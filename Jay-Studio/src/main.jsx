@@ -7,7 +7,7 @@ import App from './App.jsx'
 import ErrorPage from './pages/error.jsx'
 import HomePage from './pages/home'
 // import AboutPage from './pages/about'
-// import ProjectPage from './pages/project'
+import WorkPage from './pages/Work/Work.jsx'
 // import ContactPage from './pages/contact'
 
 const router = createBrowserRouter([
@@ -34,12 +34,12 @@ const router = createBrowserRouter([
       // },
       // {
       //   path: 'contact',
-      //   element: <ContactPage />,
-      // },
-      // {
-      //   path: 'project',
-      //   element: <ProjectPage />,
-      // }
+      //   element: <ContactPage />,}
+      ,
+      {
+        path: 'work',
+        element: <WorkPage />,
+      }
     ],
   },
 ]);

@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           J Studio
         </a>
         <ul className="nav justify-content-center">
@@ -12,7 +12,7 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/work">
               Work
             </a>
           </li>
