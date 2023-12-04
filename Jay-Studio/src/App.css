@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #2d5d98;
+
+  max-height: 70px;
+}
+
+.nav-link {
+  color: rgb(180, 192, 219);
+  
+}
+.navbar-brand {
+  color: rgb(180, 192, 219);
+}
+.navbar-expand-sm{
+  max-height: 40px;
+}
+.main {
+  background-color: rgb(152, 189, 189);
+  min-height: 50px;
+}
+
+.home-header {
+  min-height: 300px;
+}
+
+.home-header h1 {
+  font-size: 50px;
+  margin-top: 70px;
+
+}
