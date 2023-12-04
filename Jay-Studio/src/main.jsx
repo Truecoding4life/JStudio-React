@@ -2,13 +2,14 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
+
 // Import components for route rendering
 import App from './App.jsx'
 import ErrorPage from './pages/error.jsx'
 import HomePage from './pages/home'
-import AboutPage from './pages/about'
-import ProjectPage from './pages/project'
-import ContactPage from './pages/contact'
+// import AboutPage from './pages/about'
+// import ProjectPage from './pages/project'
+// import ContactPage from './pages/contact'
 
 const router = createBrowserRouter([
   {
@@ -26,20 +27,20 @@ const router = createBrowserRouter([
         // https://reactrouter.com/en/main/route/route#index
         // Determines if the route is an index route. Index routes render into their parent's
         index: true,
-        element: <HomePage />,
-      },
-      {
-        path: 'about',
-        element: <AboutPage />,
-      },
-      {
-        path: 'contact',
-        element: <ContactPage />,
-      },
-      {
-        path: 'project',
-        element: <ProjectPage />,
-      },
+        element: <HomePage />,}
+      // },
+      // {
+      //   path: 'about',
+      //   element: <AboutPage />,
+      // },
+      // {
+      //   path: 'contact',
+      //   element: <ContactPage />,
+      // },
+      // {
+      //   path: 'project',
+      //   element: <ProjectPage />,
+      // }
     ],
   },
 ]);
