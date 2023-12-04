@@ -1,5 +1,7 @@
-import project1 from  '../assets/food-finder.gif'
-import project2 from  '../assets/api-adventure.gif'
+import './style.css'
+
+import project1 from  '../../assets/food-finder.gif'
+import project2 from  '../../assets/api-adventure.gif'
 export default function WorkPage() {
     return (
         <>
