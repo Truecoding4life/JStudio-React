@@ -6,7 +6,7 @@ export default function WorkPage() {
     return (
         <>
 
-            <div className="section pt-5 mt-1">
+            <div className="section pt-5 mt-1 project">
                 <div className="container">
                     <div className="row">
                         <div className="col-6 text-white">

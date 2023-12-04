@@ -9,9 +9,10 @@ function App() {
       <div className="section">
         <Navbar />
       </div>
-     
+      <div className="section">
         <Outlet />
-      
+      </div>
+       
       <div className="section">
         <Footer />
       </div>

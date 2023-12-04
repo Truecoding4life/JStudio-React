@@ -8,7 +8,7 @@ import ErrorPage from './pages/error.jsx'
 import HomePage from './pages/home'
 // import AboutPage from './pages/about'
 import WorkPage from './pages/Work/Work.jsx'
-// import ContactPage from './pages/contact'
+import ContactPage from './pages/Contact/contact.jsx'
 
 const router = createBrowserRouter([
   {
@@ -32,9 +32,9 @@ const router = createBrowserRouter([
       //   path: 'about',
       //   element: <AboutPage />,
       // },
-      // {
-      //   path: 'contact',
-      //   element: <ContactPage />,}
+       ,{
+         path: 'contact',
+         element: <ContactPage />,}
       ,
       {
         path: 'work',
