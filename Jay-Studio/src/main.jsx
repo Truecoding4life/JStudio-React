@@ -2,8 +2,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-import ErrorPage from './pages/error.jsx'
+// Import components for route rendering
 import App from './App.jsx'
+import ErrorPage from './pages/error.jsx'
+import HomePage from './pages/home'
+import AboutPage from './pages/about'
+import ProjectPage from './pages/project'
+import ContactPage from './pages/contact'
 
 const router = createBrowserRouter([
   {
@@ -24,16 +29,16 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        // https://reactrouter.com/en/main/route/route#path
-        // The path pattern to match against the URL to determine if this route matches a URL, link href, or form action.
-        path: 'profile/:id',
-        // https://reactrouter.com/en/main/route/route#elementcomponent
-        // The React Element/Component to render when the route matches the URL.
-        element: <ProfilePage />,
-      },
-      {
         path: 'about',
         element: <AboutPage />,
+      },
+      {
+        path: 'contact',
+        element: <ContactPage />,
+      },
+      {
+        path: 'project',
+        element: <ProjectPage />,
       },
     ],
   },
