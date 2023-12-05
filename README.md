@@ -3,9 +3,7 @@
 
 # JStudio-React
 
-#### Resources
 
-[Github Repository](https://github.com/Truecoding4life/JStudio-React)
 
 
 #### Table of contents
@@ -14,11 +12,20 @@
 * [Usage](#usage)
 * [Technologies used](#technologies-used)
 
+#### Resources
 
-## Description
+[Github Repository](https://github.com/Truecoding4life/JStudio-React)
+
+---
+
+### Description
 **Simplicity:** Jay's Studio embraces a clean and minimalistic design philosophy, ensuring that visitors can easily focus on your content without distractions.
 
 **Easy Navigation:** We've prioritized user-friendliness, making it effortless for your audience to find their way around your website.
+
+![Home button](./assets/application.png)
+
+
 
 
 
@@ -29,6 +36,9 @@
 - Use your IDE to make update accordingly
 - Update your repository and use accordingly
 
+
+---
+
 ### Usage
 
 #### Navigation Bar ☺︎
@@ -36,13 +46,17 @@ This is where you would find most of the content of the webpage with a click on 
 
 
 
-![Home button](./assets/application.png)
+
 
 
 ## Technologies used
 
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
