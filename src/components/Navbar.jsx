@@ -1,28 +1,28 @@
+import { Link } from 'react-router-dom';
+
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm ">
       <div className="container-fluid ">
-        <a className="navbar-brand " href="/">
+        <Link className="navbar-brand" to="/">
           J Studio
-        </a>
+        </Link>
         <ul className="nav justify-content-center">
-
           <li className="nav-item">
-            <a className="nav-link" href="/work">
+            <Link className="nav-link" to="/work">
               Portfolio
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact">
+            <Link className="nav-link" to="/contact">
               Contact
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/resume">
+            <Link className="nav-link active" to="/resume">
               Resume
-            </a>
+            </Link>
           </li>
-
         </ul>
       </div>
     </nav>
