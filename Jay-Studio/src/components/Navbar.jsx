@@ -1,19 +1,15 @@
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-sm ">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+      <div className="container-fluid ">
+        <a className="navbar-brand " href="/">
           J Studio
         </a>
         <ul className="nav justify-content-center">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
-              Resume
-            </a>
-          </li>
+
           <li className="nav-item">
             <a className="nav-link" href="/work">
-              Work
+              Portfolio
             </a>
           </li>
           <li className="nav-item">
@@ -22,10 +18,11 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" aria-disabled="true">
-              Login
+            <a className="nav-link active" aria-current="page" href="/resume">
+              Resume
             </a>
           </li>
+
         </ul>
       </div>
     </nav>

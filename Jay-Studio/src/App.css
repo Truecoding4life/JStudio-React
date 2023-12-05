@@ -10,9 +10,10 @@
 }
 .navbar-brand {
   color: rgb(180, 192, 219);
+  font-size: 30px;
 }
 .navbar-expand-sm{
-  max-height: 50px;
+  max-height: 60px;
 }
 .main {
   background-color: rgb(152, 189, 189);
@@ -30,7 +31,7 @@
 }
 
 .content {
-  min-height: 1000px;
+  min-height: 1050px;
   max-height: 100%;
 
 }
@@ -45,4 +46,8 @@
   background-color: rgba(33, 43, 62, 0.78);
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+}
+
+.actived {
+  background-color: rgb(35, 68, 124);
 }

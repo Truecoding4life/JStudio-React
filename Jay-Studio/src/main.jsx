@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App.jsx'
 import ErrorPage from './pages/error.jsx'
 import HomePage from './pages/home'
-// import AboutPage from './pages/about'
+import ResumePage from './pages/resume/resume.jsx'
 import WorkPage from './pages/Work/Work.jsx'
 import ContactPage from './pages/Contact/contact.jsx'
 
@@ -26,13 +26,13 @@ const router = createBrowserRouter([
         // https://reactrouter.com/en/main/route/route#index
         // Determines if the route is an index route. Index routes render into their parent's
         index: true,
-        element: <HomePage />,}
-      // },
-      // {
-      //   path: 'about',
-      //   element: <AboutPage />,
-      // },
-       ,{
+        element: <HomePage />,
+      }
+      ,{
+        path: 'resume',
+        element: <ResumePage />,
+      },
+       {
          path: 'contact',
          element: <ContactPage />,}
       ,
