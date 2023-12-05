@@ -1,6 +1,6 @@
 .navbar {
   background-color: #2d5d98;
-
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 
 }
 
@@ -30,9 +30,18 @@
 }
 
 .content {
-  min-height: 1200px;
+  min-height: 1000px;
   max-height: 100%;
-  background-color: #a4a8ad;
+
 }
 
+.body {
+  background-color: rgba(242, 238, 238, 0.91);
+}
 
+.contact-box{
+  padding: 20px;
+  background-color: rgb(73, 120, 161);
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
+}

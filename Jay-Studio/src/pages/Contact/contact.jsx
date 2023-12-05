@@ -1,29 +1,21 @@
 export default function ContactPage() {
     return (
-        <div className="container">
+        <div className="container ">
             <div className="row mt-5">
-                <div className="col-6 ">
+                <div className="col-md-6 contact-box">
                     <form>
-                        <h1> Send me a message</h1>
-                        <div className="input-group input-group-sm mb-3">
-                            <div className="input-group-prepend">
-                                <span className="input-group-text" id="name">Name</span>
-                            </div>
-                            <input type="text" className="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                        <h1 className="mb-5"> Send me a message</h1> 
+                        <label >Name</label>
+                        <input type="text" className="form-control mb-4" aria-label="Small" aria-describedby="inputGroup-sizing" />
+                        <label >Email</label>
+                        <input type="email" className="form-control mb-4" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
 
-                        </div>
-                        <div className="input-group input-group-sm mb-3">
-                            <div className="input-group-prepend">
-                                <span className="input-group-text" id="email">Email</span>
-                            </div>
-                            <input type="email" className="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
 
-                        </div>
-                        <div className="input-group">
+                       
 
                             <textarea className="form-control" aria-label="With textarea" id='text' placeholder="Send Message"></textarea>
-                        </div>
-                        <button type="submit" className="btn btn-primary mt-3"> Send Message</button>
+                      
+                        <button type="submit" className="btn btn-primary mt-3 col-12"> Send Message</button>
                        
                     </form>
                 </div>
