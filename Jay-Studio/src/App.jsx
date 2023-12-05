@@ -9,11 +9,11 @@ function App() {
       <div className="section">
         <Navbar />
       </div>
-      <div className="section">
+      <div className="section content">
         <Outlet />
       </div>
        
-      <div className="section">
+      <div className="section Footer">
         <Footer />
       </div>
     </>
