@@ -40,8 +40,9 @@
 }
 
 .contact-box{
+  color: white;
   padding: 20px;
-  background-color: rgb(73, 120, 161);
+  background-color: rgba(33, 43, 62, 0.78);
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
 }

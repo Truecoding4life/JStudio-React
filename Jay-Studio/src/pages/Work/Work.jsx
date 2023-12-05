@@ -18,8 +18,8 @@ export default function WorkPage() {
               </div>
             </div>
           </div>
-            <div className="col-md-6 col-12 col-lg-6">
-                <div className="card col-md-12 col-12 mb-5">
+            <div className="col-md-6 col-12 col-lg-6 ">
+                <div className="card col-md-12 col-12 mb-5 text-white">
               <div className="card-body">
                 <h4 className="card-title">Food Finder</h4>
                 <p className="card-text">
@@ -28,16 +28,22 @@ export default function WorkPage() {
                 </p>
                 <h6 className="text-success">Click on image to go to page</h6>
               </div>
+             
               <a href="https://fenriragni.github.io/food-finder/">
                 <img
                   src={project1}
-                  className="card-img-top"
+                  className="card-img-top "
                   alt="project-1-image"
                 />
               </a>
+
+               <div className="col-12 d-flex justify-content-evenly p-2">
+                <a href="https://github.com/FenriRagni/food-finder" className="btn btn-lg bg-primary text-white rounded-1 col-5">View this repository</a>
+                <a href="https://fenriragni.github.io/food-finder/" className="btn btn-lg bg-success text-white rounded-1 col-5">Online Application</a>
+            </div>
             </div>
         
-            <div className="card col-md-12 col-12 ">
+            <div className="card col-md-12 col-12  text-white">
               <div className="card-body">
                 <h4 className="card-title">API Adventure</h4>
                 <p className="card-text">
@@ -47,6 +53,7 @@ export default function WorkPage() {
                 </p>
                 <h6 className="text-success">Click on image to go to page</h6>
               </div>
+              
               <a href="https://api-adventures-635e529205da.herokuapp.com/">
                 <img
                   src={project2}
@@ -54,6 +61,11 @@ export default function WorkPage() {
                   alt="project 2"
                 />
               </a>
+            <div className="col-12 d-flex justify-content-evenly p-2">
+                <a href="https://github.com/Truecoding4life/api-adventures" className="btn btn-lg bg-primary text-white rounded-1 col-5">View this repository</a>
+                <a href="https://api-adventures-635e529205da.herokuapp.com/" className="btn btn-lg bg-success text-white rounded-1 col-5">Online Application</a>
+            </div>
+
             </div>
             </div>
             

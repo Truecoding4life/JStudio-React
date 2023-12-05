@@ -1,8 +1,8 @@
 export default function ContactPage() {
     return (
         <div className="container ">
-            <div className="row mt-5">
-                <div className="col-md-6 contact-box">
+            <div className="row mt-5 justify-content-center">
+                <div className="col-md-6 contact-box ">
                     <form>
                         <h1 className="mb-5"> Send me a message</h1> 
                         <label >Name</label>
@@ -18,9 +18,6 @@ export default function ContactPage() {
                         <button type="submit" className="btn btn-primary mt-3 col-12"> Send Message</button>
                        
                     </form>
-                </div>
-                <div className="col-6">
-                    
                 </div>
             </div>
         </div>
