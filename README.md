@@ -1,5 +1,7 @@
 
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+
+
 
 # JStudio-React
 
@@ -16,6 +18,11 @@
 
 [Github Repository](https://github.com/Truecoding4life/JStudio-React)
 
+[Deployed Application](https://main--j-studio-rjs.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2a3c7a65-1603-40f0-ba4c-8c591b83bffe/deploy-status)](https://app.netlify.com/sites/j-studio-rjs/deploys)
+
+
 ---
 
 ### Description
@@ -25,6 +32,11 @@
 
 ![Home button](./assets/application.png)
 
+
+
+**Responsive Interface:** Site is construct based on smaller screen first so that other client can also can access to my website across different devices
+
+![phone screen](./src/assets/phonescreen.png)
 
 
 
@@ -51,6 +63,7 @@ This is where you would find most of the content of the webpage with a click on 
 
 ## Technologies used
 
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
