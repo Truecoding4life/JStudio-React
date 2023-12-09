@@ -23,7 +23,6 @@
 }
 .main {
   background-color: rgb(152, 189, 189);
-  min-height: 50px;
 }
 
 .home-header {
@@ -37,7 +36,7 @@
 }
 
 .content {
-  min-height: 1050px;
+  min-height: 50px;
   max-height: 100%;
 
 }
@@ -49,7 +48,7 @@
 .contact-box{
   color: white;
   padding: 20px;
-  background-color: rgba(33, 43, 62, 0.78);
+  background-color: rgba(26, 27, 30, 0.78);
   border-radius: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
 }
@@ -64,15 +63,26 @@
 
 }
 
+.home-header {
+  color: rgba(6, 32, 81, 0.909);
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+}
+
 #welcome-quote {
   font-family: 'Staatliches', sans-serif;
   font-size: 70px;
-  color: rgba(56, 53, 98, 0.86);
+  color: rgba(6, 32, 81, 0.909);
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: rgb(102, 60, 186);
+  color: rgb(132, 128, 142);
 }
 
 
+@media screen and (min-height: 1200px) {
+  .content {
+    min-height: 900px;
+  }
+}
 
