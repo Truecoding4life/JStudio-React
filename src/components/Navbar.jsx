@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import image from "../assets/logo.png";
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+
 
 const contact = (
   <svg
@@ -41,53 +43,46 @@ const portfolio = (
   </svg>
 );
 
-export default function Navbar() {
+export default function NavbarLi() {
   return (
-    <nav className="navbar navbar-expand-sm ">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          <image>
-            <img src={image} alt="logo" width="50px" />
-          </image>
+    <Navbar expand="lg">
+      <Navbar.Brand href="/">
+        <image> <img src={image} alt="logo" width="50px" /></image>
           J Studio
-        </Link>
-        <button
-          className="navbar-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="main-navbar"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-caret-down"
-            viewBox="0 0 16 16"
-          >
-            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
-          </svg>
-        </button>
-        <div className="collapse navbar-collapse" id="main-navbar">
-          <ul className="nav justify-content-center">
-            <li className="nav-item">
-              <Link className="nav-link" to="/work">
-                {portfolio} Portfolio
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                {contact} Contact
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link active" to="/resume">
-                {resume} Resume
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" bg="black" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/work"> {portfolio} Portfolio</Nav.Link>
+          <Nav.Link href="/contact"> {contact} Contact</Nav.Link>
+          <Nav.Link href="/resume"> { resume} Resume</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
+
+// const MyNavbar = () => {
+//   return (
+//     <Navbar bg="light" expand="lg">
+//       <Navbar.Brand href="/">
+//         <image> <img src={image} alt="logo" width="50px" /></image>
+//           J Studio
+//       </Navbar.Brand>
+//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
+//       <Navbar.Collapse id="basic-navbar-nav">
+//         <Nav className="mr-auto">
+//           <Nav.Link href="#home">Home</Nav.Link>
+//           <Nav.Link href="#link">Link</Nav.Link>
+//           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+//             <NavDropdown.Item href="/work"> {portfolio} Portfolio </NavDropdown.Item>
+//             <NavDropdown.Item href="/contact">{contact} Contact</NavDropdown.Item>
+//             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+//             <NavDropdown.Divider />
+//             <NavDropdown.Item href="/resume">{resume} Resume</NavDropdown.Item>
+//           </NavDropdown>
+//         </Nav>
+//       </Navbar.Collapse>
+//     </Navbar>
+//   );
+// };
