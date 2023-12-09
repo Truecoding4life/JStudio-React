@@ -12,6 +12,7 @@ export default function HomePage() {
                             src={logo}
                             alt="logo"
                             id="homepage-logo"
+                            width="100%"
                         />
                     </image>
                 </div>
