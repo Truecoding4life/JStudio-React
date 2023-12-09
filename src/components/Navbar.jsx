@@ -52,11 +52,13 @@ export default function NavbarLi() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" bg="black" />
       <Navbar.Collapse id="basic-navbar-nav">
+      
         <Nav className="mr-auto">
-          <Nav.Link href="/work"> {portfolio} Portfolio</Nav.Link>
-          <Nav.Link href="/contact"> {contact} Contact</Nav.Link>
-          <Nav.Link href="/resume"> { resume} Resume</Nav.Link>
+          <Nav.Link as={Link} to="/work"> {portfolio} Portfolio </Nav.Link>
+          <Nav.Link as={Link} to="/contact"> {contact} Contact</Nav.Link>
+          <Nav.Link as={Link} to="/resume"> { resume} Resume</Nav.Link>
         </Nav>
+       
       </Navbar.Collapse>
     </Navbar>
   );
