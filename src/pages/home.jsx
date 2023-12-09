@@ -20,7 +20,7 @@ export default function HomePage() {
                 <div className="col-12 col-md-6 align-self-center home-header">
                     <div className="col-12 text-center">
                         <h1 id="welcome-quote"> Build your website everyday better</h1>
-                        <h4> Turn your idea to reality</h4>
+                        <h4> Turn your idea into reality</h4>
                         <p> We design website for business and personal </p>
                         <p> We Focus on Modern and Minimal Design</p>
                         <p> Fast and Optimize Running Time </p>
