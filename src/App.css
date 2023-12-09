@@ -55,7 +55,7 @@
 }
 
 .actived {
-  background-color: rgb(35, 68, 124);
+  background-color: rgb(136, 146, 164);
 }
 
 #homepage-logo {
@@ -69,3 +69,10 @@
   font-size: 70px;
   color: rgba(56, 53, 98, 0.86);
 }
+
+.nav-link:hover, .navbar-brand:hover {
+  color: rgb(102, 60, 186);
+}
+
+
+

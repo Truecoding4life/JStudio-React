@@ -3,6 +3,7 @@ import image from '../assets/logo.png';
 
 export default function Navbar() {
   return (
+    
     <nav className="navbar navbar-expand-sm ">
       <div className="container-fluid ">
         <Link className="navbar-brand" to="/">
@@ -15,9 +16,12 @@ export default function Navbar() {
           </image>
           J Studio
         </Link>
+        
         <ul className="nav justify-content-center">
           <li className="nav-item">
+       
             <Link className="nav-link" to="/work">
+              
               Portfolio
             </Link>
           </li>
