@@ -41,9 +41,7 @@ export default function WorkPage() {
                 </div>
               </div>
             </div>
-            <div className=" container-fluid col-12 d-md-inline-flex flex-lg-row justify-content-between">
-              {" "}
-              {/* Added d-flex flex-row classes */}
+            <div className=" container-fluid col-12 d-md-inline-flex flex-lg-row justify-content-between ">
               <div className="card col-md-5 col-12 text-white mb-5">
                 <div className="card-body">
                   <h4 className="card-title">Food Finder</h4>

@@ -24,7 +24,7 @@
 
 
 .main {
-  background-color: rgb(152, 189, 189);
+  background-color: rgb(195, 216, 216);
 }
 
 .home-header {
@@ -44,7 +44,7 @@
 }
 
 .body {
-  background-color: rgba(242, 238, 238, 0.91);
+  background-color: rgba(30, 29, 29, 0.323);
 }
 
 .contact-box{
@@ -82,7 +82,6 @@
 .nav-link:hover, .navbar-brand:hover {
   color: rgb(132, 128, 142);
 }
-
 
 
 @media screen and (min-height: 1200px) {
