@@ -86,7 +86,7 @@ export default function WorkPage() {
                   <h6 className="text-success">Click on image to go to page</h6>
                 </div>
 
-                <a href="https://api-adventures-635e529205da.herokuapp.com/">
+                <a href="https://api-adventure-project-8151c086edbf.herokuapp.com/">
                   <img
                     src={project2}
                     className="card-img-bottom"
