@@ -53,7 +53,7 @@ export default function NavbarLi() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" bg="black" />
       <Navbar.Collapse id="basic-navbar-nav">
       
-        <Nav className="mr-auto p-4">
+        <Nav className="m-auto p-4 justify-content-between">
           <Nav.Link as={Link} to="/work"> {portfolio} Portfolio </Nav.Link>
           <Nav.Link as={Link} to="/contact"> {contact} Contact</Nav.Link>
           <Nav.Link as={Link} to="/resume"> { resume} Resume</Nav.Link>

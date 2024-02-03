@@ -29,7 +29,7 @@ import project2 from "../../assets/api-adventure.gif";
 export default function WorkPage() {
   return (
     <>
-      <div className=" pt-5 mt-1 project">
+      <div className=" pt-5 project">
         <div className="container">
           <div className="row ">
             <div className="col-md-12 align-self-center ">

@@ -1,32 +1,58 @@
 * {
   font-family: 'Onest', sans-serif;
 }
-
+:root {
+  --main: rgba(8, 186, 136, 0.944); /* Set your desired theme color here */
+}
 .navbar {
   background-color: #1c1d1eed;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 
 }
-
-.nav-link {
-  color: rgb(255, 255, 255);
-  font-family: 'Staatliches', sans-serif;
-  
+#welcome-hi{
+  font-size: 60px;
+  color: rgba(235, 235, 235, 0.944);
 }
+.nav-link {
+  color: var(--main);
+  font-family: 'Staatliches', sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
 .navbar-brand {
-  color: rgb(219, 219, 219);
+  color: var(--main);
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
+   transition: transform 0.3s ease-in-out;
 }
+#welcome-quote, #welcome-quote-dev, #welcome-quote-vet {
+  
+  font-size: 60px;
+  color: rgba(247, 248, 249, 0.909);
+};
+
 .navbar-expand-sm{
   max-height: 60px;
 }
 
 
+
+#welcome-quote-dev{
+  color: var(--main)
+};
+
+#download{
+  border-radius: 80px;
+}
 .main {
-  background-color: rgb(195, 216, 216);
+  background-color: rgb(31, 34, 34);
 }
 
+#veteran{
+  
+  font-size: 60px;
+  color: rgba(8, 138, 186, 0.944);
+}
 .home-header {
   min-height: 300px;
 }
@@ -43,6 +69,10 @@
 
 }
 
+.download-button{
+  border-color: rgb(9, 161, 110);
+  color: aquamarine;
+}
 .body {
   background-color: rgba(30, 29, 29, 0.323);
 }
@@ -67,26 +97,36 @@
 
 }
 
-.home-header {
-  color: rgba(6, 32, 81, 0.909);
-  font-family: 'Overpass', sans-serif;
-  font-size: 20px;
-}
+.nav-link:visited{
+  color: var(--main);
 
-#welcome-quote {
-  font-family: 'Staatliches', sans-serif;
-  font-size: 70px;
-  color: rgba(31, 44, 68, 0.909);
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: rgb(132, 128, 142);
+  color: rgb(212, 208, 209);
+  transform: scale(1.2)
 }
 
 
-@media screen and (min-height: 1200px) {
-  .content {
-    min-height: 1050px;
+.content{
+  background-color: rgba(18, 17, 17, 0.967);
+  min-height: 1200px;
+}
+
+.download-button:hover{
+  border-color: rgb(218, 47, 47);
+  color: rgb(218, 47, 47);
+
+}
+
+
+@media screen and (max-height: 768px) {
+  #welcome-quote{
+    font-size: 50px;
+    margin-top: 40px;
   }
-}
-
+  #homepage-logo{
+    width:70%;
+    margin-left: 15%;
+  }
+};

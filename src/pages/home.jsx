@@ -20,13 +20,11 @@ export default function HomePage() {
 
                 <div className="col-12 col-md-6 align-self-center home-header">
                     <div className="col-12 text-center">
-                        <h1 id="welcome-quote"> Build your website everyday better</h1>
-                        <h4> Turn your idea into reality</h4>
-                        <p> We design website for business and personal </p>
-                        <p> We Focus on Modern and Minimal Design</p>
-                        <p> Fast and Optimize Running Time </p>
-
-                   
+                        <h1 id='welcome-hi'> Hi, it's Jay </h1>
+                        <h2 id="welcome-quote"> I am a </h2>
+                        <h3 id="welcome-quote-dev"> Fullstack Web Developer </h3>
+                        <h3 id="welcome-quote-vet"> and a <span id='veteran'> Veteran</span>  </h3>
+                        <button type="button" class="btn download-button"> DOWNLOAD RESUME </button>
                     </div>
                 </div>
 
