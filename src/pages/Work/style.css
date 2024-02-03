@@ -1,23 +1,54 @@
-.card {
-    background-color: rgba(23, 25, 28, 0.78);
-    color: rgb(5, 5, 5);
-    box-shadow  : 0 0 10px 0 rgba(0, 0, 0, 0.4);
-    margin: 40px;
+:root {
+    --bluemain: rgba(19, 80, 124, 0.424);
+    --whiteout: rgb(211, 220, 225);
+
 }
 
+.card {
+    background-color: var(--bluemain);
+    color: var(--whiteout);
+    box-shadow  : 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    margin: 40px;
+    
+}
+
+.card-text, .card-title{
+    font-family:'Courier New', Courier, monospace;
+}
 .section-header {
-    font-family: 'Staatliches', sans-serif;
-    color: rgb(192, 192, 192);
-    background-color: rgb(53, 59, 59);
-    border-radius: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgba(201, 199, 199, 0.854);
+    background-color:var(--bluemain);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow  : 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
+  
     padding: 30px;
+}
+.project-container{
+    
+    border-color: var(--bluemain);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 14px;
+}
+.card:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: rgb(24, 23, 23);
+    border: 5px solid var(--bluemain);
 }
 
 @media screen and (max-width: 768px) {
     .card {
         margin: 0;
     }
-    
+    .project-card{
+        margin-bottom: 40px;
+        margin-top: 30px
+    }
 };
 
     

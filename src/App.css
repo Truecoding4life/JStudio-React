@@ -2,7 +2,7 @@
   font-family: 'Onest', sans-serif;
 }
 :root {
-  --main: rgba(8, 186, 136, 0.944); /* Set your desired theme color here */
+  --main: rgba(4, 250, 184, 0.944); /* Set your desired theme color here */
 }
 .navbar {
   background-color: #1c1d1eed;
@@ -14,13 +14,13 @@
   color: rgba(235, 235, 235, 0.944);
 }
 .nav-link {
-  color: var(--main);
+  color: white;
   font-family: 'Staatliches', sans-serif;
   transition: transform 0.3s ease-in-out;
 }
 
 .navbar-brand {
-  color: var(--main);
+  color: white;
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
    transition: transform 0.3s ease-in-out;
@@ -35,10 +35,12 @@
   max-height: 60px;
 }
 
-
+.navbarbrand{
+  margin-left: 30px;
+}
 
 #welcome-quote-dev{
-  color: var(--main)
+  color: rgba(8, 186, 136, 0.944);
 };
 
 #download{
@@ -98,13 +100,13 @@
 }
 
 .nav-link:visited{
-  color: var(--main);
+  color: white;
 
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: rgb(212, 208, 209);
-  transform: scale(1.2)
+  color: var(--main);
+  transform: scale(1.1)
 }
 
 
@@ -119,14 +121,29 @@
 
 }
 
+.custom-toggler{
+  border-color: var(--main);
+  border-style: solid;
+  border-radius: 10px;
+  color: greenyellow;
+}
 
 @media screen and (max-height: 768px) {
-  #welcome-quote{
-    font-size: 50px;
-    margin-top: 40px;
+ 
+  .nav-link:hover {
+    transition: margin-left 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+    margin-left: 20px; 
   }
-  #homepage-logo{
-    width:70%;
-    margin-left: 15%;
+}
+@media screen and (max-width: 768px) {
+
+  .nav-link:hover {
+ 
+    transform: none;
+    
   }
-};
+  
+  .home-header{
+    min-height: 800px;
+  }
+}

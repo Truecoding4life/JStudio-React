@@ -1,4 +1,4 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/Homepage.jpg';
 
 export default function HomePage() {
     return (

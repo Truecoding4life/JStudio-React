@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import image from "../assets/logo.png";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-
+import {KeyboardDoubleArrowDownIcon} from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 const contact = (
   <svg
@@ -13,6 +12,13 @@ const contact = (
   >
     <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
     <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12z" />
+  </svg>
+);
+
+const expandIcon = (
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" className="bi bi-chevron-double-down" viewBox="0 20 10">
+    <path fillRule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+    <path fillRule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
   </svg>
 );
 
@@ -45,19 +51,28 @@ const portfolio = (
 
 export default function NavbarLi() {
   return (
-    <Navbar expand="lg">
-      <Navbar.Brand href="/">
-        <image> <img src={image} alt="logo" width="50px" /></image>
+    <Navbar expand="md">
+      <Navbar.Brand href="/" className='navbarbrand'>
+       
           J Studio
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" bg="black" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">
+  {/* Paste the copied SVG code here */}
+  {expandIcon}
+</Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav">
       
-        <Nav className="m-auto p-4 justify-content-between">
-          <Nav.Link as={Link} to="/work"> {portfolio} Portfolio </Nav.Link>
-          <Nav.Link as={Link} to="/contact"> {contact} Contact</Nav.Link>
-          <Nav.Link as={Link} to="/resume"> { resume} Resume</Nav.Link>
-        </Nav>
+      <Nav className="d-flex justify-content-between p-3">
+      <Nav.Link as={Link} to="/work">
+        Portfolio
+      </Nav.Link>
+      <Nav.Link as={Link} to="/contact">
+        Contact
+      </Nav.Link>
+      <Nav.Link as={Link} to="/resume">
+        Resume
+      </Nav.Link>
+    </Nav>
        
       </Navbar.Collapse>
     </Navbar>

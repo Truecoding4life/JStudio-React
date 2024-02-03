@@ -1,5 +1,6 @@
 import "./style.css";
 
+// Icon use for buttons
 const Github = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -24,91 +25,75 @@ const Play = (
   </svg>
 );
 
+const Boxed = (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg>);
+
 import project1 from "../../assets/food-finder.gif";
 import project2 from "../../assets/api-adventure.gif";
+
+const Project = [
+  {
+    title: "Food Finder",
+    description:"Front End web application powered by Bootstrap, Google API and Edamam API. This app is designed to solve our basic need as simple as find restaurants or find recipe and you can do all that within this single front end application.",
+    github: "https://github.com/FenriRagni/food-finder",
+    link: "https://fenriragni.github.io/food-finder/",
+  },
+  {
+    title: "API Adventure",
+    description:
+      "FullStack blog post application designed to connect students through API networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
+    github: "https://github.com/Truecoding4life/api-adventures",
+  },
+  {
+    title: "Boring Game Shop",
+    description:
+      "FullStack E-commerce web application powered by React, Materialize Ui, Node.js, Express, MongoDB, and Stripe.",
+    github: "https://github.com/Andrewchall92/game-shop",
+  }
+];
 export default function WorkPage() {
   return (
     <>
       <div className=" pt-5 project">
-        <div className="container">
+        <div className="container project-container">
           <div className="row ">
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
                 <div className="row align-items-center">
-                  <div className=" col-12 mb-5">
-                    <h2 className="section-header">Class Project</h2>
+                  <div className=" col-12 mb-1">
+                    <h2 className="section-header">Academic</h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div className=" container-fluid col-12 d-md-inline-flex flex-lg-row justify-content-between ">
-              <div className="card col-md-5 col-12 text-white mb-5">
-                <div className="card-body">
-                  <h4 className="card-title">Food Finder</h4>
-                  <p className="card-text">
-                    This project I focus on front end design, I was able to pull
-                    off a beautiful website for users to find their next meal.
-                  </p>
-                  <h6 className="text-success">Click on image to go to page</h6>
-                </div>
+            {Project.map((project) => (
+              <div key={project.title} className="col-12 col-md-6 project-card">
+                <div className="card ">
+                  <div className="card-body">
+                    <h4 className="card-title"><span> <i> {Boxed}</i></span> {project.title}</h4>
+                    <p className="card-text">{project.description}</p>
+                  </div>
 
-                <a href="https://fenriragni.github.io/food-finder/">
-                  <img
-                    src={project1}
-                    className="card-img-top "
-                    alt="project-1-image"
-                  />
-                </a>
-
-                <div className="col-12 d-flex justify-content-evenly p-2">
-                  <a
-                    href="https://github.com/FenriRagni/food-finder"
-                    className="btn btn bg-primary text-white rounded-1 col-5"
-                  >
-                    {Github}
-                  </a>
-                  <a
-                    href="https://fenriragni.github.io/food-finder/"
-                    className="btn btn-sm bg-success text-white rounded-1 col-5"
-                  >
-                    {Play}
-                  </a>
+                  <div className="col-12 d-flex justify-content-evenly p-2">
+                    <a
+                      href={project.github}
+                      className="btn btn bg-primary  rounded-1 col-5"
+                    >
+                      {Github}
+                    </a>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        className="btn btn-sm bg-success rounded-1 col-5"
+                      >
+                        {Play}
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
               </div>
-              <div className="card col-md-5 col-12  text-white">
-                <div className="card-body">
-                  <h4 className="card-title">API Adventure</h4>
-                  <p className="card-text">
-                    This is a Fullstack project, my team was able to pull off an
-                    amazing website for developers to find API sources for their
-                    next project.
-                  </p>
-                  <h6 className="text-success">Click on image to go to page</h6>
-                </div>
-
-                <a href="https://api-adventure-project-8151c086edbf.herokuapp.com/">
-                  <img
-                    src={project2}
-                    className="card-img-bottom"
-                    alt="project 2"
-                  />
-                </a>
-                <div className="col-12 d-flex justify-content-evenly p-2">
-                  <a
-                    href="https://github.com/Truecoding4life/api-adventures"
-                    className="btn btn-sm bg-primary text-white rounded-1 col-5"
-                  >
-                    {Github}
-                  </a>
-                  <a
-                    href="https://api-adventures-635e529205da.herokuapp.com/"
-                    className="btn btn-sm bg-success text-white rounded-1 col-5"
-                  >
-                    {Play}
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
