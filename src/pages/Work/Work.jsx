@@ -25,9 +25,24 @@ const Play = (
   </svg>
 );
 
-const Boxed = (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-</svg>);
+const Boxed = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-star-fill"
+    viewBox="0 0 16 16"
+  >
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+  </svg>
+);
+
+const paged = (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sticky" viewBox="0 0 16 16">
+  <path d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 15 8.586V2.5A1.5 1.5 0 0 0 13.5 1zM2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V8H9.5A1.5 1.5 0 0 0 8 9.5V14H2.5a.5.5 0 0 1-.5-.5zm7 11.293V9.5a.5.5 0 0 1 .5-.5h4.293z"/>
+</svg>
+)
 
 import project1 from "../../assets/food-finder.gif";
 import project2 from "../../assets/api-adventure.gif";
@@ -35,7 +50,8 @@ import project2 from "../../assets/api-adventure.gif";
 const Project = [
   {
     title: "Food Finder",
-    description:"Front End web application powered by Bootstrap, Google API and Edamam API. This app is designed to solve our basic need as simple as find restaurants or find recipe and you can do all that within this single front end application.",
+    description:
+      "Front End web application powered by Bootstrap, Google API and Edamam API. This app is designed to solve our basic need as simple as find restaurants or find recipe and you can do all that within this single front end application.",
     github: "https://github.com/FenriRagni/food-finder",
     link: "https://fenriragni.github.io/food-finder/",
   },
@@ -50,8 +66,37 @@ const Project = [
     description:
       "FullStack E-commerce web application powered by React, Materialize Ui, Node.js, Express, MongoDB, and Stripe.",
     github: "https://github.com/Andrewchall92/game-shop",
-  }
+  },{
+    title: "Progressive Web Application",
+    description: "Application built with advanced concepts, including data persistence with IndexedDB, webpack bundling, and service worker integration using workbox.",
+    github: "https://github.com/Truecoding4life/Note-Favorite",
+    link: "https://notefavorite-j-80588266bd0c.herokuapp.com/",
+  },
 ];
+
+const OtherSkills = [
+ {
+    name: "Object-Relational Mapping",
+    description: "Backend Application powered by Sequelize to handle server side logic",
+    github: "https://github.com/Truecoding4life/E-Commerce-Back-End",
+  },
+  {
+    name: "MVC",
+    description: "Web blog post built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
+    github: "https://github.com/Truecoding4life/Developer-blog-with-model-view-control",
+    link: "https://developer-blogpost-a4d9376f41de.herokuapp.com/",
+  },
+  {
+    name: "MySQL Database",
+    description: "Backend Application powered by MySQL to handle server side logic",
+    github: "https://github.com/Truecoding4life/MySQL-for-SPACEX",
+  }, {
+    name: "Express JS",
+    description: "Web Application powered by Express JS to handle server side logic",
+    github: "https://github.com/Truecoding4life/Note-Favorite",
+    link: "https://notefavorite-j-80588266bd0c.herokuapp.com/",
+  },
+]
 export default function WorkPage() {
   return (
     <>
@@ -71,7 +116,13 @@ export default function WorkPage() {
               <div key={project.title} className="col-12 col-md-6 project-card">
                 <div className="card ">
                   <div className="card-body">
-                    <h4 className="card-title"><span> <i> {Boxed}</i></span> {project.title}</h4>
+                    <h4 className="card-title">
+                      <span>
+                        {" "}
+                        <i> {Boxed}</i>
+                      </span>{" "}
+                      {project.title}
+                    </h4>
                     <p className="card-text">{project.description}</p>
                   </div>
 
@@ -94,8 +145,56 @@ export default function WorkPage() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
+            
+            <div className="col-md-12 align-self-center ">
+  <div className="container text-center ">
+    <div className="row align-items-center">
+      <div className=" col-12 mb-1">
+        <h2 className="section-header">Other skills</h2>
+      </div>
+                </div>
+                <div className="row">
+
+                {OtherSkills.map((skill)=>(
+                   <div key={skill.name} className="col-12 col-md-12 col-lg-4 project-card">
+                   <div className="card ">
+                     <div className="card-body">
+                       <h4 className="card-title">
+                         <span>
+                         {" "}
+                           <i> {paged}</i>
+                         </span>
+                         {" "}
+                         {skill.name}
+                       </h4>
+                       <p className="card-text">{skill.description}</p>
+                     </div>
+   
+                     <div className="col-12 d-flex justify-content-evenly p-2">
+                       <a
+                         href={skill.github}
+                         className="btn btn bg-primary  rounded-1 col-5"
+                       >
+                         {Github}
+                       </a>
+                       {skill.link ? (
+                         <a
+                           href={skill.link}
+                           className="btn btn-sm bg-success rounded-1 col-5"
+                         >
+                           {Play}
+                         </a>
+                       ) : null}
+                     </div>
+                   </div>
+                 </div>
+                ))}
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+     
       </div>
     </>
   );
