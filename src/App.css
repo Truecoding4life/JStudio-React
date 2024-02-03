@@ -2,7 +2,7 @@
   font-family: 'Onest', sans-serif;
 }
 :root {
-  --main: rgba(4, 250, 184, 0.944); /* Set your desired theme color here */
+  --main: #04fab8f1; /* Set your desired theme color here */
 }
 .navbar {
   background-color: #141517fc;
@@ -21,12 +21,12 @@
 }
 .nav-link {
   color: rgb(129, 126, 126);
-  font-family: 'Staatliches', sans-serif;
+  font-family: 'Roboto', sans-serif;
   transition: transform 0.3s ease-in-out;
 }
 
 .navbar-brand {
-  color: rgb(188, 187, 189);
+  color: var(--main);
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
    transition: transform 0.3s ease-in-out;
@@ -73,18 +73,13 @@
 .download-button{
   border-color: rgb(9, 161, 110);
   color: aquamarine;
+  transition: .3se ;
 }
 .body {
   background-color: rgba(30, 29, 29, 0.323);
 }
 
-.contact-box{
-  color: white;
-  padding: 20px;
-  background-color: rgba(26, 27, 30, 0.78);
-  border-radius: 20px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .7);
-}
+
 
 .actived {
   background-color: rgb(136, 146, 164);
@@ -111,9 +106,9 @@
 
 
 .download-button:hover{
-  border-color: rgb(218, 47, 47);
+  border-color: rgb(227, 87, 6);
   color: rgb(218, 47, 47);
-
+  transform: scale(1.2);
 }
 
 .custom-toggler{
@@ -122,6 +117,7 @@
   border-radius: 10px;
   color: greenyellow;
 }
+
 
 @media screen and (max-height: 768px) {
  

@@ -2,7 +2,7 @@ import logo from "../../assets/Homepage.jpg";
 import "./style.css";
 
 
-export default function ResumePage() {
+export default function AboutPage() {
   return (
     <div id="about-container" className="container-fluid">
       <div className="row mephoto">
@@ -27,4 +27,4 @@ export default function ResumePage() {
       </div>
     </div>
   );
-}
+};

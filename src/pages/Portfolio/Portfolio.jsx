@@ -15,22 +15,17 @@ const Github = (
 );
 
 const PlayButton = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    fill="currentColor"
-    className="bi bi-play-fill"
-    viewBox="0 0 16 16"
-  >
-    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+</svg>
 );
 
 const starIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
+    width="23"
+    height="23"
     fill="currentColor"
     className="bi bi-star-fill"
     viewBox="0 0 16 16"
@@ -40,17 +35,13 @@ const starIcon = (
 );
 
 const pageIcon = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    fill="currentColor"
-    className="bi bi-sticky"
-    viewBox="0 0 16 16"
-  >
-    <path d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 15 8.586V2.5A1.5 1.5 0 0 0 13.5 1zM2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V8H9.5A1.5 1.5 0 0 0 8 9.5V14H2.5a.5.5 0 0 1-.5-.5zm7 11.293V9.5a.5.5 0 0 1 .5-.5h4.293z" />
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-floppy" viewBox="0 0 16 16">
+  <path d="M11 2H9v3h2z"/>
+  <path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0M1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5m3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4zM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5z"/>
+</svg>
 );
+
+
 
 
 const renderSkillCard = (skill) => (
@@ -67,37 +58,44 @@ const renderSkillCard = (skill) => (
         <p className="card-text">{skill.description}</p>
       </div>
 
-      <div className="col-12 d-flex justify-content-evenly p-2">
+      
+        {skill.link ? (
+          <div className="col-12 d-flex justify-content-evenly p-2">
         <a
           href={skill.github}
-          className="btn btn bg-primary  rounded-1 col-5"
+          className="btn btn github-btn  rounded-1  col-6 m-1"
         >
           {Github}
         </a>
-        {skill.link ? (
           <a
             href={skill.link}
-            className="btn btn-sm bg-success rounded-1 col-5"
+            className="btn btn-sm play-btn rounded-1  col-6 m-1"
           >
             {PlayButton}
-          </a>
-        ) : null}
-      </div>
+          </a></div>
+        ) : <div className="col-12 d-flex justify-content-evenly p-2">
+        <a
+          href={skill.github}
+          className="btn btn github-btn  rounded-1 col-12"
+        >
+          {Github}
+        </a></div>}
+     
     </div>
   </div>
 );
 
-export default function WorkPage() {
+export default function PortfolioPage() {
   return (
     <>
-      <div className="pt-5 project pb-5">
+      <div className="pt-5 project pb-5 p-3">
         <div className="container project-container">
           <div className="row ">
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
                 <div className="row align-items-center">
                   <div className="col-12 mb-1">
-                    <h2 className="section-header">Academic</h2>
+                    <h2 className="section-header fw-bolder">Academic</h2>
                   </div>
                 </div>
               </div>
@@ -105,11 +103,11 @@ export default function WorkPage() {
             {Project.map((project) => (
               <div
                 key={project.title}
-                className="col-12 col-md-6 project-card"
+                className="col-12 col-md-6 project-card p-4"
               >
                 <div className="card ">
                   <div className="card-body">
-                    <h4 className="card-title">
+                    <h4 className="card-title fw-bolder">
                       <span>
                         {" "}
                         <i> {starIcon}</i>
@@ -119,30 +117,37 @@ export default function WorkPage() {
                     <p className="card-text">{project.description}</p>
                   </div>
 
-                  <div className="col-12 d-flex justify-content-evenly p-2">
-                    <a
-                      href={project.github}
-                      className="btn btn bg-primary  rounded-1 col-5"
-                    >
-                      {Github}
-                    </a>
+                  
                     {project.link ? (
+                      <div className="col-12 d-flex justify-content-evenly p-2">
+                      <a
+                        href={project.github}
+                        className="btn btn rounded-1 col-6 m-1 github-btn"
+                      >
+                        {Github}
+                      </a>
                       <a
                         href={project.link}
-                        className="btn btn-sm bg-success rounded-1 col-5"
+                        className="btn btn-sm play-btn rounded-1 col-6 m-1"
                       >
                         {PlayButton}
-                      </a>
-                    ) : null}
+                      </a></div>
+                    ) : <div className="col-12 d-flex justify-content-evenly p-2">
+                    <a
+                      href={project.github}
+                      className="btn btn rounded-1 col-12 github-btn"
+                    >
+                      {Github}
+                    </a></div>}
                   </div>
-                </div>
+               
               </div>
             ))}
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
                 <div className="row align-items-center">
                   <div className="col-12 mb-1">
-                    <h2 className="section-header">Other skills</h2>
+                    <h2 className="section-header fw-bolder">Other skills</h2>
                   </div>
                 </div>
                 <div className="row">

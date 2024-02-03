@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App.jsx'
 import ErrorPage from './pages/error.jsx'
 import HomePage from './pages/home'
-import ResumePage from './pages/resume/resume.jsx'
-import WorkPage from './pages/Work/Work.jsx'
+import AboutPage from './pages/About/About.jsx'
+import PortfolioPage from './pages/Portfolio/Portfolio.jsx'
 import ContactPage from './pages/Contact/contact.jsx'
 
 const router = createBrowserRouter([
@@ -23,16 +23,16 @@ const router = createBrowserRouter([
         element: <HomePage />,
       }
       ,{
-        path: 'resume',
-        element: <ResumePage />,
+        path: 'about',
+        element: <AboutPage />,
       },
        {
          path: 'contact',
          element: <ContactPage />,}
       ,
       {
-        path: 'work',
-        element: <WorkPage />,
+        path: 'portfolio',
+        element: <PortfolioPage />,
       }
     ],
   },

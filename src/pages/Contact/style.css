@@ -1,30 +1,14 @@
 .chat-box{
-    min-height: 1000px;
+    min-height: 500px;
     
-    border-width: 15px;
-    border-color: var(--bluemain);
+  
     border-style: solid;
     border-radius: 12px;
+    border-color: var(--main)
 };
 
-.chat{
 
-    border-width: 15px;
-    border-color: var(--bluemain);
-    border-style: solid;
-    border-radius: 12px;
-    background-color: rgb(13, 198, 198);
-}
-.sidebar{
-    min-height: auto;
-    border-width: 15px;
-    border-color: var(--bluemain);
-    border-style: solid;
-    border-radius: 1px;
-};
 
-.contact{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 440px;
-    color: aliceblue;
-}
+
+
+
