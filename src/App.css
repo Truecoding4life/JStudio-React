@@ -5,47 +5,52 @@
   --main: rgba(4, 250, 184, 0.944); /* Set your desired theme color here */
 }
 .navbar {
-  background-color: #1c1d1eed;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  background-color: #141517fc;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
 
 }
+
+.content{
+  background-color: rgba(0, 0, 0, 0.967);
+  min-height: 1200px;
+}
+
 #welcome-hi{
   font-size: 60px;
   color: rgba(235, 235, 235, 0.944);
 }
 .nav-link {
-  color: white;
+  color: rgb(129, 126, 126);
   font-family: 'Staatliches', sans-serif;
   transition: transform 0.3s ease-in-out;
 }
 
 .navbar-brand {
-  color: white;
+  color: rgb(188, 187, 189);
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
    transition: transform 0.3s ease-in-out;
+   margin-left: 30px;
 }
-#welcome-quote, #welcome-quote-dev, #welcome-quote-vet {
+#welcome-quote, .welcome-quote-dev, #welcome-quote-vet {
   
   font-size: 60px;
   color: rgba(247, 248, 249, 0.909);
+
 };
 
-.navbar-expand-sm{
-  max-height: 60px;
-}
 
-.navbarbrand{
-  margin-left: 30px;
-}
 
-#welcome-quote-dev{
-  color: rgba(8, 186, 136, 0.944);
-};
+
+
 
 #download{
   border-radius: 80px;
 }
+.welcome-quote-dev{
+  color: rgba(21, 194, 145, 0.944);
+};
+
 .main {
   background-color: rgb(31, 34, 34);
 }
@@ -62,12 +67,6 @@
 .home-header h1 {
   font-size: 50px;
   margin-top: 70px;
-
-}
-
-.content {
-  min-height: 50px;
-  max-height: 100%;
 
 }
 
@@ -100,20 +99,16 @@
 }
 
 .nav-link:visited{
-  color: white;
+  color: rgb(129, 126, 126);
 
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  color: var(--main);
+  color:rgba(79, 201, 140, 0.93);
   transform: scale(1.1)
 }
 
 
-.content{
-  background-color: rgba(18, 17, 17, 0.967);
-  min-height: 1200px;
-}
 
 .download-button:hover{
   border-color: rgb(218, 47, 47);
@@ -132,7 +127,7 @@
  
   .nav-link:hover {
     transition: margin-left 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
-    margin-left: 20px; 
+   
   }
 }
 @media screen and (max-width: 768px) {

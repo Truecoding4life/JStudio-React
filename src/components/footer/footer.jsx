@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footer">
       <h6> Design by JStudio. 2023</h6>
       <p> Make Your Website Everyday Better </p>
-      <div className="col-12">
+      <div className="row align-items-end col-12">
         <ul className="contact-info">
           <li>
             <a href="mailto: nghiemxthai@gmail.com.com">

@@ -1,25 +1,48 @@
+// ContactPage.js
+import React from "react";
+import "./style.css";
+import { Button } from "@mui/material";
+
 export default function ContactPage() {
-    return (
-        <div className="container ">
-            <div className="row justify-content-center">
-                <div className="col-8 col-md-6 col-lg-4 contact-box mt-5">
-                    <form>
-                        <h1 className="mb-5"> Send me a message</h1> 
-                        <label >Name</label>
-                        <input type="text" className="form-control mb-4" placeholder="Your Name" aria-label="Small" aria-describedby="inputGroup-sizing" />
-                        <label >Email</label>
-                        <input type="email" className="form-control mb-4" aria-label="Small" placeholder="Email Address" aria-describedby="inputGroup-sizing-sm" />
-
-
-                       
-
-                            <textarea className="form-control" aria-label="With textarea" id='text' placeholder="Send Message"></textarea>
-                      
-                        <button type="submit" className="btn btn-primary mt-3 col-12"> Send Message</button>
-                       
-                    </form>
-                </div>
-            </div>
+  return (
+    <div className="pt-5 contact-container container">
+      <div className="col-md-12 align-self-center chat-box p-4">
+        <div className="row">
+          <div className="col-12">
+            
+              <h1 className="contact">Contact Me</h1>
+              <p className="contact">
+                Feel like I am a good fit for your next project?
+              </p>
+            
+          </div>
         </div>
-    );
-}
+        <div className="row d-flex flex-row">
+          <div className="col-lg-6 col-12 p-2">
+            <div className="col-12">
+              <Button variant="outlined" size="large" className="custom-button">
+              Send Message
+            </Button> 
+            </div>
+           <div className="col-12">
+            <Button variant="outlined" size="large" className="custom-button">
+              Check Response
+            </Button>
+           </div>
+           <div className="col-12">
+            <Button variant="outlined" size="large" className="custom-button">
+              Contact Info
+            </Button>
+           </div>
+           <div className="col-12">
+           <Button variant="outlined" size="medium" className="custom-button">
+              Download Resume
+            </Button>
+           </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  );
+};

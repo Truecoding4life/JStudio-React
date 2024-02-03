@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import {KeyboardDoubleArrowDownIcon} from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 const contact = (
   <svg
@@ -51,6 +50,9 @@ const portfolio = (
 
 export default function NavbarLi() {
   return (
+   
+
+    
     <Navbar expand="md">
       <Navbar.Brand href="/" className='navbarbrand'>
        
@@ -70,12 +72,13 @@ export default function NavbarLi() {
         Contact
       </Nav.Link>
       <Nav.Link as={Link} to="/resume">
-        Resume
+        About
       </Nav.Link>
     </Nav>
        
       </Navbar.Collapse>
     </Navbar>
+   
   );
 }
 

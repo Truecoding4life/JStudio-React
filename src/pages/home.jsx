@@ -1,10 +1,11 @@
-import logo from '../assets/Homepage.jpg';
+import logo from '../assets/hello.png';
+import resume from '../assets/resume.pdf';
 
 export default function HomePage() {
     return (
 
         <div className="container">
-
+            
             <div className="row">
                 <div className="col-12 col-md-6 align-self-center home-header">
                     <image className="center">
@@ -21,10 +22,12 @@ export default function HomePage() {
                 <div className="col-12 col-md-6 align-self-center home-header">
                     <div className="col-12 text-center">
                         <h1 id='welcome-hi'> Hi, it's Jay </h1>
-                        <h2 id="welcome-quote"> I am a </h2>
-                        <h3 id="welcome-quote-dev"> Fullstack Web Developer </h3>
-                        <h3 id="welcome-quote-vet"> and a <span id='veteran'> Veteran</span>  </h3>
-                        <button type="button" class="btn download-button"> DOWNLOAD RESUME </button>
+                        <h3 className="welcome-quote-dev"> Fullstack Web Developer </h3>
+                        <h3 id="welcome-quote"> and <span id='veteran'> Veteran</span>  </h3>
+                        <a href={resume} download="Jay_Resume.pdf">
+                           
+                        <button type="button" href={resume}  className="btn download-button"> DOWNLOAD RESUME </button>
+                        </a>
                     </div>
                 </div>
 
