@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {useState, useEffect} from 'react';
 
 const contact = (
   <svg
@@ -43,9 +44,15 @@ const portfolio = (
 );
 
 export default function NavbarLi() {
-  return (
-   
+  const [currentPage, setCurrentPage] = useState('');
+  const location = useLocation();
 
+  useEffect(() => {
+    setCurrentPage(location.pathname);
+  }, [location]);
+
+
+  return (
     
     <Navbar expand="md">
       <Navbar.Brand href="/" className='navbarbrand'>
@@ -58,13 +65,13 @@ export default function NavbarLi() {
       <Navbar.Collapse id="basic-navbar-nav">
       
       <Nav className="d-flex justify-content-between p-3">
-      <Nav.Link as={Link} to="/work">
+      <Nav.Link  style={{ color: currentPage === '/portfolio' ? '#04fab8f1' : '#817e7e' }} as={Link} to="/portfolio" >
         Portfolio
       </Nav.Link>
-      <Nav.Link as={Link} to="/contact">
+      <Nav.Link style={{ color: currentPage === '/contact' ? '#04fab8f1' : '#817e7e' }} as={Link} to="/contact">
         Contact
       </Nav.Link>
-      <Nav.Link as={Link} to="/resume">
+      <Nav.Link style={{ color: currentPage === '/about' ? '#04fab8f1' : '#817e7e' }} as={Link} to="/about">
         About
       </Nav.Link>
     </Nav>
@@ -73,7 +80,9 @@ export default function NavbarLi() {
     </Navbar>
    
   );
-}
+};
+
+const handlePageChange = (page) => { setCurrentPage(page) };
 
 // const MyNavbar = () => {
 //   return (
