@@ -41,7 +41,6 @@ const resolvers = {
       return { token, user };
     },
     addMessage: async (parent, { userId, message, name, email }) => {
-      if (context.user) {
         return User.findOneAndUpdate(
           { _id: userId },
           {
@@ -54,24 +53,20 @@ const resolvers = {
             runValidators: true,
           }
         );
-      }
-      throw AuthenticationError;
+     
     },
-    removeMessage: async (parent, { usertId, messagetId }) => {
-      if (context.user) {
+    removeMessage: async (parent, { userId, messageId }) => {
+     
         return User.findOneAndUpdate(
           { _id: userId },
           {
             $pull: {
-              messages: {
-                _id: messageId
-              },
+              messages: {_id: messageId},
             },
           },
           { new: true }
         );
-      }
-      throw AuthenticationError;
+     
     },
   },
 };
