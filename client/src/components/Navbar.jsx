@@ -1,19 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
-import { Navbar, Nav, NavDropdown, Modal, Fade } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Modal, Fade, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
-import Switch from "@mui/material/Switch";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormGroup from "@mui/material/FormGroup";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import Backdrop from "@mui/material/Backdrop";
+import Auth from "../ulti/auth";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import Input from '@mui/material/Input';
+
+
 const contact = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +21,6 @@ const contact = (
     <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12z" />
   </svg>
 );
-
 const expandIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +34,6 @@ const expandIcon = (
     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
   </svg>
 );
-
 const resume = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +47,6 @@ const resume = (
     <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
   </svg>
 );
-
 const portfolio = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +60,6 @@ const portfolio = (
     <path d="M7 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5" />
   </svg>
 );
-
 const style = {
   position: "absolute",
   top: "50%",
@@ -90,8 +81,21 @@ export default function NavbarLi() {
   }, [location]);
 
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [showPasswordBox, setShowPasswordBox] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+    setShowPasswordBox(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+    setShowPasswordBox(false);
+  };
+
+  const [inputValue, setInputValue] = useState("");
+
+  const handleLogin = () => {
+    console.log("inputValue", inputValue);
+  }
 
   return (
     <Navbar expand="md">
@@ -130,64 +134,71 @@ export default function NavbarLi() {
           >
             About
           </Nav.Link>
-          <div className="ms-auto">
-            <IconButton
-              size="xs"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpen}
-              style={{ color: "#ebebebf1" }}
-            >
-              <AccountCircle />
-            </IconButton>
-            <Modal
-              show={open}
-              onHide={handleClose}
-              aria-labelledby="transition-modal-title"
-              aria-describedby="transition-modal-description"
-              centered
-              color = "black"
-            >
-              <Modal.Header closeButton style={{ backgroundColor: '#04fab8f1', color: 'black'}}>
-                <Modal.Title id="modal-title" >
-                  Your Messages
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body style={{ backgroundColor: '#817e7e', color: 'white' }}>
-                <Typography id="modal-description">
-                  You don't have any message
-                </Typography>
-              </Modal.Body>
-            </Modal>
-          </div>
+          {Auth.loggedIn() ? (
+        <div className="ms-auto">
+          <IconButton
+            size="xs"
+            aria-label="account of current user"
+            onClick={handleOpen}
+            style={{ color: "#ebebebf1" }}
+          >
+            <AccountCircle />
+          </IconButton>
+          <Modal
+            show={open}
+            onHide={handleClose}
+            aria-labelledby="transition-modal-title"
+            aria-describedby="transition-modal-description"
+            top
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="modal-title">Your Messages</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Typography id="modal-description">
+            
+          "You don't have any message"
+          </Typography>
+            </Modal.Body>
+          </Modal>
+        </div>
+      ) : (
+        <div className="ms-auto">
+          {showPasswordBox ? (
+            <div>
+              <Input
+                placeholder="Developer Key"
+                style={{backgroundColor: "#04fab8f1", borderRadius: "5px", padding: "5px", width: "113px", height: "20px", color: "#141517fc", marginLeft: "20px", fontFamily: "Roboto"}}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleLogin();
+                  }
+                }}
+              />
+              <IconButton
+            size="xs"
+            aria-label="account of current user"
+            onClick={handleClose}
+            style={{ color: "#04fab8f1" }}
+          >
+            <KeyboardArrowRightIcon />
+          </IconButton>
+              </div>
+              
+            ) : (<IconButton
+            size="xs"
+            aria-label="account of current user"
+            onClick={handleOpen}
+            style={{ color: "#ebebebf1" }}
+          >
+            <KeyboardArrowRightIcon />
+          </IconButton>)}
+          
+        </div>
+      )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   );
 }
-
-// const MyNavbar = () => {
-//   return (
-//     <Navbar bg="light" expand="lg">
-//       <Navbar.Brand href="/">
-//         <image> <img src={image} alt="logo" width="50px" /></image>
-//           J Studio
-//       </Navbar.Brand>
-//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//       <Navbar.Collapse id="basic-navbar-nav">
-//         <Nav className="mr-auto">
-//           <Nav.Link href="#home">Home</Nav.Link>
-//           <Nav.Link href="#link">Link</Nav.Link>
-//           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-//             <NavDropdown.Item href="/work"> {portfolio} Portfolio </NavDropdown.Item>
-//             <NavDropdown.Item href="/contact">{contact} Contact</NavDropdown.Item>
-//             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-//             <NavDropdown.Divider />
-//             <NavDropdown.Item href="/resume">{resume} Resume</NavDropdown.Item>
-//           </NavDropdown>
-//         </Nav>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   );
-// };
