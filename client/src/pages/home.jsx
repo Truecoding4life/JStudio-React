@@ -8,14 +8,14 @@ export default function HomePage() {
             
             <div className="row">
                 <div className="col-12 col-md-6 align-self-center home-header">
-                    <image className="center">
+                    <div className="center">
                         <img
                             src={logo}
                             alt="logo"
                             id="homepage-logo"
                             width="100%"
                         />
-                    </image>
+                    </div>
                 </div>
 
 

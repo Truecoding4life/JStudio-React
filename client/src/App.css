@@ -14,7 +14,9 @@
   background-color: rgba(0, 0, 0, 0.967);
   min-height: 1200px;
 }
-
+.dim {
+  color: #4b4949f1;
+}
 #welcome-hi{
   font-size: 60px;
   color: #ebebebf1;
@@ -48,7 +50,7 @@
   border-radius: 80px;
 }
 .welcome-quote-dev{
-  color: rgba(21, 194, 145, 0.944);
+  color: #15c291f1;
 };
 
 .main {

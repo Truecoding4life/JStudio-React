@@ -7,8 +7,11 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import Auth from "../ulti/auth";
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Input from '@mui/material/Input';
-
-
+import { useMutation } from '@apollo/client';
+import { LOGIN_USER } from '../ulti/mutations';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import KeyIcon from '@mui/icons-material/Key';
+import InputAdornment from '@mui/material/InputAdornment';
 const contact = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +82,6 @@ export default function NavbarLi() {
   useEffect(() => {
     setCurrentPage(location.pathname);
   }, [location]);
-
   const [open, setOpen] = useState(false);
   const [showPasswordBox, setShowPasswordBox] = useState(false);
   const handleOpen = () => {
@@ -90,12 +92,28 @@ export default function NavbarLi() {
     setOpen(false);
     setShowPasswordBox(false);
   };
-
+  
   const [inputValue, setInputValue] = useState("");
 
-  const handleLogin = () => {
+  const [login, { error, data }] = useMutation(LOGIN_USER);
+
+  const handleLogin = async () => {
     console.log("inputValue", inputValue);
-  }
+    try {
+      const { data } = await login({
+        
+        variables: {username: "admin", password: inputValue },
+      });
+
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
+    }
+
+    // clear form values
+    setInputValue(" ");
+  };
+  
 
   return (
     <Navbar expand="md">
@@ -141,9 +159,11 @@ export default function NavbarLi() {
             aria-label="account of current user"
             onClick={handleOpen}
             style={{ color: "#ebebebf1" }}
+            onKeyDown={(e) => {console.log(e)}}
           >
             <AccountCircle />
           </IconButton>
+          <ExitToAppIcon onClick={Auth.logout} style={{ color: "#ebebebf1" }} />
           <Modal
             show={open}
             onHide={handleClose}
@@ -167,14 +187,24 @@ export default function NavbarLi() {
           {showPasswordBox ? (
             <div>
               <Input
-                placeholder="Developer Key"
-                style={{backgroundColor: "#04fab8f1", borderRadius: "5px", padding: "5px", width: "113px", height: "20px", color: "#141517fc", marginLeft: "20px", fontFamily: "Roboto"}}
+
+                type="password"
+                startAdornment={
+                  <InputAdornment position="start">
+                    <KeyIcon />
+                  </InputAdornment>}
+                style={{backgroundColor: "#04fab8f1", borderRadius: "5px", padding: "5px", width: "69px", height: "30px", color: "#141517fc", marginLeft: "20px", fontFamily: "Roboto",}}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
                     handleLogin();
                   }
                 }}
+
+                sx={{'&:focus-within::before': {
+                  transform: 0,
+                },}}
+
               />
               <IconButton
             size="xs"
@@ -182,6 +212,7 @@ export default function NavbarLi() {
             onClick={handleClose}
             style={{ color: "#04fab8f1" }}
           >
+
             <KeyboardArrowRightIcon />
           </IconButton>
               </div>
