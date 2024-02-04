@@ -1,0 +1,21 @@
+.footer {
+    background-color: #141517fc;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+.contact-info{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,140 @@
+* {
+  font-family: 'Onest', sans-serif;
+}
+:root {
+  --main: #04fab8f1; /* Set your desired theme color here */
+}
+.navbar {
+  background-color: #141517fc;
+  box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
+
+}
+
+.content{
+  background-color: rgba(0, 0, 0, 0.967);
+  min-height: 1200px;
+}
+
+#welcome-hi{
+  font-size: 60px;
+  color: rgba(235, 235, 235, 0.944);
+}
+.nav-link {
+  color: #817e7e;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  color: var(--main);
+  font-size: 30px;
+  font-family: 'Staatliches', sans-serif;
+   transition: transform 0.3s ease-in-out;
+   margin-left: 30px;
+}
+#welcome-quote, .welcome-quote-dev, #welcome-quote-vet {
+  
+  font-size: 60px;
+  color: rgba(247, 248, 249, 0.909);
+
+};
+
+
+
+
+
+
+#download{
+  border-radius: 80px;
+}
+.welcome-quote-dev{
+  color: rgba(21, 194, 145, 0.944);
+};
+
+.main {
+  background-color: rgb(31, 34, 34);
+}
+
+#veteran{
+  
+  font-size: 60px;
+  color: rgba(8, 138, 186, 0.944);
+}
+.home-header {
+  min-height: 300px;
+}
+
+.home-header h1 {
+  font-size: 50px;
+  margin-top: 70px;
+
+}
+
+.download-button{
+  border-color: rgb(9, 161, 110);
+  color: aquamarine;
+  transition: .3se ;
+}
+.body {
+  background-color: rgba(30, 29, 29, 0.323);
+}
+
+
+
+.actived {
+  background-color: rgb(136, 146, 164);
+}
+
+
+
+#homepage-logo {
+
+  margin-top: 100px;
+
+}
+
+.nav-link:visited{
+  color: rgb(129, 126, 126);
+
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color:rgba(79, 201, 140, 0.93);
+  transform: scale(1.1)
+}
+
+
+
+.download-button:hover{
+  border-color: rgb(227, 87, 6);
+  color: rgb(218, 47, 47);
+  transform: scale(1.2);
+}
+
+.custom-toggler{
+  border-color: var(--main);
+  border-style: solid;
+  border-radius: 10px;
+  color: greenyellow;
+}
+
+
+@media screen and (max-height: 768px) {
+ 
+  .nav-link:hover {
+    transition: margin-left 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+   
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .nav-link:hover {
+ 
+    transform: none;
+    
+  }
+  
+  .home-header{
+    min-height: 800px;
+  }
+}
