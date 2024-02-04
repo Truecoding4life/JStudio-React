@@ -1,5 +1,5 @@
 const {Schema, model} = require('mongoose');
-const timeFormat = require('../utils/timeFormat');
+const dateFormat = require('../ulti/dateFormat');
 
 const userSchema = new Schema({
     username: {
