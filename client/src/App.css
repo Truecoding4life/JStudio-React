@@ -3,12 +3,16 @@
 }
 :root {
   --main: #04fab8f1; /* Set your desired theme color here */
+  --bluemain: #73ce9cf2;
+  --whiteout: rgb(10, 12, 12);
 }
 .navbar {
   background-color: #141517fc;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
 
 }
+
+
 FormLabel {
   color: #c39595f1;
 
