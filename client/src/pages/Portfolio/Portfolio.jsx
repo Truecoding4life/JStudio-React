@@ -1,4 +1,3 @@
-import "./style.css";
 import { Project, OtherSkills } from "../../ulti/seeds";
 
 // Icon use for buttons
