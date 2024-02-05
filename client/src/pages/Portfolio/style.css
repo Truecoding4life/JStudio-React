@@ -4,13 +4,7 @@
 
 }
 
-.card {
-    background-color: var(--bluemain);
-    color: var(--whiteout);
-    box-shadow  : 0 0 10px 0 rgba(0, 0, 0, 0.4);
-    margin: 40px;
-    
-}
+
 
 .card-text, .card-title{
     font-family:'Courier New', Courier, monospace;
@@ -26,6 +20,13 @@
   
     padding: 30px;
 }
+.card {
+    background-color: var(--bluemain);
+    color: var(--whiteout);
+    box-shadow  : 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    margin: 40px;
+    
+};
 .project-container{
     
     border-color: var(--bluemain);
