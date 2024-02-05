@@ -122,7 +122,7 @@ export default function PortfolioPage() {
                       <div className="col-12 d-flex justify-content-evenly p-2">
                       <a
                         href={project.github}
-                        className="btn btn rounded-1 col-6 m-1 github-btn"
+                        className="btn btn rounded-1 col-6 m-1 github-btn "
                       >
                         {Github}
                       </a>

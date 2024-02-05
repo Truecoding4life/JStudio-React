@@ -9,13 +9,16 @@
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
 
 }
+FormLabel {
+  color: #c39595f1;
 
+}
 .content{
   background-color: rgba(0, 0, 0, 0.967);
   min-height: 1200px;
 }
 .dim {
-  color: #4b4949f1;
+  color: #292d2bf1;
 }
 #welcome-hi{
   font-size: 60px;
@@ -108,9 +111,9 @@
 
 
 .download-button:hover{
-  border-color: rgb(227, 87, 6);
-  color: rgb(218, 47, 47);
-  transform: scale(1.2);
+  border-color: rgb(13, 222, 187);
+  color: rgb(13, 222, 187);
+  transform: scale(1.05);
 }
 
 .custom-toggler{

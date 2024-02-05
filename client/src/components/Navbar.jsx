@@ -1,17 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
-import { Navbar, Nav, NavDropdown, Modal, Fade, Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Modal, Fade, Button, Alert } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Auth from "../ulti/auth";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import Input from '@mui/material/Input';
-import { useMutation } from '@apollo/client';
-import { LOGIN_USER } from '../ulti/mutations';
-import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import KeyIcon from '@mui/icons-material/Key';
-import InputAdornment from '@mui/material/InputAdornment';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Input from "@mui/material/Input";
+import { useMutation } from "@apollo/client";
+import { LOGIN_USER } from "../ulti/mutations";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import KeyIcon from "@mui/icons-material/Key";
+import InputAdornment from "@mui/material/InputAdornment";
+
+
 const contact = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -86,13 +88,18 @@ export default function NavbarLi() {
   const [showPasswordBox, setShowPasswordBox] = useState(false);
   const handleOpen = () => {
     setOpen(true);
-    setShowPasswordBox(true);
   };
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleOpenPasswordBox = () => {
+    setShowPasswordBox(true);
+  };
+
+  const handleClosePasswordBox = () => {
     setShowPasswordBox(false);
   };
-  
   const [inputValue, setInputValue] = useState("");
 
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -101,8 +108,7 @@ export default function NavbarLi() {
     console.log("inputValue", inputValue);
     try {
       const { data } = await login({
-        
-        variables: {username: "admin", password: inputValue },
+        variables: { username: "admin", password: inputValue },
       });
 
       Auth.login(data.login.token);
@@ -113,7 +119,6 @@ export default function NavbarLi() {
     // clear form values
     setInputValue(" ");
   };
-  
 
   return (
     <Navbar expand="md">
@@ -153,81 +158,99 @@ export default function NavbarLi() {
             About
           </Nav.Link>
           {Auth.loggedIn() ? (
-        <div className="ms-auto">
-          <IconButton
-            size="xs"
-            aria-label="account of current user"
-            onClick={handleOpen}
-            style={{ color: "#ebebebf1" }}
-            onKeyDown={(e) => {console.log(e)}}
-          >
-            <AccountCircle />
-          </IconButton>
-          <ExitToAppIcon onClick={Auth.logout} style={{ color: "#ebebebf1" }} />
-          <Modal
-            show={open}
-            onHide={handleClose}
-            aria-labelledby="transition-modal-title"
-            aria-describedby="transition-modal-description"
-            top
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="modal-title">Your Messages</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Typography id="modal-description">
-            
-          "You don't have any message"
-          </Typography>
-            </Modal.Body>
-          </Modal>
-        </div>
-      ) : (
-        <div className="ms-auto">
-          {showPasswordBox ? (
-            <div>
-              <Input
-
-                type="password"
-                startAdornment={
-                  <InputAdornment position="start">
-                    <KeyIcon />
-                  </InputAdornment>}
-                style={{backgroundColor: "#04fab8f1", borderRadius: "5px", padding: "5px", width: "69px", height: "30px", color: "#141517fc", marginLeft: "20px", fontFamily: "Roboto",}}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
-                    handleLogin();
-                  }
-                }}
-
-                sx={{'&:focus-within::before': {
-                  transform: 0,
-                },}}
-
-              />
+            <div className="ms-auto">
               <IconButton
-            size="xs"
-            aria-label="account of current user"
-            onClick={handleClose}
-            style={{ color: "#04fab8f1" }}
-          >
-
-            <KeyboardArrowRightIcon />
-          </IconButton>
-              </div>
-              
-            ) : (<IconButton
-            size="xs"
-            aria-label="account of current user"
-            onClick={handleOpen}
-            style={{ color: "#ebebebf1" }}
-          >
-            <KeyboardArrowRightIcon />
-          </IconButton>)}
-          
-        </div>
-      )}
+                size="xs"
+                aria-label="account of current user"
+                onClick={handleOpen}
+                style={{ color: "#ebebebf1" }}
+                onKeyDown={(e) => {
+                  console.log(e);
+                }}
+              >
+                <AccountCircle />
+              </IconButton>
+              <ExitToAppIcon
+                onClick={Auth.logout}
+                style={{ color: "#ebebebf1" }}
+              />
+              <Modal
+                show={open}
+                onHide={handleClose}
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                top
+              >
+                <Modal.Header
+                  style={{ backgroundColor: "rgb(9, 161, 110) " }}
+                  closeButton
+                >
+                  <Modal.Title id="modal-title">Your Messages</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <Typography id="modal-description">
+                    "You don't have any message"
+                  </Typography>
+                </Modal.Body>
+              </Modal>
+            </div>
+          ) : (
+            <div className="ms-auto">
+              {showPasswordBox ? (
+                <div>
+                 
+                  <Input
+                    type="password"
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <KeyIcon />
+                      </InputAdornment>
+                    }
+                    style={{
+                      backgroundColor: "#04fab8f1",
+                      borderRadius: "5px",
+                      padding: "5px",
+                      width: "69px",
+                      height: "30px",
+                      color: "#141517fc",
+                      marginLeft: "20px",
+                      fontFamily: "Roboto",
+                    }}
+                    onChange={(e) => setInputValue(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        handleLogin();
+                      }
+                    }}
+                    sx={{
+                      "&:focus-within::before": {
+                        transform: 0,
+                      },
+                    }}
+                  />
+                 
+                      <IconButton
+                        size="xs"
+                        aria-label="account of current user"
+                        onClick={handleClosePasswordBox}
+                        style={{ color: "#04fab8f1" }}
+                      >
+                        <KeyboardArrowRightIcon />
+                      </IconButton>
+                    
+                </div>
+              ) : (
+                <IconButton
+                  size="xs"
+                  aria-label="account of current user"
+                  onClick={handleOpenPasswordBox}
+                  style={{ color: "#ebebebf1" }}
+                >
+                  <KeyboardArrowRightIcon />
+                </IconButton>
+              )}
+            </div>
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
