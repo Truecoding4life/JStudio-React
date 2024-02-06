@@ -9,7 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Josefin+Sans:wght@400;700&family=Onest&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<script type="module" src="http://localhost:5173/@vite/client"></script>
+<script type="module">
+    import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>  
 <title>JStudio</title>
 </head>
 
