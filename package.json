@@ -13,7 +13,8 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "20.9.0"
+    "node": "20.9.0",
+    "npm": "10.4.0"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
