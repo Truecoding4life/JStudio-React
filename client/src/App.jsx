@@ -9,6 +9,11 @@ import {
 } from '@apollo/client';
 import NavbarLi from "./components/Navbar.jsx";
 import Footer from './components/footer/footer.jsx'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
+import { useState } from 'react'
+import FloatingActionButtonSize from './components/FloatingBox'
+import IconButton from "@mui/material/IconButton";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -33,15 +38,44 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
+
+
 function App() {
+  const [darkMode, setDarkMode] = useState(true)
+
+  const theme = createTheme({
+    palette:{
+      primary: {
+        main:  '#04fab8f1' ,
+        mainLight: darkMode ?'#72d09cf2' : '#7ab399ea' ,
+        mainBackground: darkMode ? '#000000f7' : '#b6dfd1ec',
+        mainText: darkMode ? 'white' : 'black',
+        button: darkMode ? '#7fffd4' : '#0d7755',
+        buttonBorder: darkMode ? '#09a16e' : '#56927e',
+        projectButton: darkMode ? '#0f866a':'#0d151276',
+      }
+    }
+  })
+  
+ 
+  
+  
+  const backgroundNow = theme.palette.primary.mainBackground
   return (
+    <ThemeProvider theme={theme}>
+
+
     <ApolloProvider client={client}>
     <div className='body'>
       <div className="section">
         <NavbarLi />
       </div>
-      <div className="section content">
+      <div className="section content" style={{backgroundColor:backgroundNow}}>
         <Outlet />
+        <FloatingActionButtonSize setDark={setDarkMode} darkMode={darkMode}></FloatingActionButtonSize>
+   
+
       </div>
        
       <div className="section Footer">
@@ -49,6 +83,7 @@ function App() {
       </div>
     </div>
     </ApolloProvider>
+    </ThemeProvider>
   );
 }
 

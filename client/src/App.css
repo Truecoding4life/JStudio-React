@@ -1,124 +1,97 @@
 * {
   font-family: 'Onest', sans-serif;
 }
-:root {
-  --main: #04fab8f1; /* Set your desired theme color here */
-  --bluemain: #72d09cf2;
+
+/* :root {
+  --theme-main: #04fab8f1; /* Set your desired theme color here 
+  --theme-green-light: #72d09cf2;
   --whiteout: rgb(10, 12, 12);
-}
+
+/* } */ 
+
 .navbar {
   background-color: #141517fc;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
-
 }
 
+
+background {
+  background-color: #0d151276;
+}
+
+.card-title,
 .card-text,
-.card-title {
-    font-family: 'Courier New', Courier, monospace;
+.section-header {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .section-header {
-    font-family: 'Courier New', Courier, monospace;
-    color: rgba(16, 16, 16, 0.854);
-    background-color: var(--bluemain);
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-
-
-    padding: 30px;
+  color: rgba(16, 16, 16, 0.854);
+  background-color: var(--theme-green-light);
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  padding: 30px;
 }
 
 .card {
-    background-color: var(--bluemain);
-    color: var(--whiteout);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-    margin: 40px;
-
+  background-color: var(--theme-green-light);
+  color: var(--whiteout);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  margin: 40px;
+  border: 5px solid var(--theme-green-light);
 }
-
 
 .project-container {
-
-    border-color: var(--bluemain);
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 14px;
-
+  border-color: var(--theme-green-light);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 14px;
 }
-
 
 .card:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
-    background-color: rgba(20, 22, 27, 0.971);
-    border: 5px solid var(--bluemain);
-    color: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+  border: 5px solid var(--theme-green-light);
+
 }
-
-
 
 .github-btn,
 .play-btn {
-
-    background-color: rgb(61, 146, 126);
-    box-shadow: 0 0 3px 0 rgba(1, 3, 2, 0.5);
-
-
+  
+  box-shadow: 0 0 3px 0 rgba(1, 3, 2, 0.5);
 }
 
 
-
-
-
-
-FormLabel {
-  color: #c39595f1;
-
-}
-
-
-.content{
-  background-color: rgba(0, 0, 0, 0.967);
-  min-height: 1200px;
-}
-.dim {
-  color: #292d2bf1;
-}
-#welcome-hi{
-  font-size: 60px;
-  color: #ebebebf1;
-}
-.nav-link {
-  color: #817e7e;
-  font-family: 'Roboto', sans-serif;
-  transition: transform 0.3s ease-in-out;
-}
 
 .navbar-brand {
-  color: var(--main);
+  color: var(--theme-main);
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
    transition: transform 0.3s ease-in-out;
    margin-left: 30px;
 }
-#welcome-quote, .welcome-quote-dev, #welcome-quote-vet {
+
+.content {
   
+  min-height: 1200px;
+}
+
+
+#welcome-hi,
+.welcome-quote-dev,
+#welcome-quote-vet,
+#welcome-quote {
   font-size: 60px;
-  color: rgba(247, 248, 249, 0.909);
+  color: rgba(241, 241, 244, 0.909);
+}
 
-};
-
-
-
-
-
-
-#download{
+#download {
   border-radius: 80px;
 }
-.welcome-quote-dev{
+
+.welcome-quote-dev {
   color: #15c291f1;
 }
 
@@ -126,11 +99,11 @@ FormLabel {
   background-color: rgb(31, 34, 34);
 }
 
-#veteran{
-  
+#veteran {
   font-size: 60px;
   color: rgba(8, 138, 186, 0.944);
 }
+
 .home-header {
   min-height: 300px;
 }
@@ -138,85 +111,70 @@ FormLabel {
 .home-header h1 {
   font-size: 50px;
   margin-top: 70px;
-
 }
 
-.download-button{
-  border-color: rgb(9, 161, 110);
-  color: aquamarine;
-  transition: .3se ;
+.download-button {
+  border-color: #56927e;
+  color: #0d7755;
+  transition: .3s;
 }
+
 .body {
-  background-color: rgba(30, 29, 29, 0.323);
+  background-color: #58a48bab;
 }
-
-
 
 .actived {
   background-color: rgb(136, 146, 164);
 }
 
-
-
 #homepage-logo {
-
   margin-top: 100px;
-
 }
 
-.nav-link:visited{
+.nav-link:visited {
   color: rgb(129, 126, 126);
-
 }
 
-.nav-link:hover, .navbar-brand:hover {
-  color:rgba(79, 201, 140, 0.93);
-  transform: scale(1.1)
+.nav-link:hover,
+.navbar-brand:hover {
+  color: rgba(79, 201, 140, 0.93);
+  transform: scale(1.1);
 }
 
-
-
-.download-button:hover{
+.download-button:hover {
   border-color: rgb(13, 222, 187);
   color: rgb(13, 222, 187);
   transform: scale(1.05);
 }
 
-.custom-toggler{
-  border-color: var(--main);
+.custom-toggler {
+  border-color: var(--theme-main);
   border-style: solid;
   border-radius: 10px;
   color: greenyellow;
 }
 
-
 @media screen and (max-height: 768px) {
- 
   .nav-link:hover {
-    transition: margin-left 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
-   
+    transition: margin-left 0.3s ease-in-out;
   }
 }
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 768px) {
   .nav-link:hover {
- 
     transform: none;
-    
   }
-  
-  .home-header{
+
+  .home-header {
     min-height: 800px;
   }
-}
 
-@media screen and (max-width: 768px) {
   .card {
-      margin: 0;
+    margin: 0;
   }
 
   .project-card {
-      margin-bottom: 40px;
-      margin-top: 30px
+    margin-bottom: 40px;
+    margin-top: 30px;
   }
 }

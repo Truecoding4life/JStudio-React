@@ -1,8 +1,11 @@
 import logo from "../../assets/Homepage.jpg";
-import "./style.css";
+import {useTheme} from '@mui/material/styles'
 
 
 export default function AboutPage() {
+  const theme = useTheme();
+  const textColor = theme.palette.primary.mainText
+  const themeMain = theme.palette.primary.main
   return (
     <div id="about-container" className="container-fluid">
       <div className="row mephoto">
@@ -13,9 +16,9 @@ export default function AboutPage() {
         </div>
 
         <div className="col-12 col-sm-6 col-md-6 align-self-center about-me mt-3">
-          <div className="col-12 text-white">
-            <h3 className="highlight"> CODINGWITHJAY </h3>
-            <p>
+          <div className="col-12 ">
+            <h3 className="highlight" style={{color:themeMain}}> CODINGWITHJAY  </h3>
+            <p style={{color:textColor}}>
               {" "}
               I'm a Fullstack Software Developer based in California, passionate
               about crafting remarkable digital experiences. Came from military background I have a strong work ethic and professionalism. I have a strong foundation in web development, and I am always looking to expand my skill set. I am a quick learner and a team player, and

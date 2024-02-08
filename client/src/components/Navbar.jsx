@@ -12,7 +12,7 @@ import { LOGIN_USER } from "../ulti/mutations";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import KeyIcon from "@mui/icons-material/Key";
 import InputAdornment from "@mui/material/InputAdornment";
-
+import {useTheme} from '@mui/material/styles'
 
 const contact = (
   <svg
@@ -78,6 +78,8 @@ const style = {
 };
 
 export default function NavbarLi() {
+  const theme = useTheme()
+  const mainTheme = theme.palette.primary.main
   const [currentPage, setCurrentPage] = useState("");
   const location = useLocation();
 
@@ -122,7 +124,7 @@ export default function NavbarLi() {
 
   return (
     <Navbar expand="md">
-      <Navbar.Brand href="/" className="navbarbrand">
+      <Navbar.Brand href="/" className="navbarbrand" style={{color:mainTheme}}>
         J Studio
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">

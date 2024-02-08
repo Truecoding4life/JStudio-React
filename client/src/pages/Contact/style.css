@@ -3,9 +3,13 @@
     
   
     border-style: solid;
-    border-radius: 12px;
+    border-radius: 20px;
     border-color: var(--main)
-};
+}
+
+color{
+    background-color: #ffffff;
+}
 
 
 

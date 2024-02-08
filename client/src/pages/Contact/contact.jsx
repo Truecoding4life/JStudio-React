@@ -1,19 +1,17 @@
 // ContactPage.js
 import React from "react";
-import "./style.css";
 import resume from "../../assets/resume.pdf";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Alert, FormHelperText, Input } from "@mui/material";
-import { FormLabel } from "react-bootstrap";
-import FormControl from "@mui/joy/FormControl";
-import InputAdornment from "@mui/material/InputAdornment";
-import PermIdentityIcon from "@mui/icons-material/PermIdentity";
-import BusinessIcon from "@mui/icons-material/Business";
-import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
+
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircle';
 import AlertTitle from '@mui/material/AlertTitle';
 import MessageForm from '../../components/contact/Form'
+import {useTheme} from '@mui/material/styles'
 
+
+    
+    
 
 const Icon = (
   <svg
@@ -101,26 +99,13 @@ export default function ContactPage() {
   });
 
 
+  const theme = useTheme();
+  const textColor = theme.palette.primary.mainText
+  const buttonTheme = theme.palette.primary.button
+  const buttonBorderTheme = theme.palette.primary.buttonBorder
 
-
-  const handleChange = (e) => {
-    setFormInfo({ ...formInfo, [e.target.name]: [e.target.value] });
-    client = formInfo.name
-  };
  
   
-  const handleFormSubmit = (e) => {
-    setAlert(true)
-    e.preventDefault();
-    setFormInfo({
-      name: "",
-      email: "",
-      message: "",
-    });
-    
-
-    setMessaging(false);
-  };
 
 
   return (
@@ -131,12 +116,12 @@ export default function ContactPage() {
       Hola {client}, your request was sent successful
     </Alert> : null}
       {Messaging ? (
-        <MessageForm setFormInfo={setFormInfo} formInfo={formInfo}>
+        <MessageForm setFormInfo={setFormInfo} setAlert={setAlert} setMessaging={setMessaging} formInfo={formInfo}>
 
         </MessageForm>
       ) : (
         <div className="pt-5 contact-container container">
-          <div className="col-md-12 align-self-center chat-box p-4">
+          <div className="col-md-12 align-self-center chat-box p-4" >
             <div className="row">
               <div className="col-12">
                 <p
@@ -144,7 +129,7 @@ export default function ContactPage() {
                   style={{
                     fontFamily: "Contrail One",
                     fontSize: 30,
-                    color: "white",
+                    color: textColor,
                   }}
                 >
                   <i> {Icon}</i> Reach out for work
@@ -160,13 +145,14 @@ export default function ContactPage() {
                       setMessaging(true);
                     }}
                     className="btn download-button"
+                    style={{color: buttonTheme, borderColor: buttonBorderTheme}}
                   >
                     {" "}
                     <i>{messageIcon} </i> send message{" "}
                   </button>
                 </div>
                 <div className="col p-2">
-                  <button type="button" className="btn download-button">
+                  <button type="button" className="btn download-button" style={{color: buttonTheme, borderColor: buttonBorderTheme}}> 
                     {" "}
                     <i> {contactIcon}</i> Contact info{" "}
                   </button>
@@ -177,6 +163,7 @@ export default function ContactPage() {
                       type="button"
                       href={resume}
                       className="btn download-button"
+                      style={{color: buttonTheme, borderColor: buttonBorderTheme}}
                     >
                       {" "}
                       <i> {resumeIcon}</i> Download CV Resume{" "}
