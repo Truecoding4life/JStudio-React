@@ -1,15 +1,9 @@
-.chat-box{
+.chat-box {
     min-height: 500px;
-    
-  
     border-style: solid;
-    border-radius: 20px;
-    border-color: var(--main)
-}
-
-color{
-    background-color: #ffffff;
-}
+    border-radius: 30px;
+    border-width: 4px;
+  }
 
 
 

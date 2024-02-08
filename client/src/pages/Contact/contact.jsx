@@ -121,7 +121,7 @@ export default function ContactPage() {
         </MessageForm>
       ) : (
         <div className="pt-5 contact-container container">
-          <div className="col-md-12 align-self-center chat-box p-4" >
+          <div className="col-md-12 align-self-center chat-box p-4" style={{borderColor: buttonBorderTheme}} >
             <div className="row">
               <div className="col-12">
                 <p

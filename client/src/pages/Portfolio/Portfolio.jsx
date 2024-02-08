@@ -1,5 +1,6 @@
 import { Project, OtherSkills } from "../../ulti/seeds";
 import { useTheme } from "@mui/material/styles";
+import "./style.css";
 
 // Icon use for buttons
 const Github = (

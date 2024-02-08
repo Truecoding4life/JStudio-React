@@ -12,6 +12,7 @@ import { Alert, AlertTitle } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircle";
 import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
+import ReplyIcon from '@mui/icons-material/Reply';
 
 const Icon = (
   <svg
@@ -75,20 +76,25 @@ const messageIcon = (
     <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
   </svg>
 );
+const backIcon = (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+</svg>
+);
+
 const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
   const theme = useTheme();
   const textColor = theme.palette.primary.mainText;
   const buttonTheme = theme.palette.primary.button;
   const buttonBorderTheme = theme.palette.primary.buttonBorder;
-
-
-
+  const dangerButtonTheme = theme.palette.primary.buttonDanger;
+  const dangerButtonBorder= theme.palette.primary.buttonDangerBorder;
+ 
   const handleChange = (e) => {
     setFormInfo({ ...formInfo, [e.target.name]: [e.target.value] });
     client = formInfo.name;
   };
-
-
 
   const handleFormSubmit = (e) => {
     setAlert(true);
@@ -100,8 +106,6 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
       message: "",
     });
   };
-
-
 
   return (
     <div className="pt-5 contact-container container">
@@ -122,7 +126,7 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
         </div>
         <div className="row row-cols-2 d-flex flex-row">
           <div className="col-lg-6 col-12 p-2">
-            <FormControl style={{ padding: "30px" }}>
+            <FormControl style={{ padding: "30px" }} className="col-12">
               <Input
                 name="name"
                 onChange={handleChange}
@@ -139,12 +143,11 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
                   backgroundColor: "#7c9f90f1",
                   borderRadius: "5px",
                   padding: "10px",
-                  width: "400px",
                 }}
               />
             </FormControl>
 
-            <FormControl style={{ padding: "30px" }}>
+            <FormControl style={{ padding: "30px" }} className="col-12">
               <Input
                 onChange={handleChange}
                 name="email"
@@ -161,12 +164,11 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
                   backgroundColor: "#7c9f90f1",
                   borderRadius: "5px",
                   padding: "10px",
-                  width: "400px",
                 }}
               />
             </FormControl>
 
-            <FormControl style={{ padding: "30px" }}>
+            <FormControl style={{ padding: "30px" }} className="col-12">
               <Input
                 onChange={handleChange}
                 name="message"
@@ -183,7 +185,6 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
                   backgroundColor: "#7c9f90f1",
                   borderRadius: "5px",
                   padding: "10px",
-                  width: "400px",
                 }}
               />
 
@@ -193,32 +194,49 @@ const MessageForm = ({ formInfo, setFormInfo, setAlert, setMessaging }) => {
               </FormHelperText>
             </FormControl>
 
-            <div className="col p-4">
-              <button
+            <div className="row justify-content-around p-4">
+              <div className='col-12 p-2'>
+                 <button
+                type="button"
+                onClick={()=>{setMessaging(false)}}
+               
+                className="btn delete-button"
+                style={{ color: dangerButtonTheme, borderColor: dangerButtonBorder }}
+              >
+                {" "}
+                <i>{backIcon} </i> Go Back  {" "}
+              </button>
+              </div>
+              <div className='col-12 p-2'>
+                 <button
                 type="button"
                 onClick={handleFormSubmit}
                 onKeyDown={(e) => console.log(e.key)}
                 className="btn download-button"
-                style={{color: buttonTheme, borderColor: buttonBorderTheme}}
+                style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
               >
                 {" "}
-                <i>{messageIcon} </i> send{" "}
+                <i>{messageIcon} </i> send message{" "}
               </button>
-            </div>
-
-            <div className="col p-4">
-              <a href={resume} download="Jay_Resume.pdf">
+              </div>
+              
+             <div className='col-12 p-2'>
+               <a href={resume} download="Jay_Resume.pdf">
                 <button
                   type="button"
                   href={resume}
                   className="btn download-button"
-                  style={{color: buttonTheme, borderColor: buttonBorderTheme}}
+                  style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
                 >
                   {" "}
                   <i> {resumeIcon}</i> Download CV Resume{" "}
                 </button>
-              </a>
+              </a> 
+              </div>
+              
             </div>
+
+            <div className="col-12 p-4"></div>
           </div>
         </div>
       </div>

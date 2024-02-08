@@ -1,6 +1,7 @@
-import logo from '../assets/hello.png';
-import resume from '../assets/resume.pdf';
+import logo from '../../assets/hello.png';
+import resume from '../../assets/resume.pdf';
 import {useTheme} from '@mui/material/styles'
+import './style.css'
 
 export default function HomePage() {
     

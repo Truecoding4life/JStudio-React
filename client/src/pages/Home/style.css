@@ -1,0 +1,26 @@
+.home-header {
+    min-height: 300px;
+  }
+  
+  .home-header h1 {
+    font-size: 50px;
+    margin-top: 70px;
+  }
+  
+  /* Welcome Section */
+  #welcome-hi,
+  .welcome-quote-dev,
+  #welcome-quote-vet,
+  #welcome-quote {
+    font-size: 60px;
+  }
+  
+  .welcome-quote-dev {
+    color: #15c291f1;
+  }
+  
+  
+  #veteran {
+    font-size: 60px;
+    color: rgba(8, 138, 186, 0.944);
+  }

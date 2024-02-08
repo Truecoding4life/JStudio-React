@@ -7,7 +7,7 @@ import {
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
-import NavbarLi from "./components/Navbar.jsx";
+import NavbarLi from "./components/Navbar/Navbar.jsx";
 import Footer from './components/footer/footer.jsx'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useTheme } from '@mui/material/styles';
@@ -54,6 +54,8 @@ function App() {
         button: darkMode ? '#7fffd4' : '#0d7755',
         buttonBorder: darkMode ? '#09a16e' : '#56927e',
         projectButton: darkMode ? '#0f866a':'#0d151276',
+        buttonDangerBorder: darkMode ? '#d24949d1' : '#761111',
+        buttonDanger: darkMode ? '#d24949d1' : '#761111',
       }
     }
   })

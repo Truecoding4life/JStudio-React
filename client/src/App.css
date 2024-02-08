@@ -1,134 +1,24 @@
+/* Global Styles */
 * {
   font-family: 'Onest', sans-serif;
 }
 
-/* :root {
-  --theme-main: #04fab8f1; /* Set your desired theme color here 
-  --theme-green-light: #72d09cf2;
-  --whiteout: rgb(10, 12, 12);
+body {
+  background-color: #58a48bab;
+}
 
-/* } */ 
-
+/* Navbar */
 .navbar {
   background-color: #141517fc;
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
 }
 
-
-background {
-  background-color: #0d151276;
-}
-
-.card-title,
-.card-text,
-.section-header {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.section-header {
-  color: rgba(16, 16, 16, 0.854);
-  background-color: var(--theme-green-light);
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-  padding: 30px;
-}
-
-.card {
-  background-color: var(--theme-green-light);
-  color: var(--whiteout);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-  margin: 40px;
-  border: 5px solid var(--theme-green-light);
-}
-
-.project-container {
-  border-color: var(--theme-green-light);
-  border-style: solid;
-  border-width: 5px;
-  border-radius: 14px;
-}
-
-.card:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-  border: 5px solid var(--theme-green-light);
-
-}
-
-.github-btn,
-.play-btn {
-  
-  box-shadow: 0 0 3px 0 rgba(1, 3, 2, 0.5);
-}
-
-
-
 .navbar-brand {
   color: var(--theme-main);
   font-size: 30px;
   font-family: 'Staatliches', sans-serif;
-   transition: transform 0.3s ease-in-out;
-   margin-left: 30px;
-}
-
-.content {
-  
-  min-height: 1200px;
-}
-
-
-#welcome-hi,
-.welcome-quote-dev,
-#welcome-quote-vet,
-#welcome-quote {
-  font-size: 60px;
-  color: rgba(241, 241, 244, 0.909);
-}
-
-#download {
-  border-radius: 80px;
-}
-
-.welcome-quote-dev {
-  color: #15c291f1;
-}
-
-.main {
-  background-color: rgb(31, 34, 34);
-}
-
-#veteran {
-  font-size: 60px;
-  color: rgba(8, 138, 186, 0.944);
-}
-
-.home-header {
-  min-height: 300px;
-}
-
-.home-header h1 {
-  font-size: 50px;
-  margin-top: 70px;
-}
-
-.download-button {
-  border-color: #56927e;
-  color: #0d7755;
-  transition: .3s;
-}
-
-.body {
-  background-color: #58a48bab;
-}
-
-.actived {
-  background-color: rgb(136, 146, 164);
-}
-
-#homepage-logo {
-  margin-top: 100px;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
 }
 
 .nav-link:visited {
@@ -141,12 +31,6 @@ background {
   transform: scale(1.1);
 }
 
-.download-button:hover {
-  border-color: rgb(13, 222, 187);
-  color: rgb(13, 222, 187);
-  transform: scale(1.05);
-}
-
 .custom-toggler {
   border-color: var(--theme-main);
   border-style: solid;
@@ -154,6 +38,36 @@ background {
   color: greenyellow;
 }
 
+
+/* Content Section */
+.content {
+  min-height: 1200px;
+}
+
+
+/* Download Button */
+.download-button {
+  border-color: #56927e;
+  color: #0d7755;
+  transition: .3s;
+}
+
+.download-button:hover {
+  border-color: rgb(13, 222, 187);
+  color: rgb(13, 222, 187);
+  transform: scale(1.05);
+}
+
+
+
+/* Delete Button */
+.delete-button:hover {
+  border-color: #87d825;
+  color: #b11f1f;
+  transform: scale(1.05);
+}
+
+/* Media Queries */
 @media screen and (max-height: 768px) {
   .nav-link:hover {
     transition: margin-left 0.3s ease-in-out;
