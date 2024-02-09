@@ -1,7 +1,8 @@
-import logo from '../../assets/hello.png';
+import logo from '../../assets/logo.png';
 import resume from '../../assets/resume.pdf';
 import {useTheme} from '@mui/material/styles'
 import './style.css'
+
 
 export default function HomePage() {
     
@@ -15,15 +16,17 @@ export default function HomePage() {
             
             <div className="row">
                 <div className="col-12 col-md-6 align-self-center home-header">
-                    <div className="center">
+                    <div className="content-center" style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
                         <img
                             src={logo}
                             alt="logo"
                             id="homepage-logo"
-                            width="100%"
+                            width="60%"
+                            
                         />
                     </div>
                 </div>
+            
 
 
                 <div className="col-12 col-md-6 align-self-center home-header">
