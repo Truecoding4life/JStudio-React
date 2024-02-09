@@ -37,3 +37,13 @@ mutation AddMessage($userId: ID!, $message: String!, $email: String!, $name: Str
   }
 }
 `;
+
+export const REMOVE_MESSAGE = gql`
+mutation RemoveMessage($userId: ID!, $messageId: ID!) {
+  removeMessage(userId: $userId, messageId: $messageId) {
+    messages {
+      message
+    }
+  }
+}
+`;

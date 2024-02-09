@@ -22,7 +22,7 @@ const typeDefs = `
   type Query {
     users: [User]
     user(username: String!): User
-    messages(username: String): [Message]
+    messages(userId: ID !): [Message]
     message(messageId: ID!): Message
     me: User
   }

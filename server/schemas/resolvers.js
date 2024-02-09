@@ -15,6 +15,13 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    messages: async (parent, { userId }) => {
+      try{
+      return User.findOneById({ _id: userId }).populate('messages');
+      } catch (err) {
+        console.log(err);
+      }
+    },
   },
 
   Mutation: {
