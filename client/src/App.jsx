@@ -10,10 +10,8 @@ import {
 import NavbarLi from "./components/Navbar/Navbar.jsx";
 import Footer from './components/footer/footer.jsx'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useTheme } from '@mui/material/styles';
 import { useState } from 'react'
 import FloatingActionButtonSize from './components/FloatingBox'
-import IconButton from "@mui/material/IconButton";
 
 const httpLink = createHttpLink({
   uri: '/graphql',

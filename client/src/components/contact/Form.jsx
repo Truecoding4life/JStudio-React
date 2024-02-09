@@ -12,7 +12,6 @@ import { Alert, AlertTitle } from "@mui/material";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircle";
 import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
-import ReplyIcon from '@mui/icons-material/Reply';
 
 const Icon = (
   <svg

@@ -21,18 +21,19 @@ export const LOGIN_USER = gql`
 
 
 
-export const ADD_COMMENT = gql`
-  mutation addComment($thoughtId: ID!, $commentText: String!) {
-    addComment(thoughtId: $thoughtId, commentText: $commentText) {
+export const ADD_MESSAGE = gql`
+mutation AddMessage($userId: ID!, $message: String!, $email: String!, $name: String!) {
+  addMessage(userId: $userId, message: $message, email: $email, name: $name) {
+    _id
+    messages {
       _id
-      thoughtText
-      thoughtAuthor
       createdAt
-      comments {
-        _id
-        commentText
-        createdAt
-      }
+      email
+      message
+      name
     }
+    password
+    username
   }
+}
 `;
