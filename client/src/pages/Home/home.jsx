@@ -16,7 +16,7 @@ export default function HomePage() {
             
             <div className="row">
                 <div className="col-12 col-md-6 align-self-center home-header">
-                    <div className="content-center" style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
+                    <div className="content-center" style={{ display: 'flex', justifyContent: 'center', marginTop: '80px' }}>
                         <img
                             src={logo}
                             alt="logo"

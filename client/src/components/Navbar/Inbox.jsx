@@ -23,7 +23,7 @@ const Inbox = ({open, close}) => {
         aria-describedby="transition-modal-description"
         top
     >
-        <Modal.Header style={{ backgroundColor: "rgb(9, 161, 110) " }} closeButton>
+        <Modal.Header style={{ backgroundColor: "#149c5cd6" }} closeButton>
             <Modal.Title id="modal-title">Your Messages</Modal.Title>
         </Modal.Header>
         <Modal.Body>

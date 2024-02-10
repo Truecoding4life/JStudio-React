@@ -35,7 +35,8 @@ const [removeMessage] = useMutation(REMOVE_MESSAGE, { refetchQueries: [
       style={{
         padding: "5px",
         marginBottom: "30px",
-        backgroundColor: "#d8dcdf"
+        backgroundColor: "#d8dcdf",
+        boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.4)' // Added boxShadow property value
       }}
       key={id}
     >
