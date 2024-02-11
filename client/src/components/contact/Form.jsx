@@ -10,18 +10,17 @@ import BusinessIcon from "@mui/icons-material/Business";
 import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
 import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
-import {Icon, resumeIcon, messageIcon, backIcon} from '../../ulti/icon'
-import {ADD_MESSAGE} from '../../ulti/mutations'
+import { Icon, resumeIcon, messageIcon, backIcon } from "../../ulti/icon";
+import { ADD_MESSAGE } from "../../ulti/mutations";
 import { useMutation } from "@apollo/client";
 
 const inputStyle = {
   backgroundColor: "#7c9f90f1",
   borderRadius: "5px",
   padding: "10px",
-  fontFamily: 'Josefin Sans',
-  color: '#161717cd'
-}
-
+  fontFamily: "Josefin Sans",
+  color: "#161717cd",
+};
 
 const MessageForm = ({ setAlert, setMessaging }) => {
   const theme = useTheme();
@@ -29,8 +28,9 @@ const MessageForm = ({ setAlert, setMessaging }) => {
   const buttonTheme = theme.palette.primary.button;
   const buttonBorderTheme = theme.palette.primary.buttonBorder;
   const dangerButtonTheme = theme.palette.primary.buttonDanger;
-  const dangerButtonBorder= theme.palette.primary.buttonDangerBorder;
- 
+  const dangerButtonBorder = theme.palette.primary.buttonDangerBorder;
+
+  const [emailNotValid, setEmailNotValid] = useState(false);
 
   const [formInfo, setFormInfo] = useState({
     name: "",
@@ -38,9 +38,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
     message: "",
   });
 
-
   const [addMessage, { error }] = useMutation(ADD_MESSAGE);
-
 
   const handleChange = (e) => {
     setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
@@ -48,20 +46,31 @@ const MessageForm = ({ setAlert, setMessaging }) => {
   };
 
   const handleFormSubmit = async (e) => {
-  e.preventDefault();
-    try{
-      const {data} = await addMessage({variables:
-      {...formInfo,userId: '65bf4ca7da66cd1e791b259d'}})
-        console.log(data)
-    } catch (e) {console.log(e)}
-    setAlert(true);
-    setMessaging(false);
-   
+    e.preventDefault();
+    try {
+      if (emailValidation(formInfo.email)) {
+        const { data } = await addMessage({
+          variables: { ...formInfo, userId: "65bf4ca7da66cd1e791b259d" },
+        });
+        setAlert(true);
+        setMessaging(false);
+      } else {
+        setEmailNotValid(true);
+        return;
+      }
+    } catch (e) {
+      console.log(e);
+    }
+
     setFormInfo({
       name: "",
       email: "",
       message: "",
     });
+  };
+  const emailValidation = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
   return (
@@ -89,7 +98,6 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                 onChange={handleChange}
                 placeholder="Name"
                 variant="soft"
-                
                 required
                 startAdornment={
                   <InputAdornment position="start">
@@ -101,7 +109,11 @@ const MessageForm = ({ setAlert, setMessaging }) => {
               />
             </FormControl>
 
-            <FormControl style={{ padding: "30px" }} className="col-12">
+            <FormControl
+              style={{ padding: "30px" }}
+              className="col-12"
+              error={emailNotValid}
+            >
               <Input
                 onChange={handleChange}
                 name="email"
@@ -116,6 +128,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                 }
                 style={inputStyle}
               />
+              <FormHelperText>Please enter a valid email</FormHelperText>
             </FormControl>
 
             <FormControl style={{ padding: "30px" }} className="col-12">
@@ -136,50 +149,56 @@ const MessageForm = ({ setAlert, setMessaging }) => {
 
               <FormHelperText style={{ color: "white" }}>
                 {" "}
-                How did you heard about me ?
+                What can I build for you today ?
               </FormHelperText>
             </FormControl>
 
             <div className="row justify-content-around p-4">
-              <div className='col-12 p-2'>
-                 <button
-                type="button"
-                onClick={()=>{setMessaging(false)}}
-               
-                className="btn delete-button"
-                style={{ color: dangerButtonTheme, borderColor: dangerButtonBorder }}
-              >
-                {" "}
-                <i>{backIcon} </i> Go Back  {" "}
-              </button>
-              </div>
-              <div className='col-12 p-2'>
-                 <button
-                type="button"
-                onClick={handleFormSubmit}
-                onKeyDown={(e) => console.log(e.key)}
-                className="btn download-button"
-                style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
-              >
-                {" "}
-                <i>{messageIcon} </i> send message{" "}
-              </button>
-              </div>
-              
-             <div className='col-12 p-2'>
-               <a href={resume} download="Jay_Resume.pdf">
+              <div className="col-12 p-2">
                 <button
                   type="button"
-                  href={resume}
+                  onClick={() => {
+                    setMessaging(false);
+                  }}
+                  className="btn delete-button"
+                  style={{
+                    color: dangerButtonTheme,
+                    borderColor: dangerButtonBorder,
+                  }}
+                >
+                  {" "}
+                  <i>{backIcon} </i> Go Back{" "}
+                </button>
+              </div>
+              <div className="col-12 p-2">
+                <button
+                  type="button"
+                  onClick={handleFormSubmit}
+                  onKeyDown={(e) => console.log(e.key)}
                   className="btn download-button"
                   style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
                 >
                   {" "}
-                  <i> {resumeIcon}</i> Download CV Resume{" "}
+                  <i>{messageIcon} </i> send message{" "}
                 </button>
-              </a> 
               </div>
-              
+
+              <div className="col-12 p-2">
+                <a href={resume} download="Jay_Resume.pdf">
+                  <button
+                    type="button"
+                    href={resume}
+                    className="btn download-button"
+                    style={{
+                      color: buttonTheme,
+                      borderColor: buttonBorderTheme,
+                    }}
+                  >
+                    {" "}
+                    <i> {resumeIcon}</i> Download CV Resume{" "}
+                  </button>
+                </a>
+              </div>
             </div>
 
             <div className="col-12 p-4"></div>
