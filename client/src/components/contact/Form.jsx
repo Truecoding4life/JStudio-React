@@ -42,7 +42,6 @@ const MessageForm = ({ setAlert, setMessaging }) => {
 
   const handleChange = (e) => {
     setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
-    client = formInfo.name;
   };
 
   const handleFormSubmit = async (e) => {
