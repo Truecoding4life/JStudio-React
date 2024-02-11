@@ -14,6 +14,14 @@ import {Icon, resumeIcon, messageIcon, backIcon} from '../../ulti/icon'
 import {ADD_MESSAGE} from '../../ulti/mutations'
 import { useMutation } from "@apollo/client";
 
+const inputStyle = {
+  backgroundColor: "#7c9f90f1",
+  borderRadius: "5px",
+  padding: "10px",
+  fontFamily: 'Josefin Sans',
+  color: '#161717cd'
+}
+
 
 const MessageForm = ({ setAlert, setMessaging }) => {
   const theme = useTheme();
@@ -64,7 +72,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
             <p
               className="reach-out"
               style={{
-                fontFamily: "Contrail One",
+                fontFamily: "Righteous",
                 fontSize: 30,
                 color: "white",
               }}
@@ -81,6 +89,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                 onChange={handleChange}
                 placeholder="Name"
                 variant="soft"
+                
                 required
                 startAdornment={
                   <InputAdornment position="start">
@@ -88,11 +97,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                   </InputAdornment>
                 }
                 color="success"
-                style={{
-                  backgroundColor: "#7c9f90f1",
-                  borderRadius: "5px",
-                  padding: "10px",
-                }}
+                style={inputStyle}
               />
             </FormControl>
 
@@ -109,11 +114,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     <BusinessIcon />
                   </InputAdornment>
                 }
-                style={{
-                  backgroundColor: "#7c9f90f1",
-                  borderRadius: "5px",
-                  padding: "10px",
-                }}
+                style={inputStyle}
               />
             </FormControl>
 
@@ -130,11 +131,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     <FormatAlignJustifyIcon />
                   </InputAdornment>
                 }
-                style={{
-                  backgroundColor: "#7c9f90f1",
-                  borderRadius: "5px",
-                  padding: "10px",
-                }}
+                style={inputStyle}
               />
 
               <FormHelperText style={{ color: "white" }}>

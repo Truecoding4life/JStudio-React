@@ -11,16 +11,17 @@
   #welcome-hi,
   .welcome-quote-dev,
   #welcome-quote-vet,
-  #welcome-quote {
+  #welcome-quote ,
+  #veteran{
     font-size: 60px;
+    font-family: 'Righteous';
   }
   
-  .welcome-quote-dev {
-    color: #15c291f1;
+
+
+  @media screen and (min-width: 1550px) {
+    .homecontainer{
+      padding-top: 200px;
+    }
   }
   
-  
-  #veteran {
-    font-size: 60px;
-    color: rgba(8, 138, 186, 0.944);
-  }

@@ -47,13 +47,16 @@ function App() {
       primary: {
         main:  '#04fab8f1' ,
         mainLight: darkMode ?'#72d09cf2' : '#7ab399ea' ,
-        mainBackground: darkMode ? '#000000f7' : '#b6dfd1ec',
+        mainBackground: darkMode ? '#000000f7' : '#c9ddd6ec',
         mainText: darkMode ? 'white' : 'black',
+        mainTextHighLight: darkMode ? '#15c291f1': '#048e66f1',
+        mainTextHighLightVet: darkMode ? '#088abaf1': '#075b7ae0',
         button: darkMode ? '#7fffd4' : '#0d7755',
         buttonBorder: darkMode ? '#09a16e' : '#56927e',
         projectButton: darkMode ? '#0f866a':'#0d151276',
         buttonDangerBorder: darkMode ? '#d24949d1' : '#761111',
-        buttonDanger: darkMode ? '#d24949d1' : '#761111',
+        buttonDanger: darkMode ? '#d24949d1' : '#761111'
+        
       }
     }
   })

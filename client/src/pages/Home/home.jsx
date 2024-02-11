@@ -10,9 +10,11 @@ export default function HomePage() {
     const textColor = theme.palette.primary.mainText
     const buttonTheme = theme.palette.primary.button
     const buttonBorderTheme = theme.palette.primary.buttonBorder
+    const mainTextDev = theme.palette.primary.mainTextHighLight
+    const mainTextVet = theme.palette.primary.mainTextHighLightVet
     return (
 
-        <div className="container" >
+        <div className="container homecontainer" >
             
             <div className="row">
                 <div className="col-12 col-md-6 align-self-center home-header">
@@ -32,8 +34,8 @@ export default function HomePage() {
                 <div className="col-12 col-md-6 align-self-center home-header">
                     <div className="col-12 text-center">
                         <h1 id='welcome-hi' style={{color:textColor}}> Hi, it's Jay </h1>
-                        <h3 className="welcome-quote-dev"> Fullstack Web Developer </h3>
-                        <h3 id="welcome-quote" style={{color:textColor}} > and <span id='veteran'> Veteran</span>  </h3>
+                        <h3 className="welcome-quote-dev" style={{color: mainTextDev}}> Fullstack Web Developer </h3>
+                        <h3 id="welcome-quote" style={{color:textColor}} > and <span id='veteran'style={{color: mainTextVet}}> Veteran</span>  </h3>
                         <a href={resume} download="Jay_Resume.pdf">
                            
                         <button type="button" style={{color: buttonTheme, borderColor: buttonBorderTheme}} href={resume}  className="btn download-button"> DOWNLOAD RESUME </button>

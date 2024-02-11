@@ -53,11 +53,17 @@ const [removeMessage] = useMutation(REMOVE_MESSAGE, { refetchQueries: [
       />
 
       <CardContent>
-      <Typography variant="h7" color="text.secondary">
-          Email: {email}
+      <Typography variant="h6" color="text.secondary">
+          Email:
+        </Typography>
+        <Typography variant="p" color="text.secondary">
+          {email}
         </Typography>
         <Typography variant="h6" color="text.secondary">
-          Message: {text}
+          Message: 
+        </Typography>
+        <Typography variant="p" color="text.secondary">
+        {text}
         </Typography>
       </CardContent>
     </Card>

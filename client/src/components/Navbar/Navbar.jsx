@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import IconButton from "@mui/material/IconButton";
 import Auth from "../../ulti/auth";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import './styles.css'
 
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";

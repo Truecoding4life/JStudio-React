@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #141517fc;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
+  }
+  
+  .navbar-brand {
+    color: var(--theme-main);
+    font-size: 30px;
+    font-family: 'Staatliches', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 30px;
+  }
+  
+  .nav-link:visited {
+    color: rgb(129, 126, 126);
+  }
+  
+  .nav-link:hover,
+  .navbar-brand:hover {
+    color: rgba(79, 201, 140, 0.93);
+    transform: scale(1.1);
+  }
+  
+  .custom-toggler {
+    border-color: var(--theme-main);
+    border-style: solid;
+    border-radius: 10px;
+    color: greenyellow;
+  }
+
+  #modal-title{
+     font-family: 'Righteous', sans-serif;
+    font-size: 30px;
+  }
