@@ -34,7 +34,7 @@ export default function PortfolioPage() {
             {Project.map((project) => (
               <div
                 key={project.title}
-                className="col-12 col-md-6 project-card p-4"
+                className="col-12 col-md-6 project-card p-2"
               >
                 <div className="card " style={{ backgroundColor: mainLight }}>
                   <div className="card-body">
