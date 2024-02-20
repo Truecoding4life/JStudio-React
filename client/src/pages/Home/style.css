@@ -1,0 +1,27 @@
+.home-header {
+    min-height: 300px;
+  }
+  
+  .home-header h1 {
+    font-size: 50px;
+    margin-top: 70px;
+  }
+  
+  /* Welcome Section */
+  #welcome-hi,
+  .welcome-quote-dev,
+  #welcome-quote-vet,
+  #welcome-quote ,
+  #veteran{
+    font-size: 60px;
+    font-family: 'Righteous';
+  }
+  
+
+
+  @media screen and (min-width: 1550px) {
+    .homecontainer{
+      padding-top: 200px;
+    }
+  }
+  
