@@ -1,9 +1,10 @@
 import { Project, OtherSkills } from "../../ulti/seeds";
 import { useTheme } from "@mui/material/styles";
 import "./style.css";
-import {Github, PlayButton, starIcon, pageIcon} from '../../ulti/icon';
-// Icon use for buttons
+import { Github, PlayButton, starIcon, pageIcon } from "../../ulti/icon";
+import MoreDetail from "./MoreDetail";
 
+// Icon use for buttons
 
 export default function PortfolioPage() {
   const theme = useTheme();
@@ -13,17 +14,17 @@ export default function PortfolioPage() {
     <>
       <div className="pt-5 project pb-5 p-3">
         <div
-          className="container project-container"
+          className="container-fluid project-container"
           style={{ borderColor: mainLight }}
         >
           <div className="row ">
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
-                <div className="row align-items-center">
+                <div className="row ">
                   <div className="col-12 mb-1">
                     <h2
                       className="section-header fw-bolder"
-                      style={{ backgroundColor: mainLight }}
+                     
                     >
                       Academic
                     </h2>
@@ -31,61 +32,68 @@ export default function PortfolioPage() {
                 </div>
               </div>
             </div>
-            {Project.map((project) => (
-              <div
-                key={project.title}
-                className="col-12 col-md-6 project-card p-2"
-              >
-                <div className="card " style={{ backgroundColor: mainLight }}>
-                  <div className="card-body">
-                    <h4 className="card-title fw-bolder">
+            <div className="row">
+              {Project.map((project) => (
+                <div
+                  key={project.title}
+                  className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 project-card d-flex align-items-stretch">              
+                  <div className="card p-3 d-flex flex-column justify-content-evenly">
+                    {project.image ? (
+                      <img
+                        class="card-img-top"
+                        src={project.image}
+                        alt="Food Finder"
+                      />
+                    ) : null}
+
+                    <h4 className="card-title fw-bolder p-3">
                       <span>
                         {" "}
                         <i> {starIcon}</i>
                       </span>{" "}
                       {project.title}
                     </h4>
-                    <p className="card-text">{project.description}</p>
-                  </div>
 
-                  {project.link ? (
-                    <div className="col-12 d-flex justify-content-evenly p-2">
-                      <a
-                        href={project.github}
-                        className="btn btn rounded-1 col-6 m-1 github-btn "
-                        style={{backgroundColor:button}}
-                      >
-                        {Github}
-                      </a>
-                      <a
-                        href={project.link}
-                        className="btn btn-sm play-btn rounded-1 col-6 m-1"
-                        style={{backgroundColor:button}}
-                      >
-                        {PlayButton}
-                      </a>
-                    </div>
-                  ) : (
-                    <div className="col-12 d-flex justify-content-evenly p-2">
-                      <a
-                        href={project.github}
-                        className="btn btn rounded-1 col-12 github-btn"
-                        style={{backgroundColor:button}}
-                      >
-                        {Github}
-                      </a>
-                    </div>
-                  )}
+                    {project.link ? (
+                      <div className="col-12 d-flex justify-content-evenly p-2">
+                        <a
+                          href={project.github}
+                          className="btn btn rounded-4 col-6 m-2 p-2 github-btn "
+                          style={{ backgroundColor: button }}
+                        >
+                          {Github} GitHub
+                        </a>
+                        <a
+                          href={project.link}
+                          className="btn  play-btn rounded-4 p-2 col-6 m-2"
+                          style={{ backgroundColor: button }}
+                        >
+                          {PlayButton} Website
+                        </a>
+                      </div>
+                    ) : (
+                      <div className="col-12 d-flex justify-content-evenly p-2">
+                        <a
+                          href={project.github}
+                          className="btn btn rounded-4 col-12 p-2 github-btn"
+                          style={{ backgroundColor: button }}
+                        >
+                          {Github} GitHub
+                        </a>
+                      </div>
+                    )}
+                    <MoreDetail description={project.description}></MoreDetail>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
                 <div className="row align-items-center">
                   <div className="col-12 mb-1">
                     <h2
                       className="section-header fw-bolder"
-                      style={{ backgroundColor: mainLight }}
+                    
                     >
                       Other skills
                     </h2>
@@ -95,11 +103,11 @@ export default function PortfolioPage() {
                   {OtherSkills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="col-12 col-md-12 col-lg-4 project-card d-flex"
+                      className="col-12 col-md-6 col-lg-4 col-lg-12 project-card d-flex"
                     >
                       <div
-                        className="card flex-fill"
-                        style={{ backgroundColor: mainLight }}
+                        className="card flex-fill p-3"
+                       
                       >
                         <div className="card-body">
                           <h4 className="card-title">
@@ -116,27 +124,27 @@ export default function PortfolioPage() {
                           <div className="col-12 d-flex justify-content-evenly p-2">
                             <a
                               href={skill.github}
-                              className="btn btn github-btn  rounded-1  col-6 m-1"
-                              style={{backgroundColor:button}}
+                              className="btn btn github-btn  rounded-4 p-2  col-6 m-1"
+                              style={{ backgroundColor: button }}
                             >
-                              {Github}
+                              {Github} GitHub
                             </a>
                             <a
                               href={skill.link}
-                              className="btn btn-sm play-btn rounded-1  col-6 m-1"
-                              style={{backgroundColor:button}}
+                              className="btn btn-sm play-btn rounded-4 p-2  col-6 m-1"
+                              style={{ backgroundColor: button }}
                             >
-                              {PlayButton}
+                              {PlayButton} Website
                             </a>
                           </div>
                         ) : (
                           <div className="col-12 d-flex justify-content-evenly p-2">
                             <a
                               href={skill.github}
-                              className="btn btn github-btn  rounded-1 col-12"
-                              style={{backgroundColor:button}}
+                              className="btn btn github-btn  rounded-4 p-2 col-12"
+                              style={{ backgroundColor: button }}
                             >
-                              {Github}
+                              {Github} GitHub
                             </a>
                           </div>
                         )}

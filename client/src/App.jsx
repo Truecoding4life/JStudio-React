@@ -53,7 +53,7 @@ function App() {
         mainTextHighLightVet: darkMode ? '#088abaf1': '#075b7ae0',
         button: darkMode ? '#7fffd4' : '#0d7755',
         buttonBorder: darkMode ? '#09a16e' : '#56927e',
-        projectButton: darkMode ? '#0f866a':'#36544989',
+        projectButton: darkMode ? '#72d09cf2':'#36544989',
         buttonDangerBorder: darkMode ? '#d24949d1' : '#761111',
         buttonDanger: darkMode ? '#d24949d1' : '#761111'
         

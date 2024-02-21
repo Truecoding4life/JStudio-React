@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import components for route rendering
 import App from './App.jsx'
-import ErrorPage from './pages/error.jsx'
-import HomePage from './pages/Home/home'
-import AboutPage from './pages/About/About.jsx'
-import PortfolioPage from './pages/Portfolio/Portfolio.jsx'
-import ContactPage from './pages/Contact/contact.jsx'
+import ErrorPage from './containers/error.jsx'
+import HomePage from './containers/Home/home'
+import AboutPage from './containers/About/About.jsx'
+import PortfolioPage from './containers/Portfolio/Portfolio.jsx'
+import ContactPage from './containers/Contact/contact.jsx'
 
 const router = createBrowserRouter([
   {
