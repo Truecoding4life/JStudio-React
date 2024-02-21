@@ -12,22 +12,14 @@ export default function PortfolioPage() {
   const button = theme.palette.primary.projectButton;
   return (
     <>
-      <div className="pt-5 project pb-5 p-3">
-        <div
-          className="container-fluid project-container"
-          style={{ borderColor: mainLight }}
-        >
+      <div className="pt-5 project pb-5 p-3 container-fluid">
+        <div className=" project-container" style={{ borderColor: mainLight }}>
           <div className="row ">
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
                 <div className="row ">
                   <div className="col-12 mb-1">
-                    <h2
-                      className="section-header fw-bolder"
-                     
-                    >
-                      Academic
-                    </h2>
+                    <h2 className="section-header fw-bolder">Academic</h2>
                   </div>
                 </div>
               </div>
@@ -36,8 +28,9 @@ export default function PortfolioPage() {
               {Project.map((project) => (
                 <div
                   key={project.title}
-                  className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 project-card d-flex align-items-stretch">              
-                  <div className="card p-3 d-flex flex-column justify-content-evenly">
+                  className="col-12 col-sm-12 col-md-6 col-lg-4  project-card d-flex mx-auto"
+                >
+                  <div className="card p-3 d-flex ">
                     {project.image ? (
                       <img
                         class="card-img-top"
@@ -89,26 +82,20 @@ export default function PortfolioPage() {
             </div>
             <div className="col-md-12 align-self-center ">
               <div className="container text-center ">
-                <div className="row align-items-center">
-                  <div className="col-12 mb-1">
-                    <h2
-                      className="section-header fw-bolder"
-                    
-                    >
-                      Other skills
-                    </h2>
+                <div className="row ">
+                  <div className="col-12 col-md-6 col-lg-6 col-xl-3 project-card align-items-center d-flex">
+                    <div className="card flex-fill ">
+                      <div className="card-body">
+                        <h5 className="card-title other-project">OTHER PROJECT </h5>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="row">
                   {OtherSkills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="col-12 col-md-6 col-lg-4 col-lg-12 project-card d-flex"
+                      className="col-12 col-md-6 col-lg-6 col-xl-3  project-card d-flex"
                     >
-                      <div
-                        className="card flex-fill p-3"
-                       
-                      >
+                      <div className="card flex-fill p-3">
                         <div className="card-body">
                           <h4 className="card-title">
                             <span>

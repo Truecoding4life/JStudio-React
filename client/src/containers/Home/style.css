@@ -1,27 +1,41 @@
 .home-header {
-    min-height: 300px;
-  }
-  
-  .home-header h1 {
-    font-size: 50px;
-    margin-top: 70px;
-  }
-  
-  /* Welcome Section */
-  #welcome-hi,
-  .welcome-quote-dev,
-  #welcome-quote-vet,
-  #welcome-quote ,
-  #veteran{
-    font-size: 60px;
-    font-family: 'Righteous';
-  }
-  
+  min-height: 300px;
+}
 
+.home-header h1 {
+  font-size: 50px;
+  margin-top: 70px;
+}
 
-  @media screen and (min-width: 1550px) {
-    .homecontainer{
-      padding-top: 200px;
-    }
+.home-container {
+  min-height: 100vh;
+}
+
+/* Welcome Section */
+#welcome-hi,
+.welcome-quote-dev,
+#welcome-quote-vet,
+#welcome-quote,
+#veteran {
+  font-size: 60px;
+  font-family: 'Righteous';
+}
+
+section {
+  min-height: 100vh;
+  height: 100%;
+ 
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  /* Add this to enable scrolling */
+  height: 100vh;
+}
+
+@media screen and (min-width: 1550px) {
+  .home-container {
+    padding-top: 200px;
   }
-  
+}

@@ -7,7 +7,7 @@ export default function AboutPage() {
   const textColor = theme.palette.primary.mainText
   const themeMain = theme.palette.primary.main
   return (
-    <div id="about-container" className="container-fluid">
+    <section id="about-container" className="container-fluid">
       <div className="row mephoto">
         <div className="col-12 col-sm-6 col-md-6 col-lg-4 align-self-center photograph">
           <image>
@@ -28,6 +28,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

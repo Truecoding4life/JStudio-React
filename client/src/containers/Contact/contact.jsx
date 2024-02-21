@@ -20,7 +20,7 @@ export default function ContactPage() {
   const buttonBorderTheme = theme.palette.primary.buttonBorder;
 
   return (
-    <div>
+    <section>
       {doAlert ? (
         <Alert
           icon={
@@ -117,6 +117,6 @@ export default function ContactPage() {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 }

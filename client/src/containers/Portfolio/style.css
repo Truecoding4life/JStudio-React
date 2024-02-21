@@ -38,10 +38,24 @@
     border-radius: 20px;
     border-width: 1px;
     border-style: solid;
+    font-family: Righteous,Courier, monospace;
+    font-size: 300%; 
     margin-top: 30px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     padding: 30px;
     font-size: 300%;
+  }
+
+  .other-project{
+    color: #76f5aff2;
+    border-color: var(--theme-green-light);
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 30px;
+ 
+    font-size: 190%;
+    font-family: 'Righteous',Courier, monospace;
   }
   
  

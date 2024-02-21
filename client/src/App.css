@@ -1,19 +1,17 @@
 /* Global Styles */
 * {
   font-family: 'Onest', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #58a48bab;
-}
-bac{
-  background-color: #36544989;
-}
+  background-color: #13151c;
+  min-height: 100vh;
+};
 
 /* Content Section #b6dfd1ec */
-.content {
-  min-height: 1200px;
-}
 
 
 /* Download Button */
@@ -29,6 +27,24 @@ bac{
   transform: scale(1.05);
 }
 
+
+.home-background{
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 25% 62%, rgba(20, 25, 23, 1) 0%, rgba(28, 24, 75, 1) 55%);
+}
+
+
+section {
+ height: 120vh;
+ 
+  scroll-snap-align: start;
+}
+
+.body {
+ 
+  /* Add this to enable scrolling */
+  height: 100vh;
+}
 
 
 /* Delete Button */
