@@ -15,7 +15,7 @@ export default function PortfolioPage() {
         className="btn btn github-btn  p-2 col-6 m-1"
         style={{ backgroundColor: button }}
       >
-        {Github} GitHub
+        {Github} <span className="button-name">GitHub</span>
       </a>
       {item.link && (
         <a
@@ -23,7 +23,7 @@ export default function PortfolioPage() {
           className="btn play-btn  p-2 col-6 m-1"
           style={{ backgroundColor: button }}
         >
-          {PlayButton} Website
+          {PlayButton} <span className="button-name">Website</span>
         </a>
       )}
     </div>
