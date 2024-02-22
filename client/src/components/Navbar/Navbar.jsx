@@ -55,7 +55,7 @@ export default function NavbarLi() {
     <Navbar expand="md">
       <Navbar.Brand
         href="/"
-        className="navbarbrand"
+        className="navbar-brand"
         style={{ color: mainTheme }}
       >
         J Studio
@@ -63,11 +63,12 @@ export default function NavbarLi() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">
         {expandIcon}
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse id="basic-navbar-nav ">
         <Nav className="d-flex justify-content-between p-3">
           <Nav.Link
             style={{
               color: "#817e7e"
+              
             }}
             hidden = { currentPage !== '/' ? true : false }
           as={ScrollLink}  

@@ -18,7 +18,8 @@
 #welcome-quote,
 #veteran {
   font-size: 60px;
-  font-family: 'Roboto', Courier, monospace;
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 300;
 }
 
 section {

@@ -57,7 +57,7 @@ export default function HomePage() {
                   className="btn download-button"
                 >
                   {" "}
-                  DOWNLOAD RESUME{" "}
+                  DOWNLOAD MY RESUME{" "}
                 </Button>
               </a>
             </div>
