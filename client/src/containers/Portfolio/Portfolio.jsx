@@ -23,7 +23,7 @@ export default function PortfolioPage() {
           className="btn play-btn  p-2 col-6 m-1"
           style={{ backgroundColor: button }}
         >
-          {PlayButton} Deployed Site
+          {PlayButton} Website
         </a>
       )}
     </div>

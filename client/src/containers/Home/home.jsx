@@ -1,8 +1,11 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/circle.gif";
 import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
+
+import {  Button } from "@mui/material";
+
 
 export default function HomePage() {
   const theme = useTheme();
@@ -47,7 +50,7 @@ export default function HomePage() {
                 </span>{" "}
               </h3>
               <a href={resume} download="Jay_Resume.pdf">
-                <button
+                <Button
                   type="button"
                   style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
                   href={resume}
@@ -55,7 +58,7 @@ export default function HomePage() {
                 >
                   {" "}
                   DOWNLOAD RESUME{" "}
-                </button>
+                </Button>
               </a>
             </div>
           </div>

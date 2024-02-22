@@ -28,11 +28,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="col-12 ">
-            <h3 className="highlight" style={{color:themeMain}}> Came From Military Background  </h3>
-            <p style={{color:textColor}}>
-              {" "}
-              I'm Proud to served in the United State Army. I'
-            </p>
+            
           </div>
         </div>
       </div>

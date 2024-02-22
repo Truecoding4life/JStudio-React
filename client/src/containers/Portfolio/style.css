@@ -64,6 +64,9 @@
   font-size: 200%;
 }
 
+background{
+  background-color: #78817dd5 ;
+}
 .card:hover {
   transform: scale(1.1);
   transition: transform 0.4s ease-in-out;

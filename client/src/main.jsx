@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         path: "portfolio",
         element: <PortfolioPage />,
       },
-      { patch: "*", 
+      { path: "*", 
       element: <NoMatch /> 
     },
     ],

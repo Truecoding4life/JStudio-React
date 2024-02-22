@@ -9,7 +9,7 @@ function NoMatch() {
   return (
     <div
       style={{
-        backgroundColor: "lightgray",
+        backgroundColor: "black",
         height: "100vh",
         width: "100vw",
         display: "flex",

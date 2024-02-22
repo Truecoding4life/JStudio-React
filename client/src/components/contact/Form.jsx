@@ -1,34 +1,38 @@
 import React, { useState } from "react";
-import {
-  Input,
-  FormControl,
-  InputAdornment,
-  FormHelperText,
-} from "@mui/material";
+import { Input, FormControl, InputAdornment, FormHelperText, Typography, Box, TextField } from "@mui/material";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import BusinessIcon from "@mui/icons-material/Business";
 import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
-import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
-import { Icon, resumeIcon, messageIcon, backIcon } from "../../ulti/icon";
+import { resumeIcon, messageIcon, backIcon } from "../../ulti/icon";
 import { ADD_MESSAGE } from "../../ulti/mutations";
 import { useMutation } from "@apollo/client";
+import resume from "../../assets/resume.pdf";
+import Button from "@mui/material/Button";
+import { Icon} from "../../ulti/icon";
+
 
 const inputStyle = {
-  backgroundColor: "#7c9f90f1",
-  borderRadius: "5px",
-  padding: "10px",
-  fontFamily: "Josefin Sans",
-  color: "#161717cd",
+  "& .MuiInputBase-input": {
+    color: "white",
+  },
+  "& input:-webkit-autofill": {
+    WebkitBoxShadow: "0 0 0 1000px ##000000e6 inset !important",
+    backgroundColor: "#000000e6 !important",
+    transition: "background-color 5000s ease-in-out 0s !important",
+    color: "#f8f3f3e6 !important", // Add this line to prevent text color change
+
+  },
 };
 
 const MessageForm = ({ setAlert, setMessaging }) => {
   const theme = useTheme();
-  const textColor = theme.palette.primary.mainText;
-  const buttonTheme = theme.palette.primary.button;
-  const buttonBorderTheme = theme.palette.primary.buttonBorder;
-  const dangerButtonTheme = theme.palette.primary.buttonDanger;
-  const dangerButtonBorder = theme.palette.primary.buttonDangerBorder;
+
+  const mainText = theme.palette.primary.mainText;
+  const button = theme.palette.primary.button;
+  const buttonBorder = theme.palette.primary.buttonBorder;
+  const buttonDanger = theme.palette.primary.buttonDanger;
+  const buttonDangerBorder = theme.palette.primary.buttonDangerBorder;
 
   const [emailNotValid, setEmailNotValid] = useState(false);
 
@@ -67,144 +71,134 @@ const MessageForm = ({ setAlert, setMessaging }) => {
       message: "",
     });
   };
+
   const emailValidation = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
   return (
-    <div className="pt-5 contact-container container">
-      <div className="col-md-12 align-self-center chat-box p-4">
-        <div className="row">
-          <div className="col-12">
-            <p
-              className="reach-out"
-              style={{
-                fontFamily: "Righteous",
-                fontSize: 30,
-                color: "white",
-              }}
-            >
-              <i> {Icon}</i> Reach out for work
-            </p>
-          </div>
-        </div>
-        <div className="row row-cols-2 d-flex flex-row">
-          <div className="col-lg-6 col-12 p-2">
-            <FormControl style={{ padding: "30px" }} className="col-12">
-              <Input
-                name="name"
-                onChange={handleChange}
-                placeholder="Name"
-                variant="soft"
-                required
-                startAdornment={
-                  <InputAdornment position="start">
-                    <PermIdentityIcon />
-                  </InputAdornment>
-                }
-                color="success"
-                style={inputStyle}
-              />
-            </FormControl>
-
-            <FormControl
-              style={{ padding: "30px" }}
-              className="col-12"
-              error={emailNotValid}
-            >
-              <Input
-                onChange={handleChange}
-                name="email"
-                placeholder="Email"
-                variant="soft"
-                color="success"
-                required
-                startAdornment={
-                  <InputAdornment position="start">
-                    <BusinessIcon />
-                  </InputAdornment>
-                }
-                style={inputStyle}
-              />
-              <FormHelperText>Please enter a valid email</FormHelperText>
-            </FormControl>
-
-            <FormControl style={{ padding: "30px" }} className="col-12">
-              <Input
-                onChange={handleChange}
-                name="message"
-                placeholder="Write your message"
-                variant="soft"
-                color="success"
-                required
-                startAdornment={
-                  <InputAdornment position="start">
-                    <FormatAlignJustifyIcon />
-                  </InputAdornment>
-                }
-                style={inputStyle}
-              />
-
-              <FormHelperText style={{ color: "white" }}>
-                {" "}
-                What can I build for you today ?
-              </FormHelperText>
-            </FormControl>
-
-            <div className="row justify-content-around p-4">
-              <div className="col-12 p-2">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setMessaging(false);
-                  }}
-                  className="btn delete-button"
-                  style={{
-                    color: dangerButtonTheme,
-                    borderColor: dangerButtonBorder,
-                  }}
-                >
-                  {" "}
-                  <i>{backIcon} </i> Go Back{" "}
-                </button>
-              </div>
-              <div className="col-12 p-2">
-                <button
-                  type="button"
-                  onClick={handleFormSubmit}
-                  onKeyDown={(e) => console.log(e.key)}
-                  className="btn download-button"
-                  style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
-                >
-                  {" "}
-                  <i>{messageIcon} </i> send message{" "}
-                </button>
-              </div>
-
-              <div className="col-12 p-2">
-                <a href={resume} download="Jay_Resume.pdf">
-                  <button
-                    type="button"
-                    href={resume}
-                    className="btn download-button"
-                    style={{
-                      color: buttonTheme,
-                      borderColor: buttonBorderTheme,
-                    }}
-                  >
-                    {" "}
-                    <i> {resumeIcon}</i> Download CV Resume{" "}
-                  </button>
-                </a>
-              </div>
+    <>
+      <div className="pt-5 contact-container container">
+        <div className="col-md-12 align-self-center chat-box p-4">
+          <div className="row">
+            <div className="col-12">
+              <Typography
+                className="reach-out gradient-text"
+                variant="h4"
+                style={{
+                  fontFamily: "Raleway",
+                  
+                }}
+              >
+                <i>{Icon} </i>
+                Reach out for work
+              </Typography>
             </div>
+          </div>
+          <div className="row row-cols-2 d-flex flex-row">
+            <div className="col-lg-6 col-12 p-2 contact-form">
+            <Box style={{ padding: "30px" }}>
+                <TextField
+                  name="name"
+                  onChange={handleChange}
+                  label="Name"
+                  variant="standard"
+                  fullWidth
+                  required
+                  focused
+                  sx={
+                    inputStyle
+                  }
+                  
+                />
+              </Box>
 
-            <div className="col-12 p-4"></div>
+              <Box style={{ padding: "30px" }}>
+                <TextField
+                  name="email"
+                  onChange={handleChange}
+                  label="Email"
+                  variant="standard"
+                  fullWidth
+                  required
+                  focused
+                  sx={
+                    inputStyle
+                  }
+                  
+                />
+              </Box>
+
+              <Box style={{ padding: "30px" }}>
+                <TextField
+                  name="message"
+                  onChange={handleChange}
+                  label="Type here"
+                  variant="outlined"
+                  fullWidth
+                  required
+                  focused
+                  multiline
+                  rows={4}
+                  sx={
+                    inputStyle
+                  }  
+                
+                />
+              </Box>
+
+               
+
+              <div className="row justify-content-around p-4">
+                <div className="col-12 p-2">
+                  <Button
+                    type="button"
+                    onClick={() => setMessaging(false)}
+                    className="btn delete-button"
+                   
+                  >
+                    <i>{backIcon}</i> Go Back
+                  </Button>
+                </div>
+                <div className="col-12">
+                  
+                </div>
+                <div className="col-12 p-2">
+                  <Button
+                    type="button"
+                    onClick={handleFormSubmit}
+                    
+                    className="btn download-button"
+                    style={{ color: button, borderColor: buttonBorder }}
+                  >
+                    <i>{messageIcon}</i> Send Message
+                  </Button>
+                </div>
+
+                <div className="col-12 p-2">
+                  <a href={resume} download="Jay_Resume.pdf">
+                    <Button
+                      type="button"
+                      href={resume}
+                      className="btn download-button"
+                      style={{
+                        color: button,
+                        borderColor: buttonBorder,
+                      }}
+                    >
+                      <i>{resumeIcon}</i> Download CV Resume
+                    </Button>
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-12 p-4"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
