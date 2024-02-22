@@ -85,7 +85,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
             <div className="col-12">
               <Typography
                 className="reach-out gradient-text"
-                variant="h4"
+                variant="p"
                 style={{
                   fontFamily: "Raleway",
                   

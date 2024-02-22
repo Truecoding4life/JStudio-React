@@ -18,7 +18,7 @@
 #welcome-quote,
 #veteran {
   font-size: 60px;
-  font-family: 'Righteous';
+  font-family: 'Roboto', Courier, monospace;
 }
 
 section {
@@ -27,10 +27,5 @@ section {
  
 }
 
-body {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  /* Add this to enable scrolling */
-  height: 100vh;
-}
+
 

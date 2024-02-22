@@ -37,8 +37,11 @@
 
 }
 
+
+
 .project-header{
-  font-family: 'Fredoka';
+  font-family: 'Almarai', Courier, monospace;
+
 }
 
 .section-header {
@@ -54,7 +57,7 @@
 }
 
 .project-title{
-  font-family: Raleway, Courier, monospace;
+  font-family: 'Raleway', Courier, monospace;
   font-weight: 200;
 }
 
@@ -64,9 +67,7 @@
   font-size: 200%;
 }
 
-background{
-  background-color: #78817dd5 ;
-}
+
 .card:hover {
   transform: scale(1.1);
   transition: transform 0.4s ease-in-out;
@@ -117,15 +118,5 @@ background{
   
   .github-btn, .play-btn {
       font-size: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
- 
-  
- 
-  
-  .button-name{
-   display: none;
   }
 }

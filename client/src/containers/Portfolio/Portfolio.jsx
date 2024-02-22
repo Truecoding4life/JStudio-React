@@ -4,6 +4,8 @@ import "./style.css";
 import { Github, PlayButton, starIcon, pageIcon } from "../../ulti/icon";
 import MoreDetail from "./MoreDetail";
 
+
+
 export default function PortfolioPage() {
   const { palette } = useTheme();
   const { mainLight, projectButton: button } = palette.primary;
@@ -73,6 +75,7 @@ export default function PortfolioPage() {
                   <div className="col-12 mb-1 academic-box">
                     <h2 className="section-header fw-bolder gradient-text">
                       Academic Projects
+                      
                     </h2>
                   </div>
                 </div>

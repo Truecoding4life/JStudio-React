@@ -21,8 +21,7 @@ export default function ContactPage() {
     },
     reachOut: {
       fontFamily: "Raleway",
-      color: textColor,
-      fontSize: "30px",
+      color: textColor
     },
     button: {
       color: buttonTheme,
