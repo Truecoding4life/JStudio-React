@@ -10,14 +10,14 @@ import './style.css'
 export default function MoreDetail({description}) {
   return (
     <div>
-      <Accordion className='detail-project card-text p-1' style={{backgroundColor:'#eae8e8', borderRadius:30}} >
+      <Accordion className='detail-project card-text ' style={{backgroundColor:'transparent', borderRadius:10}} >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon style={{color:'white'}}/>}
           aria-controls="panel1-content"
-          
+        
           
         >
-          <h5 class='more-detail'> More Detail</h5>
+          <h5 class='more-detail'> More about this project  </h5>
         </AccordionSummary>
         <AccordionDetails className='detail'>
           {description}

@@ -34,14 +34,14 @@ export default function HomePage() {
                 {" "}
                 Hi, it's Jay{" "}
               </h1>
-              <h3 className="welcome-quote-dev" style={{ color: mainTextDev }}>
+              <h3 className="welcome-quote-dev gradient-text" >
                 {" "}
                 Fullstack Web Developer{" "}
               </h3>
               <h3 id="welcome-quote" style={{ color: textColor }}>
                 {" "}
                 and{" "}
-                <span id="veteran" style={{ color: mainTextVet }}>
+                <span id="veteran" className="gradient-text">
                   {" "}
                   Veteran
                 </span>{" "}
@@ -62,7 +62,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section>
+      <section id='portfolio-section'>
         <PortfolioPage></PortfolioPage>
       </section>
     </div>

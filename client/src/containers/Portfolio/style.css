@@ -1,94 +1,122 @@
 /* Card Component */
 .card {
-    box-shadow: 0px 0px 4px 1px #364c46ad;
-    margin: 40px;
-    border: 5px solid var(--theme-green-light);
-    background-color: #3636455c;
-    color: white;
-    border-radius: 30px;
-  }
-  
-  .card-title,
-  .card-text,
-  .section-header, .detail-project {
-    font-family: 'Vazirmatn', Courier, monospace;
-    
-  }
-  
+  box-shadow: 0 0 4px 1px #141a19ad;
+  margin: 40px;
+  border: 5px solid var(--theme-green-light);
+  background-color: #3636455c;
+  color: white;
+  border-radius: 10px;
+}
 
-  .detail{
-    background-color:rgba(24, 172, 76, 0.487);
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-family: 'Vazirmatn', Courier, monospace;
-  }
+.detail {
+  background-color: #5fdd9aee;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: Onest , Courier, monospace;
+}
 
-  .more-detail{
-    font-weight: 900;
-  }
-
-  img {
-    border-radius: 20px;
-    padding: 10px;
-    
-  }
-  .section-header {
-    color: #76f5aff2;
-    border-color: var(--theme-green-light);
-    border-radius: 20px;
-    border-width: 1px;
-    border-style: solid;
-    font-family: Righteous,Courier, monospace;
-    font-size: 300%; 
-    margin-top: 30px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-    padding: 30px;
-    font-size: 300%;
-  }
-
-  .other-project{
-    color: #76f5aff2;
-    border-color: var(--theme-green-light);
-    border-radius: 20px;
-    border-width: 1px;
-    border-style: solid;
-    padding: 30px;
+.more-detail {
  
-    font-size: 190%;
-    font-family: 'Righteous',Courier, monospace;
-  }
+  color: #fbfbfbbe;
+  font-family: 'Fredoka', Courier, monospace;
+
+}
+
+.card-image {
+  border-radius: 3px;
+  box-shadow: 0 0 4px 3px #141a19ad;
+  max-height: 400px;
+}
+
+.section-header, .other-project {
   
- 
   
-  .card:hover {
-    
-    transform: scale(1.1);
-    transition: transform .4s ease-in-out;
-    border: 5px solid var(--theme-green-light);
-  }
-  
-  .github-btn,
-  .play-btn {
-    box-shadow: 0 0 3px 0 rgba(1, 3, 2, 0.5);
-  }
-  
-  .project-card {
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
+  font-family: Raleway , Courier, monospace;
 
   
-.AccordionSummary{
+
+}
+
+.project-header{
+  font-family: 'Fredoka';
+}
+
+.section-header {
+  border-color: var(--theme-green-light);
+  font-size: 230%;
+ 
+}
+
+.academic-box{
+  
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.project-title{
+  font-family: Raleway, Courier, monospace;
+  font-weight: 200;
+}
+
+.other-project {
+ 
+  border-color: var(--theme-green-light);
+  font-size: 200%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+  border: 5px solid var(--theme-green-light);
+}
+
+.github-btn, .play-btn {
+  box-shadow: 0 0 3px 0 rgba(1, 3, 2, 0.5);
+}
+
+.list-tag{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: auto;
+
+}
+
+.tag{
+  background-color: rgba(60, 62, 67, 0.667);
+  max-width: fit-content;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: small;
+}
+
+.AccordionSummary {
   background-color: #9b1e1ecc;
   color: #eae8e8;
 }
 
-
-  @media screen and (max-width: 800px){
-    .card-title{
-      font-size: 16px;
-    }
-    .card-text{
-      font-size: 12px;
-    }
+@media screen and (max-width: 1300px) {
+  .github-btn, .play-btn {
+      font-size: 60%;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .card-title {
+      font-size: 16px;
+  }
+  
+  .card-text {
+      font-size: 12px;
+  }
+  
+  .skill-name {
+      font-size: 14px;
+  }
+  
+  .github-btn, .play-btn {
+      font-size: 100%;
+  }
+}

@@ -1,10 +1,12 @@
+import "./styles.css";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import IconButton from "@mui/material/IconButton";
 import Auth from "../../ulti/auth";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import "./styles.css";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
@@ -65,10 +67,14 @@ export default function NavbarLi() {
         <Nav className="d-flex justify-content-between p-3">
           <Nav.Link
             style={{
-              color: currentPage === "/portfolio" ? "#04fab8f1" : "#817e7e",
+              color: "#817e7e"
             }}
-            as={Link}
-            to="/portfolio"
+            hidden = { currentPage !== '/' ? true : false }
+          as={ScrollLink}  
+          to="portfolio-section" 
+          smooth={true}
+          offset={-70}
+          duration={100}
           >
             Portfolio
           </Nav.Link>
