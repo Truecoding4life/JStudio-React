@@ -10,7 +10,7 @@ import {
 import NavbarLi from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FloatingActionButtonSize from "./components/FloatingBox";
 
 const httpLink = createHttpLink({
@@ -38,6 +38,38 @@ const client = new ApolloClient({
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState("up");
+
+  const handleScroll = () => {
+    const currentPosition = window.pageYOffset;
+
+    if (currentPosition > scrollPosition) {
+      setScrollDirection("down");
+    } else {
+      setScrollDirection("up");
+    }
+
+    setScrollPosition(currentPosition);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
+  
+  const navbarStyle = {
+    position: "sticky",
+    top: 0,
+    transition: "transform 0.3s ease-in-out",
+    zIndex: 1000,
+    transform:
+      scrollDirection === "down" ? "translateY(-100%)" : "translateY(0)",
+  };
 
   const theme = createTheme({
     palette: {
@@ -57,12 +89,11 @@ function App() {
     },
   });
 
-  const backgroundNow = theme.palette.primary.mainBackground;
   return (
     <ThemeProvider theme={theme}>
       <ApolloProvider client={client}>
         <div className="body  d-flex flex-column min-vh-100">
-          <div className="section">
+          <div className="section" style={navbarStyle}>
             <NavbarLi />
           </div>
           <div
