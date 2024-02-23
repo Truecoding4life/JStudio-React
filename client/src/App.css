@@ -10,7 +10,8 @@
   }
 
 body {
-  background-color: #111010fd;
+  background: radial-gradient(circle at 48% 57%, rgba(72, 113, 118, 1) 0%, rgba(0, 0, 0, 1) 41%);
+
   min-height: 100vh;
 };
 
@@ -29,7 +30,7 @@ body {
 
 
 .gradient-text{
-  background: linear-gradient(90deg, rgba(74, 215, 135, 1) 0%, rgba(80, 98, 249, 1) 100%);
+  background: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
  background-clip: text;
  -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
@@ -79,13 +80,7 @@ body {
     font-size: 25px
   }
 
-  #welcome-hi,
-.welcome-quote-dev,
-#welcome-quote-vet,
-#welcome-quote,
-#veteran{
-    font-size: 10px;
-  }
+  
   
   .button-name{
    display: none;

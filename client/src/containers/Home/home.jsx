@@ -17,19 +17,19 @@ export default function HomePage() {
     <div className="container-fluid home-container p-0">
       <section className="container-fluid home-content-row d-flex align-items-center justify-content-center">
         <div className="row ">
-          <div className="col-12 col-md-5 align-self-center home-header ">
+          <div className="col-12 col-md-6 align-self-center home-header ">
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginTop: "80px",
+                
               }}
             >
-              <img src={logo} alt="logo" id="homepage-logo" width="60%" />
+              <img src={logo} alt="logo" id="homepage-logo" width="100%" />
             </div>
           </div>
 
-          <div className="col-12 col-md-7 align-self-center home-header">
+          <div className="col-12 col-md-6 align-self-center home-header">
             <div className="col-12 text-center greeting-quote">
               <h3 className="gradient-white-text greeting-quote"> Hi, it's Jay </h3>
               <h3 className="gradient-text greeting-quote"> Fullstack Web Developer </h3>

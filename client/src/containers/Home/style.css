@@ -7,16 +7,7 @@
 
 
 
-/* Welcome Section */
-#welcome-hi,
-.welcome-quote-dev,
-#welcome-quote-vet,
-#welcome-quote,
-#veteran {
-  font-size: 60px;
-  font-family: 'Poppins', Courier, monospace;
-  font-weight: 400;
-}
+
 
 section {
   min-height: 100vh;
@@ -40,13 +31,13 @@ section {
 
 @media screen and (max-width: 480px) {
 
-  #welcome-hi,
-  .welcome-quote-dev,
-  #welcome-quote-vet,
-  #welcome-quote,
-  #veteran {
-    font-size: 19px;
+ .greeting-quote {
+    font-size: 30px;
   }
-
-  
+  .download-btn{
+    font-size: 10px;
+  }
+  .home-header img{
+    padding-bottom: 130px;
+  }
 }
