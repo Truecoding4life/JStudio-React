@@ -19,11 +19,12 @@ body {
 
 /* Download Button */
 .download-button {
-  background-color: #d0e4de;
+  
   color: #139f73;
   transition: .3s;
   
 }
+
 
 
 
@@ -36,28 +37,22 @@ body {
 
 .home-content-row{
   /* global 92%+ browsers support */
-  background-image: url("./assets/galaxy.jpg");
+  background-image: url("./assets/galaxy-night.jpeg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 
 
-.body {
- 
-  /* Add this to enable scrolling */
-  height: 100vh;
-}
+
 
 .reach-out{
   font-size: 30px;
 }
 
 /* Delete Button */
-.delete-button:hover {
-  color: #e38e8e;
-  transform: scale(1.05);
-}
+
 
 
 
@@ -69,8 +64,8 @@ body {
 
   
 
-  .home-container{
-    margin-bottom: 300px;
+  .home-content-row{
+    padding-bottom: 300px;
     
   }
 

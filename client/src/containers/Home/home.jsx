@@ -49,11 +49,12 @@ export default function HomePage() {
                   Veteran
                 </span>{" "}
               </h3>
-              <a href={resume} download="Jay_Resume.pdf">
+              <a download="Jay_Resume.pdf">
                 <Button
                   type="button"
                   href={resume}
-                  className=" download-button"
+                  className="btn download-button"
+                  
                 >
                   {" "}
                   DOWNLOAD MY RESUME{" "}

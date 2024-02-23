@@ -15,7 +15,7 @@
 #veteran {
   font-size: 60px;
   font-family: 'Poppins', Courier, monospace;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 section {
@@ -23,10 +23,8 @@ section {
   height: 100%;
 }
 
-#portfolio-section{
-  background-color: rgba(15, 13, 13, 0.929);
-  padding: 0;
-}
+
+
 
 @media screen and (max-width: 480px) {
 

@@ -1,11 +1,10 @@
 /* Card Component */
 .card {
-  box-shadow: 0 0 4px 1px #272d2cad;
+  box-shadow: 0 0 3px 2px #31363596;
   margin: 40px;
-  border: 5px solid var(--theme-green-light);
-  background-color: #313332a8;
+  background-color: #383b3992;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .detail {
@@ -19,13 +18,15 @@
  
   color: #fbfbfbbe;
   font-family: 'Fredoka', Courier, monospace;
+  font-weight: 200;
+  font-size: 15px;
 
 }
 
 .card-image {
   border-radius: 3px;
   box-shadow: 0 0 4px 3px #141a19ad;
-  max-height: 400px;
+  max-height: 240px;
 }
 
 .section-header, .other-project {
@@ -45,8 +46,7 @@
 }
 
 .section-header {
-  border-color: var(--theme-green-light);
-  font-size: 230%;
+  font-size: 200%;
  
 }
 
@@ -109,7 +109,7 @@
   }
   
   .card-text {
-      font-size: 12px;
+      font-size: 17px;
   }
   
   .skill-name {
@@ -118,5 +118,9 @@
   
   .github-btn, .play-btn {
       font-size: 100%;
+  }
+
+  .tag{
+    display: none;
   }
 }
