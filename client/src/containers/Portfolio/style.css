@@ -1,9 +1,9 @@
 /* Card Component */
 .card {
-  box-shadow: 0 0 4px 1px #141a19ad;
+  box-shadow: 0 0 4px 1px #272d2cad;
   margin: 40px;
   border: 5px solid var(--theme-green-light);
-  background-color: #3636455c;
+  background-color: #313332a8;
   color: white;
   border-radius: 10px;
 }

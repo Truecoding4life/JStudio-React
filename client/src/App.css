@@ -6,6 +6,7 @@
     box-sizing: border-box;
     --text-gradient: linear-gradient(90deg, rgba(74, 215, 135, 1) 0%, rgba(80, 98, 249, 1) 100%);
     scroll-behavior: smooth;
+    --header-background: #141517ca;
   }
 
 body {

@@ -97,7 +97,7 @@ export default function PortfolioPage() {
                 {OtherSkills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="col-12 col-md-6 col-lg-4 col-xl-4  d-flex project-card text-center "
+                    className="col-12 col-md-6 col-lg-12 col-xl-4  d-flex project-card text-center "
                   >
                     <div className="card flex-fill p-3">
                       <div className="card-body">
