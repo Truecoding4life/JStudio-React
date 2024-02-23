@@ -4,8 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
 
-import {  Button } from "@mui/material";
-
+import { Button } from "@mui/material";
 
 export default function HomePage() {
   const theme = useTheme();
@@ -16,11 +15,10 @@ export default function HomePage() {
   const mainTextVet = theme.palette.primary.mainTextHighLightVet;
   return (
     <div className="container-fluid home-container p-0">
-      <section className='container-fluid home-content-row d-flex align-items-center justify-content-center'>
+      <section className="container-fluid home-content-row d-flex align-items-center justify-content-center">
         <div className="row ">
           <div className="col-12 col-md-5 align-self-center home-header ">
             <div
-             
               style={{
                 display: "flex",
                 justifyContent: "center",
@@ -33,28 +31,16 @@ export default function HomePage() {
 
           <div className="col-12 col-md-7 align-self-center home-header">
             <div className="col-12 text-center greeting-quote">
-              <h1 id="welcome-hi" style={{ color: textColor }}>
-                {" "}
-                Hi, it's Jay{" "}
-              </h1>
-              <h3 className="welcome-quote-dev gradient-text" >
-                {" "}
-                Fullstack Web Developer{" "}
-              </h3>
-              <h3 id="welcome-quote" style={{ color: textColor }}>
-                {" "}
-                and{" "}
-                <span id="veteran" className="gradient-text">
-                  {" "}
-                  Veteran
-                </span>{" "}
+              <h3 className="gradient-white-text greeting-quote"> Hi, it's Jay </h3>
+              <h3 className="gradient-text greeting-quote"> Fullstack Web Developer </h3>
+              <h3 className="gradient-white-text greeting-quote">
+                and <span className="gradient-text greeting-quote"> Veteran</span>{" "}
               </h3>
               <a download="Jay_Resume.pdf">
                 <Button
                   type="button"
                   href={resume}
                   className="btn download-button"
-                  
                 >
                   {" "}
                   DOWNLOAD MY RESUME{" "}
@@ -65,7 +51,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id='portfolio-section'>
+      <section id="portfolio-section">
         <PortfolioPage></PortfolioPage>
       </section>
     </div>
