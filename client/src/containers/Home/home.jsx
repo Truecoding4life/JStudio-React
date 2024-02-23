@@ -15,8 +15,8 @@ export default function HomePage() {
   const mainTextDev = theme.palette.primary.mainTextHighLight;
   const mainTextVet = theme.palette.primary.mainTextHighLightVet;
   return (
-    <div className="container-fluid home-container ">
-      <section className='container d-flex align-items-center justify-content-center'>
+    <div className="container-fluid home-container p-0">
+      <section className='container-fluid home-content-row d-flex align-items-center justify-content-center'>
         <div className="row ">
           <div className="col-12 col-md-5 align-self-center home-header ">
             <div
@@ -32,7 +32,7 @@ export default function HomePage() {
           </div>
 
           <div className="col-12 col-md-7 align-self-center home-header">
-            <div className="col-12 text-center">
+            <div className="col-12 text-center greeting-quote">
               <h1 id="welcome-hi" style={{ color: textColor }}>
                 {" "}
                 Hi, it's Jay{" "}
@@ -52,7 +52,6 @@ export default function HomePage() {
               <a href={resume} download="Jay_Resume.pdf">
                 <Button
                   type="button"
-                  style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
                   href={resume}
                   className=" download-button"
                 >

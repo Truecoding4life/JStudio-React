@@ -5,6 +5,8 @@ import MessageForm from "../../components/contact/Form";
 import { useTheme } from "@mui/material/styles";
 import { Icon, contactIcon, resumeIcon, messageIcon } from "../../ulti/icon";
 import resume from "../../assets/resume.pdf";
+import './style.css'
+
 
 export default function ContactPage() {
   const [messaging, setMessaging] = useState(false);
@@ -49,18 +51,18 @@ export default function ContactPage() {
           type="button"
           onClick={() => setMessaging(true)}
           className="btn download-button"
-          style={styles.button}
+          
         >
           <i>{messageIcon}</i> Send Message
         </Button>
       </div>
       <div className="col p-2">
-        <Button type="button" className="btn download-button" style={styles.button}>
+        <Button type="button" className="btn download-button" >
           <i>{contactIcon}</i> Contact Info
         </Button>
       </div>
       <div className="col p-2">
-          <Button type="button" href={resume}className="btn download-button" style={styles.button}>
+          <Button type="button" href={resume}className="btn download-button" >
             <i>{resumeIcon}</i> Download CV Resume
           </Button>
         

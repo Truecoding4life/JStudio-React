@@ -1,6 +1,6 @@
 .navbar {
     background-color: var(--header-background);
-    box-shadow: 0 0 14px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 14px 7px rgba(0, 0, 0, 2);
   }
   
   .navbar-brand {

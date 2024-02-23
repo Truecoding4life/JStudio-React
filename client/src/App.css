@@ -6,11 +6,11 @@
     box-sizing: border-box;
     --text-gradient: linear-gradient(90deg, rgba(74, 215, 135, 1) 0%, rgba(80, 98, 249, 1) 100%);
     scroll-behavior: smooth;
-    --header-background: #141517ca;
+    --header-background: #111215af;
   }
 
 body {
-  background-color: #13151c;
+  background-color: #111010fd;
   min-height: 100vh;
 };
 
@@ -19,17 +19,13 @@ body {
 
 /* Download Button */
 .download-button {
-  color: #0d7755;
+  background-color: #d0e4de;
+  color: #139f73;
   transition: .3s;
   
 }
 
-.download-button:hover {
-  border-color: rgb(10, 112, 95);
-  color: rgb(13, 222, 187);
-  transform: scale(1.05);
-  
-}
+
 
 .gradient-text{
   background: linear-gradient(90deg, rgba(74, 215, 135, 1) 0%, rgba(80, 98, 249, 1) 100%);
@@ -38,7 +34,7 @@ body {
  -webkit-text-fill-color: transparent;
 }
 
-body{
+.home-content-row{
   /* global 92%+ browsers support */
   background-image: url("./assets/galaxy.jpg");
   background-size: cover;
@@ -73,8 +69,9 @@ body{
 
   
 
-  .project-container{
-    margin-top: 300px;
+  .home-container{
+    margin-bottom: 300px;
+    
   }
 
   
@@ -87,6 +84,13 @@ body{
     font-size: 25px
   }
 
+  #welcome-hi,
+.welcome-quote-dev,
+#welcome-quote-vet,
+#welcome-quote,
+#veteran{
+    font-size: 10px;
+  }
   
   .button-name{
    display: none;

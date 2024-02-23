@@ -170,7 +170,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     onClick={handleFormSubmit}
                     
                     className="btn download-button"
-                    style={{ color: button, borderColor: buttonBorder }}
+                    
                   >
                     <i>{messageIcon}</i> Send Message
                   </Button>
@@ -181,11 +181,8 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     <Button
                       type="button"
                       href={resume}
-                      className="btn download-button"
-                      style={{
-                        color: button,
-                        borderColor: buttonBorder,
-                      }}
+                      className=" download-button"
+                      
                     >
                       <i>{resumeIcon}</i> Download CV Resume
                     </Button>

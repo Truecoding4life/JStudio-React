@@ -1,15 +1,11 @@
-.home-header {
-  min-height: 300px;
-}
+
 
 .home-header h1 {
   font-size: 50px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
-.home-container {
-  min-height: 100vh;
-}
+
 
 /* Welcome Section */
 #welcome-hi,
@@ -19,16 +15,28 @@
 #veteran {
   font-size: 60px;
   font-family: 'Poppins', Courier, monospace;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 section {
   min-height: 100vh;
   height: 100%;
- 
 }
 
 #portfolio-section{
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: rgba(15, 13, 13, 0.929);
+  padding: 0;
 }
 
+@media screen and (max-width: 480px) {
+
+  #welcome-hi,
+  .welcome-quote-dev,
+  #welcome-quote-vet,
+  #welcome-quote,
+  #veteran {
+    font-size: 19px;
+  }
+
+  
+}
