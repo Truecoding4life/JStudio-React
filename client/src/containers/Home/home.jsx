@@ -54,7 +54,7 @@ export default function HomePage() {
                   type="button"
                   style={{ color: buttonTheme, borderColor: buttonBorderTheme }}
                   href={resume}
-                  className="btn download-button"
+                  className=" download-button"
                 >
                   {" "}
                   DOWNLOAD MY RESUME{" "}

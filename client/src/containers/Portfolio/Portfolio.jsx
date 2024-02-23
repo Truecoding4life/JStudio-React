@@ -43,6 +43,7 @@ export default function PortfolioPage() {
             className="card-img-top w-100 card-image"
             alt={item.title}
             src={item.image}
+            key={item.title}
           />
         )}
         <div className="card-body">
@@ -50,7 +51,7 @@ export default function PortfolioPage() {
           <div>
             <ul className="list-tag" style={{textDecorationStyle:"none"}}>
               {item.tags.map((tag) => (
-                <li className="tag"> {tag} </li>
+                <li className="tag" key={tag}> {tag} </li>
               ))}
             </ul>
           </div>

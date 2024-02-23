@@ -37,9 +37,11 @@ body {
  -webkit-text-fill-color: transparent;
 }
 
-.home-background{
+body{
   /* global 92%+ browsers support */
-  background: radial-gradient(circle at 25% 62%, rgba(20, 25, 23, 1) 0%, rgba(28, 24, 75, 1) 55%);
+  background-image: url("./assets/galaxy.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
