@@ -6,7 +6,7 @@
     box-sizing: border-box;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     scroll-behavior: smooth;
-    --header-background: #242425e4;
+    --header-background: #040404d1;
   }
 
 body {
@@ -86,3 +86,4 @@ body {
    display: none;
   }
 }
+

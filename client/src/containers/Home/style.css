@@ -26,7 +26,18 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.gradient-header-text{
+  background: linear-gradient(148deg, rgba(25, 163, 126, 1) 0%, rgba(34, 152, 180, 1) 33%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+@media screen and (min-width: 1500px) {
+  .greeting-quote{
+    font-size: 75px;
+  }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -41,3 +52,4 @@ section {
     padding-bottom: 100px;
   }
 }
+

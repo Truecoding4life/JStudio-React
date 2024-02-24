@@ -1,33 +1,39 @@
 .navbar {
-    background-color: var(--header-background);
-  }
-  
-  .navbar-brand {
-    color: var(--theme-main);
-    font-size: 30px;
-    font-family: 'Staatliches', sans-serif;
-    transition: transform 0.3s ease-in-out;
-    margin-left: 30px;
-  }
-  
-  .nav-link:visited {
-    color: rgb(129, 126, 126);
-  }
-  
-  .nav-link:hover,
-  .navbar-brand:hover {
-    color: rgba(79, 201, 140, 0.93);
-    transform: scale(1.1);
-  }
-  
-  .custom-toggler {
-    border-color: var(--theme-main);
-    border-style: solid;
-    border-radius: 10px;
-    color: greenyellow;
-  }
+  background-color: var(--header-background);
+}
 
-  #modal-title{
-     font-family: 'Righteous', sans-serif;
-    font-size: 30px;
+.navbar-brand {
+  color: var(--theme-main);
+  font-size: 30px;
+  font-family: 'Staatliches', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.nav-link:visited {
+  color: rgb(129, 126, 126);
+}
+
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+    transition: 0.3s;  
+
+
+}
+
+
+
+#modal-title {
+  font-family: 'Righteous', sans-serif;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 734px) {
+  .nav-link:hover {
+    transform: scale(1.2);
+    transition: 0.3s;  
+    color: rgba(79, 201, 140, 0.93);
+
   }
+}
