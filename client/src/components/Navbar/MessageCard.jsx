@@ -10,6 +10,8 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import { useMutation } from "@apollo/client";
 import { REMOVE_MESSAGE } from "../../ulti/mutations";
 import { ALL_MESSAGE } from "../../ulti/queries";
+import './styles.css'
+
 
 export default function RecipeReviewCard({ name, date, text, id, email }) {
   const [removeMessage] = useMutation(REMOVE_MESSAGE, {
@@ -32,10 +34,11 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
   return (
     <Card
       style={{
-        padding: "5px",
-        marginBottom: "30px",
-        backgroundColor: "#d8dcdf",
-        boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.4)", // Added boxShadow property value
+        boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.4)", 
+        backgroundColor: '#d2d9daf8',
+        color:'black',
+        fontFamily: 'Poppins',
+        fontWeight:200,
       }}
       key={id}
     >
@@ -46,24 +49,36 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
             <CancelIcon></CancelIcon>
           </IconButton>
         }
-        title={name}
-        subheader={date}
+        title={
+          <div style={{ fontFamily: 'Raleway', fontWeight: 700 }}>
+            <Typography variant="inherit">{name}</Typography>
+          </div>
+        }
+        subheader={
+          <div style={{ fontFamily: 'Raleway', fontWeight: 700 }}>
+            <Typography variant="inherit">{date}</Typography>
+          </div>
+        }
+        
       />
 
-      <CardContent>
-        <Typography variant="h6" color="text.secondary">
+        
+      <CardContent className="inbox-card-text">
+        <Typography variant="h6" style={{ fontFamily: 'Raleway', fontWeight: 200, fontSize: 18 }}>
           Email:
         </Typography>
-        <Typography variant="p" color="text.secondary">
+        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight: 200 }}>
           {email}
         </Typography>
-        <Typography variant="h6" color="text.secondary">
+        <br /> {/* Line break */}
+        <br />
+        <Typography variant="h6" style={{ fontFamily: 'Raleway', fontWeight: 200, fontSize: 18 }}>
           Message:
         </Typography>
-        <Typography variant="p" color="text.secondary">
+        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight: 200 }}>
           {text}
         </Typography>
       </CardContent>
-    </Card>
+      </Card>
   );
 }

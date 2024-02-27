@@ -13,7 +13,7 @@ const Inbox = ({ open, close, set }) => {
   let messages = [];
 
   if (data) {
-    messages = data.user.messages;
+    messages = data.user?.messages;
     const messageCount = messages.length;
     set(messageCount);
   }
@@ -38,6 +38,7 @@ const Inbox = ({ open, close, set }) => {
             date={message.createdAt}
             id={message._id}
             email={message.email}
+            key={message._id}
           ></RecipeReviewCard>
         ))}
       </Modal.Body>
