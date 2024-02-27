@@ -44,9 +44,9 @@ function App() {
   const handleScroll = () => {
     const currentPosition = window.pageYOffset;
 
-    if (currentPosition >  scrollPosition || scrollDirection > 200) {
+    if (currentPosition >  scrollPosition &&  scrollPosition > 200) {
       setScrollDirection("down");
-      console.log("down" + "  " + currentPosition);
+      console.log("down" + "  " + scrollPosition);
     } else {
       setScrollDirection("up");
       
