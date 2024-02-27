@@ -1,7 +1,7 @@
 import IconButton from "@mui/material/IconButton";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Input from "@mui/material/Input";
-import KeyIcon from "@mui/icons-material/Key";
+import LockIcon from '@mui/icons-material/Lock';
 import InputAdornment from "@mui/material/InputAdornment";
 import { LOGIN_USER } from "../../ulti/mutations";
 import { useMutation } from "@apollo/client";
@@ -33,15 +33,15 @@ const PasswordBox = ({ logIn }) => {
         type="password"
         startAdornment={
           <InputAdornment position="start">
-            <KeyIcon />
+            <LockIcon />
           </InputAdornment>
         }
         style={{
           backgroundColor: "#04fab8f1",
           borderRadius: "5px",
           padding: "5px",
-          width: "69px",
-          height: "30px",
+          width: "89px",
+          height: "33px",
           color: "#141517fc",
           marginLeft: "20px",
           fontFamily: "Roboto",

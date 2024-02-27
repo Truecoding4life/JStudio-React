@@ -104,7 +104,7 @@ export default function NavbarLi() {
               close={handleClose}
             ></LoginMenu>
           ) : (
-            <div className="ms-auto">
+            <div >
               {showPasswordBox ? (
                 <PasswordBox logIn={setShowPasswordBox}></PasswordBox>
               ) : (
