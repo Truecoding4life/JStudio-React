@@ -45,4 +45,9 @@
     color: rgba(79, 201, 140, 0.93);
 
   }
+
+
+  #password-box{
+    padding: '20px';
+  }
 }

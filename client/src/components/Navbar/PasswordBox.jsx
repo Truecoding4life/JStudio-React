@@ -30,6 +30,7 @@ const PasswordBox = ({ logIn }) => {
   return (
     <div>
       <Input
+        id='password-box'
         type="password"
         startAdornment={
           <InputAdornment position="start">
@@ -38,10 +39,10 @@ const PasswordBox = ({ logIn }) => {
         }
         style={{
           backgroundColor: "#04fab8f1",
-          borderRadius: "5px",
+          borderRadius: "3px",
           padding: "5px",
           width: "89px",
-          height: "33px",
+          height: "30px",
           color: "#141517fc",
           marginLeft: "20px",
           fontFamily: "Roboto",
