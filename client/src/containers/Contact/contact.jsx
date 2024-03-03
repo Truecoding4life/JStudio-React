@@ -57,7 +57,7 @@ export default function ContactPage() {
         </Button>
       </div>
       <div className="col p-2">
-        <Button type="button" className="btn download-button" >
+        <Button type="button" className="btn download-button">
           <i>{contactIcon}</i> Contact Info
         </Button>
       </div>

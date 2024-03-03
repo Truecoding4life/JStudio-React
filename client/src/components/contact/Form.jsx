@@ -79,8 +79,8 @@ const MessageForm = ({ setAlert, setMessaging }) => {
 
   return (
     <>
-      <div className="pt-5 contact-container container">
-        <div className="col-md-12 align-self-center chat-box p-4">
+      <div className=" contact-container container">
+        <div className="col-md-12 align-self-center chat-box ">
           <div className="row">
             <div className="col-12">
               <Typography
@@ -97,7 +97,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
             </div>
           </div>
           <div className="row row-cols-2 d-flex flex-row">
-            <div className="col-lg-6 col-12 p-2 contact-form">
+            <div className="col-lg-12 col-12 contact-form">
             <Box style={{ padding: "30px" }}>
                 <TextField
                   name="name"
@@ -161,6 +161,9 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     <i>{backIcon}</i> Go Back
                   </Button>
                 </div>
+
+
+                
                 <div className="col-12">
                   
                 </div>
