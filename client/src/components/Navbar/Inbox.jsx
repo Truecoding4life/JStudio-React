@@ -26,22 +26,23 @@ const Inbox = ({ open, close, set }) => {
       aria-describedby="transition-modal-description"
       top
     >
-      <Modal.Header style={{ backgroundColor: "#149c5cd6" }} closeButton>
+      <Modal.Header style={{ backgroundColor: "#22684bec", borderBottom: 'hidden'}} closeButton>
         <Modal.Title id="modal-title"> Inbox</Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        {messages.map((message) => (
-          <RecipeReviewCard
-            style={{ padding: "40px" }}
-            name={message.name}
-            text={message.message}
-            date={message.createdAt}
-            id={message._id}
-            email={message.email}
-            key={message._id}
-          ></RecipeReviewCard>
-        ))}
-      </Modal.Body>
+      <div id='modal-body' >
+          <Modal.Body>
+            {messages.map((message) => (
+              <RecipeReviewCard
+                name={message.name}
+                text={message.message}
+                date={message.createdAt}
+                id={message._id}
+                email={message.email}
+                key={message._id}
+              ></RecipeReviewCard>
+            ))}
+          </Modal.Body>
+        </div>
     </Modal>
   );
 };

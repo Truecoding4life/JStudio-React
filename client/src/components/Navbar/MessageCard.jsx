@@ -35,12 +35,14 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
     <Card
       style={{
         boxShadow: "0 2px 5px 0 rgba(0, 0, 0, 0.4)", 
-        backgroundColor: '#d2d9daf8',
+        backgroundColor: '#bdc9c5cd',
         color:'black',
         fontFamily: 'Poppins',
         fontWeight:200,
+        marginBottom:40
       }}
       key={id}
+      className="inbox-message"
     >
       <CardHeader
         avatar={<AccountCircleIcon></AccountCircleIcon>}
@@ -64,17 +66,19 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
 
         
       <CardContent className="inbox-card-text">
-        <Typography variant="h6" style={{ fontFamily: 'Raleway', fontWeight: 200, fontSize: 18 }}>
+        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight:700 }}>
           Email:
+        <br />
         </Typography>
         <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight: 200 }}>
           {email}
         </Typography>
         <br /> {/* Line break */}
-        <br />
-        <Typography variant="h6" style={{ fontFamily: 'Raleway', fontWeight: 200, fontSize: 18 }}>
+        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight:700 }}>
           Message:
         </Typography>
+
+        <br />
         <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight: 200 }}>
           {text}
         </Typography>
