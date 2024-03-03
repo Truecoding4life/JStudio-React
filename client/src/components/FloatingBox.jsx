@@ -1,8 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
-import Brightness2Icon from '@mui/icons-material/Brightness2';
-import { useState } from 'react';
+import PersonPinIcon from '@mui/icons-material/PersonPin';import { useState } from 'react';
 import ContactModal from './contact/ContactModal';
 
 export default function FloatingActionButtonSize() {
@@ -11,9 +10,9 @@ export default function FloatingActionButtonSize() {
     <Box sx={{  padding:1, position:"absolute", bottom:16  }}>
       
       <Fab size="medium" color="primary" aria-label="add">
-        <Brightness2Icon onClick={()=>{setDark(!darkMode)}} />
+        <PersonPinIcon onClick={()=>{setContactBoxOpen(!contactBoxOpen)}} />
       </Fab>
-      <ContactModal></ContactModal>
+      <ContactModal open={contactBoxOpen} setClose={setContactBoxOpen}></ContactModal>
     </Box>
   );
 }

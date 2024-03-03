@@ -17,8 +17,7 @@ const style = {
   pb: 3,
 };
 
-export default function ContactModal() {
-  const [open, setOpen] = useState(false);
+export default function ContactModal({open, setClose}) {
   const handleOpen = () => {
     setOpen(true);
   };
@@ -31,7 +30,7 @@ export default function ContactModal() {
       <Button onClick={handleOpen}>Contact</Button>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={()=> setClose(!open)}
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
