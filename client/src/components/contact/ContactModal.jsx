@@ -10,7 +10,8 @@ const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
-  height : '100%',
+  width: {xs:'90%',sm:'60%',lg:'30%'},
+  height : '80%',
   transform: 'translate(-50%, -50%) scale(1)',
   bgcolor: '#0e0e0ec4',
   border: '2px solid #000',
@@ -34,11 +35,9 @@ export default function ContactModal({open, setClose}) {
       <Modal
         open={open}
         onClose={()=> setClose(!open)}
-        aria-labelledby="child-modal-title"
-        aria-describedby="child-modal-description"
       >
         <Box sx={{ ...style}}>
-          <MessageForm closeModal={setClose}></MessageForm>
+          <MessageForm openModal={setClose}></MessageForm>
         </Box>
       </Modal>
     </React.Fragment>

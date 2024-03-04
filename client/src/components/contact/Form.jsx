@@ -25,16 +25,8 @@ const inputStyle = {
   },
 };
 
-const MessageForm = ({ setAlert, setMessaging }) => {
-  const theme = useTheme();
+const MessageForm = ({ setAlert, setMessaging, openModal }) => {
 
-  const mainText = theme.palette.primary.mainText;
-  const button = theme.palette.primary.button;
-  const buttonBorder = theme.palette.primary.buttonBorder;
-  const buttonDanger = theme.palette.primary.buttonDanger;
-  const buttonDangerBorder = theme.palette.primary.buttonDangerBorder;
-
-  const [emailNotValid, setEmailNotValid] = useState(false);
 
   const [formInfo, setFormInfo] = useState({
     name: "",
@@ -55,8 +47,14 @@ const MessageForm = ({ setAlert, setMessaging }) => {
         const { data } = await addMessage({
           variables: { ...formInfo, userId: "65bf4ca7da66cd1e791b259d" },
         });
-        setAlert(true);
+        if(window.location.pathname==='/contact'){
+          setAlert(true);
         setMessaging(false);
+        }
+        else{
+
+          openModal(false);
+        }
       } else {
         setEmailNotValid(true);
         return;
@@ -151,6 +149,8 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                
 
               <div className="row justify-content-around p-4">
+                
+                {window.location.pathname === '/contact' ? (
                 <div className="col-12 p-2">
                   <Button
                     type="button"
@@ -161,7 +161,7 @@ const MessageForm = ({ setAlert, setMessaging }) => {
                     <i>{backIcon}</i> Go Back
                   </Button>
                 </div>
-
+) : null}
 
                 
                 <div className="col-12">

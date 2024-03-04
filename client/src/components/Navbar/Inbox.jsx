@@ -24,13 +24,14 @@ const Inbox = ({ open, close, set }) => {
       onHide={close}
       aria-labelledby="transition-modal-title"
       aria-describedby="transition-modal-description"
+      
       top
     >
       <Modal.Header style={{ backgroundColor: "#22684bec", borderBottom: 'hidden'}} closeButton>
         <Modal.Title id="modal-title"> Inbox</Modal.Title>
       </Modal.Header>
       <div id='modal-body' >
-          <Modal.Body>
+          <Modal.Body >
             {messages.map((message) => (
               <RecipeReviewCard
                 name={message.name}
