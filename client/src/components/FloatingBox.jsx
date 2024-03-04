@@ -8,7 +8,7 @@ import ContactModal from './contact/ContactModal';
 export default function FloatingActionButtonSize() {
   const [ contactBoxOpen, setContactBoxOpen] = useState(false);
   return (
-    <Box sx={{  padding:1, position:"absolute", bottom:16  }}>
+    <Box sx={{  padding:1, position: 'fixed', bottom: 200, left: 16, zIndex: 1000 }}>
       
       <Fab size="medium" color="primary" aria-label="add">
         <AccountCircleIcon onClick={()=>{setContactBoxOpen(!contactBoxOpen)}} />

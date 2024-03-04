@@ -80,8 +80,7 @@ function App() {
         mainLight: darkMode ? "#72d09cf2" : "#7ab399ea",
         mainBackground: darkMode ? " radial-gradient(circle at 25% 62%, rgba(20, 25, 23, 1) 0%, rgba(28, 24, 75, 1) 55%)" : "#d3f2e9f6",
         mainText: darkMode ? "white" : "black",
-        mainTextHighLight: darkMode ? "#15c291f1" : "#048e66f1",
-        mainTextHighLightVet: darkMode ? "#088abaf1" : "#075b7ae0",
+
         button: darkMode ? "#7fffd4" : "#0d7755",
         buttonBorder: darkMode ? "#09a16e" : "#56927e",
         projectButton: darkMode ? "#72d09cf2" : "#36544989",
@@ -103,10 +102,7 @@ function App() {
             
           >
             <Outlet />
-            <FloatingActionButtonSize
-              setDark={setDarkMode}
-              darkMode={darkMode}
-            ></FloatingActionButtonSize>
+           
           </div>
 
           <div className="section Footer">

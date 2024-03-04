@@ -3,6 +3,7 @@ import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
+import FloatingActionButtonSize from "../../components/FloatingBox";
 
 import { Button } from "@mui/material";
 
@@ -15,6 +16,7 @@ export default function HomePage() {
   const mainTextVet = theme.palette.primary.mainTextHighLightVet;
   return (
     <div className="container-fluid home-container p-0">
+
       <section className="container-fluid home-content-row d-flex align-items-center justify-content-center">
         <div className="row ">
           <div className="col-12 col-md-6 align-self-center home-header ">
@@ -54,6 +56,7 @@ export default function HomePage() {
       <section id="portfolio-section">
         <PortfolioPage></PortfolioPage>
       </section>
+      <FloatingActionButtonSize></FloatingActionButtonSize>
     </div>
   );
 }
