@@ -1,0 +1,68 @@
+.navbar {
+  background-color: var(--header-background);
+}
+
+.navbar-brand {
+  color: var(--theme-main);
+  font-size: 30px;
+  font-family: 'Staatliches', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.nav-link:visited {
+  color: rgb(129, 126, 126);
+}
+
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+    transition: 0.3s;  
+
+
+}
+
+
+
+#modal-title {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 23px;
+  color: #f0eaea;
+  letter-spacing: .1em;
+  
+}
+
+#modal-body{
+  background-color: #1c1c20;
+  
+}
+
+.Card{
+  background-color: #d2d9daf8;
+}
+back{
+  background-color: #22684bec;
+}
+
+
+.inbox-card-text{
+  color: #181717;
+}
+
+.inbox-message:hover{
+  transition: translateY(10px);
+}
+
+@media screen and (min-width: 734px) {
+  .nav-link:hover {
+    transform: scale(1.2);
+    transition: 0.3s;  
+    color: #4fc98ced;
+
+  }
+
+
+  #password-box{
+    padding: '20px';
+  }
+}

@@ -1,0 +1,61 @@
+
+
+.home-header h1 {
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+
+
+
+
+section {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.greeting-quote{
+  font-size: 60px;
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 300;
+}
+
+.gradient-white-text{
+  background: linear-gradient(179deg, rgba(235, 235, 230, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-header-text{
+  background: linear-gradient(148deg, rgba(25, 163, 126, 1) 0%, rgba(34, 152, 180, 1) 33%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.greeting-quote-text{
+  color: #898686;
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 300;
+}
+@media screen and (min-width: 1500px) {
+  .greeting-quote{
+    font-size: 75px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+ .greeting-quote {
+    font-size: 45px;
+  }
+  .download-btn{
+    font-size: 10px;
+  }
+  .home-header img{
+    padding-bottom: 100px;
+  }
+}
+
