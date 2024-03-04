@@ -4,9 +4,9 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
 import FloatingActionButtonSize from "../../components/FloatingBox";
-
+import imagee from '../../assets/robot1.png'
 import { Button } from "@mui/material";
-
+import SouthIcon from '@mui/icons-material/South';
 export default function HomePage() {
   const theme = useTheme();
   const textColor = theme.palette.primary.mainText;
@@ -27,7 +27,8 @@ export default function HomePage() {
                 
               }}
             >
-              <img src={logo} alt="logo" id="homepage-logo" width="100%" />
+              <img src={imagee} alt="logo" id="homepage-logo" width="100%" />
+
             </div>
           </div>
 
@@ -48,6 +49,8 @@ export default function HomePage() {
                   DOWNLOAD MY RESUME{" "}
                 </Button>
               </a>
+
+                            <h4 className=" greeting-quote-text"> <SouthIcon /> Scroll to see my portfolio <SouthIcon /> </h4>
             </div>
           </div>
         </div>

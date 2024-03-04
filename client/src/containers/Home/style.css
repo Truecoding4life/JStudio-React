@@ -33,6 +33,12 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+
+.greeting-quote-text{
+  color: #898686;
+  font-family: 'Poppins', Courier, monospace;
+  font-weight: 300;
+}
 @media screen and (min-width: 1500px) {
   .greeting-quote{
     font-size: 75px;

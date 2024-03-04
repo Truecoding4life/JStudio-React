@@ -66,7 +66,10 @@ bad{
   }
 
 
-  
+  #homepage-logo{
+    width: 300px;
+    padding-bottom: 60px;
+  }
 
   .home-content-row{
     padding-bottom: 300px;
