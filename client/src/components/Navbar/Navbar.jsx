@@ -10,7 +10,6 @@ import { Link as ScrollLink } from 'react-scroll';
 
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
-
 import LoginMenu from "./LoginMenu";
 
 const expandIcon = (
@@ -121,6 +120,7 @@ export default function NavbarLi() {
           )}
         </Nav>
       </Navbar.Collapse>
+      
     </Navbar>
   );
 }

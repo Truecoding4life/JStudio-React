@@ -10,8 +10,9 @@ import {
 import NavbarLi from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useState, useEffect } from "react";
-import FloatingActionButtonSize from "./components/FloatingBox";
+import { useState, useEffect, useContext } from "react";
+import SuccessAlert from "./components/Alert/Success.jsx";
+import UserProvider from './ulti/UserContext.jsx'
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -40,6 +41,7 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollDirection, setScrollDirection] = useState("up");
+  const [doAlert, setAlert] = useState(false);
 
   const handleScroll = () => {
     const currentPosition = window.pageYOffset;
@@ -50,7 +52,7 @@ function App() {
     } else {
       setScrollDirection("up");
       
-      console.log("up" + "  " + currentPosition);    }
+        }
 
     setScrollPosition(currentPosition);
   };
@@ -92,7 +94,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <ApolloProvider client={client}>
+      <ApolloProvider client={client} >
+        <UserProvider doAlert={doAlert} setAlert={setAlert} setSuccessAlert={setAlert}>
         <div className="body  d-flex flex-column min-vh-100">
           <div className="section" style={navbarStyle}>
             <NavbarLi />
@@ -101,6 +104,8 @@ function App() {
             className="section content"
             
           >
+            {doAlert ? <SuccessAlert ></SuccessAlert> : null}
+            
             <Outlet />
            
           </div>
@@ -109,6 +114,7 @@ function App() {
             <Footer />
           </div>
         </div>
+      </UserProvider>  
       </ApolloProvider>
     </ThemeProvider>
   );

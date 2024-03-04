@@ -3,8 +3,8 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import {useState} from 'react'; 
-import MessageForm from './Form'
-
+import MessageForm from '../contact/Form'
+import useProvider from '../../ulti/UserContext'
 
 const style = {
   position: 'absolute',
@@ -29,7 +29,6 @@ const style = {
 };
 
 export default function ContactModal({open, setClose}) {
-  
 
   return (
     <React.Fragment>

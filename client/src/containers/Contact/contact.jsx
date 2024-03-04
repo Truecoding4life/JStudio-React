@@ -6,11 +6,10 @@ import { useTheme } from "@mui/material/styles";
 import { Icon, contactIcon, resumeIcon, messageIcon } from "../../ulti/icon";
 import resume from "../../assets/resume.pdf";
 import './style.css'
+import SuccessAlert from '../../components/Alert/Success'
 
-
-export default function ContactPage() {
+export default function ContactPage({setSuccessAlert}) {
   const [messaging, setMessaging] = useState(false);
-  const [doAlert, setAlert] = useState(false);
 
   const theme = useTheme();
   const textColor = theme.palette.primary.mainText;
@@ -31,18 +30,8 @@ export default function ContactPage() {
     },
   };
 
-  const showAlert = () => (
-    <Alert
-      icon={<CheckCircleOutlineIcon style={{ color: "black", marginTop: "6px", fontWeight: "bold" }} />}
-      onClose={() => setAlert(false)}
-      style={styles.alert}
-    >
-      <AlertTitle sx={{ fontWeight: "bold" }}>Success</AlertTitle>
-      Your request was sent successfully
-    </Alert>
-  );
 
-  const showMessagingForm = () => <MessageForm setAlert={setAlert} setMessaging={setMessaging} />;
+  const showMessagingForm = () => <MessageForm  setMessaging={setMessaging} />;
 
   const showContactOptions = () => (
     <div className="col-lg-6 col-12 p-2">
@@ -72,7 +61,6 @@ export default function ContactPage() {
 
   return (
     <section>
-      {doAlert && showAlert()}
       {messaging ? (
         showMessagingForm()
       ) : (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Input, FormControl, InputAdornment, FormHelperText, Typography, Box, TextField } from "@mui/material";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import BusinessIcon from "@mui/icons-material/Business";
@@ -10,6 +10,7 @@ import { useMutation } from "@apollo/client";
 import resume from "../../assets/resume.pdf";
 import Button from "@mui/material/Button";
 import { Icon} from "../../ulti/icon";
+import { UserContext } from '../../ulti/UserContext';
 
 
 const inputStyle = {
@@ -25,9 +26,10 @@ const inputStyle = {
   },
 };
 
-const MessageForm = ({ setAlert, setMessaging, openModal }) => {
+const MessageForm = ({  setMessaging, openModal }) => {
+  const {setAlert} = useContext(UserContext);
 
-
+  const [ emailValid, setEmailNotValid] = useState(false)
   const [formInfo, setFormInfo] = useState({
     name: "",
     email: "",
@@ -48,13 +50,14 @@ const MessageForm = ({ setAlert, setMessaging, openModal }) => {
           variables: { ...formInfo, userId: "65bf4ca7da66cd1e791b259d" },
         });
         if(window.location.pathname==='/contact'){
-          setAlert(true);
+        
         setMessaging(false);
         }
         else{
-
-          openModal(false);
+        openModal(false);
         }
+        setAlert(true);
+
       } else {
         setEmailNotValid(true);
         return;
