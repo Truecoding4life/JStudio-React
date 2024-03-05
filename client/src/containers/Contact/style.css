@@ -1,0 +1,15 @@
+.delete-button:hover {
+    color: #e75f4d;
+    transform: scale(1.05);
+}
+
+.download-button:hover {
+    color: rgba(0, 250, 150, 0.958);
+    transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.QuickContact{
+    overflow-y: scroll;
+    scrollbar-color: #64df81 #020101b8;
+}
