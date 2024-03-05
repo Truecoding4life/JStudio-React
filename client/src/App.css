@@ -48,13 +48,9 @@ body {
 
 
 
-
 .reach-out{
   font-size: 30px;
 }
-
-/* Delete Button */
-
 
 
 
@@ -64,7 +60,7 @@ body {
 
   #homepage-logo{
     width: 300px;
-    padding-bottom: 90px;
+    
   }
 
   .home-content-row{
@@ -80,7 +76,7 @@ body {
 @media screen and (max-width: 480px) {
  
   .reach-out{
-    font-size: 25px
+    font-size: 20px
   }
 
   

@@ -39,7 +39,7 @@ const client = new ApolloClient({
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(null);
   const [scrollDirection, setScrollDirection] = useState("up");
   const [doAlert, setAlert] = useState(false);
 
@@ -79,12 +79,16 @@ function App() {
     palette: {
       primary: {
         main: "#04fab8f1",
-
-
       },
     },
   });
 
+  if(doAlert){
+    setTimeout(() => {
+      setAlert(false);
+      document.getElementById('success-alert').classList.add('animate__fadeOut');
+    }, 3000);
+  }
   return (
     <ThemeProvider theme={theme}>
       <ApolloProvider client={client} >
@@ -97,7 +101,7 @@ function App() {
             className="section content"
             
           >
-            {doAlert ? <SuccessAlert ></SuccessAlert> : null}
+            {doAlert ? <SuccessAlert  ></SuccessAlert> : null}
             
             <Outlet />
            

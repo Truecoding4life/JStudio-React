@@ -4,7 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import imagee from "../../assets/robot2.png";
+import imagee from "../../assets/robot3.png";
 import { Button } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
 import 'animate.css'
@@ -16,19 +16,19 @@ export default function HomePage({ setSuccessAlert }) {
     <div className="container-fluid home-container p-0">
       <section className="container-fluid home-content-row d-flex align-items-center justify-content-center">
         <div className="row ">
-          <div className="col-12 col-md-6 align-self-center home-header ">
+          <div className="col-12 col-md-6 align-self-center home-image ">
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <img src={imagee} alt="logo" id="homepage-logo" width="130%" />
+              <img src={imagee} alt="logo" id="homepage-logo" />
             </div>
           </div>
 
           <div className="col-12 col-md-6 align-self-center home-header">
-            <div className="col-12 text-center greeting-quote">
+            <div className="col-12 text-center">
               <h3 className="gradient-white-text greeting-quote">
                 {" "}
                 Hi, it's Jay{" "}

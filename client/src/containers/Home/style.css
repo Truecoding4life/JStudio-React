@@ -29,14 +29,36 @@ section {
   font-family: 'Poppins', Courier, monospace;
   font-weight: 200;
   --animate-duration: 3s;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
   .greeting-quote{
     font-size: 65px;
+   
   }
+
+  #homepage-logo{
+    width: 1700px;
+  
+  }
+  
+}
+
+@media screen and (max-width: 1600px) {
+  #homepage-logo{
+    width:600px
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  #homepage-logo{
+    width:300px;
+    padding-bottom: 100px;
+  }
+  
 }
 
 
@@ -48,9 +70,11 @@ section {
   .download-btn{
     font-size: 10px;
   }
-  .home-header img{
-    padding-bottom: 100px;
+
+  .homepage-logo{
+   width: 100px;
   }
+  
 }
 
 .gradient-white-text{
