@@ -4,9 +4,10 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import imagee from "../../assets/robot1.png";
+import imagee from "../../assets/robot2.png";
 import { Button } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
+import 'animate.css'
 
 export default function HomePage({ setSuccessAlert }) {
   const theme = useTheme();
@@ -22,7 +23,7 @@ export default function HomePage({ setSuccessAlert }) {
                 justifyContent: "center",
               }}
             >
-              <img src={imagee} alt="logo" id="homepage-logo" width="100%" />
+              <img src={imagee} alt="logo" id="homepage-logo" width="130%" />
             </div>
           </div>
 
@@ -50,11 +51,12 @@ export default function HomePage({ setSuccessAlert }) {
                   DOWNLOAD MY RESUME{" "}
                 </Button>
               </a>
-
-              <h4 className=" greeting-quote-text">
+                
+                <h5 className="greeting-quote-text animate__animated  animate__bounce animate__infinite ">
                 {" "}
+              
                 <SouthIcon /> Scroll to see my portfolio <SouthIcon />{" "}
-              </h4>
+              </h5>
             </div>
           </div>
         </div>
@@ -63,7 +65,7 @@ export default function HomePage({ setSuccessAlert }) {
       <section id="portfolio-section">
         <PortfolioPage></PortfolioPage>
       </section>
-      <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
+      <FloatingButton  setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>
   );
 }
