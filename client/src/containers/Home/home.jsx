@@ -52,7 +52,7 @@ export default function HomePage({ setSuccessAlert }) {
                 </Button>
               </a>
                 
-                <h5 className="greeting-quote-text animate__animated  animate__bounce animate__infinite ">
+                <h5 className="greeting-quote-text animate__animated  animate__shakeY animate__infinite ">
                 {" "}
               
                 <SouthIcon /> Scroll to see my portfolio <SouthIcon />{" "}

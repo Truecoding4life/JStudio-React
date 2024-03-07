@@ -73,7 +73,7 @@ export default function PortfolioPage() {
               <div className="container ">
                 <div className="row ">
                   <div className="col-12 mb-1 academic-box">
-                    <h2 className="section-header fw-bolder gradient-header-text">
+                    <h2 className="section-header gradient-header-text">
                       Academic Projects
                       
                     </h2>
@@ -89,9 +89,9 @@ export default function PortfolioPage() {
             <div className="container ">
               <div className="row ">
                 <div className="col-12 col-md-12 col-lg-12 col-xl-12  ">
-                  <h5 className="other-project  flex-fill gradient-header-text">
+                  <h3 className="section-header  gradient-header-text">
                     Other Skills
-                  </h5>
+                  </h3>
                 </div>
                 {OtherSkills.map((skill) => (
                   <div

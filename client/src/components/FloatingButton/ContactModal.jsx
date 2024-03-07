@@ -33,7 +33,7 @@ export default function ContactModal({open, setClose}) {
 
   return (
     <React.Fragment>
-      <Button > <span className='animate__animated  animate__hinge animate__delay-5s'> Contact </span></Button>
+      <Button className='animate__animated  animate__fadeOutLeft animate__delay-5s' >  Contact </Button>
       <Modal
         open={open}
         onClose={()=> setClose(!open)}
