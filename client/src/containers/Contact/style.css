@@ -1,7 +1,9 @@
 .delete-button:hover {
-    color: #e75f4d;
+    color: #c2594b;
     transform: scale(1.05);
 }
+
+
 
 .download-button:hover {
     color: rgba(0, 250, 150, 0.958);
@@ -12,4 +14,5 @@
 .QuickContact{
     overflow-y: scroll;
     scrollbar-color: #64df81 #020101b8;
+    background-color: #18171cfd;
 }

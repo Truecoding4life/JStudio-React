@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { Alert, AlertTitle, Button } from "@mui/material";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircle";
+import {  Button } from "@mui/material";
 import MessageForm from "../../components/contact/Form";
 import { useTheme } from "@mui/material/styles";
 import { Icon, contactIcon, resumeIcon, messageIcon } from "../../ulti/icon";
 import resume from "../../assets/resume.pdf";
 import './style.css'
-import SuccessAlert from '../../components/Alert/Success'
 
 export default function ContactPage({setSuccessAlert}) {
   const [messaging, setMessaging] = useState(false);
