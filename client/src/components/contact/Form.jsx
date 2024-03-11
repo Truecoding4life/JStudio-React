@@ -150,7 +150,7 @@ const MessageForm = ({ setMessaging, openModal }) => {
                       </InputAdornment>
                     ),
                   }}
-                  rows={4}
+                  maxRows={4}
                   sx={inputStyle}
                 />
               </Box>

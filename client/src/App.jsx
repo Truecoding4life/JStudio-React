@@ -12,7 +12,7 @@ import Footer from "./components/footer/footer.jsx";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect, useContext } from "react";
 import SuccessAlert from "./components/Alert/Success.jsx";
-import UserProvider from './ulti/UserContext.jsx'
+import UserProvider from "./ulti/UserContext.jsx";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -46,13 +46,12 @@ function App() {
   const handleScroll = () => {
     const currentPosition = window.pageYOffset;
 
-    if (currentPosition >  scrollPosition &&  scrollPosition > 200) {
+    if (currentPosition > scrollPosition && scrollPosition > 200) {
       setScrollDirection("down");
       console.log("down" + "  " + scrollPosition);
     } else {
       setScrollDirection("up");
-      
-        }
+    }
 
     setScrollPosition(currentPosition);
   };
@@ -65,7 +64,6 @@ function App() {
     };
   }, [scrollPosition]);
 
-  
   const navbarStyle = {
     position: "sticky",
     top: 0,
@@ -83,35 +81,37 @@ function App() {
     },
   });
 
-  if(doAlert){
+  if (doAlert) {
     setTimeout(() => {
       setAlert(false);
-      document.getElementById('success-alert').classList.add('animate__fadeOut');
+      document
+        .getElementById("success-alert")
+        .classList.add("animate__fadeOut");
     }, 3000);
   }
   return (
     <ThemeProvider theme={theme}>
-      <ApolloProvider client={client} >
-        <UserProvider doAlert={doAlert} setAlert={setAlert} setSuccessAlert={setAlert}>
-        <div className="body  d-flex flex-column min-vh-100">
-          <div className="section" style={navbarStyle}>
-            <NavbarLi />
-          </div>
-          <div
-            className="section content"
-            
-          >
-            {doAlert ? <SuccessAlert  ></SuccessAlert> : null}
-            
-            <Outlet />
-           
-          </div>
+      <ApolloProvider client={client}>
+        <UserProvider
+          doAlert={doAlert}
+          setAlert={setAlert}
+          setSuccessAlert={setAlert}
+        >
+          <div className="body  d-flex flex-column min-vh-100">
+            <div className="section" style={navbarStyle}>
+              <NavbarLi />
+            </div>
+            <div className="section content">
+              {doAlert ? <SuccessAlert></SuccessAlert> : null}
 
-          <div className="section Footer">
-            <Footer />
+              <Outlet />
+            </div>
+
+            <div className="section Footer">
+              <Footer />
+            </div>
           </div>
-        </div>
-      </UserProvider>  
+        </UserProvider>
       </ApolloProvider>
     </ThemeProvider>
   );

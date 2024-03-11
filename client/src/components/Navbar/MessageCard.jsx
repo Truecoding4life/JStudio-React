@@ -17,15 +17,82 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
   const [removeMessage] = useMutation(REMOVE_MESSAGE, {
     refetchQueries: [ALL_MESSAGE, "messages"],
   });
+  let sentHour = date.split(" ")[4][0];
+  let sentMin = date.split(" ")[4].split(':')[1];
+  let sentMonth = date.split(" ")[0];
+  const sentDate = date.split(" ")[1].split('t')[0];
+  const currentDate = new Date().getDate()
+  let currentMonth = new Date().getMonth()+1
+  let currentHour = new Date().getHours()
+  let sentTime = date.split(" ")[5]
+  let currentMin = new Date().getMinutes()
+
+  if(sentTime === 'pm'){
+    sentHour = parseInt(sentHour)+12;
+  }
+  
+
+  switch (sentMonth) {
+    case 'Jan':
+      sentMonth = 1
+      break;
+    case 'Feb':
+      sentMonth = 2
+      break;
+    case 'Mar':
+      sentMonth = 3
+      break;
+    case 'Apr':
+      sentMonth = 4
+      break;
+    case 'May':
+      sentMonth = 5
+      break;
+    case 'Jun':
+      sentMonth = 6
+      break;
+    case 'Jul':
+      sentMonth = 7
+      break;
+    case 'Aug':
+      sentMonth = 8
+      break;
+    case 'Sep':
+      sentMonth = 9
+      break;
+    case 'Oct':
+      sentMonth = 10
+      break;
+    case 'Nov':
+      sentMonth = 11
+      break;
+    case 'Dec':
+      sentMonth = 12
+      break;
+  }
+
+// if current month and data is the same then return the different hour if the hour are the same then return the min
+const handleTimeStamp = () => {
+  if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth) && parseInt(currentHour) === parseInt(sentHour)) {
+    return   `Received ${parseInt(currentMin) - parseInt(sentMin)}  Minutes ago`;
+  }  
+  else if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth)) {
+    return   `Received ${parseInt(currentHour) - parseInt(sentHour)} Hours ago`;
+  }  
+  // Return a default value (e.g., 0) if the conditions are not met
+  return {date}
+}
 
   const handleRemove = async () => {
     try {
-      const { data } = await removeMessage({
-        variables: {
-          userId: "65bf4ca7da66cd1e791b259d",
-          messageId: id,
-        },
-      });
+      console.log(`Sent Minutes ${sentMin} and the current minutes ${currentMin}`);
+      console.log(handleTimeStamp());
+      // const { data } = await removeMessage({
+      //   variables: {
+      //     userId: "65bf4ca7da66cd1e791b259d",
+      //     messageId: id,
+      //   },
+      // });
     } catch (e) {
       console.log(e);
     }
@@ -54,7 +121,7 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
         }
         subheader={
           <div >
-            <Typography style={{fontFamily: 'Raleway' }} variant="inherit">{date}</Typography>
+            <Typography style={{fontFamily: 'Raleway' }} variant="inherit">{handleTimeStamp()}</Typography>
           </div>
         }
         
