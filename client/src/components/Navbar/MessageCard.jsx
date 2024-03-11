@@ -80,7 +80,7 @@ const handleTimeStamp = () => {
     return   `Received ${parseInt(currentHour) - parseInt(sentHour)} Hours ago`;
   }  
   // Return a default value (e.g., 0) if the conditions are not met
-  return {date}
+  return date;
 }
 
   const handleRemove = async () => {
