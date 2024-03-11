@@ -25,9 +25,7 @@
 
 .inbox-message {
   background-color: #000000e0;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
-
 }
 #modal-title {
   font-family: 'Staatliches', sans-serif;
@@ -38,14 +36,12 @@
 }
 
 #modal-body {
-  background-color: #000000de;
-  border-radius: 5px;
-  
+  background-color: #1b2e2af7;
 }
 
 
 #inbox-header {
-  background-color: #000000ec;
+  background-color: #121b1bec;
   border-bottom: hidden;
   color: #fbfbfb;
 
@@ -60,8 +56,9 @@ button.btn-close {
 
 
 .message-title {
-  background-color: #20b577da;
+  background-color: #6fcba3d2;
   box-shadow: 0px 0px 3px 0px #000000;
+  
 }
 
 back {
@@ -70,8 +67,9 @@ back {
 
 
 .inbox-card-text {
-  color: #111010;
-    background-color: rgba(150, 144, 144, 0.766);
+  color: #c7c4c4;
+    background-color: rgba(38, 34, 34, 0.356);
+    
 
 }
 

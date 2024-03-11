@@ -85,14 +85,13 @@ const handleTimeStamp = () => {
 
   const handleRemove = async () => {
     try {
-      console.log(`Sent Minutes ${sentMin} and the current minutes ${currentMin}`);
-      console.log(handleTimeStamp());
-      // const { data } = await removeMessage({
-      //   variables: {
-      //     userId: "65bf4ca7da66cd1e791b259d",
-      //     messageId: id,
-      //   },
-      // });
+    
+      const { data } = await removeMessage({
+        variables: {
+          userId: "65bf4ca7da66cd1e791b259d",
+          messageId: id,
+        },
+      });
     } catch (e) {
       console.log(e);
     }
@@ -103,6 +102,7 @@ const handleTimeStamp = () => {
 
       key={id}
       className="inbox-message"
+      sx={{boxShadow: 5, borderRadius: 5, marginBottom: 2, backgroundColor:'black'}}
     >
       <CardHeader
         className='message-title'
@@ -113,15 +113,15 @@ const handleTimeStamp = () => {
           </IconButton>
         }
         title={
-          <div style={{fontFamily: 'Raleway' }}>
-            <Typography variant="inherit">{name}</Typography>
+          <div style={{fontFamily: 'Nunito Sans' }}>
+            <Typography fontSize={18} variant="inherit">{name}</Typography>
             <Typography variant="inherit">{email}</Typography>
 
           </div>
         }
         subheader={
           <div >
-            <Typography style={{fontFamily: 'Raleway' }} variant="inherit">{handleTimeStamp()}</Typography>
+            <Typography  style={{fontFamily: 'Nunito Sans'}} variant="inherit">{handleTimeStamp()}</Typography>
           </div>
         }
         
@@ -131,12 +131,12 @@ const handleTimeStamp = () => {
       <CardContent className="inbox-card-text">
 
 
-        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight:700 }}>
+        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight:700 }}>
           Message:
         </Typography>
 
         <br />
-        <Typography variant="p" style={{ fontFamily: 'Raleway', fontWeight: 200 }}>
+        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight: 200 }}>
           {text}
         </Typography>
       </CardContent>
