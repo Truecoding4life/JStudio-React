@@ -1,20 +1,20 @@
 import FoodFinder from "../assets/FoodFinder.gif";
 import ApiAdventures from "../assets/api-adventure.gif";
-import boringGameShop from "../assets/BoringGameShop.gif";
+import GameLoft from "../assets/GameLoft.gif";
 import PWA from "../assets/PWA.gif";
 import CrystalQuest from "../assets/CrystalQuest.gif";
 import DeveloperBlog from "../assets/DeveloperBlog.gif";
 
 const Project = [
   {
-    title: "Boring Game Shop",
+    title: "GameLoft",
     description:
       "Full Stack E-commerce web application powered by React, Materialize Ui, Node.js, Express, MongoDB, and Stripe.",
     github: "https://github.com/Andrewchall92/game-shop",
     header: "Full Stack",
     link: "https://the-boring-game-shop-4c06c86d757e.herokuapp.com/",
     tags: ["E-Commerce", "Online Shopping", "Secure Payment", "User Authentication"],
-    image: boringGameShop,
+    image: GameLoft,
   },
   {
     title: "API Adventure",
@@ -45,28 +45,7 @@ const Project = [
     link: "https://boiling-lowlands-40577-2b4b9eb554b0.herokuapp.com/",
     tags: ["Offline Usage", "Data Persistence"],
     image: PWA,
-  },
-  {
-    title: "Developer Blogger",
-    description:
-      "Full Stack Blog website for networking, developed with Handlebars, Bootstrap MySQL and Express.js",
-    github:
-      "https://github.com/Truecoding4life/Developer-blog-with-model-view-control",
-    header: " Full Stack",
-    link: "https://developer-blogpost-a4d9376f41de.herokuapp.com/",
-    tags: ["Social Networking", "Secure Login",  "User Authentication"],
-    image: DeveloperBlog,
-  },
-  {
-    title: "Crystal Quest",
-    description:
-      "Simple game created using jQuery, HTML, and styled with CSS. The application prompts users to select a random number and rewards them if their chosen number matches the winning number.",
-    github: "https://github.com/Truecoding4life/crytal-quest",
-    header: "Front End",
-    link: "https://65d4a1b8dfbc420008f144d2--crystalquest.netlify.app/",
-    tags: ["Game"],
-    image: CrystalQuest,
-  },
+  }
 ];
 
 const OtherSkills = [

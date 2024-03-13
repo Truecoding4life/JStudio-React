@@ -125,6 +125,9 @@
     display: none;
   }
 
+    .card:hover{
+      transform: none;
+    }
   
 
 

@@ -92,3 +92,10 @@ back {
     padding: '20px';
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .inbox-message:hover {
+    transform: none;
+  }
+  
+}
