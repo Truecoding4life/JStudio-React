@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import Auth from "../../ulti/auth";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Link as ScrollLink } from 'react-scroll';
-
+import MenuIcon from '@mui/icons-material/Menu';
 
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
@@ -60,7 +60,7 @@ export default function NavbarLi() {
         J Studio
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">
-        {expandIcon}
+        <MenuIcon style={{ color: mainTheme }} />
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav ">
         <Nav className="d-flex justify-content-between p-3">
