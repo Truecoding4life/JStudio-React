@@ -61,8 +61,8 @@ export default function HomePage({ setSuccessAlert }) {
           </div>
         </div>
       </section>
-      <span id="spacing"></span>
-      <section id="portfolio-section">
+    
+      <section id="portfolio-section" >
         <PortfolioPage></PortfolioPage>
       </section>
       <FloatingButton  setSuccessAlert={setSuccessAlert}></FloatingButton>
