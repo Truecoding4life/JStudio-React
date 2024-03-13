@@ -12,7 +12,7 @@ const Project = [
       "Full Stack E-commerce web application powered by React, Materialize Ui, Node.js, Express, MongoDB, and Stripe.",
     github: "https://github.com/Andrewchall92/game-shop",
     header: "Full Stack",
-    link: "https://the-boring-game-shop-4c06c86d757e.herokuapp.com/",
+    link: "https://game-loft-5f74d9e2c208.herokuapp.com/",
     tags: ["E-Commerce", "Online Shopping", "Secure Payment", "User Authentication"],
     image: GameLoft,
   },
