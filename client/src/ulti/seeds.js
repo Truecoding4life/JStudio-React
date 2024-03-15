@@ -1,4 +1,4 @@
-import FoodFinder from "../assets/FoodFinder.gif";
+import FoodFinder from "../assets/foodgeek-demo.gif";
 import ApiAdventures from "../assets/api-adventure.gif";
 import GameLoft from "../assets/GameLoft.gif";
 import PWA from "../assets/PWA.gif";
@@ -27,12 +27,12 @@ const Project = [
     link: "https://api-adventures-cd9e93b14d5e.herokuapp.com/",
   },
   {
-    title: "Food Finder",
+    title: "Food Geek",
     description:
       "Front-End web application powered by Bootstrap, Google API and Edamam API. This app is designed to solve our basic need as simple as find restaurants or find recipes, and you can do all that within this single front-end application.",
-    github: "https://github.com/FenriRagni/food-finder",
+    github: "https://github.com/Truecoding4life/food-geek",
     header: "Front End",
-    link: "https://fenriragni.github.io/food-finder/",
+    link: "https://truecoding4life.github.io/food-geek/index.html",
     tags: ["Search Restaurant", "Search Recipe", "Read Reviews"],
     image: FoodFinder,
   },
