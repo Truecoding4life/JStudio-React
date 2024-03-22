@@ -33,7 +33,7 @@ export default function PortfolioPage() {
   const renderCard = (item) => (
     <div
       key={item.title}
-      className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3  project-card"
+      className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6  project-card"
     >
       <div className="card">
         <div className="card-header project-header">{item.header}</div>
@@ -65,19 +65,19 @@ export default function PortfolioPage() {
     <>
       <div className="pt-5 project pb-5 p-3 ">
         <div
-          className=" project-container container-fluid"
+          className=" project-container container"
           style={{ borderColor: mainLight }}
         >
           <div className="row ">
-            <div className="col-md-12 align-self-center ">
-              <div className="container-fluid">
-                <div className="row ">
                   <div className="col-12 mb-1 academic-box">
                     <h2 className="section-header gradient-header-text">
                       Academic Projects
                       
                     </h2>
                   </div>
+            <div className="col-md-12 align-self-center ">
+              <div className="container-fluid">
+                <div className="row ">
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function PortfolioPage() {
           <div className="row align-self-center container-fluid other-skills">
             <div className="container ">
               <div className="row ">
-                <div className="col-12 col-md-12 col-lg-12 col-xl-12  ">
+                <div className="col-12  ">
                   <h3 className="section-header  gradient-header-text">
                     Other Skills
                   </h3>

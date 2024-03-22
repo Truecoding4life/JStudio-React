@@ -1,4 +1,4 @@
-import logo from "../../assets/Homepage.jpg";
+import logo from "../../assets/images/website/about.jpg";
 import {useTheme} from '@mui/material/styles'
 import './style.css'
 

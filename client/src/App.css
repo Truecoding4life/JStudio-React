@@ -6,12 +6,13 @@
     box-sizing: border-box;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     scroll-behavior: smooth;
-    --header-background: #040404d1;
-    --main-theme-color: #04fab8f1;
+    --header-background: #06080600;
+    --main-theme-color: #4ec6a2f1;
+    --navbar-font: Poppins, sans-serif;
   }
 
 body {
-  background-color: black;
+  background-color: rgb(9, 10, 14);
   min-height: 100vh;
 }
 

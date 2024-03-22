@@ -1,8 +1,8 @@
-import FoodFinder from "../assets/foodgeek-demo.gif";
-import ApiAdventures from "../assets/api-adventure.gif";
-import GameLoft from "../assets/GameLoft.gif";
-import PWA from "../assets/PWA.gif";
-import CrystalQuest from "../assets/CrystalQuest.gif";
+import FoodFinder from "../assets/images/projects/FoodGeekPicture.png";
+import ApiAdventures from "../assets/images/projects/ios2.png";
+import GameLoft from "../assets/images/projects/GameLoftPicture.png";
+import PWA from "../assets/images/projects/PWA.gif";
+import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
 import DeveloperBlog from "../assets/DeveloperBlog.gif";
 
 const Project = [
@@ -17,14 +17,14 @@ const Project = [
     image: GameLoft,
   },
   {
-    title: "API Adventure",
+    title: "iOS 2",
     description:
-      "Full Stack blog post application designed to connect students through API networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
+      "Full Stack blog post application designed to connect people route social media networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
     github: "https://github.com/Truecoding4life/api-adventures",
     tags: ["Social Media Platform", "Social Networking", "Secure Login",  "User Authentication"],
     image: ApiAdventures,
     header: "Full Stack",
-    link: "https://api-adventures-cd9e93b14d5e.herokuapp.com/",
+    link: "https://ios-2-079bbe29e9fe.herokuapp.com/",
   },
   {
     title: "Food Geek",
@@ -39,7 +39,7 @@ const Project = [
   {
     title: "Progressive Web Application",
     description:
-      "Text Editor Application built with advanced concepts, including data persistence with IndexedDB, webpack bundling, and service worker integration using workbox.",
+      "Offline Text Editor Application built with advanced concepts, including data persistence with IndexedDB, webpack bundling, and service worker integration using workbox.",
     github: "https://github.com/Truecoding4life/text-snippet-PWA",
     header: "Back End",
     link: "https://boiling-lowlands-40577-2b4b9eb554b0.herokuapp.com/",

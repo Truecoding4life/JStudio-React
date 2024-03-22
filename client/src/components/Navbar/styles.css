@@ -3,10 +3,11 @@
 }
 
 .navbar-brand {
-  color: var(--theme-main-color);
+  color: var(--theme-nav-link-color);
   font-size: 30px;
-  font-family: 'Staatliches', sans-serif;
+  font-family: var(--navbar-font);
   margin-left: 30px;
+  font-weight: 300;
 }
 
 
@@ -17,6 +18,19 @@
   transition: 0.4s ease-out;
 
 
+}
+
+.nav-link{
+  color: var(--theme-nav-link-color);
+  font-family: var(--navbar-font);
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+
+}
+
+.nav-link:hover {
+  cursor: pointer;
 }
 
 #inbox{
@@ -61,9 +75,6 @@ button.btn-close {
   
 }
 
-back {
-  background-color: #22684bec;
-}
 
 
 .inbox-card-text {

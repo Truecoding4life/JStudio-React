@@ -4,7 +4,7 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import PortfolioPage from "../Portfolio/Portfolio";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import imagee from "../../assets/robot3.png";
+import imagee from "../../assets/images/website/logo.png";
 import { Button } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
 import 'animate.css'
