@@ -98,10 +98,10 @@ function App() {
           setSuccessAlert={setAlert}
         >
           <div className="body  d-flex flex-column min-vh-100">
+            <div className="section content ">
             <div className="section" style={navbarStyle}>
               <NavbarLi />
             </div>
-            <div className="section content">
               {doAlert ? <SuccessAlert></SuccessAlert> : null}
 
               <Outlet />

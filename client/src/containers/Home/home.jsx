@@ -1,71 +1,82 @@
-import logo from "../../assets/circle.gif";
 import resume from "../../assets/resume.pdf";
 import { useTheme } from "@mui/material/styles";
 import "./style.css";
+import {  resumeIcon } from "../../ulti/icon";
+
 import PortfolioPage from "../Portfolio/Portfolio";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import imagee from "../../assets/images/website/logo.png";
+import myPhoto from "../../assets/images/website/about.jpg";
 import { Button } from "@mui/material";
-import SouthIcon from "@mui/icons-material/South";
-import 'animate.css'
-
+import "animate.css";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 export default function HomePage({ setSuccessAlert }) {
   const theme = useTheme();
 
   return (
-    <div className="container-fluid home-container p-0">
-      <section className="container-fluid home-content-row d-flex align-items-center justify-content-center">
+    <div className="container-fluid home-container animate__animated animate__fadeIn">
+      <section className="container-fluid  d-flex justify-content-center  background-image">
         <div className="row ">
-          <div className="col-12 col-md-6 align-self-center home-image ">
+          {/* <div className="col-12 col-md-6 home-image ">
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <img src={imagee} alt="logo" id="homepage-logo" />
+              <img src={myPhoto} alt="logo" id="homepage-logo" />
             </div>
-          </div>
+          </div> */}
 
-          <div className="col-12 col-md-6 align-self-center home-header">
+          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '20%' }}>
             <div className="col-12 text-center">
-              <h3 className="gradient-white-text greeting-quote">
+              <img src={myPhoto} alt="logo" id="profile-picture" />
+            </div>
+            <div className="col-12 text-center">
+              <h3 className="gradient-white-text greeting-quote greeting-sm">
                 {" "}
                 Hi, it's Jay{" "}
               </h3>
-              <h3 className="gradient-text greeting-quote">
+              <h3 className="gradient-text greeting-quote w-40">
                 {" "}
                 Fullstack Web Developer{" "}
               </h3>
-              <h3 className="gradient-white-text greeting-quote">
+              <h3 className="gradient-white-text greeting-quote greeting-sm">
                 and{" "}
-                <span className="gradient-text greeting-quote"> Veteran</span>{" "}
-              </h3>
-              <a download="Jay_Resume.pdf">
-                <Button
-                  type="button"
-                  href={resume}
-                  className="btn download-button"
-                >
+                <span className="gradient-text greeting-quote greeting-sm">
                   {" "}
-                  DOWNLOAD MY RESUME{" "}
-                </Button>
-              </a>
-                
-                <h5 className="greeting-quote-text animate__animated  animate__shakeY animate__infinite ">
+                  Veteran
+                </span>{" "}
+              </h3>
+
+              <Button
+                download="Jay_Resume.pdf"
+                type="button"
+                href={resume}
+                className="btn download-button"
+                sx={{color: '#848a8c'}}
+              >
                 {" "}
-              
-                <SouthIcon /> Scroll to see my portfolio <SouthIcon />{" "}
-              </h5>
+                {resumeIcon}
+                DOWNLOAD MY RESUME{" "}
+              </Button>
+
+
+              <Button
+                sx={{color: '#848a8c'}}
+                href="#portfolio-section" type="button" className="go-portfolio btn animate__animated  animate__flash animate__repeat-3">
+
+                  <ArrowCircleDownIcon ></ArrowCircleDownIcon>
+                GO TO PORTFOLIO 
+              </Button>
             </div>
           </div>
         </div>
       </section>
-    
-      <section id="portfolio-section" >
+
+      <section id="portfolio-section">
         <PortfolioPage></PortfolioPage>
       </section>
-      <FloatingButton  setSuccessAlert={setSuccessAlert}></FloatingButton>
+      <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>
   );
 }

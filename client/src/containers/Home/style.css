@@ -22,19 +22,37 @@ section {
 }
 
 #homepage-logo{
-  max-width:700px
+  max-width:1000px
 }
 
 
-.greeting-quote-text{
-  color: #898686;
-  font-family: 'Poppins', Courier, monospace;
-  font-weight: 200;
-  --animate-duration: 3s;
-  margin-top: 40px;
+
+
+
+
+.go-portfolio:hover, .download-button:hover{
+  color: #4fc19b;
+  transform: matrix3d(1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1.05, 0, 0, 0, 0, 1);
+  transition: transform 0.2s ease-in-out;
+
+}
+.greeting-sm{
+  font-size: 52px;
 }
 
+.w-40{
+  width: 100%;
+  margin: auto;
+}
 
+#profile-picture{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  margin-bottom: 30px;
+  box-shadow: 0 0 60px 7px #5a6060a9;
+}
 @media screen and (min-width: 1600px) {
   .greeting-quote{
     font-size: 65px;
@@ -87,4 +105,10 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and(min-width:2000px) {
+  #homepage-logo{
+    max-width: 12000px;
+  }
 }
