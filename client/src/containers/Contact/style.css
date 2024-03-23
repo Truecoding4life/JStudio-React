@@ -4,12 +4,15 @@
 }
 
 
-
+.delete-button:hover {
+    color: #e04040fd;
+    transform: scale(1.05);
+}
 
 
 .QuickContact{
     overflow-y: scroll;
     scrollbar-color: #64df81 #020101b8;
-    background-color: #0f0f0ffb;
+    background-color: #000000fb;
  
 }

@@ -2,8 +2,8 @@ import { Modal } from "react-bootstrap";
 import IconButton from "@mui/material/IconButton";
 import MailIcon from "@mui/icons-material/Mail";
 import Auth from "../../ulti/auth";
-import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import Inbox from "./Inbox";
+import LogoutIcon from '@mui/icons-material/Logout';
+import Inbox from './Inbox'
 import Badge from "@mui/material/Badge";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ const LoginMenu = ({ close, open, handleOpen }) => {
   const [badge, setBadge] = useState(0);
 
   return (
-    <div className="ms-auto">
+    <div className="ms-auto" style={{paddingRight:10, marginTop:2}}>
       <IconButton
         size="xs"
         aria-label="account of current user"
@@ -30,7 +30,7 @@ const LoginMenu = ({ close, open, handleOpen }) => {
           <MailIcon />
         </Badge>
       </IconButton>
-      <ExitToAppIcon onClick={Auth.logout} style={{ color: "#ebebebf1" }} />
+      <LogoutIcon onClick={Auth.logout}  style={{ color: "#e53232fd" }} />
       <Inbox  open={open} close={close} set={setBadge}></Inbox>
     </div>
   );

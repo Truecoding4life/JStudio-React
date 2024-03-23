@@ -7,6 +7,7 @@ import Auth from "../../ulti/auth";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Link as ScrollLink } from 'react-scroll';
 import MenuIcon from '@mui/icons-material/Menu';
+import LockIcon from '@mui/icons-material/Lock';
 
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
@@ -28,7 +29,7 @@ const expandIcon = (
 
 export default function NavbarLi() {
   const theme = useTheme();
-  const mainTheme = theme.palette.primary.main;
+  const mainTheme = theme.palette.navbar.main;
   const [currentPage, setCurrentPage] = useState("");
   const location = useLocation();
 
@@ -55,18 +56,18 @@ export default function NavbarLi() {
       <Navbar.Brand
         href="/"
         className="navbar-brand"
-        style={{ color: mainTheme }}
+        style={{ color: '#4ec6a2f1' }}
       >
         J Studio
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">
-        <MenuIcon style={{ color: mainTheme }} />
+        <MenuIcon style={{ color: '#4ec6a2f1' }} />
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav ">
-        <Nav className="d-flex justify-content-between p-3">
+        <Nav className="nav-link-section">
           <Nav.Link
             style={{
-              color: "#817e7e"
+              color: mainTheme
               
             }}
             hidden = { currentPage !== '/' ? true : false }
@@ -80,7 +81,7 @@ export default function NavbarLi() {
           </Nav.Link>
           <Nav.Link
             style={{
-              color: currentPage === "/contact" ? "#04fab8f1" : "#817e7e",
+              color: currentPage === "/contact" ? "#04fab8f1" : mainTheme,
             }}
             as={Link}
             to="/contact"
@@ -89,7 +90,7 @@ export default function NavbarLi() {
           </Nav.Link>
           <Nav.Link
             style={{
-              color: currentPage === "/about" ? "#04fab8f1" : "#817e7e",
+              color: currentPage === "/about" ? "#04fab8f1" : mainTheme,
             }}
             as={Link}
             to="/about"
@@ -111,9 +112,9 @@ export default function NavbarLi() {
                   size="xs"
                   aria-label="account of current user"
                   onClick={handleOpenPasswordBox}
-                  style={{ color: "#ebebebf1" }}
+                  style={{ color: "#ebebebf1", marginTop: "3px", }}
                 >
-                  <KeyboardArrowRightIcon />
+                  <LockIcon />
                 </IconButton>
               )}
             </div>

@@ -7,6 +7,9 @@ import { LOGIN_USER } from "../../ulti/mutations";
 import { useMutation } from "@apollo/client";
 import Auth from "../../ulti/auth";
 import { useState, useEffect } from "react";
+import KeyIcon from '@mui/icons-material/Key';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+
 
 const PasswordBox = ({ logIn }) => {
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -28,25 +31,27 @@ const PasswordBox = ({ logIn }) => {
   };
 
   return (
-    <div>
+    <div style={{marginTop: "0px"}}>
       <Input
         id='password-box'
         type="password"
         startAdornment={
           <InputAdornment position="start">
-            <LockIcon />
+            <KeyIcon />
           </InputAdornment>
         }
         style={{
           backgroundColor: "#04fab8f1",
-          borderRadius: "3px",
-          padding: "5px",
+          borderRadius: "31px",
+          padding: "0px",
           width: "89px",
           height: "30px",
           color: "#141517fc",
-          marginLeft: "20px",
+          marginLeft: "10px",
           fontFamily: "Roboto",
+          marginTop: "8px",
         }}
+        disableUnderline 
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
@@ -55,7 +60,7 @@ const PasswordBox = ({ logIn }) => {
         }}
         sx={{
           "&:focus-within::before": {
-            transform: 0,
+            transform: 'none',
           },
         }}
       />
@@ -66,7 +71,7 @@ const PasswordBox = ({ logIn }) => {
         onClick={() => logIn(false)}
         style={{ color: "#04fab8f1" }}
       >
-        <KeyboardArrowRightIcon />
+         <LockOpenIcon />
       </IconButton>
     </div>
   );

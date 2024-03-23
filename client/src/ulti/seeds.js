@@ -3,7 +3,6 @@ import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/GameLoftPicture.png";
 import PWA from "../assets/images/projects/PWA.gif";
 import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
-import DeveloperBlog from "../assets/DeveloperBlog.gif";
 
 const Project = [
   {

@@ -13,19 +13,10 @@ export default function HomePage({ setSuccessAlert }) {
   const theme = useTheme();
 
   return (
-    <div className="container-fluid home-container animate__animated animate__fadeIn">
+    <div className="container-fluid home-container p-0 animate__animated animate__fadeIn">
       <section className="container-fluid  d-flex justify-content-center  background-image">
         <div className="row ">
-          {/* <div className="col-12 col-md-6 home-image ">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img src={myPhoto} alt="logo" id="homepage-logo" />
-            </div>
-          </div> */}
+       
 
           <div className="col-12 col-md-12  home-header" style={{ paddingTop: '20%' }}>
             <div className="col-12 text-center">

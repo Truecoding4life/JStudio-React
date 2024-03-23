@@ -78,6 +78,12 @@ function App() {
       primary: {
         main: "#04fab8f1",
       },
+     
+      navbar: {
+          main: "#cfcece",
+        },
+        
+     
     },
   });
 
@@ -99,8 +105,8 @@ function App() {
         >
           <div className="body  d-flex flex-column min-vh-100">
             <div className="section content ">
-            <div className="section" style={navbarStyle}>
-              <NavbarLi />
+            <div className="section" >
+              <NavbarLi style={navbarStyle}/>
             </div>
               {doAlert ? <SuccessAlert></SuccessAlert> : null}
 

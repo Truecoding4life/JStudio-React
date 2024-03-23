@@ -1,5 +1,6 @@
 .navbar {
   background-color: var(--header-background);
+  padding: 2px;
 }
 
 .navbar-brand {
@@ -34,15 +35,16 @@
 }
 
 #inbox{
-  margin-top: 40px;
+  margin-top: 100px;
 }
-
+.navbar-collapse{
+  justify-content: flex-end;
+}
 .inbox-message {
-  background-color: #000000e0;
+  background-color: #9f8484e0;
   margin-bottom: 20px;
 }
 #modal-title {
-  font-family: 'Staatliches', sans-serif;
   font-size: 23px;
   color: #19e7ad;
   letter-spacing: .1em;
@@ -50,27 +52,37 @@
 }
 
 #modal-body {
-  background-color: #1b2e2af7;
+  /* background-image: url(../../assets/images/website/grid-small.jpeg);
+  background-size: cover;
+  background-position: center; */
+  background-color: #19191b;
 }
 
+.modal-content {
+  margin-top: 100px;
+  box-shadow: 0px 0px 60px 2px #141616ef;
+  border-radius: 40px;
+}
 
 #inbox-header {
-  background-color: #121b1bec;
+  background-color: #2a2e33ec;
   border-bottom: hidden;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   color: #fbfbfb;
 
 
 }
 
 button.btn-close {
-  background-color: #6b6767e4;
+  background-color: #d5caca92;
   border-radius: 15px;
 }
 
 
 
 .message-title {
-  background-color: #6fcba3d2;
+  background-color: #78edc2d1;
   box-shadow: 0px 0px 3px 0px #000000;
   
 }
@@ -79,7 +91,7 @@ button.btn-close {
 
 .inbox-card-text {
   color: #c7c4c4;
-    background-color: rgba(38, 34, 34, 0.356);
+    background-color: rgba(46, 51, 57, 0.795);
     
 
 }
@@ -99,9 +111,7 @@ button.btn-close {
 
   }
 
-  #password-box {
-    padding: '20px';
-  }
+ 
 }
 
 @media screen and (max-width: 1000px) {
@@ -109,4 +119,10 @@ button.btn-close {
     transform: none;
   }
   
+}
+
+@media screen and (max-width:770px) {
+  .navbar{
+    background-color: #141516da;
+  }
 }

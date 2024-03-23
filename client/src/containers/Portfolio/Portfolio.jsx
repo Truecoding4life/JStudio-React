@@ -39,7 +39,7 @@ export default function PortfolioPage() {
         <div className="card-header project-header">{item.header}</div>
         {item.image && (
           <img
-            className="card-img-top w-100 card-image"
+            className="card-img-top w-100 h-100 card-image"
             alt={item.title}
             src={item.image}
             key={item.title}
@@ -107,7 +107,7 @@ export default function PortfolioPage() {
                           </span>{" "}
                           {skill.name}
                         </h5>
-                        <p className="card-text">{skill.description}</p>
+                        <p className="card-text text-secondary">{skill.description}</p>
                       </div>
                       {renderButtons(skill)}
                     </div>

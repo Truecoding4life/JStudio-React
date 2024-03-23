@@ -24,7 +24,7 @@
         onHide={close}
       
       >
-        <div id='modal-body' style={{borderRadius:5}}>
+        <div id='modal-body' style={{borderRadius:30}}>
         <Modal.Header id='inbox-header'closeButton>
           <Modal.Title id="modal-title"> Inbox</Modal.Title>
         </Modal.Header>
