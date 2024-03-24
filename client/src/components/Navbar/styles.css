@@ -96,6 +96,10 @@ button.btn-close {
 
 }
 
+#log-out-button{
+  color: #04fab8f1;
+}
+
 .inbox-message:hover {
   transform:translateY(-10px);
   transition: 0.7s;
@@ -104,11 +108,17 @@ button.btn-close {
 
 }
 
-@media screen and (min-width: 734px) {
+@media screen and (min-width: 770px) {
   .nav-link:hover {
     transform: scale(1.1);
     transition: 0.5s;
 
+  }
+
+  #log-out-button:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    color: #df3b3b;
   }
 
  

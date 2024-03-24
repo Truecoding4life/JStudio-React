@@ -1,6 +1,48 @@
 
+.section-about{
+    min-height: 100vh;
+    height: 100%;
+    background-color: black;
 
+
+}
 .about-title{
     color: var(--main-theme-color)
-};
+}
 
+.about-text{
+    color: rgb(186, 183, 183);
+    font-size: 35px;
+    padding: 10px;
+}
+
+.about-photo{
+    max-width: 70%;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1900px) {
+    .about-text{
+        font-size: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .about-text{
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .about-title{
+        padding: auto;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .about-text{
+        font-size: 15px;
+    }
+    
+}

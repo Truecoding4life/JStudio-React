@@ -109,7 +109,7 @@ export default function NavbarLi() {
                 <PasswordBox logIn={setShowPasswordBox}></PasswordBox>
               ) : (
                 <IconButton
-                  size="xs"
+                  size="sm"
                   aria-label="account of current user"
                   onClick={handleOpenPasswordBox}
                   style={{ color: "#ebebebf1", marginTop: "3px", }}

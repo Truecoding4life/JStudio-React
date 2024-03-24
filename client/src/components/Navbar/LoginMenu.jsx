@@ -16,7 +16,7 @@ const LoginMenu = ({ close, open, handleOpen }) => {
         size="xs"
         aria-label="account of current user"
         onClick={handleOpen}
-        style={{ color: "#ebebebf1" }}
+        style={{ color: "#ebebebf1",paddingRight:20, paddingLeft:10 }}
         onKeyDown={(e) => {
           console.log(e);
         }}
@@ -30,7 +30,7 @@ const LoginMenu = ({ close, open, handleOpen }) => {
           <MailIcon />
         </Badge>
       </IconButton>
-      <LogoutIcon onClick={Auth.logout}  style={{ color: "#e53232fd" }} />
+      <LogoutIcon onClick={Auth.logout} id='log-out-button'   />
       <Inbox  open={open} close={close} set={setBadge}></Inbox>
     </div>
   );
