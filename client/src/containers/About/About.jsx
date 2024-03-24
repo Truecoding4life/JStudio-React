@@ -7,6 +7,8 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { useTheme } from '@mui/material/styles'
 import './style.css'
 import { Button } from "react-bootstrap";
+import CarouselHelper from "./caroselHelper";
+
 
 export default function AboutPage() {
   const theme = useTheme();
@@ -38,16 +40,18 @@ export default function AboutPage() {
   let image = aboutData[aboutIndex].image;
   return (
     <section id="about-container" className="container-fluid">
+
+
       <div className="">
-        <div className="section-about d-flex align-items-center">
+        <div className="section-about d-flex align-items-center animate__animated animate__fadeIn">
           <div className="button">
-            <Button type="button" style={{borderColor:'black', backgroundColor:'black'}} onClick={() => { aboutIndex > 0 ? setAboutIndex(aboutIndex - 1) : null}}>
-              <ChevronLeftIcon />
+            <Button type="button" className="carousel-button" onClick={() => { aboutIndex > 0 ? setAboutIndex(aboutIndex - 1) : null}}>
+              <ChevronLeftIcon fontSize="large" />
             </Button>
           </div>
-
           <div className="row">
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 pt-5 photograph  text-end">
+            
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 pt-5 photograph  text-center">
               <image>
                 <img src={image} alt="logo" width="100%" className="about-photo" style={{ borderRadius: 5 }} />
               </image>
@@ -61,11 +65,16 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
+          <div className="col-12 carousel">
+              <CarouselHelper index={aboutIndex} />
+
+
+          </div>
           </div>
 
           <div className="button">
-            <Button type="button" style={{borderColor:'black', backgroundColor:'black'}} onClick={() => { aboutIndex < 2 ? setAboutIndex(aboutIndex + 1) : null }}>
-              <NavigateNextIcon />
+            <Button type="button" className="carousel-button" onClick={() => { aboutIndex < 2 ? setAboutIndex(aboutIndex + 1) : null }}>
+              <NavigateNextIcon fontSize="large"  />
             </Button>
           </div>
         </div>

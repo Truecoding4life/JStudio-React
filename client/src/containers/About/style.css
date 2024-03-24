@@ -21,6 +21,33 @@
     margin-bottom: 30px;
 }
 
+.carousel{
+    margin: auto;
+    width: 20%;
+    padding-top: 10%;
+
+}
+
+.carousel-indicator{
+    color: #55deb1;
+
+}
+
+.carousel-button{
+    color: black;
+    background-color: #55deb1;
+    border: none;
+    border-radius: 30px;
+}
+
+.carousel-button:hover{
+    color: rgb(9, 10, 9);
+    background-color: #15e6a0;
+    border: none;
+    border-radius: 30px;
+    
+}
+
 @media screen and (min-width: 1900px) {
     .about-text{
         font-size: 70px;
