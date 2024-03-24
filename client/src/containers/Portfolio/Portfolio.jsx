@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import "./style.css";
 import { Github, PlayButton, starIcon, pageIcon } from "../../ulti/icon";
 import MoreDetail from "./MoreDetail";
-import renderCard from "./ProjectCard";
+
 
 
 export default function PortfolioPage() {
@@ -14,7 +14,7 @@ export default function PortfolioPage() {
     <div className="col-12 d-flex justify-content-evenly p-3">
       <a
         href={item.github}
-        className="btn btn github-btn  p-2 col-6 m-1"
+        className="btn btn github-btn  p-1 col-6 m-1"
        
       >
         {Github} <span className="button-name">GitHub</span>
@@ -28,9 +28,37 @@ export default function PortfolioPage() {
         </a>
       )}
     </div>
-);
+  );
 
-  
+  const renderCard = (item) => (
+    <div
+      key={item.title}
+      className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3  project-card"
+    >
+      <div className="card">
+        {item.image && (
+          <img
+            className="card-img-top w-100 h-100 card-image"
+            alt={item.title}
+            src={item.image}
+            key={item.title}
+          />
+        )}
+        <div className="card-body">
+          <h4 className="card-title fw-bolder project-title ">{item.title}</h4>
+          <div>
+            <ul className="list-tag" style={{textDecorationStyle:"none"}}>
+              {item.tags.map((tag) => (
+                <li className="tag" key={tag}> {tag} </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        {renderButtons(item)}
+        <MoreDetail description={item.description}></MoreDetail>
+      </div>
+    </div>
+  );
 
   return (
     <>
@@ -54,7 +82,7 @@ export default function PortfolioPage() {
             </div>
           </div>
           <div className="row">
-            {Project.map((project) => <renderCard item={project}>)}
+            {Project.map((project) => renderCard(project))}
           </div>
           <div className="row align-self-center container-fluid other-skills">
             <div className="container ">
