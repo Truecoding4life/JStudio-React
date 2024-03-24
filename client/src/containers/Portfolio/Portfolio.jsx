@@ -33,12 +33,12 @@ export default function PortfolioPage() {
   const renderCard = (item) => (
     <div
       key={item.title}
-      className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3  project-card"
+      className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3 d-flex  project-card"
     >
-      <div className="card">
+      <div className="card flex-grow-1 d-flex flex-column">
         {item.image && (
           <img
-            className="card-img-top w-100 h-100 card-image"
+            className="card-img-top w-100 h-100 card-image "
             alt={item.title}
             src={item.image}
             key={item.title}
@@ -81,7 +81,7 @@ export default function PortfolioPage() {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row ">
             {Project.map((project) => renderCard(project))}
           </div>
           <div className="row align-self-center container-fluid other-skills">

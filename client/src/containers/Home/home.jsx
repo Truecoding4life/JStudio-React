@@ -9,6 +9,7 @@ import myPhoto from "../../assets/images/website/about.jpg";
 import { Button } from "@mui/material";
 import "animate.css";
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import AboutPage from "../About/About";
 export default function HomePage({ setSuccessAlert }) {
   const theme = useTheme();
 
@@ -64,6 +65,7 @@ export default function HomePage({ setSuccessAlert }) {
         </div>
       </section>
 
+      <AboutPage></AboutPage>
       <section id="portfolio-section">
         <PortfolioPage></PortfolioPage>
       </section>
