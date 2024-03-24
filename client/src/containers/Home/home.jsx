@@ -1,17 +1,23 @@
-import resume from "../../assets/resume.pdf";
-import { useTheme } from "@mui/material/styles";
+// Import required files
 import "./style.css";
-import {  resumeIcon } from "../../ulti/icon";
-
-import PortfolioPage from "../Portfolio/Portfolio";
-import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import myPhoto from "../../assets/images/website/about.jpg";
-import { Button } from "@mui/material";
 import "animate.css";
-import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import resume from "../../assets/resume.pdf";
+import myPhoto from "../../assets/images/website/about.jpg";
+
+// Import pages
 import AboutPage from "../About/About";
+import PortfolioPage from "../Portfolio/Portfolio";
+
+// Import Icons
+import { Button } from "@mui/material";
+import {  resumeIcon } from "../../ulti/icon";
+import FloatingButton from "../../components/FloatingButton/FloatingButton";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+import CircleIcon from '@mui/icons-material/Circle';
+
+
 export default function HomePage({ setSuccessAlert }) {
-  const theme = useTheme();
+  
 
   return (
     <div className="container-fluid home-container p-0 animate__animated animate__fadeIn">
@@ -19,16 +25,17 @@ export default function HomePage({ setSuccessAlert }) {
         <div className="row ">
        
 
-          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '20%' }}>
+          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '10%' }}>
             <div className="col-12 text-center">
               <img src={myPhoto} alt="logo" id="profile-picture" />
+              <p className="open-to-work"> <CircleIcon className="open-to-work-icon" fontSize="smaller"></CircleIcon>  Open to work</p>
             </div>
             <div className="col-12 text-center">
               <h3 className="gradient-white-text greeting-quote greeting-sm">
                 {" "}
                 Hi, it's Jay{" "}
               </h3>
-              <h3 className="gradient-text greeting-quote w-40">
+              <h3 className="gradient-text greeting-quote">
                 {" "}
                 Fullstack Web Developer{" "}
               </h3>

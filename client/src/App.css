@@ -6,7 +6,7 @@
     box-sizing: border-box;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     scroll-behavior: smooth;
-    --header-background: #0d0e10f9;
+    --header-background: #000000f9;
     --main-theme-color: #4ec6a2f1;
     --navbar-font: Poppins, sans-serif;
     --theme-nav-link:#cfcece;
