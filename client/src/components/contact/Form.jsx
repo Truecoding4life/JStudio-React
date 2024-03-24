@@ -70,9 +70,9 @@ const MessageForm = ({ setMessaging, openModal }) => {
       message: "",
     });
   };
-  let boxSizing = "col-lg-4 col-md-6 col-sm-12 align-self-center chat-box m-auto"
+  let boxSizing = "col-lg-6 col-md-6 col-sm-12 align-self-center chat-box m-auto pt-5"
   if (window.location.pathname !== "/contact") {
-    boxSizing = "col-12 align-self-center chat-box m-auto"
+    boxSizing = "col-12 align-self-center chat-box m-auto pt-5"
   }
   const emailValidation = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

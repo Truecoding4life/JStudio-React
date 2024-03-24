@@ -29,16 +29,18 @@
 }
 
 .carousel-indicator{
-    color: #55deb1;
+    color: #10ab77;
 
 }
 
 .carousel-button{
-    color: black;
-    background-color: #55deb1;
+    color: rgb(107, 216, 169);
+    background-color: #46c59b00;
     border: none;
     border-radius: 30px;
 }
+
+                                                                                                                                                                                                              
 
 .carousel-button:hover{
     color: rgb(9, 10, 9);
