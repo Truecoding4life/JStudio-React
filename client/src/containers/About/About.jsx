@@ -1,19 +1,16 @@
 import photo1 from "../../assets/images/website/about.jpg";
 import photo2 from "../../assets/images/website/photo2.jpg";
 import photo3 from "../../assets/images/website/photo3.png";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { useTheme } from '@mui/material/styles'
 import './style.css'
 import { Button } from "react-bootstrap";
 import CarouselHelper from "./caroselHelper";
 
 
 export default function AboutPage() {
-  const theme = useTheme();
-  const textColor = theme.palette.primary.mainText
-  const themeMain = theme.palette.primary.main
+ 
 
   const [aboutIndex, setAboutIndex] = useState(0)
 
@@ -41,26 +38,27 @@ export default function AboutPage() {
   let title = aboutData[aboutIndex].title;
   let text = aboutData[aboutIndex].text;
   let image = aboutData[aboutIndex].image;
+
   return (
     <section id="about-container" className="container-fluid">
       <div className="">
         <div className="section-about d-flex align-items-center animate__animated animate__fadeIn">
-          <div className="button">
+          <div className="button-about-div">
             <Button type="button" className="carousel-button" onClick={() => { aboutIndex > 0 && setAboutIndex(aboutIndex - 1) }}>
               <ChevronLeftIcon fontSize="large" />
             </Button>
           </div>
           <div className="row ">
 
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 pt-5 photograph  text-center">
+            <div  className="col-12 col-sm-6 col-md-6 col-lg-4 pt-5 photograph  text-center">
               <image>
-                <img src={image} alt="logo" width="100%" className="about-photo" style={{ borderRadius: 5 }} />
+                <img key={aboutIndex} src={image} alt="logo" width="100%" className="about-photo align-items-center animate__animated animate__fadeInRight" style={{ borderRadius: 5 }} />
               </image>
             </div>
-            <div className="col-12 col-sm-6 col-md-6 col-lg-8 align-self-center about-me ">
-              <div className="col-12 ">
+            <div  className="col-12 col-sm-6 col-md-6 col-lg-8 align-self-center about-me ">
+              <div key={aboutIndex} className="col-12 align-items-center animate__animated animate__fadeInRight">
+                  <h3 className="about-title  "> {title}  </h3>
                 <p className="about-text">
-                  <h3 className="about-title align-items-center animate__animated animate__fadeIn "> {title}  </h3>
                   {" "}
                   {text}
                 </p>
@@ -68,12 +66,14 @@ export default function AboutPage() {
             </div>
             <div className="col-12 carousel">
               <CarouselHelper index={aboutIndex} />
-
-
             </div>
+
+
+
+
           </div>
 
-          <div className="button">
+          <div className="button-about-div">
             <Button type="button" className="carousel-button" onClick={() => { aboutIndex < aboutData.length - 1 && setAboutIndex(aboutIndex + 1) }}>
               <NavigateNextIcon fontSize="large" />
             </Button>

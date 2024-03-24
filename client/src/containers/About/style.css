@@ -33,20 +33,24 @@
 
 }
 
+
+
 .carousel-button{
     color: rgb(107, 216, 169);
-    background-color: #46c59b00;
+    background-color: #3435358b;
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
+    height: 100px;
+   
 }
 
                                                                                                                                                                                                               
 
 .carousel-button:hover{
-    color: rgb(9, 10, 9);
-    background-color: #15e6a0;
+    color: rgb(20, 20, 20);
+    background-color: #30c68ae1;
+    transition: .8s;
     border: none;
-    border-radius: 30px;
     
 }
 
