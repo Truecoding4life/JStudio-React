@@ -55,7 +55,7 @@ export default function NavbarLi() {
     <Navbar expand="md">
       <Navbar.Brand
         href="/"
-        className="navbar-brand"
+        className="navbar-brand gradient-text"
         style={{ color: '#4ec6a2f1' }}
       >
         J Studio
