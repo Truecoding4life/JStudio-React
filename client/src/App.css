@@ -5,10 +5,10 @@
 
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     --header-background: #000000f9;
-    --main-theme-color: #4ec6a2f1;
+    --main-color: #4fe397f1;
     --navbar-font: Poppins, sans-serif;
-    --theme-nav-link:#b5b4b4;
-    --carousel-color: #5bd09dd6;
+    --nav-link:#b5b4b4;
+    --carousel-color: #80e6bafd;
   }
 
 body {

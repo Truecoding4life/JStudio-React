@@ -4,7 +4,6 @@
 }
 
 .navbar-brand {
-  color: var(--theme-nav-link-color);
   font-size: 35px;
   font-family: var(--navbar-font);
   margin-left: 30px;
@@ -22,7 +21,7 @@
 }
 
 .nav-link{
-  color: var(--theme-nav-link);
+  color: var(--nav-link);
   font-family: var(--navbar-font);
   font-size: 20px;
   letter-spacing: 2px;
@@ -32,6 +31,8 @@
 
 .nav-link:hover {
   cursor: pointer;
+  color: var(--nav-link);
+  
 }
 
 #inbox{

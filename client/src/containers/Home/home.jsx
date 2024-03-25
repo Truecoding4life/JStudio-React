@@ -21,7 +21,7 @@ export default function HomePage({ setSuccessAlert }) {
 
   return (
     <div className="container-fluid home-container p-0 ">
-      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn background-image">
+      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower background-image">
         <div className="row ">
        
 
