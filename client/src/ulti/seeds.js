@@ -3,6 +3,10 @@ import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/GameLoftPicture.png";
 import PWA from "../assets/images/projects/PWA.gif";
 import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
+import photo1 from "../assets/images/website/logo.png";
+import photo2 from "../assets/images/website/photo2.jpg";
+import photo3 from "../assets/images/website/photo3.png";
+
 
 const Project = [
   {
@@ -70,4 +74,22 @@ const OtherSkills = [
   },
 ];
 
-export { Project, OtherSkills };
+const aboutData = [
+  {
+    title: "CODINGWITHJAY",
+    text: "I'm a Fullstack Software Developer based in California, passionate about crafting remarkable digital experiences.",
+    image: photo1
+  },
+  {
+    title: "Military Background",
+    text: "Came from military background I have a strong work ethic and professionalism. In Kuwait I was nominated for Soldier of the Month twice.",
+    image: photo2
+  },
+  {
+    title: "User Experience",
+    text: "To me, great user experience is paramount, I strive to create a lasting impact through great user experience.",
+    image: photo3
+  }
+]
+
+export { Project, OtherSkills, aboutData };
