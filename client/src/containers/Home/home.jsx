@@ -29,16 +29,18 @@ export default function HomePage({ setSuccessAlert }) {
   
     const sections = document.querySelectorAll('.snap-section');
     sections.forEach((section, index) => {
-      new ScrollMagic.Scene({
-        triggerElement: section,
-        duration: '0%', // Adjust duration as needed
-        triggerHook: 0, // Trigger at the top of the viewport
-        offset: 400, // Adjust offset to avoid snapping at the top of the page
-       
-      })
-      .setPin(section)
-      .addTo(controller);
-    });
+      let duration = index === 2 ? '100%' : 0; // Adjust duration for the portfolio section
+    let offset = index === 2 ? 200 : 10; // Adjust offset for the portfolio section
+    let triggerHook = index === 2 ? 0.5 : 0; // Adjust trigger hook for the portfolio section
+    new ScrollMagic.Scene({
+      triggerElement: section,
+      duration: duration,
+      triggerHook: triggerHook,
+      offset: offset,
+    })
+    .setPin(section)
+    .addTo(controller);
+  });
   
     return () => {
       controller.destroy();
@@ -47,7 +49,7 @@ export default function HomePage({ setSuccessAlert }) {
 
   return (
     <div className="container-fluid home-container p-0 ">
-      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower background-image snap-section">
+      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower height-100 background-image snap-section">
         <div className="row ">
        
 
@@ -98,12 +100,12 @@ export default function HomePage({ setSuccessAlert }) {
         </div>
       </section>
       
-      <section id="about-container" className="container-fluid snap-section">
+      <section id="about-container" className="container-fluid height-100 snap-section">
       <AboutPage ></AboutPage>
       </section>
-      <section id="portfolio-section" className=" snap-section" >
+      <div id="portfolio-section" className="snap-section heigh-more" >
         <PortfolioPage ></PortfolioPage>
-      </section>
+      </div>
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>
   );
