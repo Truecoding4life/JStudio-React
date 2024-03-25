@@ -6,11 +6,14 @@
 }
 
 section {
-  min-height: 100vh;
-  height: 100%;
+  height: 100vh;
+  
 
 }
 
+/* .home-container{
+  min-height: 1600px;
+} */
 
 
 
@@ -105,11 +108,3 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.home-container {
-  overflow-y: scroll; /* Enable vertical scrolling */
-  scroll-snap-type: y mandatory; /* Define scrolling behavior */
-}
-
-section {
-  scroll-snap-align: start; /* Specify snapping behavior for each section */
-}

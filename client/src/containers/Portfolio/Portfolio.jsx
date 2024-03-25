@@ -62,12 +62,12 @@ export default function PortfolioPage() {
 
   return (
     <>
-      <div className="pt-5 project pb-5 p-3 ">
+      <div className="pt-5 project pb-5 p-3">
         <div
-          className=" project-container container-fluid need-padding"
+          className=" project-container container-fluid "
           style={{ borderColor: mainLight }}
         >
-          <div className="row ">
+          <div className="row">
                   <div className="col-12 mb-1 academic-box">
                     <h2 className="section-header gradient-header-text">
                       Academic Projects
@@ -76,7 +76,7 @@ export default function PortfolioPage() {
                   </div>
             <div className="col-md-12 align-self-center ">
               <div className="container-fluid">
-                <div className="row ">
+                <div className="row  ">
                 </div>
               </div>
             </div>

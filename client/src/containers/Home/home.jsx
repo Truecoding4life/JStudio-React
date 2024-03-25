@@ -3,6 +3,9 @@ import "./style.css";
 import "animate.css";
 import resume from "../../assets/resume.pdf";
 import myPhoto from "../../assets/images/website/about.jpg";
+import React, { useEffect } from 'react';
+import ScrollMagic from 'scrollmagic';
+
 
 // Import pages
 import AboutPage from "../About/About";
@@ -19,13 +22,36 @@ import CircleIcon from '@mui/icons-material/Circle';
 export default function HomePage({ setSuccessAlert }) {
   
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls the window to the top-left corner when the component mounts
+
+    const controller = new ScrollMagic.Controller();
+  
+    const sections = document.querySelectorAll('.snap-section');
+    sections.forEach((section, index) => {
+      new ScrollMagic.Scene({
+        triggerElement: section,
+        duration: '0%', // Adjust duration as needed
+        triggerHook: 0, // Trigger at the top of the viewport
+        offset: 400, // Adjust offset to avoid snapping at the top of the page
+       
+      })
+      .setPin(section)
+      .addTo(controller);
+    });
+  
+    return () => {
+      controller.destroy();
+    };
+  }, []);
+
   return (
     <div className="container-fluid home-container p-0 ">
-      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower background-image">
+      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower background-image snap-section">
         <div className="row ">
        
 
-          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '10%' }} >
+          <div className="col-12 col-md-12  home-header " style={{ paddingTop: '10%' }} >
             <div className="col-12 text-center">
               <img src={myPhoto} alt="logo" id="profile-picture" />
               <p className="open-to-work"> <CircleIcon className="open-to-work-icon" fontSize="smaller"></CircleIcon>  Open to work</p>
@@ -71,9 +97,11 @@ export default function HomePage({ setSuccessAlert }) {
           </div>
         </div>
       </section>
-
-      <AboutPage></AboutPage>
-      <section id="portfolio-section" >
+      
+      <section id="about-container" className="container-fluid snap-section">
+      <AboutPage ></AboutPage>
+      </section>
+      <section id="portfolio-section" className=" snap-section" >
         <PortfolioPage ></PortfolioPage>
       </section>
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>

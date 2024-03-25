@@ -22,7 +22,7 @@ export default function AboutPage() {
   let image = aboutData[aboutIndex].image;
 
   return (
-    <section id="about-container" className="container-fluid">
+    
       <div>
         <div className="section-about d-flex align-items-center animate__animated animate__fadeIn ">
           <div className="button-about-div">
@@ -40,6 +40,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </section>
+  
   );
 };
