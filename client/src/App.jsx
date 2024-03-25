@@ -102,7 +102,7 @@ function App() {
           setAlert={setAlert}
           setSuccessAlert={setAlert}
         >
-          <div className="body  d-flex flex-column min-vh-100">
+          <div className="body  d-flex flex-column">
             <div className="section content ">
             <div className="section" >
               <NavbarLi style={navbarStyle}/>

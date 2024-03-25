@@ -20,8 +20,8 @@ export default function HomePage({ setSuccessAlert }) {
   
 
   return (
-    <div className="container-fluid home-container p-0 animate__animated animate__fadeIn">
-      <section className="container-fluid  d-flex justify-content-center  background-image">
+    <div className="container-fluid home-container p-0 ">
+      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn background-image">
         <div className="row ">
        
 
@@ -73,7 +73,7 @@ export default function HomePage({ setSuccessAlert }) {
       </section>
 
       <AboutPage></AboutPage>
-      <section id="portfolio-section" style={{ scrollSnapAlign: 'start' }}>
+      <section id="portfolio-section" >
         <PortfolioPage ></PortfolioPage>
       </section>
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
