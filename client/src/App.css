@@ -11,6 +11,10 @@
     --carousel-color: #80e6bafd;
   }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(0, 0, 0);
   min-height: 100vh;

@@ -105,3 +105,11 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.home-container {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Define scrolling behavior */
+}
+
+section {
+  scroll-snap-align: start; /* Specify snapping behavior for each section */
+}

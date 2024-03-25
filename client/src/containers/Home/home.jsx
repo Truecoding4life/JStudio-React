@@ -25,7 +25,7 @@ export default function HomePage({ setSuccessAlert }) {
         <div className="row ">
        
 
-          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '10%' }}>
+          <div className="col-12 col-md-12  home-header" style={{ paddingTop: '10%' }} >
             <div className="col-12 text-center">
               <img src={myPhoto} alt="logo" id="profile-picture" />
               <p className="open-to-work"> <CircleIcon className="open-to-work-icon" fontSize="smaller"></CircleIcon>  Open to work</p>
@@ -80,3 +80,4 @@ export default function HomePage({ setSuccessAlert }) {
     </div>
   );
 }
+
