@@ -22,7 +22,7 @@
 }
 
 .nav-link{
-  color: var(--theme-nav-link-color);
+  color: var(--theme-nav-link);
   font-family: var(--navbar-font);
   font-size: 20px;
   letter-spacing: 2px;

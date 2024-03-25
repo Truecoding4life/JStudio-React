@@ -65,10 +65,7 @@ export default function NavbarLi() {
       <Navbar.Collapse id="basic-navbar-nav" className="text-center">
         <Nav className="nav-link-section">
           <Nav.Link
-            style={{
-              color: mainTheme
-              
-            }}
+            
             hidden = { currentPage !== '/' ? true : false }
           as={ScrollLink}  
           to="portfolio-section" 
@@ -79,18 +76,15 @@ export default function NavbarLi() {
             Portfolio
           </Nav.Link>
           <Nav.Link
-            style={{
-              color: currentPage === "/contact" ? "#04fab8f1" : mainTheme,
-            }}
+         style={currentPage === "/contact" ? { color: "#04fab8f1" } : null}
+
             as={Link}
             to="/contact"
           >
             Contact
           </Nav.Link>
           <Nav.Link
-            style={{
-              color: currentPage === "/about" ? "#04fab8f1" : mainTheme,
-            }}
+            style={currentPage === "/about" ? { color: "#04fab8f1" } : null}
             as={Link}
             to="/about"
           >
@@ -111,7 +105,8 @@ export default function NavbarLi() {
                   size="sm"
                   aria-label="account of current user"
                   onClick={handleOpenPasswordBox}
-                  style={{ color: "#ebebebf1", marginTop: "3px", }}
+                 
+                  style={{ color: "#b5b4b4", marginTop: "3px", }}
                 >
                   <LockIcon />
                 </IconButton>
