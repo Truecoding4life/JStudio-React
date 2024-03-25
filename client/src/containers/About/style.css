@@ -7,7 +7,7 @@
 
 }
 .about-title{
-    color: var(--main-theme-color)
+    color: var(--main-theme-color);
 }
 
 .about-text{
@@ -48,9 +48,9 @@
                                                                                                                                                                                                               
 
 .carousel-button:hover{
-    color: rgb(107, 216, 169);
+    color:var(--main-theme-color);
     background-color: #34353500;
-    border: 2px solid rgb(107, 216, 169);
+    border: 2px solid var(--main-theme-color);
     transition: .8s;
     transform: scale(1.1);
 }
