@@ -48,7 +48,6 @@ function App() {
 
     if (currentPosition > scrollPosition && scrollPosition > 200) {
       setScrollDirection("down");
-      console.log("down" + "  " + scrollPosition);
     } else {
       setScrollDirection("up");
     }

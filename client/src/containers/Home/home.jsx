@@ -73,8 +73,8 @@ export default function HomePage({ setSuccessAlert }) {
       </section>
 
       <AboutPage></AboutPage>
-      <section id="portfolio-section">
-        <PortfolioPage></PortfolioPage>
+      <section id="portfolio-section" style={{ scrollSnapAlign: 'start' }}>
+        <PortfolioPage ></PortfolioPage>
       </section>
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>

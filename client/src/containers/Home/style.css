@@ -8,8 +8,18 @@
 section {
   min-height: 100vh;
   height: 100%;
+  scroll-snap-align: start; /* Snap to the start of each section */
+  overflow-y: scroll; 
 }
 
+.container-fluid.home-container {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-snap-type: y mandatory; /* Enable mandatory snapping along the vertical axis */
+}
+
+#portfolio-section {
+  scroll-snap-align: start;
+}
 .greeting-quote {
   font-size: 60px;
   font-family: 'Poppins', Courier, monospace;

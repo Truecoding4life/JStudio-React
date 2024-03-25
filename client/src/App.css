@@ -4,12 +4,11 @@
     
 
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
-    scroll-behavior: smooth;
     --header-background: #000000f9;
     --main-theme-color: #4ec6a2f1;
     --navbar-font: Poppins, sans-serif;
     --theme-nav-link:#cfcece;
-    --carousel-color: #77e2b4e4;
+    --carousel-color: #5bd09dd6;
   }
 
 body {
@@ -27,16 +26,17 @@ body {
 
 ::-webkit-scrollbar {
   width: 4px; /* Set the width of the scrollbar */
+  height: 14px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000000; /* Change the background color of the scrollbar track */
+  background-color: black; /* Change the background color of the scrollbar track */
 }
 
 /* Change the scrollbar handle (thumb) color */
 ::-webkit-scrollbar-thumb {
-  background-color: #20d3a0;
-  border-radius: 20px; /* Change the color of the scrollbar handle */
+  background-color: #46e8a1ee;
+  border-radius: 1px; /* Change the color of the scrollbar handle */
 }
 
 /* Add hover effect to the scrollbar handle */
