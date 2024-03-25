@@ -1,7 +1,7 @@
 /* Card Component */
 .card {
-  box-shadow: 0 0 3px 1px #1a1c1c96;
-  margin: 40px;
+  box-shadow: 0 0 20px 1px #0e100f96;
+  margin: 20px;
   background-color: #2228266c;
   color: white;
   border-radius: 5px;
@@ -147,7 +147,7 @@
   }
 
   .card-title {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .card-text {
@@ -172,5 +172,11 @@
   
   .section-header{
     font-size: 200%;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .need-padding{
+    padding: 60px;
   }
 }

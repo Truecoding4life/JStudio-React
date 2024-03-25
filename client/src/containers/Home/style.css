@@ -16,9 +16,6 @@ section {
   font-weight: 300;
 }
 
-#homepage-logo {
-  max-width: 1000px;
-}
 
 .go-portfolio:hover,
 .download-button:hover {
@@ -69,12 +66,6 @@ section {
  
 }
 
-@media screen and (max-width: 768px) {
-  #homepage-logo {
-    width: 300px;
-    padding-bottom: 100px;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .greeting-quote {
@@ -82,6 +73,10 @@ section {
   }
   .download-btn {
     font-size: 10px;
+  }
+
+  .home-header{
+    margin-top: 60px;
   }
  
 }
@@ -106,8 +101,3 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 2000px) {
-  #homepage-logo {
-    max-width: 12000px;
-  }
-}

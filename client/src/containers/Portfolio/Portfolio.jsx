@@ -33,7 +33,7 @@ export default function PortfolioPage() {
   const renderCard = (item) => (
     <div
       key={item.title}
-      className="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-3 d-flex  project-card"
+      className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 d-flex  project-card"
     >
       <div className="card flex-grow-1 d-flex flex-column">
         {item.image && (
@@ -64,7 +64,7 @@ export default function PortfolioPage() {
     <>
       <div className="pt-5 project pb-5 p-3 ">
         <div
-          className=" project-container container-fluid"
+          className=" project-container container-fluid need-padding"
           style={{ borderColor: mainLight }}
         >
           <div className="row ">
@@ -86,7 +86,7 @@ export default function PortfolioPage() {
           </div>
           <div className="row align-self-center container-fluid other-skills">
             <div className="container ">
-              <div className="row ">
+              <div className="row">
                 <div className="col-12  ">
                   <h3 className="section-header  gradient-header-text">
                     Other Skills

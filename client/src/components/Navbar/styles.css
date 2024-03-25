@@ -5,7 +5,7 @@
 
 .navbar-brand {
   color: var(--theme-nav-link-color);
-  font-size: 30px;
+  font-size: 35px;
   font-family: var(--navbar-font);
   margin-left: 30px;
   font-weight: 300;
@@ -15,7 +15,7 @@
 
 
 .navbar-brand:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.4s ease-out;
 
 
@@ -110,7 +110,7 @@ button.btn-close {
 
 @media screen and (min-width: 770px) {
   .nav-link:hover {
-    transform: scale(1.1);
+    transform: translateY(-5px);
     transition: 0.5s;
 
   }

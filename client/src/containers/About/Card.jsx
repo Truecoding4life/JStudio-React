@@ -3,12 +3,12 @@ import CarouselHelper from "./caroselHelper";
 
 export default function CarouselCard({ image, title, text, aboutIndex }) {
   return (
-    <div >
+    <div>
       {image ? (
         <>
-          <div key={aboutIndex} className="row animate__animated animate__fadeInRight ">
-            <div className="col-12 col-sm-6 col-md-6 col-lg-4 pt-5 photograph ">
-              <img src={image} alt="logo" width="100%" className="about-photo align-items-center text-center" style={{ borderRadius: 5 }} />
+          <div key={aboutIndex} className="row animate__animated animate__fadeInRight d-flex ">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-4 photograph d-flex align-items-center justify-content-center">
+              <img src={image} alt="logo" width="100%" className="about-photo " style={{ borderRadius: 5 }} />
             </div>
             <div className="col-12 col-sm-6 col-md-6 col-lg-8 align-self-center about-me ">
               <div key={aboutIndex} className="col-12 align-items-center ">
