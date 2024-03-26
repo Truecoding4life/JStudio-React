@@ -29,9 +29,9 @@ export default function HomePage({ setSuccessAlert }) {
   
     const sections = document.querySelectorAll('.snap-section');
     sections.forEach((section, index) => {
-      let duration = index === 2 ? '10%' : 0; // Adjust duration for the portfolio section
+      let duration = index === 2 ? 40 : 0; // Adjust duration for the portfolio section
     let offset = index === 2 ? 0 : 10; // Adjust offset for the portfolio section
-    let triggerHook = 0; // Adjust trigger hook for the portfolio section
+    let triggerHook = index === 2 ? 0 : 0; // Adjust trigger hook for the portfolio section
     new ScrollMagic.Scene({
       triggerElement: section,
       duration: duration,
