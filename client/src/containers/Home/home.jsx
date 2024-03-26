@@ -31,7 +31,7 @@ export default function HomePage({ setSuccessAlert }) {
     sections.forEach((section, index) => {
       let duration = index === 2 ? '10%' : 0; // Adjust duration for the portfolio section
     let offset = index === 2 ? 0 : 10; // Adjust offset for the portfolio section
-    let triggerHook = index === 2 ? 0.5 : 0; // Adjust trigger hook for the portfolio section
+    let triggerHook = 0; // Adjust trigger hook for the portfolio section
     new ScrollMagic.Scene({
       triggerElement: section,
       duration: duration,

@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       <a
         href={item.github}
         className="btn btn github-btn  p-1 col-6 m-1"
-       
+
       >
         {Github} <span className="button-name">GitHub</span>
       </a>
@@ -47,7 +47,7 @@ export default function PortfolioPage() {
         <div className="card-body">
           <h4 className="card-title fw-bolder project-title ">{item.title}</h4>
           <div>
-            <ul className="list-tag" style={{textDecorationStyle:"none"}}>
+            <ul className="list-tag" style={{ textDecorationStyle: "none" }}>
               {item.tags.map((tag) => (
                 <li className="tag" key={tag}> {tag} </li>
               ))}
@@ -61,62 +61,62 @@ export default function PortfolioPage() {
   );
 
   return (
-    <>
-      <div className="pt-5 project pb-5 p-3">
-        <div
-          className=" project-container container-fluid "
-          style={{ borderColor: mainLight }}
-        >
-          <div className="row">
-                  <div className="col-12 mb-1 academic-box">
-                    <h2 className="section-header gradient-header-text">
-                      Academic Projects
-                      
-                    </h2>
-                  </div>
-            <div className="col-md-12 align-self-center ">
-              <div className="container-fluid">
-                <div className="row  ">
-                </div>
-              </div>
-            </div>
+
+    <div className=" project p-3">
+      <div
+        className=" project-container container-fluid "
+        style={{ borderColor: mainLight }}
+      >
+        <div className="row">
+          <div className="col-12 mb-1 academic-box">
+            <h2 className="section-header gradient-header-text">
+              Academic Projects
+
+            </h2>
           </div>
-          <div className="row ">
-            {Project.map((project) => renderCard(project))}
-          </div>
-          <div className="row align-self-center container-fluid other-skills">
-            <div className="container ">
-              <div className="row">
-                <div className="col-12  ">
-                  <h3 className="section-header  gradient-header-text">
-                    Other Skills
-                  </h3>
-                </div>
-                {OtherSkills.map((skill) => (
-                  <div
-                    key={skill.name}
-                    className="col-12 col-md-6 col-lg-12 col-xl-4 d-flex project-card text-center "
-                  >
-                    <div className="card flex-fill p-3">
-                      <div className="card-body">
-                        <h5 className="card-title skill-name p-2">
-                          <span>
-                            {" "}
-                            <i> {pageIcon}</i>
-                          </span>{" "}
-                          {skill.name}
-                        </h5>
-                        <p className="card-text text-secondary">{skill.description}</p>
-                      </div>
-                      {renderButtons(skill)}
-                    </div>
-                  </div>
-                ))}
+          <div className="col-md-12 align-self-center ">
+            <div className="container-fluid">
+              <div className="row  ">
               </div>
             </div>
           </div>
         </div>
+        <div className="row ">
+          {Project.map((project) => renderCard(project))}
+        </div>
+        <div className="row align-self-center container-fluid other-skills">
+          <div className="container ">
+            <div className="row">
+              <div className="col-12  ">
+                <h3 className="section-header  gradient-header-text">
+                  Other Skills
+                </h3>
+              </div>
+              {OtherSkills.map((skill) => (
+                <div
+                  key={skill.name}
+                  className="col-12 col-md-6 col-lg-12 col-xl-4 d-flex project-card text-center "
+                >
+                  <div className="card flex-fill p-3">
+                    <div className="card-body">
+                      <h5 className="card-title skill-name p-2">
+                        <span>
+                          {" "}
+                          <i> {pageIcon}</i>
+                        </span>{" "}
+                        {skill.name}
+                      </h5>
+                      <p className="card-text text-secondary">{skill.description}</p>
+                    </div>
+                    {renderButtons(skill)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
+
   );
 }
