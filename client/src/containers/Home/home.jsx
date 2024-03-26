@@ -76,9 +76,9 @@ export default function HomePage({ setSuccessAlert }) {
               </h3>
 
               <Button
-                download="Jay_Resume.pdf"
+               
                 type="button"
-                href={resume}
+                onClick={ () => window.open(resume, "jay_resume")}
                 className="btn download-button"
                 sx={{color: '#848a8c'}}
               >

@@ -14,6 +14,9 @@ import resume from "../../assets/resume.pdf";
 import Button from "@mui/material/Button";
 import { Icon } from "../../ulti/icon";
 import { UserContext } from "../../ulti/UserContext";
+import './style.css'
+
+
 
 const inputStyle = {
   "& .MuiInputBase-input": {
@@ -99,36 +102,48 @@ const MessageForm = ({ setMessaging, openModal }) => {
           </div>
           <div className="row row-cols-2 d-flex flex-row">
             <form className="col-lg-12 col-12 contact-form" >
-              <Box style={{ padding: "30px" }}>
-                <TextField
-                  name="name"
-                  onChange={handleChange}
-                  label="Name"
-                  variant="standard"
-                  fullWidth
-                  required
-                  focused
-                  sx={inputStyle}
-                />
+
+
+              <Box style={{ padding: "10px" }}>
+
+                <div className="row">
+                  <div className="col-md-6">
+                    <div >
+                      <label htmlFor="name" className="form-label">Name</label>
+                      <input type="text" placeholder="Type your name" className="custom-input form-control" name="name" onChange={handleChange} />
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div >
+                      <label htmlFor="email" className="form-label">Email</label>
+                      <input type="text" className="custom-input form-control" placeholder="Type your Email" name="email" onChange={handleChange} />
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-9 col-md-7 col-lg-9">
+                    <div >
+                      <label htmlFor="message" className="form-label">Message</label>
+                      <input type="text" placeholder="Type Message" className="custom-input form-control" name="message" onChange={handleChange} />
+                    </div>
+                  </div>
+                  <div className="col-3 col-md-5 col-lg-3 custom-input-button text-center">
+                    <button
+                      type="button"
+                      onClick={handleFormSubmit}
+                      className="btn download-button"
+                    >
+                      <i>{messageIcon}</i> Send
+                    </button>
+                  </div>
+                </div>
+
               </Box>
 
               <Box style={{ padding: "30px" }}>
-                <TextField
-                  name="email"
-                  onChange={handleChange}
-                  label="Email"
-                  variant="standard"
-                  fullWidth
-                  required
-                  error={emailNotValid}
-                  helperText={emailNotValid ? "Please enter a valid email" : ""}
-                  focused
-                  sx={inputStyle}
-                />
-              </Box>
 
-              <Box style={{ padding: "30px" }}>
-                <TextField
+
+                {/* <TextField
                   name="message"
                   onChange={handleChange}
                   label="Type here"
@@ -140,31 +155,19 @@ const MessageForm = ({ setMessaging, openModal }) => {
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end">
-                        <Button
-                          type="button"
-                          onClick={handleFormSubmit}
-                          className="btn download-button"
-                        >
-                          <i>{messageIcon}</i> Send
-                        </Button>
+                       
                       </InputAdornment>
                     ),
                   }}
                   maxRows={4}
                   sx={inputStyle}
-                />
+                /> */}
               </Box>
 
               <div className="row justify-content-around p-4">
                 {window.location.pathname === "/contact" ? (
                   <div className="col-12 p-2">
-                    <Button
-                      type="button"
-                      onClick={() => setMessaging(false)}
-                      className="btn delete-button"
-                    >
-                      <i>{backIcon}</i> Go Back
-                    </Button>
+
                   </div>
                 ) : null}
 

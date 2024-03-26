@@ -1,0 +1,57 @@
+.delete-button:hover {
+    color: #c2594b;
+    transform: scale(1.05);
+}
+
+.custom-input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(26, 28, 28);
+    color: aliceblue;
+}
+.custom-input::placeholder{
+    color: #7a7d7c;
+}
+
+.custom-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(26, 28, 28) inset; /* Change the color to whatever you want */
+    -webkit-text-fill-color: white;
+}
+
+/* For Firefox */
+
+.custom-input:-moz-autofill {
+    -moz-box-shadow: 0 0 0px 1000px rgb(26, 28, 28) inset; /* Change the color to whatever you want */
+
+}
+
+.custom-input:focus{
+    outline: none;
+    border: 3px solid #7bd3ad;
+    background-color: rgb(36, 42, 42);
+    color: aliceblue;
+}
+
+
+.form-label{
+    color: #67dda0;
+    font-size: 1.2rem;
+
+}
+
+.custom-input-button{
+    margin-top: 45px;
+    background-color: #dadedc;
+    margin-bottom: 12px;
+    border-radius: 20px;
+}
+
+.QuickContact{
+    overflow-y: scroll;
+    scrollbar-color: #64df81 #020101b8;
+    background-color: #000000fb;
+}
+
