@@ -110,11 +110,12 @@ function App() {
               {doAlert ? <SuccessAlert></SuccessAlert> : null}
 
               <Outlet />
-            </div>
 
-            <div className="section Footer">
-              <Footer />
+
             </div>
+               
+
+           
           </div>
         </UserProvider>
       </ApolloProvider>
