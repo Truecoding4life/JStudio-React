@@ -62,7 +62,7 @@ export default function ContactPage({setSuccessAlert}) {
       {messaging ? (
         showMessagingForm()
       ) : (
-        <div className="pt-5 contact-container container">
+        <div className="pt-5 contact-container container height-100">
           <div className="col-md-12 align-self-center chat-box p-4">
             <div className="row">
               <div className="col-12">
