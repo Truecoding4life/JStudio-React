@@ -2,26 +2,43 @@ import React from 'react';
 import myPhoto from "../../assets/images/website/about.jpg";
 import CircleIcon from '@mui/icons-material/Circle';
 import './style.css'
-
-
-
+import CodeIcon from '@mui/icons-material/Code';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 export default function AboutPage() {
     return (
-        <section className="height-100 container">
-            <div className="row">
-                <div className="col-12">
-                    <h1 className='header text-center'>About Jay</h1>
-                </div>
+        <section className="height-100 container-fluid">
+            {/* <h2 style={{backgroundColor:'white', width:'100%'}}> hey </h2> */}
+            <div className="container">
+
+
+
+
                 <div className="col-12  intro-bio">
                     <div className="row ">
-                        <div className="col-3 bold text-center align-self-center">
-                            <p> Vision </p>
+                        <div className="col-12 text-center">
+                            <h1 className='header'>About Jay</h1>
+                        </div>
+                        <div className="col-3 bold text-end align-self-center">
+                            <h5> Specialty </h5>
                         </div>
                         <div className="col-9 p-2">
-                            <p> {" "} I craft websites using cutting-edge technologies, striving for the most optimized solutions to deliver an exceptional user experience.  {" "}</p>
+                            <p> {" "} Fullstack Web Development.  {" "}</p>
                         </div>
-                        <div className="col-3 bold text-center align-self-center">
-                            <p> Values </p>
+                        <div className="col-3 bold text-end align-self-center">
+                            <h5> Certification  </h5>
+                        </div>
+                        <div className="col-9 p-2">
+                            <p> {" "} UC Berkely Extension Fullstack Web Development.  {" "}</p>
+                        </div>
+                        <div className="col-3 bold text-end align-self-center">
+                            <h5> My Vision </h5>
+                        </div>
+                        <div className="col-9 p-2">
+                            <p> {" "} Craft websites using cutting-edge technologies, striving for the most optimized solutions to deliver an exceptional user experience.  {" "}</p>
+                        </div>
+                        <div className="col-3 bold text-end align-self-center">
+                            <h5> My  Values </h5>
                         </div>
                         <div className="col-9 p-2">
                             <p> {" "}
@@ -30,44 +47,55 @@ export default function AboutPage() {
                     </div>
                 </div>
                 <div className="col-12 showcase">
-                    <div className="row text-center ">
+                    <div className="row ">
                         <div id='showcase1' className="col-4">
                             <div className="row">
-                                <div className="col-6"></div>
-                                <div className="col-6">
-                                   <h3 className='custom-font'> 2000+ </h3><p>
-                                Coding Hours
-                            </p> 
+                                <div className="col-5 text-end p-0">
+                                    <CodeIcon style={{ fontSize: 80, color: 'var(--showcase-icon-color)' }}></CodeIcon>
+                                </div>
+                                <div className="col-7">
+                                    <h3 className='custom-font'> 2000+ </h3><p className='sub'>
+                                        Coding Hours
+                                    </p>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div id='showcase2' className="col-4">
                             <div className="row">
-                                <div className="col-6"></div>
-                                <div className="col-6">
-<h3 className='custom-font'>
-                               100%
-                            </h3>
-                            <p>  Job Success</p>
+
+                                <div className="col-5 text-end p-0">
+                                    <ThumbUpOffAltIcon style={{ fontSize: 80, color: 'var(--showcase-icon-color)' }}></ThumbUpOffAltIcon>
+                                </div>
+
+                                <div className="col-7">
+                                    <h3 className='custom-font'>
+                                        100%
+                                    </h3>
+                                    <p className='sub'>  Job Success</p>
                                 </div>
                             </div>
-                            
+
                         </div>
-                        <div id='showcase3'className="col-4">
+                        <div id='showcase3' className="col-4">
                             <div className="row">
-                                <div className="col-6"></div>
-                                <div className="col-6">
-                                <h3 className='custom-font'>
-                                3
-                            </h3>
-                            <p> Projects</p>
+
+                                <div className="col-5 text-end p-0">
+                                    <ViewInArIcon style={{ fontSize: 80, color: 'var(--showcase-icon-color)' }}></ViewInArIcon>
+                                </div>
+
+                                <div className="col-7">
+                                    <h3 className='custom-font'>
+                                        10+
+                                    </h3>
+                                    <p className='sub'> Total Works</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     )

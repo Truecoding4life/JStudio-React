@@ -1,32 +1,33 @@
 *{
     --showcase-border-color: rgb(125, 126, 128);
-    --showcase-background-color: rgb(26, 28, 34);
+    --showcase-background-color: rgba(11, 16, 12, 0.369);
+    --showcase-icon-color: rgb(83, 223, 160);
 }
 
 .header{
-    color: rgb(212, 212, 212);
+    color: rgb(224, 224, 224);
     font-size: 40px;
     font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    padding: 80px;
-    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    padding: 60px;
+    padding-bottom: 30px;
 }
 
 body{
-    background-color: rgb(17, 19, 21);
+    background-color: rgb(13, 16, 19);
     overflow-x: hidden;
 }
 .bold{
-    font-weight: 700;
-
+    font-weight: 600;
+    color: rgb(215, 212, 212);
 }
 
 .intro-bio{
-    color: rgb(186, 183, 183);
+    color: rgb(143, 144, 146);
     font-size: 20px;
     padding: 90px;
     font-weight: 300;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .showcase{
@@ -37,6 +38,7 @@ body{
 .custom-font{
      font-family: Nunito Sans;  
     font-weight: 400;
+    font-size: 220%;
 }
 #showcase1{
    background-color: var(--showcase-background-color);
@@ -62,4 +64,8 @@ body{
     border-bottom-right-radius: 20px;
     border: 2px solid var(--showcase-border-color);
 
+}
+
+.sub{
+    color: rgb(158, 156, 156);
 }
