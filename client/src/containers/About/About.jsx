@@ -10,12 +10,7 @@ import {aboutData} from "../../ulti/seeds";
 export default function AboutPage() {
 
 
-  const [aboutIndex, setAboutIndex] = useState(0)
-
-
-  // Rest of your component code
-
- 
+  const [aboutIndex, setAboutIndex] = useState(0);
 
   let title = aboutData[aboutIndex].title;
   let text = aboutData[aboutIndex].text;

@@ -62,15 +62,18 @@
 .modal-content {
   margin-top: 100px;
   box-shadow: 0px 0px 60px 2px #141616ef;
-  border-radius: 40px;
+  border-radius: 50px;
+  border-bottom: none;
 }
 
 #inbox-header {
   background-color: #2a2e33ec;
   border-bottom: hidden;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ 
   color: #fbfbfb;
+
 
 
 }
@@ -85,6 +88,7 @@ button.btn-close {
 .message-title {
   background-color: #78edc2d1;
   box-shadow: 0px 0px 3px 0px #000000;
+  
   
 }
 

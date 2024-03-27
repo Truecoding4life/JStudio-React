@@ -11,21 +11,22 @@ const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
-  width: {xs:'90%',sm:'60%',lg:'30%'},
+  width: {xs:'90%',sm:'80%',lg:'30%'},
   height : '80%',
   transform: 'translate(-50%, -50%) scale(1)',
-  border: '2px solid #000',
+  border: '2px solid #67dda0',
   boxShadow: 24,
-  borderRadius:3,
+  borderRadius:9,
   pt: 2,
   px: 4,
   pb: 3,
 
 
 
+
   transition: 'transform 0.3s ease-in-out', // Adding transition for a smooth effect
   '&:hover': {
-    transform: 'translate(-50%, -50%) scale(1.05)'}
+    transform: 'translate(-50%, -50%) scale(1.02)'}
 };
 
 export default function ContactModal({open, setClose}) {

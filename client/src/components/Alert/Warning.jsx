@@ -4,18 +4,17 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircle";
 import {UserContext} from '../../ulti/UserContext'
 import 'animate.css'
 
-export default function SuccessAlert()  {
-  const {SuccessAlert, FailAlert} = useContext(UserContext)
-  FailAlert(false);
+export default function DangerAlert()  {
+  const {SuccessAlert, FailAlert} = useContext(UserContext);
   return ( <Alert
       icon={<CheckCircleOutlineIcon style={{ color: "black", marginTop: "6px", fontWeight: "bold"}} />}
-      onClose={() => SuccessAlert(false)}
-      style={{backgroundColor: '#04fab8f1',}}
-      id='success-alert'
+      onClose={() => FailAlert(false)}
+      style={{backgroundColor: '#ce3832',}}
+      id='danger-alert'
       className='animate__animated  animate__fadeInDown '
     >
-      <AlertTitle sx={{ fontWeight: "bold" }}>Success</AlertTitle>
-      Your request was sent successfully
+      <AlertTitle sx={{ fontWeight: "bold" }}> Fail to send </AlertTitle>
+      Please a valid email
     </Alert>)
    
 };

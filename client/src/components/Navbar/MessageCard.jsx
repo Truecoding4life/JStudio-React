@@ -113,8 +113,8 @@ const handleTimeStamp = () => {
           </IconButton>
         }
         title={
-          <div style={{fontFamily: 'Nunito Sans' }}>
-            <Typography fontSize={18} variant="inherit">{name}</Typography>
+          <div style={{fontFamily: 'Nunito Sans', fontWeight:600 }}>
+            <Typography fontSize={16} variant="inherit" style={{ fontWeight:700 }}>{name}</Typography>
             <Typography variant="inherit">{email}</Typography>
 
           </div>

@@ -1,0 +1,28 @@
+
+
+#contact-page-photo{
+    height: auto;
+    height: 100vh;
+    width: auto;
+    
+    
+ 
+}
+
+.contact-content{
+    padding: 10px;
+    height: 100vh;
+   
+}
+
+
+
+  
+
+
+@media  screen and (max-width: 960px) {
+    #contact-page-photo{
+        display: none;
+    }
+    
+}

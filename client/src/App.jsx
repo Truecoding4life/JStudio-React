@@ -13,6 +13,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState, useEffect, useContext } from "react";
 import SuccessAlert from "./components/Alert/Success.jsx";
 import UserProvider from "./ulti/UserContext.jsx";
+import DangerAlert from "./components/Alert/Warning.jsx";
+
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -38,39 +40,9 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(null);
-  const [scrollDirection, setScrollDirection] = useState("up");
   const [doAlert, setAlert] = useState(false);
+  const [doDangerAlert, setDangerAlert] = useState(false);
 
-  const handleScroll = () => {
-    const currentPosition = window.pageYOffset;
-
-    if (currentPosition > scrollPosition && scrollPosition > 200) {
-      setScrollDirection("down");
-    } else {
-      setScrollDirection("up");
-    }
-
-    setScrollPosition(currentPosition);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollPosition]);
-
-  const navbarStyle = {
-    position: "sticky",
-    top: 0,
-    transition: "transform 0.3s ease-in-out",
-    zIndex: 1000,
-    transform:
-      scrollDirection === "down" ? "translateY(-100%)" : "translateY(0)",
-  };
 
   const theme = createTheme({
     palette: {
@@ -101,12 +73,14 @@ function App() {
           doAlert={doAlert}
           setAlert={setAlert}
           setSuccessAlert={setAlert}
+          setDangerAlert={setDangerAlert}
         >
           <div className="body  d-flex flex-column">
             <div className="section content ">
             <div className="section" >
-              <NavbarLi style={navbarStyle}/>
+              <NavbarLi />
             </div>
+            {doDangerAlert ? <DangerAlert></DangerAlert> : null}
               {doAlert ? <SuccessAlert></SuccessAlert> : null}
 
               <Outlet />

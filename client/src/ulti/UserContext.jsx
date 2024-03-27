@@ -5,9 +5,9 @@ export const UserContext = createContext();
 
 export const useMyContext = () => useContext(UserContext);
 
-const UserProvider = ({ children, doAlert, setAlert }) => {
+const UserProvider = ({ children, doAlert, setAlert, setDangerAlert }) => {
   return (
-    <UserContext.Provider value={{ doAlert, setAlert }}>
+    <UserContext.Provider value={{ doAlert, SuccessAlert: setAlert, FailAlert: setDangerAlert }}>
       {children}
     </UserContext.Provider>
   );
