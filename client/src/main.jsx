@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App.jsx";
 import ErrorPage from "./containers/error.jsx";
 import HomePage from "./containers/Home/home";
-import AboutPage from "./containers/About/About.jsx";
+import AboutPage from "./containers/About/AboutPage.jsx";
 import PortfolioPage from "./containers/Portfolio/Portfolio.jsx";
 import ContactPage from "./containers/Contact/contact.jsx";
 import NoMatch from "./containers/noMatch/NoMatch.jsx";

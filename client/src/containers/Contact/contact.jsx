@@ -5,7 +5,7 @@ import image2 from "../../assets/images/website/contact-2.jpeg";
 import image3 from "../../assets/images/website/contact-3.jpeg";
 import image4 from "../../assets/images/website/contact-4.jpeg";
 
-const imageList = [image1, image2, image3, image4];
+const imageList = [ image2, image3];
 
 import './style.css'
 

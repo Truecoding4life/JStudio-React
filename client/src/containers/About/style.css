@@ -1,99 +1,65 @@
-
-.section-about{
-    min-height: 100vh;
-    height: 100%;
-    background-color: black;
-
-
-}
-.about-title{
-    color: var(--main-color);
+*{
+    --showcase-border-color: rgb(125, 126, 128);
+    --showcase-background-color: rgb(26, 28, 34);
 }
 
-.about-text{
+.header{
+    color: rgb(212, 212, 212);
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px;
+    padding-bottom: 10px;
+}
+
+body{
+    background-color: rgb(17, 19, 21);
+    overflow-x: hidden;
+}
+.bold{
+    font-weight: 700;
+
+}
+
+.intro-bio{
     color: rgb(186, 183, 183);
-    font-size: 35px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 90px;
     font-weight: 300;
+    padding-top: 20px;
 }
 
-.about-photo{
-    max-width: 100%;
-    margin-left: auto;
-    max-height: 300px;
-    width: fit-content;
+.showcase{
+   /* background-color: rgb(150, 210, 210); */
+   color: aliceblue;
+   font-family: 'Nunito Sans', sans-serif;
+}
+.custom-font{
+     font-family: Nunito Sans;  
+    font-weight: 400;
+}
+#showcase1{
+   background-color: var(--showcase-background-color);
+   padding: 50px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: 2px solid var(--showcase-border-color);
+
 }
 
-.carousel{
-    margin: auto;
-    width: 20%;
-    padding-top: 10%;
+#showcase2{
+    padding: 50px;
+       background-color: var(--showcase-background-color);
+       border: 2px solid var(--showcase-border-color);
+
 
 }
 
-.carousel-indicator{
-    color: var(--carousel-color);
+#showcase3{
+    padding: 50px;
+    background-color: var(--showcase-background-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid var(--showcase-border-color);
 
-}
-
-
-
-.carousel-button{
-    color: var(--carousel-color);
-    background-color: #33363600;
-    border: 2px solid var(--carousel-color);
-    border-radius: 50px;
-    height: 60px;
-   
-}
-
-                                                                                                                                                                                                              
-
-.carousel-button:hover{
-    color:var(--carousel-color);
-    background-color: #34353500;
-    border: 2px solid var(--carousel-color);
-    transition: .8s;
-    transform: scale(1.1);
-}
-
-@media screen and (min-width: 1900px) {
-    .about-text{
-        font-size: 70px;
-    }
-    .about-photo{
-        margin: auto;
-        max-height: 450px;
-    }
-    
-}
-
-@media screen and (max-width: 1028px) {
-    .about-text{
-        font-size: 24px;
-        padding: 0px;
-    }
-
-    .about-title{
-        padding: auto;
-    }
-    
-}
-
-@media screen and (max-width: 580px) {
-    .about-text{
-        font-size: 15px;
-        
-    }
-
-    .about-photo{
-        padding-bottom: 100px;
-        margin: auto;
-    }
-   
-    .carousel-button{
-        padding: 1px;
-        border: 0px;
-    }
-    
 }

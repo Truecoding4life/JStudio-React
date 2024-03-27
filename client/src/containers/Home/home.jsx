@@ -8,7 +8,7 @@ import ScrollMagic from 'scrollmagic';
 
 
 // Import pages
-import AboutPage from "../About/About";
+import AboutPage from "../../components/About/About.jsx";
 import PortfolioPage from "../Portfolio/Portfolio";
 
 // Import Icons
