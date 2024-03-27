@@ -1,8 +1,9 @@
-.delete-button:hover {
-    color: #c2594b;
-    transform: scale(1.05);
-}
 
+.QuickContact{
+    overflow-y: scroll;
+    scrollbar-color: #64df81 #02010100;
+    background-color: #111113fb;
+}
 
 .custom-input{
     width: 100%;
@@ -59,11 +60,7 @@
     color: #242525;
 }
 
-.QuickContact{
-    overflow-y: scroll;
-    scrollbar-color: #64df81 #02010100;
-    background-color: #111113fb;
-}
+
 
 .reach-out{
     font-size: 50px;

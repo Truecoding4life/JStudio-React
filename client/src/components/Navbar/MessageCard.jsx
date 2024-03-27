@@ -17,20 +17,27 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
   const [removeMessage] = useMutation(REMOVE_MESSAGE, {
     refetchQueries: [ALL_MESSAGE, "messages"],
   });
+  date = date.trim();
+  
   let sentHour = date.split(" ")[4][0];
   let sentMin = date.split(" ")[4].split(':')[1];
   let sentMonth = date.split(" ")[0];
   const sentDate = date.split(" ")[1].split('t')[0];
   const currentDate = new Date().getDate()
-  let currentMonth = new Date().getMonth()+1
-  let currentHour = new Date().getHours()
+  let currentMonth = new Date().getMonth() + 1
+  let currentHour = new Date().getHours()+1
   let sentTime = date.split(" ")[5]
   let currentMin = new Date().getMinutes()
-
-  if(sentTime === 'pm'){
-    sentHour = parseInt(sentHour)+12;
+  console.log(date);
+  console.log(`current date: ${currentDate} current hours: ${currentHour}` );
+  // Mar 13th, 2024 at 2:39 am
+  // console.log(currentMin);
+  // console.log(sentHour);
+  // console.log(sentMin);
+  if (sentTime === 'pm') {
+    sentHour = parseInt(sentHour) + 12;
   }
-  
+
 
   switch (sentMonth) {
     case 'Jan':
@@ -71,21 +78,21 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
       break;
   }
 
-// if current month and data is the same then return the different hour if the hour are the same then return the min
-const handleTimeStamp = () => {
-  if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth) && parseInt(currentHour) === parseInt(sentHour)) {
-    return   `Received ${parseInt(currentMin) - parseInt(sentMin)}  Minutes ago`;
-  }  
-  else if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth)) {
-    return   `Received ${parseInt(currentHour) - parseInt(sentHour)} Hours ago`;
-  }  
-  // Return a default value (e.g., 0) if the conditions are not met
-  return date;
-}
+  // if current month and data is the same then return the different hour if the hour are the same then return the min
+  const handleTimeStamp = () => {
+    if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth) && parseInt(currentHour) === parseInt(sentHour)) {
+      return `Received ${parseInt(currentMin) - parseInt(sentMin)}  Minutes ago`;
+    }
+    else if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth)) {
+      return `Received ${parseInt(currentHour) - parseInt(sentHour)} Hours ago`;
+    }
+    // Return a default value (e.g., 0) if the conditions are not met
+    return date;
+  }
 
   const handleRemove = async () => {
     try {
-    
+
       const { data } = await removeMessage({
         variables: {
           userId: "65bf4ca7da66cd1e791b259d",
@@ -102,7 +109,7 @@ const handleTimeStamp = () => {
 
       key={id}
       className="inbox-message"
-      sx={{boxShadow: 5, borderRadius: 5, marginBottom: 2, backgroundColor:'black'}}
+      sx={{ boxShadow: 5, borderRadius: 5, marginBottom: 2, backgroundColor: 'black' }}
     >
       <CardHeader
         className='message-title'
@@ -113,33 +120,33 @@ const handleTimeStamp = () => {
           </IconButton>
         }
         title={
-          <div style={{fontFamily: 'Nunito Sans', fontWeight:600 }}>
-            <Typography fontSize={16} variant="inherit" style={{ fontWeight:700 }}>{name}</Typography>
+          <div style={{ fontFamily: 'Nunito Sans', fontWeight: 600 }}>
+            <Typography fontSize={16} variant="inherit" style={{ fontWeight: 700 }}>{name}</Typography>
             <Typography variant="inherit">{email}</Typography>
 
           </div>
         }
         subheader={
           <div >
-            <Typography  style={{fontFamily: 'Nunito Sans'}} variant="inherit">{handleTimeStamp()}</Typography>
+            <Typography style={{ fontFamily: 'Nunito Sans' }} variant="inherit">{handleTimeStamp()}</Typography>
           </div>
         }
-        
+
       />
 
-        
+
       <CardContent className="inbox-card-text">
 
 
-        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight:700 }}>
+        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight: 700 }}>
           Message:
         </Typography>
 
         <br />
-        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight: 200 }}>
+        <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight: 300 }}>
           {text}
         </Typography>
       </CardContent>
-      </Card>
+    </Card>
   );
 }

@@ -1,11 +1,18 @@
 import React from "react";
 import MessageForm from "../../components/contact/Form";
-import image from "../../assets/images/website/contact-6.jpeg";
+import image1 from "../../assets/images/website/contact-1.jpeg";
+import image2 from "../../assets/images/website/contact-2.jpeg";
+import image3 from "../../assets/images/website/contact-3.jpeg";
+import image4 from "../../assets/images/website/contact-4.jpeg";
+
+const imageList = [image1, image2, image3, image4];
+
 import './style.css'
+
 
 export default function ContactPage() {
 
-
+let image = imageList[Math.floor(Math.random() * imageList.length)];
 
   
 

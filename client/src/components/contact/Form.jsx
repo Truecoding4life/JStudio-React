@@ -32,6 +32,9 @@ const MessageForm = ({ openModal}) => {
   });
  
 
+  if(emailNotValid){
+    FailAlert(true)
+  }
   const [addMessage, { error }] = useMutation(ADD_MESSAGE);
 
   const handleChange = (e) => {
@@ -51,7 +54,6 @@ const MessageForm = ({ openModal}) => {
         }
         SuccessAlert(true);
       } else {
-        FailAlert(true)
         setEmailNotValid(true);
         setTimeout(() => {
           setEmailNotValid(false);
@@ -109,7 +111,7 @@ const MessageForm = ({ openModal}) => {
                   </div>
                   <div className="col-6">
                     <div >
-                      <label htmlFor="email" error={emailNotValid}  className="form-label">Email</label>
+                      <label htmlFor="email" error={()=>{FailAlert(true)}}  className="form-label">Email</label>
                       <input type="text" required   className="custom-input form-control" placeholder="Type your Email" name="email" onChange={handleChange} />
                     </div>
                   </div>
@@ -139,15 +141,20 @@ const MessageForm = ({ openModal}) => {
               <div className="row justify-content-around p-1">
 
                 <div className="col-12 p-2">
-                  <a href={resume} download="Jay_Resume.pdf">
-                    <Button
-                      type="button"
-                      href={resume}
-                      className=" download-button"
-                    >
-                      <i>{resumeIcon}</i> Download CV Resume
-                    </Button>
-                  </a>
+                <Button
+               
+               type="button"
+               onClick={ () => window.open(resume, "jay_resume")}
+               className="btn download-button"
+               sx={{color: '#848a8c'}}
+             >
+               {" "}
+               {resumeIcon}
+               DOWNLOAD MY RESUME{" "}
+             </Button>
+                </div>
+                <div className="col-12 " >
+                  <h2 > nghiemxthai@gmail.com</h2>
                 </div>
               </div>
 
