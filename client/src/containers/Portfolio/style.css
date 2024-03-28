@@ -18,13 +18,13 @@
   background-color: #5fdd9aee;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-family: Onest, Courier, monospace;
+  font-family: Poppins, Courier, monospace;
 }
 
 /* More Detail Section */
 .more-detail {
   color: #fbfbfbbe;
-  font-family: 'Fredoka', Courier, monospace;
+  font-family: Poppins, Courier, monospace;
   font-weight: 200;
   font-size: 15px;
 }
@@ -53,6 +53,7 @@
   font-family: 300;
   padding: 10px;
   color: #c8c5c5;
+  padding-bottom: 0;
 
 ;
 }
@@ -66,6 +67,8 @@
 /* Project Title */
 .project-title {
   font-family: 'Raleway', Courier, monospace;
+  color: rgb(185, 190, 190);
+  font-size: 200%;
 }
 
 /* Other Project */
@@ -93,12 +96,13 @@
 
 /* Tag Styling */
 .tag {
-  background-color: rgba(60, 62, 67, 0.667);
+  background-color: rgba(39, 42, 50, 0.667);
   max-width: fit-content;
   padding: 8px;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 5px;
   font-size:12px;
+  color: rgb(187, 190, 193);
 }
 
 /* Card Hover Effect */
@@ -108,7 +112,8 @@
 }
 
 .github-btn:hover, .play-btn:hover{
-  background-color: #1ed284bc;
+  background-color: #07ba6df6;
+  color: black;
 
 }
 
