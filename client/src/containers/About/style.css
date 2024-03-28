@@ -1,22 +1,22 @@
 *{
-    --showcase-border-color: rgb(125, 126, 128);
-    --showcase-background-color: rgba(5, 14, 7, 0.423);
-    --showcase-icon-color: rgb(83, 223, 160);
+    --showcase-border-color: rgb(143, 142, 142);
+    --showcase-background-color: rgba(70, 86, 73, 0.139);
+    --showcase-icon-color: rgb(85, 215, 152);
 }
 
 .header{
     color: rgb(224, 224, 224);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
-    padding: 60px;
+    padding: 30px;
     padding-bottom: 30px;
     letter-spacing: 1px;
   
 }
 
 body{
-    background-color: rgb(13, 16, 19);
+    background-color: rgba(8, 11, 14, 0.992);
     overflow-x: hidden;
 }
 .bold{
@@ -36,6 +36,7 @@ body{
    /* background-color: rgb(150, 210, 210); */
    color: aliceblue;
    font-family: 'Nunito Sans', sans-serif;
+   padding-top: 10%;
 
 }
 
@@ -79,4 +80,29 @@ body{
 
 .sub{
     color: rgb(158, 156, 156);
+}
+
+@media screen and ( min-width: 2000px) {
+    .header{
+        font-size: 70px;
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .intro-bio{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .custom-font{
+        font-size: 130%;
+    }
+    .sub{
+        font-size: 13px;
+    }
+    
 }

@@ -67,6 +67,13 @@
   
 }
 
+.reach-out-out-2{
+    padding: 10px;
+    font-size: 30px;
+    color: #b1b1b1;
+    font-weight: 300;
+
+}
 #danger-alert{
     
     color: rgb(5, 5, 5);
@@ -78,16 +85,24 @@
     .reach-out{
       font-size: 30px
     }
+.reach-out-out-2{
+      font-size: 20px;
+    }
+
+
+
   }
     
-
 
 @media screen and (max-width: 480px) {
    
     .reach-out{
-      font-size: 18px
+      font-size: 14px
     }
   
+    .reach-out-out-2{
+      font-size: 12px;
+    }
     
     
   }

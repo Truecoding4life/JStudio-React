@@ -94,6 +94,9 @@ const MessageForm = ({ openModal}) => {
                 <i>{Icon} </i>
                 Reach out for work
               </Typography>
+              <h2 className="reach-out-out-2">
+                Looking for a Fullstack Developer? Want to start a project? or Just ask a question? Contact me!
+              </h2>
             </div>
           </div>
           <div className="row row-cols-2 d-flex flex-row">
