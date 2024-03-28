@@ -11,10 +11,10 @@ export default function PortfolioPage() {
   const { mainLight, projectButton: button } = palette.primary;
 
   const renderButtons = (item) => (
-    <div className="col-12 d-flex justify-content-evenly p-3">
+    <div className="col-12 d-flex justify-content-evenly p-1">
       <a
         href={item.github}
-        className="btn btn github-btn  p-1 col-6 m-1"
+        className="btn btn github-btn   col-6 m-1"
 
       >
         {Github} <span className="button-name">GitHub</span>
@@ -22,7 +22,7 @@ export default function PortfolioPage() {
       {item.link && (
         <a
           href={item.link}
-          className="btn play-btn  p-2 col-6 m-1"
+          className="btn play-btn m-1  col-6"
         >
           {PlayButton} <span className="button-name">Website</span>
         </a>
@@ -42,6 +42,7 @@ export default function PortfolioPage() {
             alt={item.title}
             src={item.image}
             key={item.title}
+            style={{borderTopRightRadius:20, borderTopLeftRadius:20}}
           />
         )}
         <div className="card-body">
@@ -84,6 +85,7 @@ export default function PortfolioPage() {
         <div className="row ">
           {Project.map((project) => renderCard(project))}
         </div>
+          <span className="space"></span>
         <div className="row align-self-center container-fluid other-skills">
           <div className="container ">
             <div className="row">
