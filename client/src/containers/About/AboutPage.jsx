@@ -7,17 +7,19 @@ import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 export default function AboutPage() {
     return (
-        <section className="height-100 container-fluid">
+        <section className="height-100 container-fluid animate__animated animate__fadeIn animate__slower">
             {/* <h2 style={{backgroundColor:'white', width:'100%'}}> hey </h2> */}
             <div className="container">
 
 
+                <div className="row">
 
+               
 
                 <div className="col-12  intro-bio">
                     <div className="row ">
-                        <div className="col-12 text-center">
-                            <h1 className='header'>About Jay</h1>
+                        <div className="col-12">
+                            <h1 className='header text-center'>About Jay</h1>
                         </div>
                         <div className="col-3 bold text-end align-self-center">
                             <h5> Specialty </h5>
@@ -38,14 +40,25 @@ export default function AboutPage() {
                             <p> {" "} Craft websites using cutting-edge technologies, striving for the most optimized solutions to deliver an exceptional user experience.  {" "}</p>
                         </div>
                         <div className="col-3 bold text-end align-self-center">
-                            <h5> My  Values </h5>
+                            <h5> Values </h5>
                         </div>
                         <div className="col-9 p-2">
                             <p> {" "}
                                 "As a member of the Army, I embody the seven core values: Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, and Personal Courage. Among these values, Integrity holds a special place for me because it serves as the cornerstone upon which all others are built. Integrity comes first, and everything else falls into place thereafter."  {" "}</p>
                         </div>
+                        <div className="col-3 bold text-end align-self-center">
+                            <h5> Awards </h5>
+                        </div>
+                        <div className="col-9 p-2">
+                            <ul>
+                                <li> Soldier of the Month x2</li>
+                                <li> Army Achievement Medal</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+                
                 <div className="col-12 showcase">
                     <div className="row ">
                         <div id='showcase1' className="col-4">
@@ -96,6 +109,9 @@ export default function AboutPage() {
                     </div>
                 </div>
 
+              </div>   
+
+            
             </div>
         </section>
     )

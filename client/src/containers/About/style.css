@@ -1,6 +1,6 @@
 *{
     --showcase-border-color: rgb(125, 126, 128);
-    --showcase-background-color: rgba(11, 16, 12, 0.369);
+    --showcase-background-color: rgba(5, 14, 7, 0.423);
     --showcase-icon-color: rgb(83, 223, 160);
 }
 
@@ -11,6 +11,8 @@
     font-family: 'Raleway', sans-serif;
     padding: 60px;
     padding-bottom: 30px;
+    letter-spacing: 1px;
+  
 }
 
 body{
@@ -25,15 +27,24 @@ body{
 .intro-bio{
     color: rgb(143, 144, 146);
     font-size: 20px;
-    padding: 90px;
+    padding: 20px;
     font-weight: 300;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .showcase{
    /* background-color: rgb(150, 210, 210); */
    color: aliceblue;
    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+
 }
 .custom-font{
      font-family: Nunito Sans;  

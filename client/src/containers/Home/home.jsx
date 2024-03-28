@@ -48,8 +48,8 @@ export default function HomePage({ setSuccessAlert }) {
   }, []);
 
   return (
-    <div className="container-fluid home-container p-0 ">
-      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower height-100 background-image snap-section">
+    <div className="container-fluid home-container p-0">
+      <section className="container-fluid  d-flex justify-content-center animate__animated animate__fadeIn animate__slower height-100 background-image snap-section ">
         <div className="row ">
        
 
