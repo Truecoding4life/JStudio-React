@@ -34,7 +34,8 @@
 /* Card Image Section */
 .card-image {
   border-radius: 3px;
-  max-height: 340px;
+  
+  max-height: 640px;
   
 }
 
@@ -48,6 +49,7 @@
 
 .h-100{
   border-radius: 4px;
+  height: 100%;
 }
 /* Project Header */
 .project-header {
@@ -114,6 +116,17 @@
 .card:hover {
   transform: translateY(-10px);
   
+}
+
+.card-image-container{
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+.card-image:hover{
+  transition: .5s;
+  transform: scale(1.3);
 }
 
 .github-btn:hover, .play-btn:hover{

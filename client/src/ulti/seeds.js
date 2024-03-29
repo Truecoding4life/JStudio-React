@@ -1,11 +1,11 @@
-import FoodFinder from "../assets/images/projects/FoodGeekPicture.png";
+import FoodFinder from "../assets/images/projects/foodgeek.png";
 import ApiAdventures from "../assets/images/projects/ios2.png";
-import GameLoft from "../assets/images/projects/GameLoftPicture.png";
-import PWA from "../assets/images/projects/PWA.gif";
+import GameLoft from "../assets/images/projects/gameloft.png";
+import PWA from "../assets/images/projects/PWA.png";
 import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
 import photo1 from "../assets/images/website/logo.png";
 import photo2 from "../assets/images/website/photo2.jpg";
-import photo3 from "../assets/images/website/photo3.png";
+import photo3 from "../assets/images/website/photo3.jpg";
 
 
 const Project = [
@@ -45,7 +45,7 @@ const Project = [
       "Offline Text Editor Application built with advanced concepts, including data persistence with IndexedDB, webpack bundling, and service worker integration using workbox.",
     github: "https://github.com/Truecoding4life/text-snippet-PWA",
     header: "Back End",
-    link: "https://boiling-lowlands-40577-2b4b9eb554b0.herokuapp.com/",
+    link: "https://jate-text-editor-jstudio-e2bc1e7322b6.herokuapp.com/",
     tags: ["Offline Usage", "Data Persistence"],
     image: PWA,
   }

@@ -37,13 +37,16 @@ export default function PortfolioPage() {
     >
       <div className="card flex-grow-1 d-flex flex-column">
         {item.image && (
-          <img
+          <div className="card-image-container">
+             <img
             className="card-img-top w-100 h-100 card-image "
             alt={item.title}
             src={item.image}
             key={item.title}
             style={{borderTopRightRadius:20, borderTopLeftRadius:20}}
           />
+          </div>
+         
         )}
         <div className="card-body">
           <h4 className="card-title fw-bolder project-title ">{item.title}</h4>

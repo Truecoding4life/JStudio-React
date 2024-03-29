@@ -4,8 +4,7 @@ import CircleIcon from '@mui/icons-material/Circle';
 import './style.css'
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
-import ViewInArIcon from '@mui/icons-material/ViewInAr';
-export default function AboutPage() {
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';export default function AboutPage() {
     return (
         <section className="height-100 container-fluid animate__animated animate__fadeIn animate__slower">
             {/* <h2 style={{backgroundColor:'white', width:'100%'}}> hey </h2> */}
@@ -95,7 +94,7 @@ export default function AboutPage() {
                             <div className="row">
 
                                 <div className="col-5 text-end p-0">
-                                    <ViewInArIcon style={{ fontSize: '5vw', color: 'var(--showcase-icon-color)' , maxHeight:'75px'}}></ViewInArIcon>
+                                    <ArrowForwardIosIcon  style={{ fontSize: '5vw', color: 'var(--showcase-icon-color)' , maxHeight:'75px'}}></ArrowForwardIosIcon >
                                 </div>
 
                                 <div className="col-7">
