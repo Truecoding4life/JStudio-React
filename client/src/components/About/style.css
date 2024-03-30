@@ -3,18 +3,24 @@
     min-height: 100vh;
     height: 100%;
     background-color: black;
-
+    color: aliceblue;
+    padding: auto;
 
 }
+
+
 .about-title{
     color: var(--main-color);
 }
+
 
 .about-text{
     color: rgb(186, 183, 183);
     font-size: 35px;
     padding: 10px;
     font-weight: 300;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .about-photo{
@@ -22,6 +28,13 @@
     margin-left: auto;
     max-height: 300px;
     width: fit-content;
+}
+
+.carousel-card-description {
+    color: rgb(155, 152, 152);
+    font-size: 20px;
+    padding: 10px;
+
 }
 
 .carousel{
@@ -47,7 +60,7 @@
    
 }
 
-                                                                                                                                                                                                              
+
 
 .carousel-button:hover{
     color:var(--carousel-color);
@@ -72,6 +85,15 @@
     .about-text{
         font-size: 24px;
         padding: 0px;
+    }
+
+    .carousel-card-description{
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+    .need-padding{
+        padding: 20px;
     }
 
     .about-title{

@@ -3,10 +3,9 @@ import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/gameloft.png";
 import PWA from "../assets/images/projects/PWA.png";
 import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
-import photo1 from "../assets/images/website/logo.png";
+import photo1 from "../assets/images/website/photo1.png";
 import photo2 from "../assets/images/website/photo2.jpg";
 import photo3 from "../assets/images/website/photo3.jpg";
-
 
 const Project = [
   {
@@ -16,7 +15,12 @@ const Project = [
     github: "https://github.com/Andrewchall92/game-shop",
     header: "Full Stack",
     link: "https://game-loft-5f74d9e2c208.herokuapp.com/",
-    tags: ["E-Commerce", "Online Shopping", "Secure Payment", "User Authentication"],
+    tags: [
+      "E-Commerce",
+      "Online Shopping",
+      "Secure Payment",
+      "User Authentication",
+    ],
     image: GameLoft,
   },
   {
@@ -24,7 +28,12 @@ const Project = [
     description:
       "Full Stack blog post application designed to connect people route social media networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
     github: "https://github.com/Truecoding4life/api-adventures",
-    tags: ["Social Media Platform", "Social Networking", "Secure Login",  "User Authentication"],
+    tags: [
+      "Social Media Platform",
+      "Social Networking",
+      "Secure Login",
+      "User Authentication",
+    ],
     image: ApiAdventures,
     header: "Full Stack",
     link: "https://ios-2-079bbe29e9fe.herokuapp.com/",
@@ -48,7 +57,7 @@ const Project = [
     link: "https://jate-text-editor-jstudio-e2bc1e7322b6.herokuapp.com/",
     tags: ["Offline Usage", "Data Persistence"],
     image: PWA,
-  }
+  },
 ];
 
 const OtherSkills = [
@@ -77,19 +86,18 @@ const OtherSkills = [
 const aboutData = [
   {
     title: "CODINGWITHJAY",
-    text: "I'm a Fullstack Software Developer based in California, passionate about crafting remarkable digital experiences.",
-    image: photo1
-  },
-  {
-    title: "Military Background",
-    text: "Came from military background I have a strong work ethic and professionalism. In Kuwait I was nominated for Soldier of the Month twice.",
-    image: photo2
+    text: "I'm a Fullstack Software Developer that passionate about cutting edge technology, pixel perfect, beautiful interfaces and intuitively implemented UX",
+    image: photo1,
   },
   {
     title: "User Experience",
-    text: "To me, great user experience is paramount, I strive to create a lasting impact through great user experience.",
-    image: photo3
-  }
-]
+    text: ["Responsive UI", "Friendly UI"],
+    description: [
+      "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",
+      "My passion lies in minimalist and contemporary web design, employing cutting-edge technologies such as React, Material UI, and Bootstrap to create visually stunning and user-friendly experiences.",
+    ],
+    image: photo3,
+  },
+];
 
 export { Project, OtherSkills, aboutData };

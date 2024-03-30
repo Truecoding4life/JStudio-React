@@ -15,6 +15,8 @@ export default function AboutPage() {
   let title = aboutData[aboutIndex].title;
   let text = aboutData[aboutIndex].text;
   let image = aboutData[aboutIndex].image;
+  let special = aboutData[aboutIndex].special;
+  let description = aboutData[aboutIndex]?.description || false;
 
   return (
     
@@ -27,7 +29,7 @@ export default function AboutPage() {
           </div>
          
 
-          <CarouselCard title={title} text={text} image={image} aboutIndex={aboutIndex} />
+          <CarouselCard title={title} text={text} image={image} description={description} aboutIndex={aboutIndex}  />
           <div className="button-about-div">
             <Button type="button" className="carousel-button" onClick={() => { aboutIndex < aboutData.length - 1 && setAboutIndex(aboutIndex + 1) }}>
               <NavigateNextIcon fontSize="large" />

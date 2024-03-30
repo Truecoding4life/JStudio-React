@@ -124,10 +124,7 @@
   border-top-right-radius: 20px;
   
 }
-.card-image:hover{
-  transition: .5s;
-  transform: scale(1.3);
-}
+
 
 .github-btn:hover, .play-btn:hover{
   background-color: #07ba6df6;
@@ -206,4 +203,9 @@
   .need-padding{
     padding: 60px;
   }
+
+  .card-image:hover{
+  transition: .5s;
+  transform: scale(1.3);
+}
 }
