@@ -33,7 +33,7 @@ export default function PortfolioPage() {
   const renderCard = (item) => (
     <div
       key={item.title}
-      className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-3 d-flex  project-card"
+      className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3 col-xxl-3 d-flex  project-card"
     >
       <div className="card flex-grow-1 d-flex flex-column">
         {item.image && (
