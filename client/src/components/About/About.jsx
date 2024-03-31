@@ -21,21 +21,14 @@ export default function AboutPage() {
   return (
     
       <div>
-        <div className="section-about d-flex align-items-center animate__animated animate__fadeIn ">
-          <div className="button-about-div">
-            <Button type="button" className="carousel-button" onClick={() => { aboutIndex > 0 && setAboutIndex(aboutIndex - 1) }}>
-              <ChevronLeftIcon fontSize="large" />
-            </Button>
-          </div>
-         
+        <div className="section-about d-flex align-items-center animate__animated animate__fadeIn p-2">
+          
+        
 
-          <CarouselCard title={title} text={text} image={image} description={description} aboutIndex={aboutIndex}  />
-          <div className="button-about-div">
-            <Button type="button" className="carousel-button" onClick={() => { aboutIndex < aboutData.length - 1 && setAboutIndex(aboutIndex + 1) }}>
-              <NavigateNextIcon fontSize="large" />
-            </Button>
-          </div>
-        </div>
+          <CarouselCard title={title} text={text} image={image} description={description} aboutIndex={aboutIndex} set={setAboutIndex} />
+          
+         </div>
+         
       </div>
   
   );

@@ -3,7 +3,7 @@ import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/gameloft.png";
 import PWA from "../assets/images/projects/PWA.png";
 import photo1 from "../assets/images/website/carousel/photo1.png";
-import photo2 from "../assets/images/website/carousel/photo2.jpg";
+import photo2 from "../assets/images/website/carousel/devices.png";
 import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 const Project = [
@@ -95,7 +95,7 @@ const aboutData = [
       "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",
       "My passion lies in minimalist and contemporary web design, employing cutting-edge technologies such as React, Material UI, and Bootstrap to create visually stunning and user-friendly experiences.",
     ],
-    image: photo3,
+    image: photo2,
   },
 ];
 
