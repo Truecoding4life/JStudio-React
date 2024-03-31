@@ -107,7 +107,7 @@ export default function HomePage({ setSuccessAlert }) {
         </div>
       </section>
 
-      <section id="about-container" className="container-fluid height-100 snap-section">
+      <section id="about-container" className="container-fluid height-100 snap-section p-0">
         <AboutPage ></AboutPage>
       </section>
       <div id="portfolio-section" className="snap-section heigh-more" >
@@ -115,9 +115,9 @@ export default function HomePage({ setSuccessAlert }) {
       </div>
 
 
-      <div >
+      {/* <div >
       <ContactPage ></ContactPage>
-      </div>
+      </div> */}
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>
   );

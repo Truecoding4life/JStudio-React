@@ -79,7 +79,7 @@ const MessageForm = ({ openModal}) => {
   };
 
   return (
-    <>
+    < div className="container container-fluid">
       <div className=" contact-container container">
         <div className={boxSizing}>
           <div className="row">
@@ -165,7 +165,7 @@ const MessageForm = ({ openModal}) => {
           </div>
         </div>
       </div>
-    </>
+    </ div>
   );
 };
 

@@ -1,15 +1,22 @@
 
+
+#about-container{
+    min-height: 100vh;
+    height: fit-content;
+    background-color: rgb(25, 26, 32);
+     border-radius: 20px;
+}
 .section-about{
     min-height: 100vh;
     height: fit-content;
-    background-color: rgb(17, 17, 21);
     color: aliceblue;
     padding: auto;
+   
 
 }
 
 #carousel{
-    background-color: rgba(20, 23, 27, 0.999);
+    background-color: rgba(30, 35, 41, 0.691);
     border-radius: 30px;
 }
 

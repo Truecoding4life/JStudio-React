@@ -85,7 +85,7 @@ const OtherSkills = [
 const aboutData = [
   {
     title: "CODINGWITHJAY",
-    text: "I'm a Fullstack Software Developer that passionate about cutting edge technology, pixel perfect, beautiful interfaces and intuitively implemented UX",
+    text: "My passion lies in minimalist and contemporary web design, employing cutting-edge technologies such as React, Material UI, and Bootstrap to create visually stunning and user-friendly experiences.",
     image: photo1,
   },
   {
@@ -93,7 +93,7 @@ const aboutData = [
     text: ["Responsive UI", "Friendly UI"],
     description: [
       "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",
-      "My passion lies in minimalist and contemporary web design, employing cutting-edge technologies such as React, Material UI, and Bootstrap to create visually stunning and user-friendly experiences.",
+      
     ],
     image: photo2,
   },
