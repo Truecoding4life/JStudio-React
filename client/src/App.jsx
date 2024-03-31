@@ -39,10 +39,11 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+const isDeployed = process.env.NODE_ENV === 'production';
 function App() {
   const [doAlert, setAlert] = useState(false);
   const [doDangerAlert, setDangerAlert] = useState(false);
-  const [videoPlaying, setVideoPlaying] = useState( process.env.PORT ? true : false);
+  const [videoPlaying, setVideoPlaying] = useState(isDeployed);
 
   if (window.screen.width < 768) {
     console.log(window.screen.width);
