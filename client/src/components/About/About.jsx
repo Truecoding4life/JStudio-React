@@ -3,10 +3,10 @@ import { useState } from "react";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import './style.css'
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import CarouselCard from "./Card";
 import {aboutData} from "../../ulti/seeds";
-
+import CarouselHelper from "./caroselHelper";
 export default function AboutPage() {
 
 
@@ -20,16 +20,17 @@ export default function AboutPage() {
 
   return (
     
-      <div>
+      <Container>
         <div className="section-about d-flex align-items-center animate__animated animate__fadeIn p-2">
-          
         
+         
 
           <CarouselCard title={title} text={text} image={image} description={description} aboutIndex={aboutIndex} set={setAboutIndex} />
           
+         
          </div>
          
-      </div>
+      </Container>
   
   );
 };

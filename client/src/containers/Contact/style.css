@@ -11,7 +11,7 @@
 
 .contact-content{
     padding: 10px;
-    height: 100vh;
+    height: 10vh;
    
 }
 
@@ -30,4 +30,10 @@
         display: none;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    .reach-out{
+        font-size: 25px;
+    }
 }

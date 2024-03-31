@@ -1,7 +1,7 @@
 
 .section-about{
     min-height: 100vh;
-    height: 100%;
+    height: fit-content;
     background-color: rgb(17, 17, 21);
     color: aliceblue;
     padding: auto;
@@ -36,12 +36,17 @@
 
 
 
-.about-photo{
+.about-photo, .devices{
     max-width: 100%;
-    height: max-content;
+    height: auto;
     width: fit-content;
     border-radius: 30px;
+    width: fit-content;
+    max-height: 300px;
+    max-width: 280px;
+
 }
+
 
 .carousel-card-description {
     color: rgb(212, 219, 223);
@@ -52,7 +57,7 @@
 
 .carousel{
  
-    padding-top: 100px;
+    padding-top: 10px;
 
 }
 
@@ -113,6 +118,12 @@
         padding: 5px;
     }
     
+    .about-photo, .devices{
+        max-width: 50%;
+        
+        width: fit-content;
+        border-radius: 30px;
+    }
     
 
     .about-title{
@@ -142,6 +153,10 @@
     .carousel-button{
         padding: 1px;
         border: 0px;
+    }
+
+    .about-me{
+        padding-top: 10px;
     }
     
 }
