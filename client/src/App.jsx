@@ -44,7 +44,10 @@ function App() {
   const [doDangerAlert, setDangerAlert] = useState(false);
   const [videoPlaying, setVideoPlaying] = useState(true);
 
-  
+  if (window.screen.width < 768) {
+    console.log(window.screen.width);
+  }
+
   const handleVideoEnd = () => {
     setVideoPlaying(false);
   }
@@ -80,7 +83,7 @@ function App() {
           setSuccessAlert={setAlert}
           setDangerAlert={setDangerAlert}
         >
-          {videoPlaying ? <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> : (
+          {videoPlaying && window.screen.width > 768 ? <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> : (
 
 
 

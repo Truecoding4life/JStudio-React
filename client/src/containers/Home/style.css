@@ -12,10 +12,9 @@
 
 
 
-/* .home-container{
-  min-height: 1600px;
-} */
-
+.home-header{
+  margin-top: 10%;
+}
 
 
 .greeting-quote {
@@ -41,6 +40,13 @@
   margin: auto;
 }
 
+#intro-video{
+  width: 100%;
+  height: 100%;
+  margin-top: auto;
+
+}
+
 #profile-picture {
   width: 80px;
   height: 80px;
@@ -63,21 +69,35 @@
 
 
 
-@media screen and (min-width: 1600px) {
-  .greeting-quote {
-    font-size: 125px;
-  }
-}
 
 @media screen and (min-width: 1224px) {
+  
   .greeting-quote {
     font-size: 80px;
   }
+ .home-header{
+  margin-top: 200px;
+ }
+}
+
+@media screen and (min-width: 1600px) {
+  .greeting-quote {
+    font-size: 135px;
  
+  }
+
+  .home-header{
+    margin-top: 300px;
+  }
+  
 }
 
 
 @media screen and (max-width: 480px) {
+
+  .home-header{
+    margin-top: 200px;
+  }
   .greeting-quote {
     font-size: 45px;
   }
