@@ -2,7 +2,7 @@
 import "./style.css";
 import "animate.css";
 import resume from "../../assets/resume.pdf";
-import myPhoto from "../../assets/images/website/about.jpg";
+import myPhoto from "../../assets/images/website/other/profile.jpg";
 import React, { useEffect } from 'react';
 import ScrollMagic from 'scrollmagic';
 
@@ -18,11 +18,16 @@ import FloatingButton from "../../components/FloatingButton/FloatingButton";
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import CircleIcon from '@mui/icons-material/Circle';
 
+import VideoComponent from "./Intro.jsx";
+
+
+
 
 export default function HomePage({ setSuccessAlert }) {
   
 
   useEffect(() => {
+    
     window.scrollTo(0, 0); // Scrolls the window to the top-left corner when the component mounts
 
     const controller = new ScrollMagic.Controller();

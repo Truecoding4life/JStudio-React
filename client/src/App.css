@@ -60,7 +60,7 @@ body {
 
 
 .gradient-text{
-  background: linear-gradient(148deg, rgba(36, 97, 62, 1) 0%, rgba(32, 160, 125, 1) 27%, rgba(34, 152, 180, 1) 55%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);  
+  background: linear-gradient(148deg, #24613e 0%, rgba(32, 160, 125, 1) 27%, rgba(34, 152, 180, 1) 55%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);  
   
   background-clip: text;
  -webkit-background-clip: text;
@@ -69,7 +69,7 @@ body {
 
 .background-image{
   /* global 92%+ browsers support */
-  background-image: url("./assets/images/website/background.jpeg");
+  background-image: url("./assets/images/website/other/background.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ body {
 @media screen and (max-width: 768px) {
   .background-image{
     /* global 92%+ browsers support */
-    background-image: url("./assets/images/website/background-2.jpeg");
+    background-image: url("./assets/images/website/other/background-2.jpeg");
    
   }
 

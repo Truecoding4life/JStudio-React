@@ -1,11 +1,9 @@
 import React from "react";
 import MessageForm from "../../components/contact/Form";
-import image1 from "../../assets/images/website/contact-1.jpeg";
-import image2 from "../../assets/images/website/contact-2.jpeg";
-import image3 from "../../assets/images/website/contact-3.jpeg";
-import image4 from "../../assets/images/website/contact-4.jpeg";
+import image1 from "../../assets/images/website/contact/photo-1.jpeg";
+import image2 from "../../assets/images/website/contact/photo-2.jpeg";
 
-const imageList = [ image2, image3];
+const imageList = [ image1, image2];
 
 import './style.css'
 

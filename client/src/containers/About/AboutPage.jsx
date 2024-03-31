@@ -1,6 +1,6 @@
 import React from 'react';
-import myPhoto from "../../assets/images/website/about.jpg";
-import CircleIcon from '@mui/icons-material/Circle';
+import myPhoto from "../../assets/images/website/other/profile.jpg";
+
 import './style.css'
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';

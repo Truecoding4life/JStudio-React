@@ -2,10 +2,9 @@ import FoodFinder from "../assets/images/projects/foodgeek.png";
 import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/gameloft.png";
 import PWA from "../assets/images/projects/PWA.png";
-import CrystalQuest from "../assets/images/projects/CrystalQuest.gif";
-import photo1 from "../assets/images/website/photo1.png";
-import photo2 from "../assets/images/website/photo2.jpg";
-import photo3 from "../assets/images/website/photo3.jpg";
+import photo1 from "../assets/images/website/carousel/photo1.png";
+import photo2 from "../assets/images/website/carousel/photo2.jpg";
+import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 const Project = [
   {
@@ -79,7 +78,7 @@ const OtherSkills = [
       "Web Application powered by Express JS to handle server side logic",
     github: "https://github.com/Truecoding4life/Note-Favorite",
     header: "",
-    link: "https://notefavorite-j-80588266bd0c.herokuapp.com/",
+    link: "https://notefavorite-webapp-4790f7ae5b8c.herokuapp.com/notes",
   },
 ];
 
