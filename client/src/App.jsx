@@ -14,7 +14,7 @@ import { useState, useEffect, useContext } from "react";
 import SuccessAlert from "./components/Alert/Success.jsx";
 import UserProvider from "./ulti/UserContext.jsx";
 import DangerAlert from "./components/Alert/Warning.jsx";
-
+import VideoComponent from "./containers/Home/Intro.jsx";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -42,7 +42,12 @@ const client = new ApolloClient({
 function App() {
   const [doAlert, setAlert] = useState(false);
   const [doDangerAlert, setDangerAlert] = useState(false);
+  const [videoPlaying, setVideoPlaying] = useState(true);
 
+  
+  const handleVideoEnd = () => {
+    setVideoPlaying(false);
+  }
 
   const theme = createTheme({
     palette: {
@@ -75,6 +80,10 @@ function App() {
           setSuccessAlert={setAlert}
           setDangerAlert={setDangerAlert}
         >
+          {videoPlaying ? <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> : (
+
+
+
           <div className="body  d-flex flex-column">
             <div className="section content ">
             <div className="section" >
@@ -91,6 +100,11 @@ function App() {
 
            
           </div>
+
+
+          )}
+       
+          
         </UserProvider>
       </ApolloProvider>
     </ThemeProvider>

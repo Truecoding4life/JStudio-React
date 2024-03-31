@@ -4,11 +4,8 @@ import video from '../../assets/video/intro.mp4';
 
 
 
- const VideoComponent = () => {
-    function handleVideoEnd(){
-        window.location.href = '/';
-    }
-
+ const VideoComponent = ({handleVideoEnd}) => {
+   
 
     return (
       <div>

@@ -18,7 +18,6 @@ import FloatingButton from "../../components/FloatingButton/FloatingButton";
 import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import CircleIcon from '@mui/icons-material/Circle';
 
-import VideoComponent from "./Intro.jsx";
 
 
 
