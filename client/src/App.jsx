@@ -58,12 +58,12 @@ function App() {
       primary: {
         main: "#04fab8f1",
       },
-     
+
       navbar: {
-          main: "#cfcece",
-        },
-        
-     
+        main: "#cfcece",
+      },
+
+
     },
   });
 
@@ -85,30 +85,27 @@ function App() {
           setDangerAlert={setDangerAlert}
         >
           {videoPlaying && window.screen.width > 768 ? <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> : (
+            <div className="body  d-flex flex-column">
+              <div className="section content ">
+                <div className="section" >
+                  <NavbarLi />
+                </div>
+                {doDangerAlert ? <DangerAlert></DangerAlert> : null}
+                {doAlert ? <SuccessAlert></SuccessAlert> : null}
+
+                <Outlet />
+
+
+              </div>
 
 
 
-          <div className="body  d-flex flex-column">
-            <div className="section content ">
-            <div className="section" >
-              <NavbarLi />
             </div>
-            {doDangerAlert ? <DangerAlert></DangerAlert> : null}
-              {doAlert ? <SuccessAlert></SuccessAlert> : null}
-
-              <Outlet />
-
-
-            </div>
-               
-
-           
-          </div>
 
 
           )}
-       
-          
+
+
         </UserProvider>
       </ApolloProvider>
     </ThemeProvider>
