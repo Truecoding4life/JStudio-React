@@ -6,7 +6,7 @@ import './style.css'
 import { Button, Container } from "react-bootstrap";
 import CarouselCard from "./Card";
 import {aboutData} from "../../ulti/seeds";
-import CarouselHelper from "./caroselHelper";
+import CarouselHelper from "./CarouselHelper";
 export default function AboutPage() {
 
 

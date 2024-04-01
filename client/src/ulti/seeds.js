@@ -89,8 +89,8 @@ const aboutData = [
     image: photo1,
   },
   {
-    title: "User Experience",
-    text: ["Responsive UI", "Friendly UI"],
+    title: "Platform Responsive",
+    text: ["Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens."],
     description: [
       "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",
       
