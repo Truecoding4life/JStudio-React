@@ -7,10 +7,12 @@ import Auth from "../../ulti/auth";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Link as ScrollLink } from 'react-scroll';
 import LockIcon from '@mui/icons-material/Lock';
-import LensBlurIcon from '@mui/icons-material/LensBlur';
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
 import LoginMenu from "./LoginMenu";
+import DragHandleIcon from '@mui/icons-material/DragHandle';
+import LensBlurIcon from '@mui/icons-material/LensBlur';
+
 
 const expandIcon = (
   <svg
@@ -60,9 +62,17 @@ export default function NavbarLi() {
         J Studio
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler">
-        <LensBlurIcon fontSize="large" style={{ color: '#c7c4c4' }} />
+
+
+
+        <DragHandleIcon fontSize="large" style={{ color: '#c7c4c4' }} />
+
+
+
+
+
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav" className="text-center">
+      <Navbar.Collapse id="basic-navbar-nav" className="text-end">
         <Nav className="nav-link-section">
           <Nav.Link
             

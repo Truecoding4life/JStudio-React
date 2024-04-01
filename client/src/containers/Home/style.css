@@ -76,18 +76,19 @@
     font-size: 80px;
   }
  .home-header{
-  margin-top: 200px;
+  margin-top: 50px;
  }
 }
 
 @media screen and (min-width: 1600px) {
   .greeting-quote {
     font-size: 115px;
+    font-weight: 200;
  
   }
 
   .home-header{
-    margin-top: 300px;
+    margin-top: 200px;
   }
   
 }
@@ -95,9 +96,7 @@
 
 @media screen and (max-width: 480px) {
 
-  .home-header{
-    margin-top: 200px;
-  }
+
   .greeting-quote {
     font-size: 45px;
   }
