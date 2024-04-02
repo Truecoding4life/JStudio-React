@@ -6,6 +6,26 @@ import photo1 from "../assets/images/website/carousel/photo1.png";
 import photo2 from "../assets/images/website/carousel/devices.png";
 import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
+
+// technologies
+import apollo from '../assets/images/website/logos/apollo.png';
+import bootstrap from '../assets/images/website/logos/bootstrap.png';
+import css from '../assets/images/website/logos/css.png';
+// import express from '../assets/images/website/logos/express.jpeg';
+import html from '../assets/images/website/logos/html.webp';
+import javascript from '../assets/images/website/logos/javascript.png';
+import jest from '../assets/images/website/logos/jest.png';
+import jquery from '../assets/images/website/logos/jquery.webp';
+import materialize from '../assets/images/website/logos/material-ui.png';
+import mongodb from '../assets/images/website/logos/mongodb.png';
+// import mysql from '../assets/images/website/logos/mysql.jpg';
+import node from '../assets/images/website/logos/node.png';
+import python from '../assets/images/website/logos/python.png';
+import react from '../assets/images/website/logos/react.svg';
+import stripe from '../assets/images/website/logos/stripe.png';
+
+const technologiesLogo = [ apollo, bootstrap, css,  html, javascript, jquery, materialize, mongodb,  node, python, react, stripe ];
+
 // showcase
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
@@ -121,4 +141,4 @@ const showcaseData =  [
   },
 ]
 
-export { Project, OtherSkills, aboutData, showcaseData };
+export { Project, OtherSkills, aboutData, showcaseData, technologiesLogo };

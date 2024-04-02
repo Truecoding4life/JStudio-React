@@ -1,0 +1,49 @@
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slide{
+    white-space: nowrap;
+    padding: 60px 0px;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #110f0f;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.logo-slide{
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+.logos{
+    height: 50px;
+    margin: 0px 40px;
+}
+.slide:hover .logo-slide{
+    animation-play-state: paused;
+}
+
+.slide:before, .slide:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    
+}
+.slide:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(3, 2, 2, 0.083), rgb(0, 0, 0));
+}
+.slide:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.083), rgb(5, 5, 5));
+}

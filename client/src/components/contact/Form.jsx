@@ -11,16 +11,6 @@ import './style.css'
 
 
 
-const inputStyle = {
-  "& .MuiInputBase-input": {
-    color: "white",
-  },
-  "& input:-webkit-autofill": {
-    WebkitBoxShadow: "0 0 0 1000px ##000000e6 inset !important",
-    transition: "background-color 5000s ease-in-out 3s !important",
-    color: "#f8f3f3e6 !important", // Add this line to prevent text color change
-  },
-};
 
 const MessageForm = ({ openModal}) => {
   const { SuccessAlert, FailAlert} = useContext(UserContext);
@@ -49,9 +39,9 @@ const MessageForm = ({ openModal}) => {
           variables: { ...formInfo, userId: "65bf4ca7da66cd1e791b259d" },
         });
         
-        if (window.location.pathname !== "/contact") {
+      
           openModal(false);
-        }
+       
         SuccessAlert(true);
       } else {
         setEmailNotValid(true);
@@ -81,7 +71,7 @@ const MessageForm = ({ openModal}) => {
         <div className='col-12 align-self-center chat-box m-auto '>
           <div className="row">
             <div className="col-12">
-              <Typography
+              <h1
                 className="reach-out gradient-text"
                 variant="p"
                 style={{
@@ -90,7 +80,7 @@ const MessageForm = ({ openModal}) => {
               >
                 <i>{Icon} </i>
                 Reach me for work
-              </Typography>
+              </h1>
               <h2 className="reach-out-out-2">
                 Looking for a Fullstack Developer? Want to start a project? or Just ask a question? Contact me!
               </h2>
@@ -111,7 +101,7 @@ const MessageForm = ({ openModal}) => {
                   </div>
                   <div className="col-6">
                     <div >
-                      <label htmlFor="email" error={()=>{FailAlert(true)}}  className="form-label">Email</label>
+                      <label htmlFor="email"  className="form-label">Email</label>
                       <input type="text" required   className="custom-input form-control" placeholder="Type your Email" name="email" onChange={handleChange} />
                     </div>
                   </div>

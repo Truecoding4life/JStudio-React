@@ -8,7 +8,7 @@ export default function ShowcaseBox (){
         <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-0s">
         <div className="row ">
             {showcaseData.map((item, index)=>
-            <div id={`showcase${index +1}`} className="col-4">
+            <div key={index} id={`showcase${index +1}`} className="col-4">
                 <div className="row">
                     <div className="col-12 col-sm-5  showcase-icon">
                         <item.icon style={{ fontSize: '5vw',maxHeight:'75px', color: 'var(--showcase-icon-color)' }}></item.icon>

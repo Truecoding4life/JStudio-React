@@ -1,5 +1,7 @@
 
-
+#carousel-row{
+    width: 100%;
+}
 #about-container{
     min-height: 100vh;
     height: fit-content;
@@ -10,6 +12,8 @@
     height: fit-content;
     color: aliceblue;
     padding: auto;
+
+  
    
 
 }
@@ -17,6 +21,8 @@
 #carousel{
     background-color: var(--carousel-color);
     border-radius: 30px;
+  
+    
 
 }
 
@@ -104,6 +110,10 @@
     transition: .8s;
     transform: scale(1.1);
 }
+
+
+
+
 
 @media screen and (min-width: 1900px) {
     .carousel-text{
