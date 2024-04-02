@@ -93,6 +93,10 @@
 
 }
 
+.second{
+    background-color: rgba(43, 47, 47, 0);
+    margin-top: 20px;
+}
 
 .carousel-button:hover{
     color:var(--carousel-color);

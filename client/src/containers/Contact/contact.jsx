@@ -17,7 +17,7 @@ let image = imageList[Math.floor(Math.random() * imageList.length)];
   
 
   return (
-    <section className="contact-content  animate__animated animate__fadeIn animate__slower" style={{height:'70vh'}}>
+    <section className="contact-content  animate__animated animate__fadeIn " style={{height:'70vh'}}>
       <div className="row">
         <div className=" col-lg-7" style={{overflow:'hidden'}}>
           <img src={image} alt="beautiful lighting" id="contact-page-photo" />

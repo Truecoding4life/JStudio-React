@@ -1,12 +1,13 @@
 import React from 'react';
 import myPhoto from "../../assets/images/website/other/profile.jpg";
-
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 import './style.css'
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';export default function AboutPage() {
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+export default function AboutPage() {
     return (
-        <section className="height-100 container-fluid animate__animated animate__fadeIn animate__slower">
+        <section className="height-100 container-fluid animate__animated animate__fadeIn">
             {/* <h2 style={{backgroundColor:'white', width:'100%'}}> hey </h2> */}
             <div className="container">
 
@@ -18,37 +19,47 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';export def
                 <div className="col-12  intro-bio">
                     <div className="row ">
                         <div className="col-12">
-                            <h1 className='header text-center'>About Jay</h1>
+                            <h1 className='header'>Info</h1>
                         </div>
-                        <div className="col-3 bold text-end align-self-center">
-                            <h5> Specialty </h5>
+                        <div className="col-12 line-space"></div>
+
+                        <div className="col-6 bold  align-self-center">
+                            <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Services </h5>
                         </div>
-                        <div className="col-9 p-2">
+                        <div className="col-6 p-2">
                             <p> {" "} Fullstack Web Development.  {" "}</p>
                         </div>
-                        <div className="col-3 bold text-end align-self-center">
-                            <h5> Certification  </h5>
+                        <div className="col-12 line-space"></div>
+                        <div className="col-6 bold  align-self-center">
+                            <h5> <span> <SubdirectoryArrowRightIcon/> </span> Certification  </h5>
                         </div>
-                        <div className="col-9 p-2">
+                        
+                        <div className="col-6 p-2">
                             <p> {" "} UC Berkely Extension Fullstack Web Development.  {" "}</p>
                         </div>
-                        <div className="col-3 bold text-end align-self-center">
-                            <h5> My Vision </h5>
+                        <div className="col-12 line-space"></div>
+
+                        <div className="col-6 bold  align-self-center">
+                            <h5> <span> <SubdirectoryArrowRightIcon/> </span> My Vision </h5>
                         </div>
-                        <div className="col-9 p-2">
+                        <div className="col-6 p-2">
                             <p> {" "} My passion lies in using creative vision to drive product strategies, enhance user experience, and deliver exceptional design solutions that drive results.  {" "}</p>
                         </div>
-                        <div className="col-3 bold text-end align-self-center">
-                            <h5> Values </h5>
+                        <div className="col-12 line-space"></div>
+
+                        <div className="col-6 bold  align-self-center">
+                            <h5> <span> <SubdirectoryArrowRightIcon/> </span> Values </h5>
                         </div>
-                        <div className="col-9 p-2">
+                        <div className="col-6 p-2">
                             <p> {" "}
                                 "As a member of the Army, I embody the seven core values: Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, and Personal Courage. Among these values, Personal Courage resonates deeply with me, as individuals who exhibit remarkable Personal Courage are often the ones who achieve extraordinary feats."  {" "}</p>
                         </div>
-                        <div className="col-3 bold text-end align-self-center">
-                            <h5> Awards </h5>
+                        <div className="col-12 line-space"></div>
+
+                        <div className="col-6 bold  align-self-center">
+                            <h5> <span> <SubdirectoryArrowRightIcon/> </span> Awards </h5>
                         </div>
-                        <div className="col-9 p-2">
+                        <div className="col-6 p-2">
                             <ul>
                                 <li> Soldier of the Month x2</li>
                                 <li> Army Achievement Medal</li>

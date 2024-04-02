@@ -1,4 +1,4 @@
-import CarouselHelper from "./CarouselHelper";
+import CarouselHelper from "./CaroselHelper";
 
 export default function CarouselCard({ image, title, text, aboutIndex, description, set }) {
   return (
