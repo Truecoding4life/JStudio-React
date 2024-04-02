@@ -49,7 +49,7 @@ export default function PortfolioPage() {
          
         )}
         <div className="card-body">
-          <h4 className="fw-bolder project-title ">{item.title}</h4>
+          <h4 className=" project-title ">{item.title}</h4>
           <div>
             <ul className="list-tag" style={{ textDecorationStyle: "none" }}>
               {item.tags.map((tag) => (
@@ -66,7 +66,7 @@ export default function PortfolioPage() {
 
   return (
 
-    <div className=" project p-3">
+    <div className=" project p-0 ">
       <div
         className=" project-container container-fluid "
         style={{ borderColor: mainLight }}
@@ -88,7 +88,7 @@ export default function PortfolioPage() {
         <div className="row ">
           {Project.map((project) => renderCard(project))}
         </div>
-          <span className="space"></span>
+        <br></br>
         <div className="row align-self-center container-fluid other-skills">
           <div className="container ">
             <div className="row">
@@ -114,14 +114,17 @@ export default function PortfolioPage() {
                       <p className="card-text text-secondary">{skill.description}</p>
                     </div>
                     {renderButtons(skill)}
+                    
                   </div>
                 </div>
               ))}
+              <br />
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 
   );
 }

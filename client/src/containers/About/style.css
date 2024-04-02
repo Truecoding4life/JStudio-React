@@ -51,9 +51,7 @@ body{
     font-size: 220%;
 }
 
-.sub{
-    color: rgb(158, 156, 156);
-}
+
 
 @media screen and ( min-width: 2000px) {
     .header{

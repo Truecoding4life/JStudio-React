@@ -3,7 +3,6 @@
 #about-container{
     min-height: 100vh;
     height: fit-content;
-    background-color: #121317;
      border-radius: 20px;
 }
 .section-about{
@@ -89,7 +88,7 @@
 }
 
 .disable{
-    color: rgb(33, 40, 49);
+    color: var(--carousel-indicator-disable);
     border: none;
 
 }
