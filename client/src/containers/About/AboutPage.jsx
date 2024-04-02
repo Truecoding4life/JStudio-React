@@ -26,15 +26,9 @@ export default function AboutPage() {
                             <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Overview </h5>
                         </div>
                         <div className="col-12 col-sm-6 p-1">
-                            <p> {" "} My name is Jay Nghiem, and I specialize in full-stack web development with an eye for aestheticism and a passion for solving real-world problems, I bring a unique blend of creativity and technical expertise to every project I undertake.{" "}</p>
+                            <p> {" "} My name is Jay Nghiem, and I am a full-stack web developer with an eye for aestheticism and a passion for solving real-world problems, I bring a unique blend of creativity and technical expertise to every project I undertake.{" "}</p>
                         </div>
-                        <div className="col-12 line-space"></div>
-                        <div className="col-12 col-sm-6 bold  ">
-                            <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Services </h5>
-                        </div>
-                        <div className="col-12 col-sm-6 p-1">
-                            <p> {" "} Fullstack Web Development.  {" "}</p>
-                        </div>
+                       
                         <div className="col-12 line-space"></div>
                         <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Certification  </h5>
@@ -49,7 +43,7 @@ export default function AboutPage() {
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> My Vision </h5>
                         </div>
                         <div className="col-12 col-sm-6 p-1">
-                            <p> {" "} My passion lies in using creative vision to drive product strategies, enhance user experience, and deliver exceptional design solutions that drive results.  {" "}</p>
+                            <p> {" "} "I'm committed to make a positive impact on the world and strive to leave a lasting legacy of meaningful change. With a fervent desire to innovate and a relentless pursuit of excellence, I aim to transform challenges into opportunities and make a difference that resonates far and wide "{" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
 
@@ -73,67 +67,8 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div> 
-            {/* intro col */}
+        
 
-                
-                {/* <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-1s">
-                    <div className="row ">
-                        <div id='showcase1' className="col-4">
-                            <div className="row">
-                                <div className="col-5 text-end p-0">
-                                    <CodeIcon style={{ fontSize: '5vw',maxHeight:'75px', color: 'var(--showcase-icon-color)' }}></CodeIcon>
-                                </div>
-                                <div className="col-7">
-                                    <h3 className='custom-font'> 2000+ </h3><p className='sub'>
-                                        Coding Hours
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div id='showcase2' className="col-4">
-                            <div className="row">
-
-                                <div className="col-5 text-end p-0">
-                                    <ThumbUpOffAltIcon style={{ fontSize: '5vw',maxHeight:'75px', color: 'var(--showcase-icon-color)' }}></ThumbUpOffAltIcon>
-                                </div>
-
-                                <div className="col-7">
-                                    <h3 className='custom-font'>
-                                        100%
-                                    </h3>
-                                    <p className='sub'>  Job Success</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div id='showcase3' className="col-4">
-                            <div className="row">
-
-                                <div className="col-5 text-end p-0">
-                                    <ArrowForwardIosIcon  style={{ fontSize: '5vw', color: 'var(--showcase-icon-color)' , maxHeight:'75px'}}></ArrowForwardIosIcon >
-                                </div>
-
-                                <div className="col-7">
-                                    <h3 className='custom-font'>
-                                        10+
-                                    </h3>
-                                    <p className='sub'> Total Works</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                  showcase col */}
-
-                <div className="col-12 pt-5">
-
-                    <div className="row">
-                        <div className="col-12">
-                        </div>
-                    </div>
-                </div>
 
 
 
