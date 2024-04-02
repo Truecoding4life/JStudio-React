@@ -11,7 +11,7 @@ export default function CarouselCard({ image, title, text, aboutIndex, descripti
           </div>
           <div className="col-12 col-sm-12 col-md-12 col-lg-8 align-self-center about-me ">
             <div key={aboutIndex} className="col-12 align-items-center ">
-              <h4 className="carousel-title  "> {title}  </h4>
+              <h4 className="carousel-title"> {title}  </h4>
               <p className="carousel-text">
                 {" "}
                 {text}

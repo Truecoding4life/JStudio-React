@@ -56,7 +56,7 @@ export default function HomePage({ setSuccessAlert }) {
 
   return (
     <div className="container-fluid  p-0">
-      <section className="container-fluid home p-0   animate__animated animate__fadeIn animate__slower height-100 background-image snap-section ">
+      <section className="container-fluid home p-0   animate__animated animate__fadeIn  height-100 background-image snap-section ">
         <NavbarLi></NavbarLi>
         <div className="row ">
 
@@ -76,31 +76,19 @@ export default function HomePage({ setSuccessAlert }) {
                 </div>
               </div>
               <div className="col-12 ">
-                <h3 className="text-white greeting-quote">
+                <h3 className=" greeting-quote text-white">
                   {" "}
                   Meet Jay{" "}
                 </h3>
-                <h3 className="text-white greeting-quote"> Full Stack Web Developer</h3>
-                <h3 className="text-white greeting-quote"> Veteran</h3>
-
-                {/* <h3 className="text-white greeting-quote">
-                  {" "}
-                  Fullstack Web Developer{" "}
-                </h3>
-                <h3 className="text-white greeting-quote greeting-sm">
-                  and{" "}
-                  <span className="text-white greeting-quote greeting-sm">
-                    {" "}
-                    Veteran
-                  </span>{" "}
-                </h3> */}
+                <h3 className=" greeting-quote text-white"> Full Stack Web Developer</h3>
+                <h3 className=" greeting-quote text-white"> Veteran</h3>
 
                 <Button
 
                   type="button"
                   onClick={() => window.open(resume, "jay_resume")}
-                  className="btn download-button"
-                  sx={{ color: '#848a8c' }}
+                  className="btn download-button animate__animated  animate__flash animate__repeat-2"
+                  
                 >
                   {" "}
                   {resumeIcon}
@@ -109,8 +97,8 @@ export default function HomePage({ setSuccessAlert }) {
 
 
                 <Button
-                  sx={{ color: '#848a8c' }}
-                  href="#portfolio-section" type="button" className="go-portfolio btn animate__animated  animate__flash animate__repeat-3">
+                  
+                  href="#portfolio-section" type="button" className="go-portfolio btn animate__animated  animate__flash animate__repeat-2">
 
                   <ArrowCircleDownIcon ></ArrowCircleDownIcon>
                   GO TO PORTFOLIO

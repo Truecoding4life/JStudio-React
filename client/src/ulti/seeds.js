@@ -8,7 +8,7 @@ import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 
 // technologies
-import apollo from '../assets/images/website/logos/apollo.png';
+import apollo from '../assets/images/website/logos/apollo.jpeg';
 import bootstrap from '../assets/images/website/logos/bootstrap.png';
 import css from '../assets/images/website/logos/css.png';
 // import express from '../assets/images/website/logos/express.jpeg';

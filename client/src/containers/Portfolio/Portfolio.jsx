@@ -14,14 +14,17 @@ export default function PortfolioPage() {
     <div className="col-12 d-flex justify-content-evenly p-1">
       <a
         href={item.github}
-        className="btn btn github-btn   col-6 m-1"
-
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn github-btn col-6 m-1"
       >
-        {Github} <span className="button-name">GitHub</span>
+        {Github} <span className="button-name col-6 m-1">GitHub</span>
       </a>
       {item.link && (
         <a
           href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn play-btn m-1  col-6"
         >
           {PlayButton} <span className="button-name">Website</span>

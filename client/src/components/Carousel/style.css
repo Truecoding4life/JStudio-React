@@ -31,12 +31,7 @@
     padding: 10px;
 }
 
-.carousel-text-area{
-    padding: 20px;
-    border-radius: 30px;
-    min-height: 100%;
 
-}
 
 .carousel-text{
     color: rgb(211, 211, 211);
@@ -71,7 +66,7 @@
 
 .carousel-helper{
     
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -133,10 +128,7 @@
        
     }
 
-    .carousel-card-description{
-        font-size: 15px;
-        padding: 5px;
-    }
+   
     
     .carousel-photo{
         max-width: 50%;
@@ -150,9 +142,7 @@
         padding: auto;
     }
 
-    .carousel-text-area{
-        margin-top: 30px;
-    }
+    
 
     
     
@@ -161,7 +151,7 @@
 @media screen and (max-width: 580px) {
     .carousel-text{
         font-size: 15px;
-        padding-bottom: 45px ;
+        padding-bottom: 15px ;
         
     }
 

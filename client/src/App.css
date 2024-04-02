@@ -4,7 +4,7 @@
     font-family:Poppins,  sans-serif;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     --header-background: #131315f9;
-    --main-color: #29dea7;
+    --main-color: #38dc77;
 
     /* Form color */
     --form-color: #67dda0;
@@ -21,7 +21,7 @@
     /* Showcase color*/
      --showcase-border-color: rgb(143, 142, 142); 
     --showcase-background-color: #1d1f21d7;
-    --showcase-icon-color: rgb(110, 231, 158);
+    --showcase-icon-color: rgb(45, 236, 125);
   }
 
   
@@ -81,7 +81,7 @@ body {
 
 /* Custom Gradient text color */
 .gradient-text{
-  background: linear-gradient(148deg, #24613e 0%, rgba(32, 160, 125, 1) 27%, rgba(34, 152, 180, 1) 55%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);  
+  background: linear-gradient(168deg, #38e941 0%, rgb(45, 197, 157) 17%, rgb(49, 196, 233) 35%, #334bd2 103%, rgba(3, 35, 86, 1) 100%);  
   
   background-clip: text;
  -webkit-background-clip: text;

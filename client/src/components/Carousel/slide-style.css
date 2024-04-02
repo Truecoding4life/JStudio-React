@@ -34,9 +34,7 @@
     height: 60px;
     margin: 0px 40px;
 }
-.slide:hover .logo-slide{
-    animation-play-state: paused;
-}
+
 
 .slide:before, .slide:after{
     content: '';
@@ -50,9 +48,15 @@
 }
 .slide:before{
     left: 0;
-    background: linear-gradient(to left, rgba(33, 33, 34, 0.083), var(--carousel-color));
+    background: linear-gradient(to left, rgba(40, 40, 50, 0.099), var(--carousel-color));
 }
 .slide:after{
     right: 0;
-    background: linear-gradient(to right, rgba(43, 43, 44, 0.083), var(--carousel-color));
+    background: linear-gradient(to right, rgba(40, 40, 50, 0.099), var(--carousel-color));
+}
+
+@media screen and (min-width: 1228px){
+    .slide:hover .logo-slide{
+    animation-play-state: paused;
+}
 }
