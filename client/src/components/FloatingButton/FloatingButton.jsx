@@ -5,7 +5,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useState } from 'react';
 import ContactModal from './ContactModal';
 import 'animate.css'
-
 export default function FloatingButton() {
   const [ contactBoxOpen, setContactBoxOpen] = useState(false);
   return (

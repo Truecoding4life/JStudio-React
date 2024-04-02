@@ -18,8 +18,9 @@ const style = {
   boxShadow: 24,
   borderRadius:9,
   pt: 2,
-  px: 4,
+  px: 0,
   pb: 3,
+
 
 
 

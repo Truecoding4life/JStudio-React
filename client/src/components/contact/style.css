@@ -82,6 +82,10 @@
 
 }
 
+.chat-box{
+    padding-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .reach-out{
       font-size: 30px

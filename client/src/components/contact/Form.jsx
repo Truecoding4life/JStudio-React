@@ -69,10 +69,7 @@ const MessageForm = ({ openModal}) => {
       message: "",
     });
   };
-  let boxSizing = "col-lg-12 col-md-12 col-sm-12 align-self-center chat-box m-auto"
-  if (window.location.pathname !== "/contact") {
-    boxSizing = "col-12 align-self-center chat-box m-auto "
-  }
+  
   const emailValidation = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -81,14 +78,14 @@ const MessageForm = ({ openModal}) => {
   return (
     < div className="container container-fluid">
       <div className=" contact-container container">
-        <div className={boxSizing}>
+        <div className='col-12 align-self-center chat-box m-auto '>
           <div className="row">
             <div className="col-12">
               <Typography
                 className="reach-out gradient-text"
                 variant="p"
                 style={{
-                  fontFamily: "Raleway",
+                  fontFamily: "Raleway"
                 }}
               >
                 <i>{Icon} </i>
@@ -100,7 +97,7 @@ const MessageForm = ({ openModal}) => {
             </div>
           </div>
           <div className="row row-cols-2 d-flex flex-row">
-            <form className="col-lg-12 col-12 contact-form" >
+            <form className="col-lg-12 col-12 contact-form " >
 
 
               <Box style={{ padding: "0px" }}>
