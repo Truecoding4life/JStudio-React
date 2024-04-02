@@ -6,6 +6,10 @@ import photo1 from "../assets/images/website/carousel/photo1.png";
 import photo2 from "../assets/images/website/carousel/devices.png";
 import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
+// showcase
+import CodeIcon from '@mui/icons-material/Code';
+import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const Project = [
   {
     title: "GameLoft",
@@ -99,4 +103,22 @@ const aboutData = [
   },
 ];
 
-export { Project, OtherSkills, aboutData };
+const showcaseData =  [
+  {
+      icon: CodeIcon,
+      text: '2000+',
+      sub: 'Coding Hours'
+  },
+  {
+      icon: ThumbUpOffAltIcon,
+      text: '100%',
+      sub: 'Job Success'
+  },
+  {
+      icon: ArrowForwardIosIcon,
+      text: '10+',
+      sub: 'Total Works'
+  },
+]
+
+export { Project, OtherSkills, aboutData, showcaseData };

@@ -1,25 +1,30 @@
-import CodeIcon from '@mui/icons-material/Code';
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 import './style.css'
+import {showcaseData} from '../../ulti/seeds.js'
+
+
 export default function ShowcaseBox (){
     return (
-        <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-4s">
+        <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-0s">
         <div className="row ">
-            <div id='showcase1' className="col-4">
+            {showcaseData.map((item, index)=>
+            <div id={`showcase${index +1}`} className="col-4">
                 <div className="row">
-                    <div className="col-5 text-end p-0">
-                        <CodeIcon style={{ fontSize: '5vw',maxHeight:'75px', color: 'var(--showcase-icon-color)' }}></CodeIcon>
+                    <div className="col-12 col-sm-5  showcase-icon">
+                        <item.icon style={{ fontSize: '5vw',maxHeight:'75px', color: 'var(--showcase-icon-color)' }}></item.icon>
                     </div>
-                    <div className="col-7">
-                        <h3 className='custom-font'> 2000+ </h3><p className='sub'>
-                            Coding Hours
+                    <div className="col-12 col-sm-7 showcase-text">
+                        <h3 className='custom-font'> {item.text} </h3><p className='sub'>
+                            {item.sub}
                         </p>
                     </div>
                 </div>
 
             </div>
-            <div id='showcase2' className="col-4">
+
+            )}
+            
+            {/* <div id='showcase2' className="col-4">
                 <div className="row">
 
                     <div className="col-5 text-end p-0">
@@ -50,7 +55,7 @@ export default function ShowcaseBox (){
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     </div>
     )

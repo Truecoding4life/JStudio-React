@@ -1,16 +1,24 @@
 /* Global Styles */
 * {
+    /* Main theme */
     font-family:Poppins,  sans-serif;
-    
-    --form-color: #67dda0;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     --header-background: #000000f9;
     --main-color: #4fe397f1;
+
+    /* Form color */
+    --form-color: #67dda0;
+
+    /* Navbar color */
     --navbar-font: Poppins, sans-serif;
     --nav-link:#b5b4b4;
+
+    /* Carousel color */
     --carousel-color: #1d1f21d7;
     --carousel-indicator: #4fe397f1;
-     --showcase-border-color: rgb(143, 142, 142);
+
+    /* Showcase color*/
+     --showcase-border-color: rgb(143, 142, 142); 
     --showcase-background-color: #1d1f21d7;
     --showcase-icon-color: rgb(85, 215, 152);
   }
@@ -21,11 +29,7 @@ body {
   background-color: rgb(0, 0, 0);
  overflow-x: hidden;
  scroll-behavior: smooth; /* Smooth scrolling behavior */
-
- 
 }
-
-
 
 .body{
   height: 100%;
@@ -35,11 +39,9 @@ body {
   height: 100vh;
 
 }
-/* Content Section #b6dfd1ec */
 
 
-/* Download Button */
-
+/* Custom Scrollbar */
 
 
 ::-webkit-scrollbar {
@@ -63,6 +65,7 @@ body {
 }
 
 
+/* Custom Gradient text color */
 .gradient-text{
   background: linear-gradient(148deg, #24613e 0%, rgba(32, 160, 125, 1) 27%, rgba(34, 152, 180, 1) 55%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);  
   
