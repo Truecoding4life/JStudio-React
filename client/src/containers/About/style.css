@@ -7,14 +7,14 @@
     font-weight: 300;
     font-family: 'Nunito Sans', sans-serif;
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     letter-spacing: 1px;
   
 }
 .line-space{
     height: 2px;
     background-color: rgb(138, 143, 146);
-    margin-block: 20px;
+    margin-block: 10px;
 }
 body{
     background-color: rgba(8, 11, 14, 0.992);
@@ -23,8 +23,8 @@ body{
 
 .intro-bio{
     color: rgb(115, 116, 120);
-    font-size: 20px;
-    padding: 20px;
+    font-size: 18px;
+    padding: 10px;
     font-weight: 300;
     padding-top: 20px;
     letter-spacing: .5px;

@@ -25,14 +25,14 @@ export default function AboutPage() {
                         <div className="col-12 col-sm-6 bold  ">
                             <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Overview </h5>
                         </div>
-                        <div className="col-12 col-sm-6 p-2">
-                            <p> {" "} My name is Jay Nghiem, and I specialize in full-stack web development. With a eye for aestheticism and a passion for solving real-world problems, I bring a unique blend of creativity and technical expertise to every project I undertake.{" "}</p>
+                        <div className="col-12 col-sm-6 p-1">
+                            <p> {" "} My name is Jay Nghiem, and I specialize in full-stack web development with an eye for aestheticism and a passion for solving real-world problems, I bring a unique blend of creativity and technical expertise to every project I undertake.{" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
                         <div className="col-12 col-sm-6 bold  ">
                             <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Services </h5>
                         </div>
-                        <div className="col-12 col-sm-6 p-2">
+                        <div className="col-12 col-sm-6 p-1">
                             <p> {" "} Fullstack Web Development.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Certification  </h5>
                         </div>
                         
-                        <div className="col-12 col-sm-6 p-2">
+                        <div className="col-12 col-sm-6 p-1">
                             <p> {" "} UC Berkely Extension Fullstack Web Development.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                         <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> My Vision </h5>
                         </div>
-                        <div className="col-12 col-sm-6 p-2">
+                        <div className="col-12 col-sm-6 p-1">
                             <p> {" "} My passion lies in using creative vision to drive product strategies, enhance user experience, and deliver exceptional design solutions that drive results.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                         <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Values </h5>
                         </div>
-                        <div className="col-12 col-sm-6 p-2">
+                        <div className="col-12 col-sm-6 p-1">
                             <p> {" "}
                                 "As a member of the Army, I embody the seven core values: Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, and Personal Courage. Among these values, Personal Courage resonates deeply with me, as individuals who exhibit remarkable Personal Courage are often the ones who achieve extraordinary feats."  {" "}</p>
                         </div>
@@ -65,7 +65,7 @@ export default function AboutPage() {
                         <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Awards </h5>
                         </div>
-                        <div className="col-12 col-sm-6 p-2">
+                        <div className="col-12 col-sm-6 p-1">
                             <ul>
                                 <li> Kuwait Soldier of the Month x2</li>
                                 <li> Army Achievement Medal</li>
