@@ -33,12 +33,13 @@ export default function AboutPage() {
 
 
 
-          <div className="col-12">
+          <div className="col-12 mt-3">
+
             <ShowcaseBox />
 
           </div>
 
-         <div className="Slide-container">
+         <div className="Slide-container p-0 pt-3">
           <Slide />
          </div>
 

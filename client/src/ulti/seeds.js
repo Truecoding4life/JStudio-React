@@ -12,17 +12,17 @@ import apollo from '../assets/images/website/logos/apollo.png';
 import bootstrap from '../assets/images/website/logos/bootstrap.png';
 import css from '../assets/images/website/logos/css.png';
 // import express from '../assets/images/website/logos/express.jpeg';
-import html from '../assets/images/website/logos/html.webp';
-import javascript from '../assets/images/website/logos/javascript.png';
+import html from '../assets/images/website/logos/html.png';
+import javascript from '../assets/images/website/logos/javscript.jpg';
 import jest from '../assets/images/website/logos/jest.png';
-import jquery from '../assets/images/website/logos/jquery.webp';
-import materialize from '../assets/images/website/logos/material-ui.png';
+import jquery from '../assets/images/website/logos/jquery.png';
+import materialize from '../assets/images/website/logos/mui.png';
 import mongodb from '../assets/images/website/logos/mongodb.png';
 // import mysql from '../assets/images/website/logos/mysql.jpg';
-import node from '../assets/images/website/logos/node.png';
+import node from '../assets/images/website/logos/nodejs.png';
 import python from '../assets/images/website/logos/python.png';
-import react from '../assets/images/website/logos/react.svg';
-import stripe from '../assets/images/website/logos/stripe.png';
+import react from '../assets/images/website/logos/react.png';
+import stripe from '../assets/images/website/logos/stripe.jpg';
 
 const technologiesLogo = [ apollo, bootstrap, css,  html, javascript, jquery, materialize, mongodb,  node, python, react, stripe ];
 

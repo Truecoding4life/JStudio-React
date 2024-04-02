@@ -18,11 +18,12 @@ export default function CarouselCard({ image, title, text, aboutIndex, descripti
               </p>
             </div>
           </div>
-
-        </div>
-        <div className="carousel-helper col-12 col-sm-12 text-center">
+ <div className="carousel-helper col-12 col-sm-12 text-center">
           <CarouselHelper index={aboutIndex} set={set} />
         </div>
+        </div>
+        
+       
 
       </div>
 
