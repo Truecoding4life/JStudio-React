@@ -8,10 +8,14 @@
     --main-color: #4fe397f1;
     --navbar-font: Poppins, sans-serif;
     --nav-link:#b5b4b4;
-    --carousel-color: #b1b4b2fd;
+    --carousel-color: #1d1f21d7;
+    --carousel-indicator: #4fe397f1;
+     --showcase-border-color: rgb(143, 142, 142);
+    --showcase-background-color: #1d1f21d7;
+    --showcase-icon-color: rgb(85, 215, 152);
   }
 
-
+  
 
 body {
   background-color: rgb(0, 0, 0);

@@ -18,7 +18,7 @@ const Project = [
       "E-Commerce",
       "Online Shopping",
       "Secure Payment",
-      "User Authentication",
+      
     ],
     image: GameLoft,
   },
@@ -31,7 +31,7 @@ const Project = [
       "Social Media Platform",
       "Social Networking",
       "Secure Login",
-      "User Authentication",
+     
     ],
     image: ApiAdventures,
     header: "Full Stack",

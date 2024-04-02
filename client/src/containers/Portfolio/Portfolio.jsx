@@ -49,7 +49,7 @@ export default function PortfolioPage() {
          
         )}
         <div className="card-body">
-          <h4 className="card-title fw-bolder project-title ">{item.title}</h4>
+          <h4 className="fw-bolder project-title ">{item.title}</h4>
           <div>
             <ul className="list-tag" style={{ textDecorationStyle: "none" }}>
               {item.tags.map((tag) => (

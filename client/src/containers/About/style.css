@@ -1,12 +1,8 @@
-*{
-    --showcase-border-color: rgb(143, 142, 142);
-    --showcase-background-color: rgba(70, 86, 73, 0.139);
-    --showcase-icon-color: rgb(85, 215, 152);
-}
+
 
 
 .header{
-    color: rgb(224, 224, 224);
+    color: rgb(16, 16, 16);
     font-size: 80px;
     font-weight: 300;
     font-family: 'Nunito Sans', sans-serif;
@@ -17,26 +13,29 @@
 }
 .line-space{
     height: 2px;
-    background-color: rgb(158, 156, 156);
+    background-color: rgb(138, 143, 146);
     margin-block: 20px;
 }
 body{
     background-color: rgba(8, 11, 14, 0.992);
     overflow-x: hidden;
 }
-.bold{
-    font-weight: 600;
-    color: rgb(215, 212, 212);
-}
 
 .intro-bio{
-    color: rgb(143, 144, 146);
+    color: rgb(115, 116, 120);
     font-size: 20px;
     padding: 20px;
     font-weight: 300;
     padding-top: 20px;
+    letter-spacing: .5px;
+    
 }
 
+.bold{
+    font-weight: 600;
+    color: rgb(88, 90, 91);
+    letter-spacing: 0;
+}
 
 
 .footer{
@@ -61,12 +60,16 @@ body{
         font-size: 90px;
         
     }
+
+    .intro-bio{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .header{
-        font-size: 30px;
-        padding: 20px;
+        font-size: 50px;
+        padding: 10px;
     }
     .intro-bio{
         font-size: 15px;

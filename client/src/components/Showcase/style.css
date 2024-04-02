@@ -13,14 +13,12 @@
     padding: 50px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 2px solid var(--showcase-border-color);
  
  }
  
  #showcase2{
      padding: 50px;
         background-color: var(--showcase-background-color);
-        border: 2px solid var(--showcase-border-color);
  
  
  }
@@ -30,6 +28,5 @@
      background-color: var(--showcase-background-color);
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
-     border: 2px solid var(--showcase-border-color);
  
  }

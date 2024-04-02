@@ -59,7 +59,7 @@ export default function AboutPage() {
 
 
         </div>
-      </div> // row
+      </div> 
 
     </Container>
 

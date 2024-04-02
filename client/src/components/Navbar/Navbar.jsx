@@ -80,23 +80,29 @@ export default function NavbarLi() {
           as={ScrollLink}  
           to="portfolio-section" 
           smooth={true}
-          offset={-70}
+          offset={-0}
           duration={100}
           >
             Portfolio
           </Nav.Link>
           <Nav.Link
          style={currentPage === "/contact" ? { color: "#04fab8f1" } : null}
+         as={ScrollLink}  
 
-            as={Link}
-            to="/contact"
+         to="contact-section" 
+         smooth={true}
+         offset={-0}
+         duration={100}
           >
             Contact
           </Nav.Link>
           <Nav.Link
             style={currentPage === "/about" ? { color: "#04fab8f1" } : null}
-            as={Link}
-            to="/about"
+            as={ScrollLink}  
+          to="info-section" 
+          smooth={true}
+          offset={-0}
+          duration={100}
           >
             About
           </Nav.Link>

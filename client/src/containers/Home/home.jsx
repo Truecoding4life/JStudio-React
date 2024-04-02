@@ -8,10 +8,10 @@ import ScrollMagic from 'scrollmagic';
 
 
 // Import pages
-import AboutPage from "../../components/Carousel/Carousel.jsx";
+import Carousel from "../../components/Carousel/Carousel.jsx";
 import PortfolioPage from "../Portfolio/Portfolio";
 import ContactPage from "../Contact/contact.jsx";
-
+import AboutPage from "../About/AboutPage.jsx";
 
 // Import Icons
 import { Button } from "@mui/material";
@@ -35,9 +35,9 @@ export default function HomePage({ setSuccessAlert }) {
 
     const sections = document.querySelectorAll('.snap-section');
     sections.forEach((section, index) => {
-      let duration = index === 2 ? 400 : 0; // Adjust duration for the portfolio section
+      let duration = index === 2 || 3 ? 400 : 0; // Adjust duration for the portfolio section
       let offset = index === 2 ? 0 : 10; // Adjust offset for the portfolio section
-      let triggerHook = index === 2 ? 0 : 0; // Adjust trigger hook for the portfolio section
+      let triggerHook = index === 3 ? 0 : 0; // Adjust trigger hook for the portfolio section
       new ScrollMagic.Scene({
         triggerElement: section,
         duration: duration,
@@ -108,12 +108,19 @@ export default function HomePage({ setSuccessAlert }) {
         </div>
       </section>
 
+
       <section id="about-container" className="container-fluid height-100 snap-section p-0">
-        <AboutPage ></AboutPage>
+        <Carousel ></Carousel>
       </section>
       <div id="portfolio-section" className="snap-section heigh-more" >
         <PortfolioPage ></PortfolioPage>
       </div>
+      <section id='info-section' className="container-fluid height-100 snap-section p-0">
+        <AboutPage></AboutPage>
+      </section>
+      <section id='contact-section' className="container-fluid height-100 snap-section p-0">
+        <ContactPage ></ContactPage>
+      </section>
 
 
       {/* <div >

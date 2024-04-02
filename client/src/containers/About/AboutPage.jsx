@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
         <section className="height-100 container-fluid animate__animated animate__fadeIn">
             {/* <h2 style={{backgroundColor:'white', width:'100%'}}> hey </h2> */}
-            <div className="container">
+            <div className="container-fluid">
 
 
                 <div className="row">
@@ -22,46 +22,52 @@ export default function AboutPage() {
                             <h1 className='header'>Info</h1>
                         </div>
                         <div className="col-12 line-space"></div>
-
-                        <div className="col-6 bold  align-self-center">
+                        <div className="col-12 col-sm-6 bold  ">
+                            <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Overview </h5>
+                        </div>
+                        <div className="col-12 col-sm-6 p-2">
+                            <p> {" "} My name is Jay Nghiem, and I specialize in full-stack web development. With a eye for aestheticism and a passion for solving real-world problems, I bring a unique blend of creativity and technical expertise to every project I undertake.{" "}</p>
+                        </div>
+                        <div className="col-12 line-space"></div>
+                        <div className="col-12 col-sm-6 bold  ">
                             <h5>  <span> <SubdirectoryArrowRightIcon/> </span> Services </h5>
                         </div>
-                        <div className="col-6 p-2">
+                        <div className="col-12 col-sm-6 p-2">
                             <p> {" "} Fullstack Web Development.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
-                        <div className="col-6 bold  align-self-center">
+                        <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Certification  </h5>
                         </div>
                         
-                        <div className="col-6 p-2">
+                        <div className="col-12 col-sm-6 p-2">
                             <p> {" "} UC Berkely Extension Fullstack Web Development.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
 
-                        <div className="col-6 bold  align-self-center">
+                        <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> My Vision </h5>
                         </div>
-                        <div className="col-6 p-2">
+                        <div className="col-12 col-sm-6 p-2">
                             <p> {" "} My passion lies in using creative vision to drive product strategies, enhance user experience, and deliver exceptional design solutions that drive results.  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
 
-                        <div className="col-6 bold  align-self-center">
+                        <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Values </h5>
                         </div>
-                        <div className="col-6 p-2">
+                        <div className="col-12 col-sm-6 p-2">
                             <p> {" "}
                                 "As a member of the Army, I embody the seven core values: Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, and Personal Courage. Among these values, Personal Courage resonates deeply with me, as individuals who exhibit remarkable Personal Courage are often the ones who achieve extraordinary feats."  {" "}</p>
                         </div>
                         <div className="col-12 line-space"></div>
 
-                        <div className="col-6 bold  align-self-center">
+                        <div className="col-12 col-sm-6 bold  ">
                             <h5> <span> <SubdirectoryArrowRightIcon/> </span> Awards </h5>
                         </div>
-                        <div className="col-6 p-2">
+                        <div className="col-12 col-sm-6 p-2">
                             <ul>
-                                <li> Soldier of the Month x2</li>
+                                <li> Kuwait Soldier of the Month x2</li>
                                 <li> Army Achievement Medal</li>
                             </ul>
                         </div>
@@ -70,7 +76,7 @@ export default function AboutPage() {
             {/* intro col */}
 
                 
-                <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-1s">
+                {/* <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-1s">
                     <div className="row ">
                         <div id='showcase1' className="col-4">
                             <div className="row">
@@ -119,7 +125,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
-                  {/* showcase col */}
+                  showcase col */}
 
                 <div className="col-12 pt-5">
 

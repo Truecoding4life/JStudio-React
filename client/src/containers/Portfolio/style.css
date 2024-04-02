@@ -7,6 +7,7 @@
   border-radius: 15px;
   transition: transform 0.4s ease;
   border: none;
+  
 }
 
 #portfolio-section {
@@ -73,7 +74,7 @@
 .project-title {
   font-family: 'Raleway', Courier, monospace;
   color: rgb(185, 190, 190);
-  font-size: 200%;
+  font-size: 120%;
 }
 
 /* Other Project */
@@ -83,7 +84,10 @@
   
 }
 
-
+.card-title{
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
 /* GitHub and Play Buttons */
 .github-btn, .play-btn {
   box-shadow: 0 0 3px 0 rgba(45, 192, 119, 0.5);
@@ -117,6 +121,8 @@
   transform: translateY(-10px);
   
 }
+
+
 
 .card-image-container{
   overflow: hidden;

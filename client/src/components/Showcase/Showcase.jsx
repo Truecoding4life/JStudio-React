@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './style.css'
 export default function ShowcaseBox (){
     return (
-        <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-1s">
+        <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-4s">
         <div className="row ">
             <div id='showcase1' className="col-4">
                 <div className="row">
