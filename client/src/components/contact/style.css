@@ -1,0 +1,119 @@
+
+.QuickContact{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #64df81 #02010100;
+    background-color: #111113fb;
+}
+
+.custom-input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(26, 28, 28);
+    color: aliceblue;
+}
+.custom-input::placeholder{
+    color: #7a7d7c;
+}
+
+.custom-input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgb(26, 28, 28) inset; /* Change the color to whatever you want */
+    -webkit-text-fill-color: white;
+}
+
+/* For Firefox */
+
+.custom-input:-moz-autofill {
+    -moz-box-shadow: 0 0 0px 1000px rgb(26, 28, 28) inset; /* Change the color to whatever you want */
+
+}
+
+.custom-input:focus{
+    outline: none;
+    border: 3px solid #7bd3ad;
+    background-color: rgb(36, 42, 42);
+    color: aliceblue;
+}
+
+
+.form-label{
+    color: var(--form-color);
+    font-size: 1.2rem;
+
+}
+
+.custom-input-button{
+    
+    padding: 10px;
+    background-color: #55c093;
+    border-radius: 10px;
+    color: #111111;;
+    width: 100%;
+   
+   
+}
+
+.custom-input-button:hover{
+    background-color: #67dda0;
+    color: #242525;
+}
+
+
+
+.reach-out{
+    font-size: 50px;
+  
+}
+
+.reach-out-out-2{
+    padding: 10px;
+    font-size: 20px;
+    color: #b1b1b1;
+    font-weight: 300;
+
+}
+#danger-alert{
+    
+    color: rgb(5, 5, 5);
+    border-radius: 10px;
+
+}
+
+.chat-box{
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .reach-out{
+      font-size: 30px
+    }
+.reach-out-out-2{
+      font-size: 20px;
+    }
+
+
+
+  }
+    
+
+@media screen and (max-width: 480px) {
+   
+    .reach-out{
+      font-size: 14px
+    }
+  
+    .reach-out-out-2{
+      font-size: 12px;
+    }
+    
+    
+  }
+
+  @media screen and ( min-width: 1600px) {
+        .reach-out-out-2{
+            font-size: 30px;
+        }
+  }
