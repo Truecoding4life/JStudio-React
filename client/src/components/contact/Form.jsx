@@ -69,9 +69,9 @@ const MessageForm = ({ openModal}) => {
       message: "",
     });
   };
-  let boxSizing = "col-lg-12 col-md-12 col-sm-12 align-self-center chat-box m-auto pt-3"
+  let boxSizing = "col-lg-12 col-md-12 col-sm-12 align-self-center chat-box m-auto"
   if (window.location.pathname !== "/contact") {
-    boxSizing = "col-12 align-self-center chat-box m-auto pt-5"
+    boxSizing = "col-12 align-self-center chat-box m-auto "
   }
   const emailValidation = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -92,7 +92,7 @@ const MessageForm = ({ openModal}) => {
                 }}
               >
                 <i>{Icon} </i>
-                Reach out for work
+                Reach me for work
               </Typography>
               <h2 className="reach-out-out-2">
                 Looking for a Fullstack Developer? Want to start a project? or Just ask a question? Contact me!
@@ -103,7 +103,7 @@ const MessageForm = ({ openModal}) => {
             <form className="col-lg-12 col-12 contact-form" >
 
 
-              <Box style={{ padding: "10px" }}>
+              <Box style={{ padding: "0px" }}>
 
                 <div className="row">
                   <div className="col-6">

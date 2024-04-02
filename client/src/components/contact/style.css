@@ -1,6 +1,7 @@
 
 .QuickContact{
     overflow-y: scroll;
+    overflow-x: hidden;
     scrollbar-color: #64df81 #02010100;
     background-color: #111113fb;
 }
