@@ -84,7 +84,7 @@ function App() {
           setSuccessAlert={setAlert}
           setDangerAlert={setDangerAlert}
         >
-          {videoPlaying && window.screen.width > 768 ? <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> : (
+          {videoPlaying && window.screen.width > 768 ? <div> <VideoComponent handleVideoEnd={handleVideoEnd}></VideoComponent> </div>  : (
             <div className="body  d-flex flex-column">
               <div className="section content ">
                 <div className="section" >
