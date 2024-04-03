@@ -11,7 +11,7 @@ export default function PortfolioPage() {
   const { mainLight, projectButton: button } = palette.primary;
 
   const renderButtons = (item) => (
-    <div className="col-12 d-flex justify-content-evenly p-1">
+    <div className="col-12 d-flex justify-content-around ">
       <a
         href={item.github}
         target="_blank"
@@ -103,7 +103,7 @@ export default function PortfolioPage() {
               {OtherSkills.map((skill) => (
                 <div
                   key={skill.name}
-                  className="col-12 col-md-6 col-lg-12 col-xl-4 d-flex project-card text-center "
+                  className="col-12 col-sm-6  col-md-6 col-lg-6 col-xl-3 d-flex project-card text-center "
                 >
                   <div className="card flex-fill p-3">
                     <div className="card-body">

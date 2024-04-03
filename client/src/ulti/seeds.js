@@ -53,8 +53,8 @@ const Project = [
     github: "https://github.com/Truecoding4life/api-adventures",
     tags: [
       "Social Media Platform",
-      "Social Networking",
-      "Secure Login",
+      
+      "User Authentication",
      
     ],
     image: ApiAdventures,
@@ -85,6 +85,18 @@ const Project = [
 
 const OtherSkills = [
   {
+    name: "JQuery",
+    description:
+      "Game built with front end logic powered by JQuery",
+    github: "https://github.com/Truecoding4life/crytal-quest",
+    link:"https://main--crystalquest.netlify.app/"
+  },{
+    name: "Express JS",
+    description:
+      "Web Application powered by Express JS to handle server side logic",
+    github: "https://github.com/Truecoding4life/Note-Favorite",
+    link: "https://notefavorite-webapp-4790f7ae5b8c.herokuapp.com/notes",
+  },{
     name: "Object-Relational Mapping",
     description:
       "Backend Application powered by Sequelize to handle server side logic",
@@ -96,14 +108,8 @@ const OtherSkills = [
       "Backend Application powered by MySQL to handle server side logic",
     github: "https://github.com/Truecoding4life/MySQL-for-SPACEX",
   },
-  {
-    name: "Express JS",
-    description:
-      "Web Application powered by Express JS to handle server side logic",
-    github: "https://github.com/Truecoding4life/Note-Favorite",
-    header: "",
-    link: "https://notefavorite-webapp-4790f7ae5b8c.herokuapp.com/notes",
-  },
+  
+  
 ];
 
 const aboutData = [
