@@ -87,6 +87,19 @@
 }
 
 
+#text::after{
+  content: 'I';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 20% , 40% , 60%, 80% , 100% {
+    color: transparent;
+  }
+  10%, 30%, 50%, 70%, 90%{
+    color: #f68640;
+  }
+}
 
 
 @media screen and (min-width: 1224px) {

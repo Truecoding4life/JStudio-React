@@ -34,26 +34,34 @@ export default function HomePage({ setSuccessAlert }) {
     let text = $('#text');
 
 
-function tsWrite(data) {
+function tsWrite(array) {
+  let data = array[0]
   for (let i = 0; i < data.length; i++) {
     setTimeout(() => {
       text.html(text.html() + data[i]);
     }, 100 * i);
     if (i === data.length - 1) {
       setTimeout(() => {
-        tsDelete(data);
+        tsDelete(array);
       }, 100 * i + 100); // Add some delay before calling tsDelete
     }
   }
 }
 
-function tsDelete(data) {
+function tsDelete(array) {
+  let data = array[0];
   for (let i = data.length - 1; i >= 0; i--) {
     setTimeout(() => {
       text.html(text.html().slice(0, -1));
     }, 100 * (data.length - 1 - i)); // Reverse the index to delete characters one by one
   }
-  
+  setTimeout(() => {
+    let newArray =[];
+    for ( let i = 1; i >= 0; i--){
+      newArray.push(array[i])
+    }
+    tsWrite(newArray); // Call tsWrite again after deleting all characters
+  }, 100 * data.length);
 }
      // Ensure that the element with ID 'text' exists
 
@@ -62,7 +70,7 @@ function tsDelete(data) {
        console.error("Element with ID 'text' not found");
        return;
      }
-    let Data = "I'm a Full Stack Web Developer";
+    let Data = ["I'm a Full Stack Web Developer   ", "I'm a Veteran   "];
     runTS(Data);
 
 function runTS(data) {
@@ -128,10 +136,7 @@ function runTS(data) {
                 <h3 className=" greeting-quote "> </h3>
                 <h3 id='text' className=" greeting-quote ">  </h3>
                 <h3> </h3>
-                <div>
-                <span className=" greeting-quote" > </span>
-               <div className='console-underscore' id='cursor'>|</div>
-                </div>
+
                
                 <Button
 
