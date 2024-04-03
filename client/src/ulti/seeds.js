@@ -1,16 +1,22 @@
+// Projects
 import FoodFinder from "../assets/images/projects/foodgeek.png";
 import ApiAdventures from "../assets/images/projects/ios2.png";
 import GameLoft from "../assets/images/projects/gameloft.png";
 import PWA from "../assets/images/projects/PWA.png";
+
+
+// Carousel
 import photo1 from "../assets/images/website/carousel/photo1.png";
 import photo2 from "../assets/images/website/carousel/devices.png";
 import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 
-// technologies
+// Technologies
 import apollo from '../assets/images/website/logos/apollo.jpeg';
 import bootstrap from '../assets/images/website/logos/bootstrap.png';
 import css from '../assets/images/website/logos/css.png';
+
+
 // import express from '../assets/images/website/logos/express.jpeg';
 import html from '../assets/images/website/logos/html.png';
 import javascript from '../assets/images/website/logos/javscript.jpg';
@@ -18,6 +24,8 @@ import jest from '../assets/images/website/logos/jest.png';
 import jquery from '../assets/images/website/logos/jquery.png';
 import materialize from '../assets/images/website/logos/mui.png';
 import mongodb from '../assets/images/website/logos/mongodb.png';
+
+
 // import mysql from '../assets/images/website/logos/mysql.jpg';
 import node from '../assets/images/website/logos/nodejs.png';
 import python from '../assets/images/website/logos/python.png';
@@ -39,9 +47,17 @@ const Project = [
     header: "Full Stack",
     link: "https://game-loft-5f74d9e2c208.herokuapp.com/",
     tags: [
+      "Full Stack",
       "E-Commerce",
       "Online Shopping",
-      "Secure Payment",
+      "Stripe Secure Payment ",
+      "User Authentication",
+      "Product Review",
+      "Order History",
+      "Admin Panel",
+      "Database query",
+    
+
       
     ],
     image: GameLoft,
@@ -52,9 +68,16 @@ const Project = [
       "Full Stack blog post application designed to connect people route social media networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
     github: "https://github.com/Truecoding4life/api-adventures",
     tags: [
+      "Full Stack",
       "Social Media Platform",
-      
+      "Blog Post",
       "User Authentication",
+      "Post Editing",
+      "Commenting",
+      "Database query"
+      
+    
+  
      
     ],
     image: ApiAdventures,
@@ -68,7 +91,7 @@ const Project = [
     github: "https://github.com/Truecoding4life/food-geek",
     header: "Front End",
     link: "https://truecoding4life.github.io/food-geek/index.html",
-    tags: ["Search Restaurant", "Search Recipe", "Read Reviews"],
+    tags: ["Full Stack","Search Restaurant", "Search Recipe", "Read Reviews", "Location auto-tracking", "Data Persistent", "Web API"],
     image: FoodFinder,
   },
   {
@@ -78,7 +101,7 @@ const Project = [
     github: "https://github.com/Truecoding4life/text-snippet-PWA",
     header: "Back End",
     link: "https://jate-text-editor-jstudio-e2bc1e7322b6.herokuapp.com/",
-    tags: ["Offline Usage", "Data Persistence"],
+    tags: ["Fullstack","Offline Usage", "Data Persistence", "Service Worker", "Webpack"],
     image: PWA,
   },
 ];
