@@ -11,7 +11,7 @@ import { useMutation } from "@apollo/client";
 import { REMOVE_MESSAGE } from "../../ulti/mutations";
 import { ALL_MESSAGE } from "../../ulti/queries";
 import './styles.css'
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 import LocalizedFormat from 'dayjs/plugin/localizedFormat';
