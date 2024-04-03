@@ -23,13 +23,56 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 
 // JS
-import './script.js'
+
 
 
 export default function HomePage({ setSuccessAlert }) {
 
+  let running = false;
 
   useEffect(() => {
+    let text = $('#text');
+
+
+function tsWrite(data) {
+  for (let i = 0; i < data.length; i++) {
+    setTimeout(() => {
+      text.html(text.html() + data[i]);
+    }, 100 * i);
+    if (i === data.length - 1) {
+      setTimeout(() => {
+        tsDelete(data);
+      }, 100 * i + 100); // Add some delay before calling tsDelete
+    }
+  }
+}
+
+function tsDelete(data) {
+  for (let i = data.length - 1; i >= 0; i--) {
+    setTimeout(() => {
+      text.html(text.html().slice(0, -1));
+    }, 100 * (data.length - 1 - i)); // Reverse the index to delete characters one by one
+  }
+  
+}
+     // Ensure that the element with ID 'text' exists
+
+     // Check if the element exists
+     if (text.length === 0) {
+       console.error("Element with ID 'text' not found");
+       return;
+     }
+    let Data = "I'm a Full Stack Web Developer";
+    runTS(Data);
+
+function runTS(data) {
+  
+    tsWrite(data);
+    running = true;
+ 
+}
+
+
 
     window.scrollTo(0, 0); // Scrolls the window to the top-left corner when the component mounts
 
@@ -82,8 +125,8 @@ export default function HomePage({ setSuccessAlert }) {
                   {" "}
                   Meet Jay{" "}
                 </h3>
-                <h3 className=" greeting-quote "> Full Stack Web Developer</h3>
-                <h3 id='text' className=" greeting-quote "> Veteran</h3>
+                <h3 className=" greeting-quote "> </h3>
+                <h3 id='text' className=" greeting-quote ">  </h3>
                 <h3> </h3>
                 <div>
                 <span className=" greeting-quote" > </span>
