@@ -24,7 +24,9 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
     refetchQueries: [ALL_MESSAGE, "messages"],
   });
   date = date.trim();
-  const currentFullDate = dayjs(dayjs().locale('en').toISOString()).format('LLL').split(' ');
+  const dateLocal = dayjs().locale('en')
+  const isoData = dateLocal.toISOString()
+  const currentFullDate = dayjs( isoData).format('LLL').split(' ');
 
   const handleRemove = async () => {
     try {

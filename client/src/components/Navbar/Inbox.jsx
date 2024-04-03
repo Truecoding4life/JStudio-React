@@ -23,7 +23,7 @@
         onHide={close}
         size="xl"
         className="inbox-modal "
-        backdrop='none'
+        
       >
         <div id='modal-body' style={{borderRadius:30}}>
         <Modal.Header id='inbox-header'closeButton>
