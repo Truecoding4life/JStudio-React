@@ -91,7 +91,7 @@ const Project = [
     github: "https://github.com/Truecoding4life/food-geek",
     header: "Front End",
     link: "https://truecoding4life.github.io/food-geek/index.html",
-    tags: ["Full Stack","Search Restaurant", "Search Recipe", "Read Reviews", "Location auto-tracking", "Data Persistent", "Web API"],
+    tags: ["Front End","Search Restaurant", "Search Recipe", "Read Reviews", "Location auto-tracking", "Data Persistent", "Web API"],
     image: FoodFinder,
   },
   {

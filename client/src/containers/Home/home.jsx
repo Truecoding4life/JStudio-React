@@ -22,7 +22,8 @@ import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
 import CircleIcon from '@mui/icons-material/Circle';
 
 
-
+// JS
+import './script.js'
 
 
 export default function HomePage({ setSuccessAlert }) {
@@ -51,6 +52,7 @@ export default function HomePage({ setSuccessAlert }) {
 
     return () => {
       controller.destroy();
+      
     };
   }, []);
 
@@ -76,13 +78,18 @@ export default function HomePage({ setSuccessAlert }) {
                 </div>
               </div>
               <div className="col-12 ">
-                <h3 className=" greeting-quote text-white">
+                <h3 className=" greeting-quote ">
                   {" "}
                   Meet Jay{" "}
                 </h3>
-                <h3 className=" greeting-quote text-white"> Full Stack Web Developer</h3>
-                <h3 className=" greeting-quote text-white"> Veteran</h3>
-
+                <h3 className=" greeting-quote "> Full Stack Web Developer</h3>
+                <h3 id='text' className=" greeting-quote "> Veteran</h3>
+                <h3> </h3>
+                <div>
+                <span className=" greeting-quote" > </span>
+               <div className='console-underscore' id='cursor'>|</div>
+                </div>
+               
                 <Button
 
                   type="button"
@@ -125,9 +132,7 @@ export default function HomePage({ setSuccessAlert }) {
       </section>
 
 
-      {/* <div >
-      <ContactPage ></ContactPage>
-      </div> */}
+     
       <FloatingButton setSuccessAlert={setSuccessAlert}></FloatingButton>
     </div>
   );

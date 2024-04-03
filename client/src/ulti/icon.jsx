@@ -3,17 +3,17 @@ export const Icon = (
     width="70px"
     height="70px"
     viewBox="0 0 1024.00 1024.00"
-    class="icon"
+    className="icon"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     fill="#131111"
     stroke="#131111"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path
@@ -41,7 +41,7 @@ export const resumeIcon = (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-file-pdf"
+    className="bi bi-file-pdf"
     viewBox="0 0 16 16"
   >
     <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1" />
@@ -54,7 +54,7 @@ export const messageIcon = (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-cursor-fill"
+    className="bi bi-cursor-fill"
     viewBox="0 0 16 16"
   >
     <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
@@ -66,7 +66,7 @@ export const backIcon = (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-arrow-counterclockwise"
+    className="bi bi-arrow-counterclockwise"
     viewBox="0 0 16 16"
   >
     <path
@@ -89,13 +89,13 @@ export const Github = (
 );
 
 export const PlayButton = (
-  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-lightning-fill" viewBox="0 0 16 16">
   <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
 </svg>
 );
 
 export const starIcon = (
-  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-terminal-fill" viewBox="0 0 16 16">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-terminal-fill" viewBox="0 0 16 16">
   <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1m-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5z"/>
 </svg>
 );
@@ -106,7 +106,7 @@ export const pageIcon = (
     width="23"
     height="23"
     fill="currentColor"
-    class="bi bi-floppy"
+    className="bi bi-floppy"
     viewBox="0 0 16 16"
   >
     <path d="M11 2H9v3h2z" />
@@ -120,7 +120,7 @@ export const contactIcon = (
     width="16"
     height="16"
     fill="currentColor"
-    class="bi bi-person-lines-fill"
+    className="bi bi-person-lines-fill"
     viewBox="0 0 16 16"
   >
     <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />

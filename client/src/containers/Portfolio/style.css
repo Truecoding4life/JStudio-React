@@ -45,7 +45,7 @@
   font-family: Raleway, Courier, monospace;
   font-family: 300;
   font-size: 300%;
-  
+  padding: 20px;
 }
 
 .h-100{
@@ -79,6 +79,7 @@
   color: rgb(185, 190, 190);
   font-size: 120%;
   font-weight: 400;
+  
 }
 
 /* Other Project */
@@ -97,8 +98,8 @@
 .github-btn, .play-btn {
   box-shadow: 0 0 3px 0 rgba(45, 192, 119, 0.5);
   background-color: #50ee9d;
-  
-  width: 47%;
+  padding: 5px;
+  width: 49%;
 }
 
 /* List Tag Section */
@@ -163,7 +164,7 @@
 .card-image-container{
   overflow: hidden;
   border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 20px;  
   
 }
 

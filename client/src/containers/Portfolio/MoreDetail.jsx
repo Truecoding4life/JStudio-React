@@ -17,7 +17,7 @@ export default function MoreDetail({description}) {
         
           
         >
-          <h5 class='more-detail'> More about this project  </h5>
+          <h5 className='more-detail'> More about this project  </h5>
         </AccordionSummary>
         <AccordionDetails className='detail'>
           {description}

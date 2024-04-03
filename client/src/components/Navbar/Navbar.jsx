@@ -20,7 +20,7 @@ const expandIcon = (
     width="30"
     height="30"
     fill="#04fab8f1"
-    class="bi bi-caret-down-square"
+    className="bi bi-caret-down-square"
     viewBox="0 0 16 16"
   >
     <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0z" />

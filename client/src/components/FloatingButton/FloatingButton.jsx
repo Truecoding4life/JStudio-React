@@ -23,7 +23,7 @@ function hideFloatButton() {
   setTimeout(() => {
     floatButton.classList.remove('animate__bounce');
     floatButton.classList.add('animate__bounceOutDown');
-  }, 20 * 1000)
+  }, 120 * 1000)
 };
 
 
