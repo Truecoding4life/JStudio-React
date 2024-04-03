@@ -43,7 +43,7 @@ const isDeployed = process.env.NODE_ENV === 'production';
 function App() {
   const [doAlert, setAlert] = useState(false);
   const [doDangerAlert, setDangerAlert] = useState(false);
-  const [videoPlaying, setVideoPlaying] = useState(isDeployed);
+  const [videoPlaying, setVideoPlaying] = useState(false);
 
   if (window.screen.width < 768) {
     console.log(window.screen.width);

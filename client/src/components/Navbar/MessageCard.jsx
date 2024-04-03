@@ -11,34 +11,14 @@ import { useMutation } from "@apollo/client";
 import { REMOVE_MESSAGE } from "../../ulti/mutations";
 import { ALL_MESSAGE } from "../../ulti/queries";
 import './styles.css'
+import * as dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+import LocalizedFormat from 'dayjs/plugin/localizedFormat';
 
+dayjs.extend(LocalizedFormat)
 
-export default function RecipeReviewCard({ name, date, text, id, email }) {
-  const [removeMessage] = useMutation(REMOVE_MESSAGE, {
-    refetchQueries: [ALL_MESSAGE, "messages"],
-  });
-  date = date.trim();
-  
-  let sentHour = date.split(" ")[4][0];
-  let sentMin = date.split(" ")[4].split(':')[1];
-  let sentMonth = date.split(" ")[0];
-  const sentDate = date.split(" ")[1].split('t')[0];
-  const currentDate = new Date().getDate()
-  let currentMonth = new Date().getMonth() + 1
-  let currentHour = new Date().getHours()+1
-  let sentTime = date.split(" ")[5]
-  let currentMin = new Date().getMinutes()
-  console.log(date);
-  console.log(`current date: ${currentDate} current hours: ${currentHour}` );
-  // Mar 13th, 2024 at 2:39 am
-  // console.log(currentMin);
-  // console.log(sentHour);
-  // console.log(sentMin);
-  if (sentTime === 'pm') {
-    sentHour = parseInt(sentHour) + 12;
-  }
-
-
+function monthToInt(sentMonth){
   switch (sentMonth) {
     case 'Jan':
       sentMonth = 1
@@ -77,16 +57,46 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
       sentMonth = 12
       break;
   }
+  return sentMonth;
+}
+
+
+
+export default function RecipeReviewCard({ name, date, text, id, email }) {
+  const [removeMessage] = useMutation(REMOVE_MESSAGE, {
+    refetchQueries: [ALL_MESSAGE, "messages"],
+  });
+  date = date.trim();
+  const currentFullDate = dayjs(dayjs().locale('en').toISOString()).format('LLL').split(' ');
+  
+ 
+  let sentYear = parseInt(date.split(" ")[2]);
+  // tested
+  const sentDate = parseInt(date.split(" ")[1].split('t')[0]); // 12
+  let sentMonth = monthToInt(date.split(" ")[0]); // 3
+  let sentHour = parseInt(date.split(" ")[4][0]); // 2
+  let sentTime = date.split(" ")[5] // am
+  let sentMin = parseInt(date.split(" ")[4].split(':')[1]); // 39
+  const currentDate = parseInt(currentFullDate[1]);
+  let currentMonth = monthToInt(currentFullDate[0].slice(0,3))
+  let currentTime = currentFullDate[4].toLowerCase();
+  let currentHour = parseInt(currentFullDate[3].split(":")[0])
+  let currentMin = currentFullDate[3].split(":")[1]
+//
+  console.log('currentFullDate', currentFullDate);
+ 
+
+  
 
   // if current month and data is the same then return the different hour if the hour are the same then return the min
   const handleTimeStamp = () => {
-    if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth) && parseInt(currentHour) === parseInt(sentHour)) {
-      return `Received ${parseInt(currentMin) - parseInt(sentMin)}  Minutes ago`;
+    if (currentDate === sentDate && currentMonth === sentMonth && currentHour === sentHour && currentTime === sentTime) {
+      return `Received ${currentMin - sentMin}  Minutes ago`;
     }
-    else if (parseInt(currentDate) === parseInt(sentDate) && parseInt(currentMonth) === parseInt(sentMonth)) {
-      return `Received ${parseInt(currentHour) - parseInt(sentHour)} Hours ago`;
+    else if (currentDate === sentDate && currentMonth === sentMonth && currentHour !== sentHour)  {
+      return `Received ${currentHour - sentHour} Hours ago`;
     }
-    // Return a default value (e.g., 0) if the conditions are not met
+    // // Return a default value (e.g., 0) if the conditions are not met
     return date;
   }
 
