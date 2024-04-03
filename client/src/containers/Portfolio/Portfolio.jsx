@@ -53,12 +53,17 @@ export default function PortfolioPage() {
         )}
         <div className="card-body">
           <h4 className=" project-title ">{item.title}</h4>
-          <div>
-            <ul className="list-tag" style={{ textDecorationStyle: "none" }}>
+          <div className="tags">
+            <div className="list-tag">
               {item.tags.map((tag) => (
-                <li className="tag" key={tag}> {tag} </li>
+                <p className="tag" key={tag}> {tag} </p>
               ))}
-            </ul>
+            </div>
+            <div className="list-tag" >
+              {item.tags.map((tag) => (
+                <p className="tag" key={tag+"3"}> {tag} </p>
+              ))}
+            </div>
           </div>
         </div>
         {renderButtons(item)}
