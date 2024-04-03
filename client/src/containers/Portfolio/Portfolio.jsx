@@ -69,12 +69,12 @@ export default function PortfolioPage() {
 
   return (
 
-    <div className=" project p-0 ">
+    <div className=" project p-0">
       <div
         className=" project-container container-fluid "
         style={{ borderColor: mainLight }}
       >
-        <div className="row">
+        <div className="row p-0">
           <div className="col-12 mb-1 academic-box">
             <h2 className="section-header gradient-header-text">
               Academic Projects
