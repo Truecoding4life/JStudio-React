@@ -138,11 +138,11 @@ const OtherSkills = [
 const aboutData = [
   {
     title: "CODINGWITHJAY",
-    text: "My passion lies in minimalist and contemporary web design, employing cutting-edge technologies such as React, Material UI, and Bootstrap to create visually stunning and user-friendly experiences.",
+    text: "I'm all about minimalist and contemporary web design, employing cutting-edge technologies to create visually stunning and user-friendly experiences.",
     image: photo1,
   },
   {
-    title: "Platform Responsive",
+    title: "Accessibility",
     text: ["Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens."],
     description: [
       "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",

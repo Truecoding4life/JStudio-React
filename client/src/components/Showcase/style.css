@@ -15,13 +15,14 @@
     padding: 50px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    
  
  }
  
  #showcase2{
      padding: 50px;
         background-color: var(--showcase-background-color);
- 
+    border-left: 20px;
  
  }
  
@@ -31,4 +32,10 @@
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
  
+ }
+
+ @media screen and ( max-width: 480px) {
+    #showcase1, #showcase2, #showcase3{
+       padding: 20px;
+    }
  }

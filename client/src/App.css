@@ -1,5 +1,6 @@
 /* Global Styles */
 * {
+    box-sizing: border-box;
     /* Main theme */
     font-family:Poppins,  sans-serif;
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);

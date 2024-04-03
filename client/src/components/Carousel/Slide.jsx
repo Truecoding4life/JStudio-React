@@ -2,12 +2,13 @@ import { technologiesLogo } from "../../ulti/seeds";
 import './slide-style.css'
 export default function Slide (){
     return (
-        <div  className=" slide">
+        <div  className="text-center slide">
+          <h1 className="slide-label">My techs stack</h1>
         <div className="logo-slide">
           {technologiesLogo.map((logo, index) => {
             return (
 
-              <img src={logo} alt="logo"  className="logos" style={{ borderRadius: 5 }} />
+              <img src={logo} alt="logo" key={index}  className="logos" style={{ borderRadius: 5 }} />
             )
 
           })}
@@ -17,7 +18,7 @@ export default function Slide (){
           {technologiesLogo.map((logo, index) => {
             return (
 
-              <img src={logo} alt="logo"  className="logos " style={{ borderRadius: 5 }} />
+              <img src={logo} alt="logo" key={index+9}  className="logos " style={{ borderRadius: 5 }} />
             )
 
           })}
