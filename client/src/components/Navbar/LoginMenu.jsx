@@ -1,12 +1,9 @@
-import { Modal } from "react-bootstrap";
 import IconButton from "@mui/material/IconButton";
 import MailIcon from "@mui/icons-material/Mail";
 import Auth from "../../ulti/auth";
-import LogoutIcon from '@mui/icons-material/Logout';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import Inbox from './Inbox'
 import Badge from "@mui/material/Badge";
-import { useState } from "react";
 import { ALL_MESSAGE } from "../../ulti/queries";
 import { useQuery } from "@apollo/client";
 

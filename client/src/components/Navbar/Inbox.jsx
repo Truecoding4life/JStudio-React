@@ -4,7 +4,7 @@
   import { useQuery } from "@apollo/client";
   import RecipeReviewCard from "./MessageCard";
 
-  const Inbox = ({ open, close, set }) => {
+  const Inbox = ({ open, close }) => {
     const { data } = useQuery(ALL_MESSAGE, {
       variables: {
         username: "admin",
