@@ -44,11 +44,11 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
     <Card
 
       key={id}
-      className="inbox-message"
+      className="inbox-message flex-grow-1"
       sx={{ boxShadow: 5, borderRadius: 5, marginBottom: 2, backgroundColor: 'black' }}
     >
       <CardHeader
-        className='message-title'
+        className='message-title '
         avatar={<AccountCircleIcon></AccountCircleIcon>}
         action={
           <IconButton onClick={handleRemove} aria-label="settings">
@@ -71,7 +71,7 @@ export default function RecipeReviewCard({ name, date, text, id, email }) {
       />
 
 
-      <CardContent className="inbox-card-text">
+      <CardContent className="inbox-card-text flex-grow-1">
 
 
         <Typography variant="p" style={{ fontFamily: 'Nunito Sans', fontWeight: 700 }}>

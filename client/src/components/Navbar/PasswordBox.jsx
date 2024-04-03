@@ -42,8 +42,8 @@ const PasswordBox = ({ logIn }) => {
         }
         style={{
           backgroundColor: "#04fab8f1",
-          borderRadius: "31px",
-          padding: "0px",
+          borderRadius: "17px",
+          padding: "2px 4px",
           width: "89px",
           height: "30px",
           color: "#141517fc",

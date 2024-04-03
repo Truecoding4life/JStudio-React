@@ -60,10 +60,7 @@
 }
 
 .modal-content {
-  margin-top: 100px;
-  box-shadow: 0px 0px 60px 2px #141616ef;
   border-radius: 50px;
-  border-bottom: none;
 }
 
 #inbox-header {
@@ -96,7 +93,8 @@ button.btn-close {
 
 .inbox-card-text {
   color: #c7c4c4;
-    background-color: rgba(46, 51, 57, 0.795);
+  background-color: #2e3339cb;
+  height: 100%;
     
 
 }
@@ -126,6 +124,9 @@ button.btn-close {
     color: #df3b3b;
   }
 
+  .inbox-modal{
+    margin-top: 30px;
+  }
  
 }
 
@@ -133,6 +134,8 @@ button.btn-close {
   .inbox-message:hover {
     transform: none;
   }
+
+  
   
 }
 
@@ -141,4 +144,11 @@ button.btn-close {
     background-color: #050606da;
   }
 
+}
+
+@media screen and ( min-width: 1560px) {
+  .inbox-modal{
+    margin-top: 10%;
+  
+  }
 }

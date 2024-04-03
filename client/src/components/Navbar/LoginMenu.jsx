@@ -3,13 +3,25 @@ import IconButton from "@mui/material/IconButton";
 import MailIcon from "@mui/icons-material/Mail";
 import Auth from "../../ulti/auth";
 import LogoutIcon from '@mui/icons-material/Logout';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
 import Inbox from './Inbox'
 import Badge from "@mui/material/Badge";
 import { useState } from "react";
+import { ALL_MESSAGE } from "../../ulti/queries";
+import { useQuery } from "@apollo/client";
 
 const LoginMenu = ({ close, open, handleOpen }) => {
-  const [badge, setBadge] = useState(0);
+  const { data } = useQuery(ALL_MESSAGE, {
+    variables: {
+      username: "admin",
+    },
+  });
+  let messages = [];
 
+  if (data) {
+    messages = data?.user?.messages;
+    
+  }
   return (
     <div className="ms-auto" style={{paddingRight:10, marginTop:2}}>
       <IconButton
@@ -23,15 +35,15 @@ const LoginMenu = ({ close, open, handleOpen }) => {
       >
         <Badge
           color="primary"
-          badgeContent={badge}
+          badgeContent={messages.length}
           anchorOrigin={{ vertical: "top", horizontal: "right" }}
           size="small"
         >
           <MailIcon />
         </Badge>
       </IconButton>
-      <LogoutIcon onClick={Auth.logout} id='log-out-button'   />
-      <Inbox  open={open} close={close} set={setBadge}></Inbox>
+      <LockOpenIcon onClick={Auth.logout} id='log-out-button'   />
+      <Inbox  open={open} close={close} ></Inbox>
     </div>
   );
 };

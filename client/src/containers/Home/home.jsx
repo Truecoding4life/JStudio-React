@@ -70,7 +70,7 @@ function tsDelete(array) {
        console.error("Element with ID 'text' not found");
        return;
      }
-    let Data = ["I'm a Full Stack Web Developer   ", "I'm a Veteran   "];
+    let Data = [" Full Stack Web Developer   ", " Veteran   "];
     runTS(Data);
 
 function runTS(data) {
@@ -88,8 +88,8 @@ function runTS(data) {
 
     const sections = document.querySelectorAll('.snap-section');
     sections.forEach((section, index) => {
-      let duration = index === 2 || 3 ? 400 : 0; // Adjust duration for the portfolio section
-      let offset = index === 2 ? 0 : 10; // Adjust offset for the portfolio section
+      let duration = index === 2 || 3 ? 400 : 400; // Adjust duration for the portfolio section
+      let offset = index === 2 ? 40 : 20; // Adjust offset for the portfolio section
       let triggerHook = index === 3 ? 0 : 0; // Adjust trigger hook for the portfolio section
       new ScrollMagic.Scene({
         triggerElement: section,
@@ -134,7 +134,7 @@ function runTS(data) {
                   Meet Jay{" "}
                 </h3>
                 <h3 className=" greeting-quote "> </h3>
-                <h3 id='text' className=" greeting-quote ">  </h3>
+                <h3  className=" greeting-quote "> I am a  <span id='text' className="greeting-quote"> </span></h3>
                 <h3> </h3>
 
                

@@ -13,16 +13,17 @@
     let messages = [];
 
     if (data) {
-      messages = data.user?.messages;
-      const messageCount = messages.length;
-      set(messageCount);
+      messages = data?.user?.messages;
+      
     }
 
     return (
       <Modal
         show={open}
         onHide={close}
-      
+        size="xl"
+        className="inbox-modal "
+        backdrop='none'
       >
         <div id='modal-body' style={{borderRadius:30}}>
         <Modal.Header id='inbox-header'closeButton>
@@ -30,16 +31,24 @@
         </Modal.Header>
         
             <Modal.Body >
+             
+
+             <div className="row  ">
               {messages.slice().reverse().map((message) => (
-                <RecipeReviewCard
+
+                <div key={message._id} className="col-12 col-sm-12 col-md-6 col-xl-3  d-flex  animate__animated animate__fadeIn">
+                    <RecipeReviewCard
                   name={message.name}
                   text={message.message}
                   date={message.createdAt}
                   id={message._id}
                   email={message.email}
-                  key={message._id}
+                 
                 ></RecipeReviewCard>
+                </div>
+              
               ))}
+               </div>
             </Modal.Body>
           </div>
       </Modal>
