@@ -33,20 +33,20 @@ const PasswordBox = ({ logIn }) => {
   return (
     <div style={{marginTop: "0px"}}>
       <Input
-        id='password-box'
+        id='password-input'
         type="password"
         startAdornment={
           <InputAdornment position="start">
-            <KeyIcon />
+            <KeyIcon style={{color:'#04fab8f1'}} />
           </InputAdornment>
         }
         style={{
-          backgroundColor: "#04fab8f1",
+          background: "var(--password-box-background)",
           borderRadius: "17px",
           padding: "2px 4px",
-          width: "89px",
+         
           height: "30px",
-          color: "#141517fc",
+          color: "white",
           marginLeft: "10px",
           fontFamily: "Roboto",
           marginTop: "8px",
@@ -67,7 +67,7 @@ const PasswordBox = ({ logIn }) => {
 
       <IconButton
         size="xs"
-        aria-label="account of current user"
+        aria-label="green unlocked icon with password box"
         onClick={() => logIn(false)}
         style={{ color: "#04fab8f1" }}
       >

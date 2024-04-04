@@ -72,7 +72,7 @@ export default function NavbarLi() {
 
 
       </Navbar.Toggle>
-      <Navbar.Collapse id="basic-navbar-nav" className="text-end">
+      <Navbar.Collapse id="basic-navbar-nav" className="text-center">
         <Nav className="nav-link-section">
           <Nav.Link
             

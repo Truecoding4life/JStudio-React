@@ -6,6 +6,7 @@
     --text-gradient: linear-gradient(90deg, #4ad787 0%, #5062f9 100%);
     --header-background: #131315f9;
     --main-color: #38dc77;
+    --password-box-background: linear-gradient(290deg, #555856cf 0%, #595e5b8d 100%);
 
     /* Form color */
     --form-color: #67dda0;

@@ -75,6 +75,19 @@
 
 }
 
+
+
+#password-input{
+  width: 50px;
+ 
+  color: rgba(75, 205, 140, 0.931);
+
+
+  font-family: "Roboto";
+ 
+}
+
+
 button.btn-close {
   background-color: #d5caca92;
   border-radius: 15px;
@@ -142,6 +155,10 @@ button.btn-close {
 @media screen and (max-width:770px) {
   .navbar{
     background-color: #050606da;
+  }
+
+  #password-input{
+    width: 30px;
   }
 
 }
