@@ -43,7 +43,7 @@ const Project = [
     title: "GameLoft",
     description:
       "Full Stack E-commerce web application powered by React, Materialize Ui, Node.js, Express, MongoDB, and Stripe.",
-    github: "https://github.com/Andrewchall92/game-shop",
+    github: "https://github.com/Truecoding4life/GameLoft",
     header: "Full Stack",
     link: "https://game-loft-5f74d9e2c208.herokuapp.com/",
     tags: [
@@ -66,7 +66,7 @@ const Project = [
     title: "iOS 2",
     description:
       "Full Stack blog post application designed to connect people route social media networking, enabling them to share their thoughts. It is built with the MVC model and powered by Node.js, Express, MySQL, Sequelize, Handlebars, and Bootstrap.",
-    github: "https://github.com/Truecoding4life/api-adventures",
+    github: "https://github.com/Truecoding4life/ios2",
     tags: [
       "Full Stack",
       "Social Media Platform",
