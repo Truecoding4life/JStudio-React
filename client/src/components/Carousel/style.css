@@ -50,9 +50,8 @@ border-radius: 20px;
 
 
 .carousel-photo{
-    max-width: auto;
     height: 200px;
-    width: fit-content;
+    object-fit:scale-down;
     border-radius: 30px;
 
    
@@ -133,9 +132,10 @@ border-radius: 20px;
    
     
     .carousel-photo{
-        max-width: 50%;
-        
-        width: fit-content;
+    
+        height: auto;
+        max-width: 180px ;
+
         border-radius: 30px;
     }
     
@@ -164,7 +164,7 @@ border-radius: 20px;
 
    
   .carousel-photo{
-    max-width: 100%;
+    width: 300px;
    
 
    
