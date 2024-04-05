@@ -120,22 +120,3 @@
     }
 }
 
-
-@media screen and ( max-width:770px){
-    .scene {
-        width: 100px;
-        height: 100px;
-    }
-    .rocket-icon{
-        width: 20px !important;
-    }
-    .scene .c1 {
-        font-size: 1em !important;
-    }
-    .scene .c2 {
-        font-size: 1.4em !important;
-    }
-    .scene .c3 {
-        font-size: 0.8em !important;
-    }
-}

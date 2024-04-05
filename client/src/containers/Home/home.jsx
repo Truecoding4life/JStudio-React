@@ -90,7 +90,7 @@ function runTS(data) {
     const sections = document.querySelectorAll('.snap-section');
     sections.forEach((section, index) => {
       let duration = index === 2 || 3 ? 400 : 400; // Adjust duration for the portfolio section
-      let offset = index === 2 ? 40 : 20; // Adjust offset for the portfolio section
+      let offset = index === 2 ? 40 : 0; // Adjust offset for the portfolio section
       let triggerHook = index === 3 ? 0 : 0; // Adjust trigger hook for the portfolio section
       new ScrollMagic.Scene({
         triggerElement: section,
