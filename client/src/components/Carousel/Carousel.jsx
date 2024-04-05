@@ -21,7 +21,7 @@ export default function AboutPage() {
 
   return (
 
-    <div className="container container-fluid about-container">
+    <div className="container about-container">
       <div className="section-about d-flex align-items-center  animate__animated animate__fadeIn p-2 ">
 
 

@@ -11,7 +11,7 @@
 }
 
  #showcase1{
-    background-color: var(--showcase-background-color);
+    background-color: var(--carousel-color);
     padding: 50px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -21,14 +21,14 @@
  
  #showcase2{
      padding: 50px;
-        background-color: var(--showcase-background-color);
+        background-color: var(--carousel-color);
     border-left: 20px;
  
  }
  
  #showcase3{
      padding: 50px;
-     background-color: var(--showcase-background-color);
+     background-color: var(--carousel-color);
      border-top-right-radius: 20px;
      border-bottom-right-radius: 20px;
  

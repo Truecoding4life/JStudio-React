@@ -16,20 +16,19 @@
     --nav-link:#b5b4b4;
 
     /* Carousel color */
-    --carousel-color: #1d1f21d7;
+    --carousel-color: #161c21d7;
     --carousel-indicator: #b6babed6;
     --carousel-indicator-disable: #8d909363;
 
     /* Showcase color*/
      --showcase-border-color: rgb(143, 142, 142); 
-    --showcase-background-color: #1d1f21d7;
     --showcase-icon-color: rgb(45, 236, 125);
   }
 
   
   #about-container{
-    background: linear-gradient(90deg, #ba57ba 0%, #63b3f0 100%);
-    
+    /* background: linear-gradient(90deg, #ba57ba 0%, #63b3f0 100%); */
+    background: #0e1013;
 
   }
   #portfolio-section {
@@ -37,7 +36,7 @@
   }
 
   #info-section{
-    background-color: #e5e5e5;
+    background-color: #16181b;
   }
   .home{
     background-color: #000000;
