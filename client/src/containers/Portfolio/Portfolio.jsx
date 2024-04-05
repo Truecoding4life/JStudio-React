@@ -84,7 +84,7 @@ export default function PortfolioPage() {
       >
         <div className="row p-0">
           <div className="col-12 mb-1 academic-box">
-            <h2 className="section-header text-center gradient-header-text">
+            <h2 className="section-header gradient-header-text">
               Academic Projects
 
             </h2>
@@ -104,7 +104,7 @@ export default function PortfolioPage() {
           <div className="container ">
             <div className="row">
               <div className="col-12  ">
-                <h3 className="section-header text-center  gradient-header-text">
+                <h3 className="section-header  gradient-header-text">
                   Other Skills
                 </h3>
               </div>

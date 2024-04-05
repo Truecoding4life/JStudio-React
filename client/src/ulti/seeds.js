@@ -138,16 +138,15 @@ const OtherSkills = [
 const aboutData = [
   {
     title: "CODINGWITHJAY",
-    text: "I'm all about minimalist and contemporary web design, employing cutting-edge technologies to create visually stunning and user-friendly experiences.",
+    text: "My journey began at UC Berkeley where I honed my skills and deepened my knowledge in full-stack web development.",
     image: photo1,
   },
   {
-    title: "Accessibility",
-    text: ["Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens."],
-    description: [
-      "Ensuring accessibility for diverse users is my foremost commitment. I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens.",
-      
-    ],
+    text: "I'm all about cutting-edge technologies, pixel-perfect, beautiful interfaces and intuitively implemented UI",
+  },
+  {
+  
+    text: ["I specialize in developing websites that seamlessly adapt to various platforms, ranging from mobile devices to expansive desktop screens."],
     image: photo2,
   },
 ];

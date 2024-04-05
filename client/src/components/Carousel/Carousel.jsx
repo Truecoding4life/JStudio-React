@@ -15,9 +15,8 @@ export default function AboutPage() {
 
   const [aboutIndex, setAboutIndex] = useState(0);
 
-  let title = aboutData[aboutIndex].title;
-  let text = aboutData[aboutIndex].text;
-  let image = aboutData[aboutIndex].image;
+  let text = aboutData[aboutIndex]?.text;
+  let image = aboutData[aboutIndex]?.image;
   let description = aboutData[aboutIndex]?.description || false;
 
   return (
@@ -28,7 +27,7 @@ export default function AboutPage() {
 
         <div id='carousel-row' className="row ">
           <div className="col-12">
-            <CarouselCard title={title} text={text} image={image} description={description} aboutIndex={aboutIndex} set={setAboutIndex} />
+            <CarouselCard  text={text} image={image} description={description} aboutIndex={aboutIndex} set={setAboutIndex} />
           </div>
 
 
