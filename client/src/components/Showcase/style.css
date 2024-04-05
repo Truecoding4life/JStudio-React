@@ -7,32 +7,12 @@
     color: aliceblue;
     font-family: 'Nunito Sans', sans-serif;
     border-radius: 20px;
+    border-radius: 20px;
+    background-color: var(--carousel-color);
+    padding: 40px;
  
 }
 
- #showcase1{
-    background-color: var(--carousel-color);
-    padding: 50px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    
- 
- }
- 
- #showcase2{
-     padding: 50px;
-        background-color: var(--carousel-color);
-    border-left: 20px;
- 
- }
- 
- #showcase3{
-     padding: 50px;
-     background-color: var(--carousel-color);
-     border-top-right-radius: 20px;
-     border-bottom-right-radius: 20px;
- 
- }
 
  @media screen and ( max-width: 480px) {
     #showcase1, #showcase2, #showcase3{

@@ -16,7 +16,7 @@
     --nav-link:#b5b4b4;
 
     /* Carousel color */
-    --carousel-color: #161c21d7;
+    --carousel-color: #101213a9;
     --carousel-indicator: #b6babed6;
     --carousel-indicator-disable: #8d909363;
 
@@ -27,8 +27,7 @@
 
   
   #about-container{
-    /* background: linear-gradient(90deg, #ba57ba 0%, #63b3f0 100%); */
-    background: #0e1013;
+    background: linear-gradient(180deg, #24345e 0%, #8759c7f5 100%);
 
   }
   #portfolio-section {
@@ -36,8 +35,8 @@
   }
 
   #info-section{
-    background-color: #16181b;
-  }
+    background-color: #121417e7;
+    box-shadow: inset 0px 0px 90px rgb(0, 0, 0.2);  }
   .home{
     background-color: #000000;
   }

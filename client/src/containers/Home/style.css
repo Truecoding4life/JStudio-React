@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2400px) {
   .greeting-sm {
     font-size: 30px;
     max-width: 40%;

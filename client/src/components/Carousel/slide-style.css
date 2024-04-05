@@ -57,11 +57,11 @@
 }
 .slide:before{
     left: 0;
-    background: linear-gradient(to left, rgba(40, 40, 50, 0.099), var(--carousel-color));
+    background: linear-gradient(to left, #331f4c55, #121516ed);
 }
 .slide:after{
     right: 0;
-    background: linear-gradient(to right, rgba(40, 40, 50, 0.099), var(--carousel-color));
+    background: linear-gradient(to right, #331f4c55, #0d0f10ed);
 }
 
 @media screen and (min-width: 1228px){

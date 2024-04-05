@@ -32,7 +32,7 @@ export default function AboutPage() {
 
 
 
-          <div className="col-12 mt-3">
+          <div className="col-12 mt-3 p-0">
 
             <ShowcaseBox />
 

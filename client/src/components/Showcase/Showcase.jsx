@@ -5,7 +5,7 @@ import {showcaseData} from '../../ulti/seeds.js'
 
 export default function ShowcaseBox (){
     return (
-        <div className="col-12 showcase animate__animated animate__bounceIn animate__delay-0s">
+        <div className="col-12 showcase animate__animated animate__bounceIn">
         <div className="row ">
             {showcaseData.map((item, index)=>
             <div key={index} id={`showcase${index +1}`} className="col-4">
