@@ -10,7 +10,13 @@
   font-weight: 300;
 }
 
-
+.nav-brand-color{
+  background: linear-gradient(148deg, rgba(36, 97, 62, 1) 0%, rgba(32, 160, 125, 1) 27%, rgba(34, 152, 180, 1) 55%, rgba(59, 106, 182, 1) 83%, rgba(3, 35, 86, 1) 100%);  
+  
+  background-clip: text;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
 
 
 .navbar-brand:hover {
