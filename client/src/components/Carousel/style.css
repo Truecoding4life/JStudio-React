@@ -1,0 +1,181 @@
+
+#carousel-row{
+    width: 100%;
+    margin: 60px 0px;
+}
+#about-container{
+    min-height: 100vh;
+    height: fit-content;
+
+}
+.section-about{
+    min-height: 100vh;
+    height: fit-content;
+    color: aliceblue;
+    padding: auto;
+}
+
+
+
+
+#carousel{
+    margin: auto;
+    background-color: var(--carousel-color);
+    border-radius: 30px;
+  
+    
+
+}
+
+.carousel-title{
+    color: var(--main-color);
+    padding: 10px;
+    padding-top: 20px;
+}
+
+
+
+.carousel-text{
+    color: rgb(211, 211, 211);
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+
+
+
+.carousel-photo{
+    height: 200px;
+    object-fit:scale-down;
+    border-radius: 30px;
+
+   
+
+
+}
+
+
+.carousel-card-description {
+    color: rgb(212, 219, 223);
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.carousel-helper{
+    background-color: rgba(16, 18, 21, 0.629);
+    padding: 10px;
+    border-radius: 30px 0px 0px 30px;
+
+}
+
+.carousel-indicator{
+    color: var(--carousel-indicator);
+    margin: 10px;
+
+}
+
+
+
+
+.carousel-button{
+    color: var(--carousel-indicator);
+    background-color: #33363600;
+    border:none;
+  padding: 0;
+    border-radius: 200px;
+   
+   
+}
+
+.disable{
+    color: var(--carousel-indicator-disable);
+    border: none;
+
+}
+
+.second{
+    background-color: rgba(43, 47, 47, 0);
+   
+}
+
+.carousel-button:hover{
+    color:var(--carousel-color);
+    background-color: #34353500;
+    transition: .8s;
+    transform: scale(1.1);
+}
+
+
+
+.carousel-button:hover{
+    color: #e0dddd;
+}
+
+@media screen and (min-width: 1900px) {
+   
+    .carousel-photo{
+        margin: auto;
+        max-height: 450px;
+    }
+
+    
+}
+
+@media screen and (max-width: 990px) {
+    .carousel-text{
+        font-size: 25px;
+   
+    }
+
+   
+    
+    .carousel-photo{
+    
+        height: auto;
+        max-width: 200px ;
+
+        border-radius: 30px;
+    }
+    
+
+    .carousel-title{
+        padding: auto;
+    }
+
+    #carousel{
+        height: 500px;
+    }
+
+    
+    
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 980px) {
+    #carousel{
+        height: 350px;
+    }
+}
+
+
+
+@media screen and (max-width: 680px) {
+    .carousel-text{
+        font-size: 15px;
+        padding-bottom: 15px ;
+    }
+  
+    .carousel-button{
+        padding: 1px;
+        border: none;
+    }
+
+   
+    
+    
+}

@@ -1,0 +1,35 @@
+*{
+    --more-detail-tab: #6df178f6;
+}
+
+.github-btn,
+.play-btn {
+  box-shadow: 0 0 3px 0 rgba(45, 192, 119, 0.5);
+  background-color: #50ee9d;
+  padding: 5px;
+}
+
+.github-btn:hover,
+.play-btn:hover {
+  background-color: #07ba6df6;
+  color: black;
+}
+
+/* More Detail Section */
+
+.more-detail {
+    padding-top: 7px;
+    color: #fbfbfbbe;
+    font-family: Raleway, Courier, monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+   
+  }
+
+.detail {
+    background-color: #5fdd9aee;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Poppins, Courier, monospace;
+    letter-spacing: .5px;
+  }
