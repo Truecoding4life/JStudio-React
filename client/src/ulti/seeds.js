@@ -6,27 +6,27 @@ import PWA from "../assets/images/projects/PWA.webp";
 
 
 // Carousel
-import photo1 from "../assets/images/website/carousel/photo1.png";
-import photo2 from "../assets/images/website/carousel/devices.png";
+import photo1 from "../assets/images/website/carousel/photo1.webp";
+import photo2 from "../assets/images/website/carousel/devices.webp";
 
 
 // Technologies
-import apollo from '../assets/images/website/logos/graphql.png';
-import bootstrap from '../assets/images/website/logos/bootstrap.png';
-import css from '../assets/images/website/logos/css.png';
+import apollo from '../assets/images/website/logos/graphql.webp';
+import bootstrap from '../assets/images/website/logos/bootstrap.webp';
+import css from '../assets/images/website/logos/css.webp';
 import github from '../assets/images/website/logos/github.webp';
-import html from '../assets/images/website/logos/html.png';
-import javascript from '../assets/images/website/logos/javscript.jpg';
-import jest from '../assets/images/website/logos/jest.png';
-import jquery from '../assets/images/website/logos/jquery.png';
-import materialize from '../assets/images/website/logos/mui.png';
-import mongodb from '../assets/images/website/logos/mongodb.png';
-import node from '../assets/images/website/logos/nodejs.png';
-import python from '../assets/images/website/logos/python.png';
-import react from '../assets/images/website/logos/react.png';
-import stripe from '../assets/images/website/logos/stripe.jpg';
-import mysql from '../assets/images/website/logos/mysql.png';
-import insomnia from '../assets/images/website/logos/insomnia.png';
+import html from '../assets/images/website/logos/html.webp';
+import javascript from '../assets/images/website/logos/javscript.webp';
+import jest from '../assets/images/website/logos/jest.webp';
+import jquery from '../assets/images/website/logos/jquery.webp';
+import materialize from '../assets/images/website/logos/mui.webp';
+import mongodb from '../assets/images/website/logos/mongodb.webp';
+import node from '../assets/images/website/logos/nodejs.webp';
+import python from '../assets/images/website/logos/python.webp';
+import react from '../assets/images/website/logos/react.webp';
+import stripe from '../assets/images/website/logos/stripe.webp';
+import mysql from '../assets/images/website/logos/mysql.webp';
+import insomnia from '../assets/images/website/logos/insomnia.webp';
 
 
 // showcase
