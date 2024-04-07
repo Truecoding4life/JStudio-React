@@ -12,9 +12,11 @@ import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 
 // Technologies
-import apollo from '../assets/images/website/logos/apollo.jpeg';
+import apollo from '../assets/images/website/logos/graphql.png';
 import bootstrap from '../assets/images/website/logos/bootstrap.png';
 import css from '../assets/images/website/logos/css.png';
+
+import github from '../assets/images/website/logos/github.webp';
 
 
 // import express from '../assets/images/website/logos/express.jpeg';
@@ -25,14 +27,15 @@ import jquery from '../assets/images/website/logos/jquery.png';
 import materialize from '../assets/images/website/logos/mui.png';
 import mongodb from '../assets/images/website/logos/mongodb.png';
 
-
 // import mysql from '../assets/images/website/logos/mysql.jpg';
 import node from '../assets/images/website/logos/nodejs.png';
 import python from '../assets/images/website/logos/python.png';
 import react from '../assets/images/website/logos/react.png';
 import stripe from '../assets/images/website/logos/stripe.jpg';
+import mysql from '../assets/images/website/logos/mysql.png';
+import insomnia from '../assets/images/website/logos/insomnia.png';
 
-const technologiesLogo = [ apollo, bootstrap, css,  html, javascript, jquery, materialize, mongodb,  node, python, react, stripe ];
+const technologiesLogo = [ mysql, apollo, bootstrap ,materialize, css,  html, javascript, react, stripe, jquery, jest , insomnia, mongodb,  node, python, github ];
 
 // showcase
 import CodeIcon from '@mui/icons-material/Code';

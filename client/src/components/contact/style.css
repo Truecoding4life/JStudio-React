@@ -65,7 +65,7 @@
 
 
 .reach-out{
-    font-size: 50px;
+    font-size: 40px;
   
 }
 
@@ -76,6 +76,11 @@
     font-weight: 300;
 
 }
+
+
+.icon{
+    color: rgb(149, 158, 154);
+}
 #danger-alert{
     
     color: rgb(5, 5, 5);
@@ -85,6 +90,15 @@
 
 .chat-box{
     padding-top: 30px;
+}
+
+@media screen and (min-width: 1198px){
+    .icon:hover{
+        color: #55c093;
+        transform: scale(1.2);
+        transition: .4s;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -114,6 +128,10 @@
   }
 
   @media screen and ( min-width: 1600px) {
+        .reach-out{
+            font-size: 50px;
+        }
+
         .reach-out-out-2{
             font-size: 30px;
         }

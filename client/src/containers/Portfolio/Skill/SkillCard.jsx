@@ -27,7 +27,10 @@ export default function RenderSkill() {
               </h5>
               <p className="card-text text-secondary">{skill.description}</p>
             </div>
-            {renderButtons(skill)}
+            <div className="row">
+                {renderButtons(skill)}
+            </div>
+          
 
           </div>
         </div>

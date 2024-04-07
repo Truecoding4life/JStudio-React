@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
-import { Typography,Box } from "@mui/material";
-import { resumeIcon, messageIcon} from "../../ulti/icon";
+import {  Box, IconButton } from "@mui/material";
+import { resumeIcon, messageIcon } from "../../ulti/icon";
 import { ADD_MESSAGE } from "../../ulti/mutations";
 import { useMutation } from "@apollo/client";
 import resume from "../../assets/resume.pdf";
@@ -8,21 +8,21 @@ import Button from "@mui/material/Button";
 import { Icon } from "../../ulti/icon";
 import { UserContext } from "../../ulti/UserContext";
 import './style.css'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
-
-
-
-const MessageForm = ({ openModal}) => {
-  const { SuccessAlert, FailAlert} = useContext(UserContext);
+const MessageForm = ({ openModal }) => {
+  const { SuccessAlert, FailAlert } = useContext(UserContext);
   const [emailNotValid, setEmailNotValid] = useState(false);
   const [formInfo, setFormInfo] = useState({
     name: "",
     email: "",
     message: "",
   });
- 
 
-  if(emailNotValid){
+
+  if (emailNotValid) {
     FailAlert(true)
   }
   const [addMessage, { error }] = useMutation(ADD_MESSAGE);
@@ -38,10 +38,10 @@ const MessageForm = ({ openModal}) => {
         const { data } = await addMessage({
           variables: { ...formInfo, userId: "65bf4ca7da66cd1e791b259d" },
         });
-        
-      
-          openModal(false);
-       
+
+
+        openModal(false);
+
         SuccessAlert(true);
       } else {
         setEmailNotValid(true);
@@ -59,7 +59,7 @@ const MessageForm = ({ openModal}) => {
       message: "",
     });
   };
-  
+
   const emailValidation = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -101,8 +101,8 @@ const MessageForm = ({ openModal}) => {
                   </div>
                   <div className="col-6">
                     <div >
-                      <label htmlFor="email"  className="form-label">Email</label>
-                      <input type="text" required   className="custom-input form-control" placeholder="Type your Email" name="email" onChange={handleChange} />
+                      <label htmlFor="email" className="form-label">Email</label>
+                      <input type="text" required className="custom-input form-control" placeholder="Type your Email" name="email" onChange={handleChange} />
                     </div>
                   </div>
                 </div>
@@ -131,20 +131,37 @@ const MessageForm = ({ openModal}) => {
               <div className="row justify-content-around p-1">
 
                 <div className="col-12 p-2">
-                <Button
-               
-               type="button"
-               onClick={ () => window.open(resume, "jay_resume")}
-               className="btn download-button"
-               sx={{color: '#848a8c'}}
-             >
-               {" "}
-               {resumeIcon}
-               DOWNLOAD MY RESUME{" "}
-             </Button>
+                  <Button
+
+                    type="button"
+                    onClick={() => window.open(resume, "jay_resume")}
+                    className="btn download-button icon"
+                    
+                  >
+                    {" "}
+                    {resumeIcon}
+                    DOWNLOAD MY RESUME{" "}
+                  </Button>
+                </div>
+                <div className="col-12">
+                  <IconButton
+                      href="mailto:nghiemxthai@gmail.com"
+                  >
+                    <AlternateEmailIcon className="icon" />
+                  </IconButton>
+                  <IconButton
+                    onClick={() => window.open("https://github.com/truecoding4life")}
+                  >
+                    <GitHubIcon className="icon" />
+                  </IconButton>
+                  <IconButton
+                    onClick={()=>{ window.open("https://www.linkedin.com/in/thai-nghiem-319292267/")}}
+                  >
+                    <LinkedInIcon className="icon" />
+                  </IconButton>
                 </div>
                 <div className="col-12 " >
-                  <h2 > nghiemxthai@gmail.com</h2>
+                  <h4 > nghiemxthai@gmail.com</h4>
                 </div>
               </div>
 

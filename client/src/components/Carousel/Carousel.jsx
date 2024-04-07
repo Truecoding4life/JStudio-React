@@ -26,7 +26,7 @@ export default function AboutPage() {
 
 
         <div id='carousel-row' className="row ">
-          <div className="col-12 p-0">
+          <div className="col-12 p-0 ">
             <CarouselCard  text={text} image={image} description={description} aboutIndex={aboutIndex} set={setAboutIndex} />
           </div>
 

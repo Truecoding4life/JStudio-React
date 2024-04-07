@@ -131,7 +131,7 @@ function runTS(data) {
                   </div>
                 </div>
               </div>
-              <div className="col-12 ">
+              <div className="col-12 shadow-1">
                 <h3 className=" greeting-quote ">
                   {" "}
                   Meet Jay{" "}

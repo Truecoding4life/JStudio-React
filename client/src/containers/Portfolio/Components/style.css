@@ -7,6 +7,21 @@
   box-shadow: 0 0 3px 0 rgba(45, 192, 119, 0.5);
   background-color: #50ee9d;
   padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+
+.otherSkills {
+  background-color: #6df178f6;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #fbfbfbbe;
+  font-family: Raleway, Courier, monospace;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 .github-btn:hover,

@@ -9,7 +9,7 @@ export default function CarouselCard({ image, text, aboutIndex, description, set
   return (
 
 
-    <div id='carousel' className="row">
+    <div id='carousel' className="row shadow-1">
 
 <div className="carousel-helper col-3 col-sm-2 col-md-1 ">
         <CarouselHelper index={aboutIndex} set={set} />

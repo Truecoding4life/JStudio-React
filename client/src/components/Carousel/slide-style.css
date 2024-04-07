@@ -64,11 +64,7 @@
     background: linear-gradient(to right, #331f4c55, #0d0f10ed);
 }
 
-@media screen and (min-width: 1228px){
-    .slide:hover .logo-slide{
-    animation-play-state: paused;
-}
-}
+
 
 
 
