@@ -3,6 +3,7 @@ import MessageForm from "../../components/contact/Form";
 import image1 from "../../assets/images/website/contact/photo-1.jpeg";
 import image2 from "../../assets/images/website/contact/photo-2.jpeg";
 
+
 const imageList = [ image1, image2];
 
 import './style.css'

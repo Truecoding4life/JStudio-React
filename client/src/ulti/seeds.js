@@ -1,33 +1,26 @@
 // Projects
-import FoodFinder from "../assets/images/projects/foodgeek.png";
-import ApiAdventures from "../assets/images/projects/ios2.png";
-import GameLoft from "../assets/images/projects/gameloft.png";
-import PWA from "../assets/images/projects/PWA.png";
+import FoodFinder from "../assets/images/projects/foodgeek.webp";
+import ApiAdventures from "../assets/images/projects/ios2.webp";
+import GameLoft from "../assets/images/projects/gameloft.webp";
+import PWA from "../assets/images/projects/PWA.webp";
 
 
 // Carousel
 import photo1 from "../assets/images/website/carousel/photo1.png";
 import photo2 from "../assets/images/website/carousel/devices.png";
-import photo3 from "../assets/images/website/carousel/photo3.jpg";
 
 
 // Technologies
 import apollo from '../assets/images/website/logos/graphql.png';
 import bootstrap from '../assets/images/website/logos/bootstrap.png';
 import css from '../assets/images/website/logos/css.png';
-
 import github from '../assets/images/website/logos/github.webp';
-
-
-// import express from '../assets/images/website/logos/express.jpeg';
 import html from '../assets/images/website/logos/html.png';
 import javascript from '../assets/images/website/logos/javscript.jpg';
 import jest from '../assets/images/website/logos/jest.png';
 import jquery from '../assets/images/website/logos/jquery.png';
 import materialize from '../assets/images/website/logos/mui.png';
 import mongodb from '../assets/images/website/logos/mongodb.png';
-
-// import mysql from '../assets/images/website/logos/mysql.jpg';
 import node from '../assets/images/website/logos/nodejs.png';
 import python from '../assets/images/website/logos/python.png';
 import react from '../assets/images/website/logos/react.png';
@@ -35,12 +28,14 @@ import stripe from '../assets/images/website/logos/stripe.jpg';
 import mysql from '../assets/images/website/logos/mysql.png';
 import insomnia from '../assets/images/website/logos/insomnia.png';
 
-const technologiesLogo = [ mysql, apollo, bootstrap ,materialize, css,  html, javascript, react, stripe, jquery, jest , insomnia, mongodb,  node, python, github ];
 
 // showcase
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
+
+const technologiesLogo = [ mysql, apollo, bootstrap ,materialize, css,  html, javascript, react, stripe, jquery, jest , insomnia, mongodb,  node, python, github ];
+
 const Project = [
   {
     title: "GameLoft",
