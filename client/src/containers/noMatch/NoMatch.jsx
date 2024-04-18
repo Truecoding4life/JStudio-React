@@ -1,5 +1,5 @@
 import "./style.css";
-import errorGif from "./noMatch.gif";
+import errorGif from "./noMatch.webp";
 import { Link, useLocation } from 'react-router-dom';
 import { Container } from "@mui/material";
 

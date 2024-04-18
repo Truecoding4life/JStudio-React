@@ -27,14 +27,14 @@ import react from '../assets/images/website/logos/react.webp';
 import stripe from '../assets/images/website/logos/stripe.webp';
 import mysql from '../assets/images/website/logos/mysql.webp';
 import insomnia from '../assets/images/website/logos/insomnia.webp';
-
+import redux from '../assets/images/website/logos/redux.webp';
 
 // showcase
 import CodeIcon from '@mui/icons-material/Code';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 
-const technologiesLogo = [ mysql, apollo, bootstrap ,materialize, css,  html, javascript, react, stripe, jquery, jest , insomnia, mongodb,  node, python, github ];
+const technologiesLogo = [ mysql,   apollo, bootstrap ,materialize, css,  html, javascript, react,redux, stripe, jquery, jest , insomnia, mongodb,  node, python, github ];
 
 const Project = [
   {
