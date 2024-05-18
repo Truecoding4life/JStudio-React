@@ -66,7 +66,7 @@ const MessageForm = ({ openModal }) => {
   };
 
   return (
-    < div className="container container-fluid">
+    < div className="container ">
       <div className=" contact-container container">
         <div className='col-12 align-self-center chat-box m-auto '>
           <div className="row">
@@ -160,9 +160,7 @@ const MessageForm = ({ openModal }) => {
                     <LinkedInIcon className="icon" />
                   </IconButton>
                 </div>
-                <div className="col-12 " >
-                  <h4 > nghiemxthai@gmail.com</h4>
-                </div>
+              
               </div>
 
             </form>

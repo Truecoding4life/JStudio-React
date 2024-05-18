@@ -4,14 +4,13 @@ import { Navbar, Nav } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import IconButton from "@mui/material/IconButton";
 import Auth from "../../ulti/auth";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Link as ScrollLink } from 'react-scroll';
 import LockIcon from '@mui/icons-material/Lock';
 import { useTheme } from "@mui/material/styles";
 import PasswordBox from "./PasswordBox";
+import BlogContainer from "./Blog";
 import LoginMenu from "./LoginMenu";
 import DragHandleIcon from '@mui/icons-material/DragHandle';
-import LensBlurIcon from '@mui/icons-material/LensBlur';
 
 
 const expandIcon = (
@@ -30,7 +29,6 @@ const expandIcon = (
 
 export default function NavbarLi() {
   const theme = useTheme();
-  const mainTheme = theme.palette.navbar.main;
   const [currentPage, setCurrentPage] = useState("");
   const location = useLocation();
 
@@ -39,6 +37,7 @@ export default function NavbarLi() {
   }, [location]);
   const [open, setOpen] = useState(false);
   const [showPasswordBox, setShowPasswordBox] = useState(false);
+  const [ showBlog, setShowBlog] = useState(false);
 
   const handleOpen = () => {
     setOpen(true);
@@ -47,6 +46,14 @@ export default function NavbarLi() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleBlogOpen = () => {
+    setShowBlog(true);
+  }
+
+  const handleBlogClose = ()=>{
+    setShowBlog(false);
+  }
 
   const handleOpenPasswordBox = () => {
     setShowPasswordBox(true);
@@ -57,7 +64,6 @@ export default function NavbarLi() {
       <Navbar.Brand
         href="/"
         className="navbar-brand nav-brand-color"
-        style={{ color: '#4ec6a2f1' }}
       >
         J Studio
       </Navbar.Brand>
@@ -86,7 +92,6 @@ export default function NavbarLi() {
             Portfolio
           </Nav.Link>
           <Nav.Link
-         style={currentPage === "/contact" ? { color: "#04fab8f1" } : null}
          as={ScrollLink}  
 
          to="contact-section" 
@@ -97,7 +102,7 @@ export default function NavbarLi() {
             Contact
           </Nav.Link>
           <Nav.Link
-            style={currentPage === "/about" ? { color: "#04fab8f1" } : null}
+            
             as={ScrollLink}  
           to="info-section" 
           smooth={true}
@@ -106,6 +111,14 @@ export default function NavbarLi() {
           >
             About
           </Nav.Link>
+          <Nav.Link
+            style={{ color: "#b5b4b4" }}
+            onClick={handleBlogOpen}
+           >
+            
+            Blog
+          </Nav.Link>
+          <BlogContainer open={showBlog} close={handleBlogClose}></BlogContainer>
           {Auth.loggedIn() ? (
             <LoginMenu
               open={open}

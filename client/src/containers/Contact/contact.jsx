@@ -20,10 +20,10 @@ let image = imageList[Math.floor(Math.random() * imageList.length)];
   return (
     <section className="contact-content  animate__animated animate__fadeIn height-100 p-0" >
       <div className="row">
-        <div className=" col-lg-7 p-0 m-0" style={{overflow:'hidden'}}>
+        {/* <div className=" col-lg-0 p-0 m-0" style={{overflow:'hidden'}}>
           <img src={image} alt="beautiful lighting" id="contact-page-photo" />
-        </div>
-        <div className="col-md-12 col-lg-5 contact-box ">
+        </div> */}
+        <div className="col-md-12 col-lg-12 contact-box ">
       <MessageForm   />
 
         </div>
