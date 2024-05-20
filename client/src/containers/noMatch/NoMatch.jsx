@@ -14,8 +14,11 @@ function NoMatch() {
 
       >
 
-
-        <Link to="/" className="btn home-button" >Go home page</Link>
+        <div className="error-code text-center">
+          <h1 > 404 Page no found </h1>
+        <Link to="/" className="btn home-button " > Go back </Link>
+          </div>
+          
       </Container>
     </div>
 

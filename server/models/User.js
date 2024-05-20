@@ -13,6 +13,29 @@ const userSchema = new Schema({
         required: true,
         minlength: 5,
     },
+    blog:[
+        {
+            title: {
+                type: String,
+                required: true,
+                trim: true,
+            },
+            text: {
+                type: String,
+                required: true,
+                trim: true,
+            },
+            url: {
+                type: String,
+                required: true,
+                trim: true,
+            },
+            createdAt: {
+                type: Date,
+                required: true,
+            },
+        }
+    ],
     messages: [
         {
             message: {
